@@ -1,4 +1,1 @@
-# NOTES: Week 11
-
-> Here is a link to the course [overview](https://github.com/benbrastmckie/ModalHistory)
-
+# [NOTES: Week 11](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-11-counterfactual-worlds-brast-mckie)

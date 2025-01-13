@@ -1,4 +1,2 @@
-# NOTES: Week 02
-
-> Here is a link to the course [overview](https://github.com/benbrastmckie/ModalHistory)
+# [NOTES: Week 02](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-02-quines-critique)
 

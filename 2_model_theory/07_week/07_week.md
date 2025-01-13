@@ -1,4 +1,1 @@
-# NOTES: Week 07
-
-> Here is a link to the course [overview](https://github.com/benbrastmckie/ModalHistory)
-
+# [NOTES: Week 07](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-07-perpetuity-principles)

@@ -1,3 +1,1 @@
-# NOTES: Week 00
-
-> Here is a link to the course [overview](https://github.com/benbrastmckie/ModalHistory)
+# [NOTES: Week 00](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-00-introduction-and-origins)
