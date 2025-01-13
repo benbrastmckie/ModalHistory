@@ -2,9 +2,11 @@
 
 > A graduate course (24.711) in _Philosophical Logic_ at MIT covering the modern history of modal logic.
 
+**Abstract:** The seminar will cover the modern history of modal logic, focusing on the development of both its proof theories and semantic systems. (1) The first module will begin with C.I. Lewis' systems of strict implication 1912 - 1932, focusing on their early motivations and interpretations. The module will conclude with Ruth Barcan Marcus' first-order extensions of the systems of strict implication 1946 and the critiques raised by Quine 1943 - 1947 that modal logic will lead back into the "jungle of Aristotelian metaphysics". (2) The second module will focus on the development of intensional semantics by comparing Carnap 1946 and Kripke's 1963 accounts. We will then consider Prior's 1967 tense logics and some of the early attempts to fit these semantic systems together in Montague 1973, Fine 1977, and Kaplan 1989. This module will conclude with Dor and Goodman 2020 paper along with an alternative bimodal system that I have developed. (3) The third module will begin with the intensional semantics for counterfactuals developed by Stalnaker 1968 and Lewis 1973. We will then move to review some of the early criticisms by Fine 1975 and others, comparing the hyperintensional account that Fine 2012 offers as an alternative. I will then present the extension that I have developed of Fine's semantics for counterfactuals. (4) The fourth module will close by considering hyperintensional semantic theories and their logics for propositional identity, subject-matter, essence, ground, and logical subtraction.
+
 ## Overview
 
-The course will be divided into the five modules indicated below.
+The course will be divided into the four modules indicated below.
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 Grades will be determined accordingly:
 
@@ -56,10 +58,6 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Problem Set #4: Semantic Proofs
 
-## Module 3: Tense and Modality
-
-> The semantics and logic for tense operators as well as the bimodal systems which also include metaphysical modal operators.
-
 ### [Week 06: Prior and Thomason's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/06_week/06_week.md)
 
 ### [Week 07: Perpetuity Principles](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/07_week/07_week.md)
@@ -68,7 +66,7 @@ Although optional for students on the _historical track_, the first problem set 
 
 ### [Week 08: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/08_week/08_week.md)
 
-## Module 4: Counterfactual Conditionals
+## Module 3: Counterfactual Conditionals
 
 > The semantics and logic for counterfactual conditionals.
 
@@ -82,7 +80,7 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Problem Set #7: Model-Checker Installation
 
-## Module 5: Constitutive Explanation
+## Module 4: Constitutive Explanation
 
 > Hyperintensional semantics and logic for constitutive explanatory operators and logical subtraction
 
