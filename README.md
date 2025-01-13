@@ -26,8 +26,9 @@ Grades will be determined accordingly:
 ### Tooling
 
 Although optional for students on the _historical track_, the first problem set for students on the _formal track_ will consist of:
-- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem set at the end of the course.
-- Using Git to push changes to the installation documentation by either explaining how you set up your text editor or else improving existing documentation (collaboration is encouraged on all problem sets).
+- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem set at the end of the course (instructions will be provided).
+- Accepting the invitation to the private problem set repo for this course, adding an SSH key.
+- Using Git to push changes to the installation documentation (collaboration is encouraged on all problem sets).
 
 ## Module 1: Proof Theory
 
@@ -91,5 +92,5 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Problem Set #8: Model-Checker Interpretation
 
-### [Week 14: Belief Revision](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
+### [Week 14: Logical Subtraction](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
 
