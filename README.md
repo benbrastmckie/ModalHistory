@@ -12,7 +12,7 @@ Grades will be determined accordingly:
 
 ### Formal Track
 
-- [10%] Present a topic in class, revising the class notes for that week
+- [10%] Present a topic in class (15min), revising the class notes for that week
 - [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
 - [40%] Make substantial contributions to all eight collaborative problem sets
 - [40%] Complete a final project by either:
@@ -21,7 +21,7 @@ Grades will be determined accordingly:
 
 ### Historical Track
 
-- [10%] Present a topic in class, revising the class notes for that week
+- [10%] Present a topic in class (15min), revising the class notes for that week
 - [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
 - [80%] Write a final term paper (5k words)
 
@@ -34,7 +34,7 @@ Although optional for students on the _historical track_, the first problem set 
 
 ## Module 1: Proof Theory
 
-> Purely syntactic approaches to modal logic inspired by _Principia Mathematica_.
+> Purely syntactic approaches to modal logic inspired by _Principia Mathematica_ and the interpretation of the modal operators.
 
 ### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/00_week/00_week.md)
 
