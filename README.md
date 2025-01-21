@@ -7,8 +7,15 @@
 ## Overview
 
 The course will be divided into the four modules indicated below.
+Readings will be arranged chronologically where primary readings for each week will be indicated in **bold**.
+All readings will be accessible on the private repository for the seminar (links below).
+Some readings may be subject to change.
+
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-Grades will be determined accordingly:
+All students will be required to have a GitHub account to access the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the course.
+Add a star to this repository so that I can verify that you have created an account.
+
+Grades will be determined according to the selected track:
 
 ### Formal Track
 
@@ -17,7 +24,7 @@ Grades will be determined accordingly:
 - [40%] Make substantial contributions to all eight collaborative problem sets
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
-  - Use the model-checker to implement a semantics
+  - Using the model-checker to implement a semantics
 
 ### Historical Track
 
@@ -34,19 +41,62 @@ Although optional for students on the _historical track_, the first problem set 
 
 ## Module 1: Modal Logic
 
-> Purely syntactic approaches to modal logic inspired by _Principia Mathematica_ and the interpretation of the modal operators.
+This module focuses on the advantages and limitations of the purely syntactic approaches to modal logic inspired by _Principia Mathematica_ as well as the challenge of interpreting the modal operators that the early pioneers faced.
 
 ### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/00_week/00_week.md)
 
+This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
+
+- **[pp. 102-4, 108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
+- Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
+- Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
+
 ### [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/01_week/01_week.md)
+
+This week will focus on the proof systems that Lewis and Langford developed for modal logic.
 
 > Problem Set #1: Tooling
 
-### [Week 02: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/02_week/02_week.md)
+- Lewis, C. I. “A New Algebra of Implications and Some Consequences.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 16 (July 1913): 428–38. https://doi.org/10.2307/2012900.
+- ———. “Alternative Systems of Logic.” The Monist 42, no. 4 (October 1932): 481–507.
+- ———. “Strict Implication–An Emendation.” The Journal of Philosophy, Psychology and Scientific Methods 17, no. 11 (May 1920): 300–302. https://doi.org/10.2307/2940598.
+- **———. “The Calculus of Strict Implication.” Mind, New Series, 23, no. 90 (April 1914): 240–47.**
+- ———. “The Matrix Algebra for Implications.” The Journal of Philosophy, Psychology and Scientific Methods 11, no. 22 (October 1914): 589–600. https://doi.org/10.2307/2012652.
+- ———. “The Structure of Logic and Its Relation to Other Systems.” The Journal of Philosophy 18, no. 19 (September 1921): 505–16. https://doi.org/10.2307/2939309.
+- **Lewis, C. I., and C. H. Langford. Symbolic Logic. New York: Century Company, 1932.**
+- McKinsey, J. C. C. “A Reduction in Number of the Postulates for C. I. Lewis’ System of Strict Implication.” Bulletin of the American Mathematical Society 40, no. 6 (1934): 425–28. https://doi.org/10.1090/S0002-9904-1934-05881-6.
 
-### [Week 03: Ruth Barcan Marcus](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/03_week/03_week.md)
+### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/02_week/02_week.md)
 
-> Problem Set #3: Axiomatic Proofs
+This week will focus on the logical form of modal locutions and the quantified modal systems pioneered by Ruth Barcan Marcus.
+
+- Fitch, Frederic B. “Modal Functions in Two-Valued Logic.” The Journal of Symbolic Logic 2, no. 23 (1937): 125–28.
+- ———. “Note on Modal Functions.” The Journal of Symbolic Logic 4, no. 3 (1939): 115–16.
+- McKinsey, J. C. C. “Review: Frederic B. Fitch, Note on Modal Functions.” The Journal of Symbolic Logic 5, no. 1 (1940): 31.
+- **Quine, W. V. “Notes on Existence and Necessity.” The Journal of Philosophy 40, no. 5 (1943): 113–27. https://doi.org/10.2307/2017458.**
+- **Church, Alonzo. Review of Review of Notes on Existence and Necessity, by Willard V. Quine. The Journal of Symbolic Logic 8, no. 1 (1943): 45–47. https://doi.org/10.2307/2267994.**
+- McKinsey, J. C. C. “On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 103 (1945): 83–94.
+- Fitch, Frederic B. “Review: J. C. C. McKinsey, On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 11, no. 3 (1946): 98–99.
+- **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
+- ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
+- **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
+
+### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/03_week/03_week.md)
+
+This week will focus on the philosophical criticisms that Quine raised against the development of modal logic.
+
+> Problem Set #2: Axiomatic Proofs
+
+- **Barcan, Ruth C. "The Identity of Individuals in a Strict Functional Calculus of Second Order." The Journal of Symbolic Logic 12, no. 1 (1947): 12–15.**
+- **Quine, W. V. "The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 2 (1947): 43–48. https://doi.org/10.2307/2267247.**
+- **Barcan, Ruth C. "Review: W. V. Quine, The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 4 (1947): 139–41.**
+- Quine, W. V. "On What There Is." The Review of Metaphysics 2, no. 5 (September 1948): 21–38.
+- Smullyan, Arthur Francis. "Modality and Description." The Journal of Symbolic Logic 13, no. 1 (1948): 31–37.
+- Barcan, Ruth C. "Review: Arthur Francis Smullyan, Modality and Description." The Journal of Symbolic Logic 13, no. 3 (1948): 149–50.
+- Fitch, Frederic B. "The Problem of the Morning Star and the Evening Star." Philosophy of Science 16, no. 2 (April 1949): 137–41.
+- Barcan, Ruth C. "Strict Implication, Deducibility and the Deduction Theorem." The Journal of Symbolic Logic 18, no. 3 (1953): 234–36.
+- **Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.**
 
 ## Module 2: Intensional Semantics
 
@@ -56,13 +106,13 @@ Although optional for students on the _historical track_, the first problem set 
 
 ### [Week 05: Kripke's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_model_theory/05_week/05_week.md)
 
-> Problem Set #4: Semantic Proofs
+> Problem Set #3: Semantic Proofs
 
 ### [Week 06: Prior and Thomason's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/06_week/06_week.md)
 
 ### [Week 07: Perpetuity Principles](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/07_week/07_week.md)
 
-> Problem Set #5: Bimodal Logic
+> Problem Set #4: Bimodal Logic
 
 ### Week 08: Spring Break (no class)
 
@@ -74,13 +124,13 @@ Although optional for students on the _historical track_, the first problem set 
 
 ### [Week 10: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/09_week/09_week.md)
 
-> Problem Set #6: Intensional Countermodels
+> Problem Set #5: Counterfactual Semantics
 
 ### [Week 11: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/10_week/10_week.md)
 
 ### [Week 12: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/11_week/11_week.md)
 
-> Problem Set #7: Model-Checker Installation
+> Problem Set #6: Model-Checker
 
 ## Module 4: Constitutive Explanation
 
@@ -88,9 +138,12 @@ Although optional for students on the _historical track_, the first problem set 
 
 ### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/12_week/12_week.md)
 
+> Problem Set #7: Hyperintensional Semantics
+
 ### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/13_week/13_week.md)
 
-> Problem Set #8: Model-Checker Interpretation
+> Problem Set #8: Programmatic Semantics
 
 ### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
 
+Presentations are intended to provide a brief (15min) and accessible overview of each project.
