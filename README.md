@@ -15,7 +15,7 @@ Grades will be determined accordingly:
 - [10%] Present a topic in class (15min), revising the class notes for that week
 - [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
 - [40%] Make substantial contributions to all eight collaborative problem sets
-- [40%] Complete a final project by either:
+- [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
   - Use the model-checker to implement a semantics
 
@@ -28,11 +28,11 @@ Grades will be determined accordingly:
 ### Tooling
 
 Although optional for students on the _historical track_, the first problem set for students on the _formal track_ will consist of:
-- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem set at the end of the course (instructions will be provided).
+- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
 - Accepting the invitation to the private problem set repo for this course, adding an SSH key.
 - Using Git to push changes to the installation documentation (collaboration is encouraged on all problem sets).
 
-## Module 1: Proof Theory
+## Module 1: Modal Logic
 
 > Purely syntactic approaches to modal logic inspired by _Principia Mathematica_ and the interpretation of the modal operators.
 
@@ -48,7 +48,7 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Problem Set #3: Axiomatic Proofs
 
-## Module 2: Model Theory
+## Module 2: Intensional Semantics
 
 > Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
@@ -64,19 +64,21 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Problem Set #5: Bimodal Logic
 
-### [Week 08: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/08_week/08_week.md)
+### Week 08: Spring Break (no class)
+
+### [Week 09: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/08_week/08_week.md)
 
 ## Module 3: Counterfactual Conditionals
 
 > The semantics and logic for counterfactual conditionals.
 
-### [Week 09: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/09_week/09_week.md)
+### [Week 10: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/09_week/09_week.md)
 
 > Problem Set #6: Intensional Countermodels
 
-### [Week 10: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/10_week/10_week.md)
+### [Week 11: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/10_week/10_week.md)
 
-### [Week 11: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/11_week/11_week.md)
+### [Week 12: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/11_week/11_week.md)
 
 > Problem Set #7: Model-Checker Installation
 
@@ -84,11 +86,11 @@ Although optional for students on the _historical track_, the first problem set 
 
 > Hyperintensional semantics and logic for constitutive explanatory operators and logical subtraction
 
-### [Week 12: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/12_week/12_week.md)
+### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/12_week/12_week.md)
 
-### [Week 13: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/13_week/13_week.md)
+### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/13_week/13_week.md)
 
 > Problem Set #8: Model-Checker Interpretation
 
-### [Week 14: Logical Subtraction](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
+### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
 
