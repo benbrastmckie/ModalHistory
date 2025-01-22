@@ -34,9 +34,12 @@ Grades will be determined according to the selected track:
 
 ### Tooling
 
-Although optional for students on the _historical track_, the first problem set for students on the _formal track_ will consist of:
+> As the problem sets are collaborative, it will be important to all be on the same page using Git to push and pull changes to markdown, LaTeX, and Python files (no prior background is required).
+
+Although optional for students on the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
+
 - Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
-- Accepting the invitation to the private problem set repo for this course, adding an SSH key.
+- Accepting the invitation to the private problem set repository for this course, adding an SSH key.
 - Using Git to push changes to the installation documentation (collaboration is encouraged on all problem sets).
 
 ## Module 1: Modal Logic
