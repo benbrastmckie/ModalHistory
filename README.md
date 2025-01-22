@@ -6,17 +6,25 @@
 
 ## Overview
 
-The course will be divided into the four modules indicated below.
-Readings will be arranged chronologically where primary readings for each week will be indicated in **bold**.
-All readings will be accessible on the private repository for the seminar (links below).
+The seminar will be held in the Stata Building, room `32-D831` at MIT.
+
+The seminar will be divided into the four modules indicated below.
+Readings will be arranged chronologically where primary readings for each week will be in **bold**.
+All readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
 Some readings may be subject to change.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-All students will be required to have a GitHub account to access the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the course.
+All students will be required to have a GitHub account to access the private repository for the course.
 Please send me an email from the same email address that you use to sign into GitHub to gain access.
-Add a star to this repository so that I can verify that you have created an account and can see the course materials.
+Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
 
-Grades will be determined according to the selected track:
+There are two tracks to choose from where grades will be determined accordingly:
+
+### Historical Track
+
+- [10%] Present a topic in class (15min), revising the class notes for that week
+- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
+- [80%] Write a final term paper (5k words)
 
 ### Formal Track
 
@@ -27,21 +35,15 @@ Grades will be determined according to the selected track:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
 
-### Historical Track
-
-- [10%] Present a topic in class (15min), revising the class notes for that week
-- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
-- [80%] Write a final term paper (5k words)
-
 ### Tooling
-
-> As the problem sets are collaborative, it will be important to all be on the same page using Git to push and pull changes to markdown, LaTeX, and Python files (no prior background is required).
 
 Although optional for students on the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
 
 - Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
 - Accepting the invitation to the private problem set repository for this course, adding an SSH key.
 - Using Git to push changes to the installation documentation (collaboration is encouraged on all problem sets).
+
+> As the problem sets are collaborative, it will be important to all be on the same page using Git to push and pull changes to markdown, LaTeX, and Python files (no prior background is required).
 
 ## Module 1: Modal Logic
 
