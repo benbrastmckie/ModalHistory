@@ -49,7 +49,7 @@ Although optional for students on the _historical track_, the [first problem set
 
 This module focuses on the advantages and limitations of the purely syntactic approaches to modal logic inspired by _Principia Mathematica_ as well as the challenge of interpreting the modal operators that the early pioneers faced.
 
-### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/00_week/00_week.md)
+### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/00_week/00_week.md)
 
 This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
@@ -58,7 +58,7 @@ This week will present the ambitions for this seminar before presenting the syst
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 - Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
-### [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/01_week/01_week.md)
+### [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md)
 
 This week will focus on the proof systems that Lewis and Langford developed for modal logic.
 
@@ -73,7 +73,7 @@ This week will focus on the proof systems that Lewis and Langford developed for 
 - **Lewis, C. I., and C. H. Langford. Symbolic Logic. New York: Century Company, 1932.**
 - McKinsey, J. C. C. “A Reduction in Number of the Postulates for C. I. Lewis’ System of Strict Implication.” Bulletin of the American Mathematical Society 40, no. 6 (1934): 425–28. https://doi.org/10.1090/S0002-9904-1934-05881-6.
 
-### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/02_week/02_week.md)
+### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md)
 
 This week will focus on the logical form of modal locutions and the quantified modal systems pioneered by Ruth Barcan Marcus.
 
@@ -88,7 +88,7 @@ This week will focus on the logical form of modal locutions and the quantified m
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 - **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
 
-### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/blob/master/1_proof_theory/03_week/03_week.md)
+### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/tree/master/1_modal_logic/03_week)
 
 This week will focus on the philosophical criticisms that Quine raised against the development of modal logic.
 
@@ -108,33 +108,33 @@ This week will focus on the philosophical criticisms that Quine raised against t
 
 > Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
-### [Week 04: Carnap's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_model_theory/04_week/04_week.md)
+### [Week 04: Carnap's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
 
-### [Week 05: Kripke's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_model_theory/05_week/05_week.md)
+### [Week 05: Kripke's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md)
 
 > Problem Set #3: Semantic Proofs
 
-### [Week 06: Prior and Thomason's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/06_week/06_week.md)
+### [Week 06: Prior and Thomason's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md)
 
-### [Week 07: Perpetuity Principles](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/07_week/07_week.md)
+### [Week 07: Perpetuity Principles](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/07_week/07_week.md)
 
 > Problem Set #4: Bimodal Logic
 
 ### Week 08: Spring Break (no class)
 
-### [Week 09: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_tense_and_modality/08_week/08_week.md)
+### [Week 09: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
 
 ## Module 3: Counterfactual Conditionals
 
 > The semantics and logic for counterfactual conditionals.
 
-### [Week 10: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/09_week/09_week.md)
+### [Week 10: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
 
 > Problem Set #5: Counterfactual Semantics
 
-### [Week 11: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/10_week/10_week.md)
+### [Week 11: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
 
-### [Week 12: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_counterfactuals/11_week/11_week.md)
+### [Week 12: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/12_week/12_week.md)
 
 > Problem Set #6: Model-Checker
 
@@ -142,14 +142,14 @@ This week will focus on the philosophical criticisms that Quine raised against t
 
 > Hyperintensional semantics and logic for constitutive explanatory operators and logical subtraction
 
-### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/12_week/12_week.md)
+### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/13_week)
 
 > Problem Set #7: Hyperintensional Semantics
 
-### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/13_week/13_week.md)
+### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/14_week)
 
 > Problem Set #8: Programmatic Semantics
 
-### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/blob/master/5_constitutive_explanation/14_week/14_week.md)
+### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/15_week)
 
 Presentations are intended to provide a brief (15min) and accessible overview of each project.
