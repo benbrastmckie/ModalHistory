@@ -13,7 +13,8 @@ Some readings may be subject to change.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 All students will be required to have a GitHub account to access the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the course.
-Add a star to this repository so that I can verify that you have created an account.
+Please send me an email from the same email address that you use to sign into GitHub to gain access.
+Add a star to this repository so that I can verify that you have created an account and can see the course materials.
 
 Grades will be determined according to the selected track:
 
