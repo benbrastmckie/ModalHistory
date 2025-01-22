@@ -88,7 +88,7 @@ This week will focus on the logical form of modal locutions and the quantified m
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 - **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
 
-### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/tree/master/1_modal_logic/03_week)
+### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/03_week/03_week.md)
 
 This week will focus on the philosophical criticisms that Quine raised against the development of modal logic.
 
@@ -142,14 +142,14 @@ This week will focus on the philosophical criticisms that Quine raised against t
 
 > Hyperintensional semantics and logic for constitutive explanatory operators and logical subtraction
 
-### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/13_week)
+### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
 
 > Problem Set #7: Hyperintensional Semantics
 
-### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/14_week)
+### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/14_week/14_week.md)
 
 > Problem Set #8: Programmatic Semantics
 
-### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/15_week)
+### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/15_week/15_week.md)
 
 Presentations are intended to provide a brief (15min) and accessible overview of each project.
