@@ -41,7 +41,7 @@ In addition to the weekly readings included in the [private repository](https://
 
 ### Textbook
 
-Although optional for the _historical track_, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth]() problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) adapted for this course.
+Although optional for the _historical track_, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/OpenLogic/tree/master/courses/boxes-and-diamonds) adapted for this course.
 The material presented in this book will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
 
 ### Tooling
