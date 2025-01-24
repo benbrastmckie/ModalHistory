@@ -37,7 +37,7 @@ There are two tracks to choose from where grades will be determined accordingly:
 
 ## Recources
 
-In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and python as well as pushing and pulling changes with Git.
+In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and python as well as pushing and pulling changes with Git so that I can monitor your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets).
 
 ### [Textbook](https://github.com/benbrastmckie/OpenLogic/tree/master/courses/boxes-and-diamonds)
 
