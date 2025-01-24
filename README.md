@@ -23,13 +23,13 @@ There are two tracks to choose from where grades will be determined accordingly:
 ### Historical Track
 
 - [10%] Present a topic in class (15min), revising the class notes for that week
-- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
 - [80%] Write a final term paper (5k words)
 
 ### Formal Track
 
 - [10%] Present a topic in class (15min), revising the class notes for that week
-- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
 - [40%] Make substantial contributions to all eight collaborative problem sets
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
