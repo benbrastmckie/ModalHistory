@@ -10,7 +10,7 @@ The seminar will be held in the Stata Building, room `32-D831` at MIT.
 
 The seminar will be divided into the four modules indicated below.
 Readings will be arranged chronologically where primary readings for each week will be in **bold**.
-All readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
+All weekly readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
 Some readings may be subject to change.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
@@ -35,9 +35,18 @@ There are two tracks to choose from where grades will be determined accordingly:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
 
+## Recources
+
+In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and python as well as pushing and pulling changes with Git.
+
+### Textbook
+
+Although optional for the _historical track_, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth]() problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) adapted for this course.
+The material presented in this book will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+
 ### Tooling
 
-Although optional for students on the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
+Also optional for students on the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
 
 - Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
 - Accepting the invitation to the private problem set repository for this course, adding an SSH key.
