@@ -69,8 +69,18 @@
     - I recommend installing LaTeX if you have not already done so
     - I recommend using Zotero to collect readings for this course
   - Use Git to contribute to problem sets
-    - VSCodium/VSCode make this very easy
+    - VSCodium/VSCode makes this very easy
 
 ## Lecture
 
+### Principia Mathematica
 
+- The meaning of 'implies'
+
+### Strict Implication
+
+- The meaning of 'implies'
+  - "They exhibit only, in sharp outline, the meaning of " implies " which has been incorporated into the algebra."
+  - "Such an attempt might be superfluous were it not that certain confusions of interpretation are involved, and that the expositors of the algebra of logic have not always taken pains to indicate that there is a difference between the algebraic and the ordinary meanings of implication."
+  - "One may suspect that some of them would deny the divergence, or at least would maintain that the technical use is preferable and ought generally to be adopted."
+  - Definition: $p \rightarrow q \coloneq \neg p \vee q$
