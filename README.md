@@ -14,10 +14,9 @@ The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays
 
 The seminar will be divided into the four modules indicated below.
 
-Readings will be arranged chronologically where primary readings for each week will be in **bold**.
+Readings will be arranged chronologically where primary readings for each week will be in **bold** where some readings may be subject to change.
 All weekly readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
-Some readings may be subject to change.
-Please send me an email from the address that you use to sign into GitHub to gain permission rights (you will need an account).
+Please send me an email from the address that you used to sign into GitHub to gain access (you will need a GitHub account).
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
@@ -26,38 +25,34 @@ Grades will be calculated as follows:
 
 ### Historical Track
 
-- [10%] Present a topic in class (15min), revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
+- [10%] Present a topic in class, revising the class notes for that week
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to post a substantial question or comment
 - [80%] Write a final term paper (5k words)
 
 ### Formal Track
 
-- [10%] Present a topic in class (15min), revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to raise a substantial question or make an observation
-- [40%] Make substantial contributions to all eight collaborative problem sets
+- [10%] Present a topic in class, revising the class notes for that week
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to post a substantial question or comment
+- [40%] Make contributions to all eight collaborative problem sets
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
 
-## Resources
-
-In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and use the [model-checker](https://github.com/benbrastmckie/ModelChecker) for the final two problem sets.
-It will be important to be able to push and pull changes with Git so that I can monitor your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
-
-### [Textbook](https://github.com/benbrastmckie/OpenLogic/tree/master/courses/boxes-and-diamonds)
-
-Although optional for the _historical track_, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/OpenLogic/blob/master/courses/boxes-and-diamonds/bd-screen.pdf) adapted for this course.
+In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/OpenLogic/blob/master/courses/boxes-and-diamonds/bd-screen.pdf) adapted for this course.
 The material presented in this book will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+
+It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
 
 ### Tooling
 
-Also optional for students on the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
+Although optional for the _historical track_, the [first problem set](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/tooling.md) for students on the _formal track_ will consist of:
 
 - Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
 - Install LaTeX on your machine if you have not already done so.
 - Use Git to push changes to the private repository, adding an SSH key as needed.
 
-> As the problem sets are collaborative, it will be important to all be on the same page using Git to push and pull changes to markdown, LaTeX, and Python files (no prior background is required).
+This is a great opportunity for upgrading you tool kit, gaining some experience using Git to collaborate if you have not done so before.
+No prior experience is required.
 
 ## Module 1: Modal Logic
 
