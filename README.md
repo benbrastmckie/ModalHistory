@@ -6,7 +6,11 @@
 
 ## Overview
 
-The seminar will be held in the Stata Building, room `32-D831` at MIT.
+### Time and Location
+
+The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
+
+### Further Particulars
 
 The seminar will be divided into the four modules indicated below.
 Readings will be arranged chronologically where primary readings for each week will be in **bold**.
@@ -15,7 +19,7 @@ Some readings may be subject to change.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 All students will be required to have a GitHub account to access the private repository for the course.
-Please send me an email from the same email address that you use to sign into GitHub to gain access.
+Please send me an email from the same email address that you use to sign into GitHub to gain permission rights.
 Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
 
 There are two tracks to choose from where grades will be determined accordingly:
@@ -35,9 +39,10 @@ There are two tracks to choose from where grades will be determined accordingly:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
 
-## Recources
+## Resources
 
-In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and python as well as pushing and pulling changes with Git so that I can monitor your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets).
+In addition to the weekly readings included in the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate), the _formal track_ will make use of the following textbook from the [Open Logic Project](https://openlogicproject.org/) and require the use of some basic tools to write in markdown, LaTeX, and use the [model-checker](https://github.com/benbrastmckie/ModelChecker) for the final two problem sets.
+It will be important to be able to push and pull changes with Git so that I can monitor your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
 
 ### [Textbook](https://github.com/benbrastmckie/OpenLogic/tree/master/courses/boxes-and-diamonds)
 
@@ -50,8 +55,7 @@ Also optional for students on the _historical track_, the [first problem set](ht
 
 - Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
 - Install LaTeX on your machine if you have not already done so.
-- Accepting the invitation to the private problem set repository for this course, adding an SSH key.
-- Using Git to push changes to the installation documentation (collaboration is encouraged on all problem sets).
+- Use Git to push changes to the private repository, adding an SSH key as needed.
 
 > As the problem sets are collaborative, it will be important to all be on the same page using Git to push and pull changes to markdown, LaTeX, and Python files (no prior background is required).
 
