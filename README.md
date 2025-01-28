@@ -38,8 +38,8 @@ Grades will be calculated as follows:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
 
-In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the open source logic textbook [_Boxes and Diamonds_](https://github.com/benbrastmckie/OpenLogic/blob/master/courses/boxes-and-diamonds/bd-screen.pdf) adapted for this course.
-The material presented in this book will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) which I will be expanding for this course.
+The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
 
 It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
 
