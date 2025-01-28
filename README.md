@@ -13,16 +13,16 @@ The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays
 ### Further Particulars
 
 The seminar will be divided into the four modules indicated below.
+
 Readings will be arranged chronologically where primary readings for each week will be in **bold**.
 All weekly readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
 Some readings may be subject to change.
+Please send me an email from the address that you use to sign into GitHub to gain permission rights (you will need an account).
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-All students will be required to have a GitHub account to access the private repository for the course.
-Please send me an email from the same email address that you use to sign into GitHub to gain permission rights.
 Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
 
-There are two tracks to choose from where grades will be determined accordingly:
+Grades will be calculated as follows:
 
 ### Historical Track
 
