@@ -1,6 +1,13 @@
 # [Week 00](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-00-introduction-and-origins)
 
-> An overview of the course topics and requirements, followed by a first lecture with time for discussion.
+This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
+
+- **[pp. 102-4, 108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
+- Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
+- Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
+
+> Notes for each week will later be made accessible.
 
 ## Course Overview
 
@@ -41,8 +48,8 @@
   - Historical Track
     - [80%] Write a final term paper (5k words)
       - Historical or contemporary
-    - [10%] Present a topic in class (15min)
-      - Discuss a paper or topic
+    - [10%] Presentation
+      - Lead discussion on a paper or present a special topic
       - Revising the class notes for that week
     - [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues)
       - Raise a substantial question or make an observation
@@ -71,16 +78,3 @@
   - Use Git to contribute to problem sets
     - VSCodium/VSCode makes this very easy
 
-## Lecture
-
-### Principia Mathematica
-
-- The meaning of 'implies'
-
-### Strict Implication
-
-- The meaning of 'implies'
-  - "They exhibit only, in sharp outline, the meaning of " implies " which has been incorporated into the algebra."
-  - "Such an attempt might be superfluous were it not that certain confusions of interpretation are involved, and that the expositors of the algebra of logic have not always taken pains to indicate that there is a difference between the algebraic and the ordinary meanings of implication."
-  - "One may suspect that some of them would deny the divergence, or at least would maintain that the technical use is preferable and ought generally to be adopted."
-  - Definition: $p \rightarrow q \coloneqq \neg p \vee q$
