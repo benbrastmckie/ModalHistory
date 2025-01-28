@@ -83,4 +83,4 @@
   - "They exhibit only, in sharp outline, the meaning of " implies " which has been incorporated into the algebra."
   - "Such an attempt might be superfluous were it not that certain confusions of interpretation are involved, and that the expositors of the algebra of logic have not always taken pains to indicate that there is a difference between the algebraic and the ordinary meanings of implication."
   - "One may suspect that some of them would deny the divergence, or at least would maintain that the technical use is preferable and ought generally to be adopted."
-  - Definition: $p \rightarrow q \coloneq \neg p \vee q$
+  - Definition: $p \rightarrow q \coloneqq* \neg p \vee q$
