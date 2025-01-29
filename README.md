@@ -21,6 +21,9 @@ Please send me an email from the address that you used to sign into GitHub to ga
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
 
+Although optional for the _historical track_ I will be expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
+The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+
 Grades will be calculated as follows:
 
 ### Historical Track
@@ -37,9 +40,9 @@ Grades will be calculated as follows:
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
+  - Other projects with approval
 
-In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) which I will be expanding for this course.
-The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) (changes are underway).
 
 It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
 
