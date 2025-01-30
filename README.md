@@ -42,9 +42,8 @@ Grades will be calculated as follows:
   - Using the model-checker to implement a semantics
   - Other projects with approval
 
-In addition to the weekly readings, the [second](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/axiomatic_proofs.md), [third](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/03_pset/semantic_proofs.md), and [fifth](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/05_pset/counterfactual_semantics.md) problem sets will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) (changes are underway).
-
-It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) (details on how to do this is covered in the first problem set).
+In addition to the weekly readings, the [problem sets](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets) will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) (changes are underway).
+It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative problem sets (details on how to do this is covered in the first problem set).
 
 ### Tooling
 
@@ -65,6 +64,9 @@ This module focuses on the advantages and limitations of the purely syntactic ap
 
 This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
+> Entries are arranged in chronological order where **bold** items are primary.
+
+- Russell, Bertrand. Principles of Mathematics. New York,: Routledge, 1903.
 - **[pp. 94-104] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
 - **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
