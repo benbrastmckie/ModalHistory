@@ -23,8 +23,9 @@ Add a star to this repository so that I can verify that you have created an acco
 
 Although optional for the _historical track_ I will be expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction.
 
-Grades will be calculated as follows:
+Grades for the seminar will be calculated as follows:
 
 ### Historical Track
 
