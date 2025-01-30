@@ -65,7 +65,7 @@ This module focuses on the advantages and limitations of the purely syntactic ap
 
 This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
-- **[pp. 102-4, 108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **[pp. 94-108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
 - **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 - Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
@@ -120,39 +120,39 @@ This week will focus on the philosophical criticisms that Quine raised against t
 
 > Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
-### [Week 04: Carnap's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
+### [Week 04: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
 
-### [Week 05: Kripke's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md)
+### [Week 05: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md)
 
 > Problem Set #3: Semantic Proofs
 
-### [Week 06: Prior and Thomason's Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md)
+### [Week 06: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md)
 
-### [Week 07: Perpetuity Principles](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/07_week/07_week.md)
+### [Week 07: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/07_week/07_week.md)
 
 > Problem Set #4: Bimodal Logic
 
 ### Week 08: Spring Break (no class)
 
-### [Week 09: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
-
 ## Module 3: Counterfactual Conditionals
 
 > The semantics and logic for counterfactual conditionals.
 
-### [Week 10: Similarity Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
+### [Week 09: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
 
 > Problem Set #5: Counterfactual Semantics
 
-### [Week 11: Imposition Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
+### [Week 10: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
 
-### [Week 12: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/12_week/12_week.md)
+### [Week 11: Strongest Objective Modality](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
 
 > Problem Set #6: Model-Checker
 
+### [Week 12: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/12_week/12_week.md)
+
 ## Module 4: Constitutive Explanation
 
-> Hyperintensional semantics and logic for constitutive explanatory operators and logical subtraction
+> Hyperintensional semantics and logic for constitutive explanatory operators
 
 ### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
 
