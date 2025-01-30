@@ -67,7 +67,6 @@ This week will present the ambitions for this seminar before presenting the syst
 
 > Entries are arranged in chronological order where **bold** items are primary.
 
-- Russell, Bertrand. Principles of Mathematics. New York,: Routledge, 1903.
 - **[pp. 94-104] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
 - **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
@@ -135,6 +134,10 @@ This week will focus on the philosophical criticisms that Quine raised against t
 
 > Problem Set #4: Bimodal Logic
 
+This week will present a draft of the following paper:
+
+- **Brast-McKie, Benjamin. "The Construction of Possible Worlds"**
+
 ### Week 08: Spring Break (no class)
 
 ## Module 3: Counterfactual Conditionals
@@ -146,6 +149,10 @@ This week will focus on the philosophical criticisms that Quine raised against t
 > Problem Set #5: Counterfactual Semantics
 
 ### [Week 10: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
+
+This week will present the forthcoming paper:
+
+- **Brast-McKie, Benjamin. ["Counterfactual Worlds"](https://github.com/benbrastmckie/ModelChecker/blob/master/Counterfactuals.pdf), JPL**
 
 ### [Week 11: Strongest Objective Modality](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
 
@@ -162,6 +169,10 @@ This week will focus on the philosophical criticisms that Quine raised against t
 ### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
 
 > Problem Set #7: Hyperintensional Semantics
+
+This week will focus on the first-half of the following paper:
+
+- Brast-McKie, Benjamin. “Identity and Aboutness.” Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. https://doi.org/10.1007/s10992-021-09612-w.
 
 ### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/14_week/14_week.md)
 
