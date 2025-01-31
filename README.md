@@ -14,12 +14,12 @@ The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays
 
 The seminar will be divided into the four modules indicated below.
 
-Readings will be arranged chronologically where primary readings for each week will be in **bold** where some readings may be subject to change.
-All weekly readings will be accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
+The readings for each week will be provided below and accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
 Please send me an email from the address that you used to sign into GitHub to gain access (you will need a GitHub account).
+Readings for each week will be arranged chronologically where primary readings will be in **bold**.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-Add a star to this repository so that I can verify that you have created an account and see who is taking the course.
+Add a star to this repository so that I can see who is taking the course.
 
 Although optional for the _historical track_ I will be expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
@@ -56,6 +56,11 @@ Although optional for the _historical track_, the [first problem set](https://gi
 
 This is a great opportunity for upgrading you tool kit, gaining some experience using Git to collaborate if you have not done so before.
 No prior experience is required.
+
+### Presentations
+
+The presentations in class may consist of leading a discussion about a particular topic or paper or presenting the outline of a formal result of general significance in an accessible way.
+I have begun to gather papers for two potential topics to present in [week 1](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/readings/01_week/01_week.md).
 
 ## Module 1: Modal Logic
 
