@@ -106,8 +106,8 @@ This week will present an overview of the seminar before presenting the system o
 
 ![Principia Mathematica p.94](assets/PM_91.png)
 
-- [p.91] Aim is to axiomatize $\neg, \vee, \wedge$, and $\rightarrow$.
-- Explicitly compositional and recursive
+- [p.91] Aim is to axiomatize $\neg, \vee, \wedge$, and $\rightarrow$ where the latter two may be defined.
+- Explicitly compositional and recursive, producing new propositions from old.
 
 ![Principia Mathematica p.94](assets/PM_94.png)
 
@@ -119,7 +119,7 @@ This week will present an overview of the seminar before presenting the system o
 
 - [p.95] Every system must posit primitives.
 - Primitives can be described though this is bound to be circular.
-- For instance, specifying how to reason with primitive terms.
+- For instance, specifying how to reason with primitive terms is such an example.
 
 ![Principia Mathematica p.98](assets/PM_98.png)
 
