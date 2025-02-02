@@ -64,6 +64,7 @@ No prior experience is required.
 
 The presentations in class may consist of leading a discussion about a particular topic or paper or presenting the outline of a formal result of general significance in an accessible way.
 I have begun to gather papers for two potential topics to present in [week 1](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/readings/01_week/01_week.md).
+Presenters for each week will also be responsible for contributing to the class notes for that week.
 
 ## Module 1: Modal Logic
 
@@ -125,7 +126,7 @@ This week will focus on the quantified modal systems pioneered by Ruth Barcan Ma
 
 ## Module 2: Intensional Semantics
 
-> Semantic approaches to interpretational and metaphysical readings of the modal operators.
+Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
 ### [Week 04: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
 
@@ -149,7 +150,7 @@ This week will present the following paper:
 
 ## Module 3: Counterfactual Conditionals
 
-> The semantics and logic for counterfactual conditionals.
+The semantics and logic for counterfactual conditionals.
 
 ### [Week 09: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
 
@@ -169,7 +170,7 @@ This week will present the forthcoming paper:
 
 ## Module 4: Constitutive Explanation
 
-> Hyperintensional semantics and logic for constitutive explanatory operators
+Hyperintensional semantics and logic for constitutive explanatory operators
 
 ### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
 
