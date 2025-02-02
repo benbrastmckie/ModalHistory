@@ -21,7 +21,10 @@ Readings for each week will be arranged chronologically where primary readings w
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
 Add a star to this repository so that I can see who is taking the course.
 
-Although optional for the _historical track_ I will be expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
+Each week will have a file for notes which I will populate in advance of each class.
+Presenters for each week will be asked to contribute to revising these notes to include their presentation topics.
+
+Although optional for the _historical track_ I will be revising and expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
 If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction.
 
@@ -94,26 +97,19 @@ This week will focus on the proof systems that Lewis and Langford developed for 
 
 ### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md)
 
-This week will focus on the logical form of modal locutions and the quantified modal systems pioneered by Ruth Barcan Marcus.
+This week will focus on the quantified modal systems pioneered by Ruth Barcan Marcus and Quine's philosophical criticisms.
 
 - Fitch, Frederic B. “Modal Functions in Two-Valued Logic.” The Journal of Symbolic Logic 2, no. 23 (1937): 125–28.
 - ———. “Note on Modal Functions.” The Journal of Symbolic Logic 4, no. 3 (1939): 115–16.
 - McKinsey, J. C. C. “Review: Frederic B. Fitch, Note on Modal Functions.” The Journal of Symbolic Logic 5, no. 1 (1940): 31.
 - **Quine, W. V. “Notes on Existence and Necessity.” The Journal of Philosophy 40, no. 5 (1943): 113–27. https://doi.org/10.2307/2017458.**
-- **Church, Alonzo. Review of Review of Notes on Existence and Necessity, by Willard V. Quine. The Journal of Symbolic Logic 8, no. 1 (1943): 45–47. https://doi.org/10.2307/2267994.**
+- Church, Alonzo. Review of Review of Notes on Existence and Necessity, by Willard V. Quine. The Journal of Symbolic Logic 8, no. 1 (1943): 45–47. https://doi.org/10.2307/2267994.
 - McKinsey, J. C. C. “On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 103 (1945): 83–94.
 - Fitch, Frederic B. “Review: J. C. C. McKinsey, On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 11, no. 3 (1946): 98–99.
 - **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 - **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
-
-### [Week 03: Quine's Critique](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/03_week/03_week.md)
-
-This week will focus on the philosophical criticisms that Quine raised against the development of modal logic.
-
-> Problem Set #2: Axiomatic Proofs
-
-- **Barcan, Ruth C. "The Identity of Individuals in a Strict Functional Calculus of Second Order." The Journal of Symbolic Logic 12, no. 1 (1947): 12–15.**
+- Barcan, Ruth C. "The Identity of Individuals in a Strict Functional Calculus of Second Order." The Journal of Symbolic Logic 12, no. 1 (1947): 12–15.
 - **Quine, W. V. "The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 2 (1947): 43–48. https://doi.org/10.2307/2267247.**
 - **Barcan, Ruth C. "Review: W. V. Quine, The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 4 (1947): 139–41.**
 - Quine, W. V. "On What There Is." The Review of Metaphysics 2, no. 5 (September 1948): 21–38.
@@ -123,25 +119,31 @@ This week will focus on the philosophical criticisms that Quine raised against t
 - Barcan, Ruth C. "Strict Implication, Deducibility and the Deduction Theorem." The Journal of Symbolic Logic 18, no. 3 (1953): 234–36.
 - **Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.**
 
+### Week 03: President's Day (no class)
+
+> Problem Set #2: Axiomatic Proofs
+
 ## Module 2: Intensional Semantics
 
 > Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
 ### [Week 04: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
 
+> Problem Set #3: Semantic Proofs
+
 ### [Week 05: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md)
 
-> Problem Set #3: Semantic Proofs
+> Problem Set #4: Tense Logic
 
 ### [Week 06: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md)
 
 ### [Week 07: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/07_week/07_week.md)
 
-> Problem Set #4: Bimodal Logic
+> Problem Set #5: Bimodal Logic
 
-This week will present a draft of the following paper:
+This week will present the following paper:
 
-- **Brast-McKie, Benjamin. "The Construction of Possible Worlds"**
+- **Brast-McKie, Benjamin. "The Construction of Possible Worlds" (draft)**
 
 ### Week 08: Spring Break (no class)
 
@@ -151,7 +153,7 @@ This week will present a draft of the following paper:
 
 ### [Week 09: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
 
-> Problem Set #5: Counterfactual Semantics
+> Problem Set #6: Counterfactual Semantics
 
 ### [Week 10: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
 
@@ -159,13 +161,11 @@ This week will present the forthcoming paper:
 
 - **Brast-McKie, Benjamin. ["Counterfactual Worlds"](https://github.com/benbrastmckie/ModelChecker/blob/master/Counterfactuals.pdf), JPL**
 
-### [Week 11: Strongest Objective Modality](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
+### [Week 11: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
 
-> Problem Set #6: Model-Checker
+> Problem Set #7: Model-Checker
 
-### [Week 12: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/12_week/12_week.md)
-
-> This class will be rescheduled for later in the week where attendance is optional for those on the historical track
+### Week 12: Patriot's Day (no class)
 
 ## Module 4: Constitutive Explanation
 
@@ -173,15 +173,13 @@ This week will present the forthcoming paper:
 
 ### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
 
-> Problem Set #7: Hyperintensional Semantics
+> Problem Set #8: Hyperintensional Semantics
 
 This week will focus on the first-half of the following paper:
 
 - Brast-McKie, Benjamin. “Identity and Aboutness.” Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. https://doi.org/10.1007/s10992-021-09612-w.
 
 ### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/14_week/14_week.md)
-
-> Problem Set #8: Programmatic Semantics
 
 ### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/15_week/15_week.md)
 
