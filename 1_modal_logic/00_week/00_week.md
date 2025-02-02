@@ -14,7 +14,7 @@ This week will present an overview of the seminar before presenting the system o
 1) Plan
   - Introduction to philosophical logic 
   - Course overview
-  - Paradoxes of material implication
+  - Readings on the paradoxes of material implication
 2) Philosophical Logic
   - Historical development
     - Logic has developed quickly since mid 1800s
@@ -33,8 +33,8 @@ This week will present an overview of the seminar before presenting the system o
     - Unravel the recent origins of modal logic
     - Gain familiarity with modal logic
     - Learn the methods that have supported its development
-    - Build perspective towards new theories
-  - There is a lot we won't do
+    - Build perspective towards developing new theories
+  - There is a lot we won't cover in the seminar meetings
     - Applications (philosophy, linguistics, CS)
     - Metalogic
 3) Four Modules
