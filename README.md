@@ -26,7 +26,7 @@ Presenters for each week will be asked to contribute to revising these notes to 
 
 Although optional for the _historical track_ I will be revising and expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
-If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction.
+If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction (see Chapter 0 for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study).
 
 Grades for the seminar will be calculated as follows:
 
