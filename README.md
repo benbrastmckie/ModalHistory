@@ -62,6 +62,8 @@ No prior experience is required.
 
 ### Presentations
 
+> In class presentations differ from the presentation of a final project for the _formal track_.
+
 The presentations in class may consist of leading a discussion about a particular topic or paper or presenting the outline of a formal result of general significance in an accessible way.
 I have begun to gather papers for two potential topics to present in [week 1](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/readings/01_week/01_week.md).
 Presenters for each week will also be responsible for contributing to the class notes for that week.
@@ -81,9 +83,9 @@ This week will present the ambitions for this seminar before presenting the syst
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 - Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
-### [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md)
+### [Week 01: Early Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md)
 
-This week will focus on the proof systems that Lewis and Langford developed for modal logic.
+This week will focus on the proof systems that Lewis and Langford developed for modal logic, as Barcan Marcus' extension to the first-order.
 
 > Problem Set #1: Tooling
 
@@ -93,8 +95,10 @@ This week will focus on the proof systems that Lewis and Langford developed for 
 - **———. “The Calculus of Strict Implication.” Mind, New Series, 23, no. 90 (April 1914): 240–47.**
 - ———. “The Matrix Algebra for Implications.” The Journal of Philosophy, Psychology and Scientific Methods 11, no. 22 (October 1914): 589–600. https://doi.org/10.2307/2012652.
 - ———. “The Structure of Logic and Its Relation to Other Systems.” The Journal of Philosophy 18, no. 19 (September 1921): 505–16. https://doi.org/10.2307/2939309.
-- **Lewis, C. I., and C. H. Langford. Symbolic Logic. New York: Century Company, 1932.**
+- **[Appendix] Lewis, C. I., and C. H. Langford. Symbolic Logic. New York: Century Company, 1932.**
 - McKinsey, J. C. C. “A Reduction in Number of the Postulates for C. I. Lewis’ System of Strict Implication.” Bulletin of the American Mathematical Society 40, no. 6 (1934): 425–28. https://doi.org/10.1090/S0002-9904-1934-05881-6.
+- **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
+- ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 
 ### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md)
 
@@ -107,8 +111,6 @@ This week will focus on the quantified modal systems pioneered by Ruth Barcan Ma
 - Church, Alonzo. Review of Review of Notes on Existence and Necessity, by Willard V. Quine. The Journal of Symbolic Logic 8, no. 1 (1943): 45–47. https://doi.org/10.2307/2267994.
 - McKinsey, J. C. C. “On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 103 (1945): 83–94.
 - Fitch, Frederic B. “Review: J. C. C. McKinsey, On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 11, no. 3 (1946): 98–99.
-- **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
-- ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 - **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
 - Barcan, Ruth C. "The Identity of Individuals in a Strict Functional Calculus of Second Order." The Journal of Symbolic Logic 12, no. 1 (1947): 12–15.
 - **Quine, W. V. "The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 2 (1947): 43–48. https://doi.org/10.2307/2267247.**
