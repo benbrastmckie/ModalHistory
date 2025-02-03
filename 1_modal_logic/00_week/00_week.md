@@ -7,84 +7,107 @@ This week will present an overview of the seminar before presenting the system o
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 - Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
-> Notes for each week will later be made accessible.
-
 ## Course Overview
 
-1) Plan
-  - Introduction to philosophical logic 
-  - Course overview
-  - Readings on the paradoxes of material implication
-2) Philosophical Logic
-  - Historical development
-    - Logic has developed quickly since mid 1800s
+### Plan
+
+- Introduction to philosophical logic 
+- Course overview
+- Readings on the paradoxes of material implication
+
+### Philosophical Logic
+
+- Historical development
+  - Logic has developed quickly since mid 19th century
+    - Followed the development of abstract algebra
     - Modal logic is a nice filter (well contained)
-    - Perspective (logic was not give to us by god)
+    - Avoiding anachronisms, e.g., truth-tables don't appear until 1921
+  - Perspective (logic was not give to us by god)
     - Good theories (strong and simple)
     - Success story (real philosophical progress)
     - Modal logic has been hugely influential
-    - Avoiding anachronisms, e.g., truth-tables don't appear until 1921
-  - Formal methodology
-    - Contrast mathematical logic
-    - Conceptual engineering
+  - There are other versions of this course that start earlier
+    - We are starting where we are to follow the birth of a methodology
+- Formal methodology
+  - Contrast philosophical logic with:
+    - Mathematical logic
+    - The philosophy of logic
+  - Conceptual engineering
     - Proof theory
     - Model theory
-    - Verification
-  - Course goals
-    - Unravel the recent origins of modal logic
-    - Gain familiarity with modal logic
-    - Learn the methods that have supported its development
-    - Build perspective towards developing new theories
-  - There is a lot we won't cover in the seminar meetings
-    - Applications (philosophy, linguistics, CS)
-    - Metalogic
-3) Four Modules
-  - Module 1: Modal Logic
-    - Paradoxes of the material conditional
-    - Early proof systems (1912 - 1932)
-    - Quantified modal logic (1946)
-    - Quine's criticisms (1943 - 1953)
-  - Module 2: Intensional Semantics
-    - Carnap and Kripke (1946 - 1963)
-    - Prior and Thomason (1967, 1970)
-    - Montague and Kaplan (1973, 1989)
-    - Bimodal logics
-  - Module 3: Counterfactual Conditionals
-    - Similarity semantics (1967 - 1979)
-    - Imposition semantics (2012)
-    - Task semantics
-    - Programmatic semantics
-  - Module 4: Constitutive Explanation
-    - Subject-matter and relevance
-    - Necessary and Sufficient
-4) Course Requirements
-  - Historical Track
-    - [80%] Write a final term paper (5k words)
-      - Historical or contemporary
-    - [10%] Presentation
-      - Lead discussion on a paper or present a special topic
-      - Revising the class notes for that week
-    - [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues)
-      - Raise a substantial question or make an observation
-      - Answer a question or otherwise engage with an existing issue
-      - Include issue links along with your term paper for review
-  - Formal Track
-    - [40%] Make substantial contributions to all eight collaborative problem sets
-    - [40%] Complete and present a final project by either:
-      - Presenting and discussing an important formal result
-      - Using the model-checker to implement a semantics
-    - [10%] Present a topic in class (ditto above)
-    - [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) (ditto above)
-5. Course Materials
-  - Public repository
-    - Syllabus
-    - Bibliography
-    - Issues
-  - Private repository
-    - Readings
-    - Class notes
-    - Problem sets
-6. Tools (formal track)
+    - Formal Verification
+  - Logic as science?
+    - General and repeatable methods 
+    - Productive programs with a lot to show (e.g., CS, linguistics)
+    - The risk is dogmatism (rigidity of a paradigm)
+- Course goals
+  - Unravel the recent origins of modal logic
+  - Gain familiarity with modal logic
+  - Learn the methods that have supported its development
+  - Build perspective towards developing new theories
+- There is a lot we won't cover in the seminar meetings
+  - Further applications (philosophy, linguistics, CS)
+  - Broad range of technical results
+
+### Four Modules
+
+- Module 1: Modal Logic
+  - Paradoxes of the material conditional
+  - Early proof systems (1912 - 1932)
+  - Quantified modal logic (1943 - 1953)
+    - NOTE: interaction of existing systems
+- Module 2: Intensional Semantics
+  - Carnap and Kripke (1946 - 1963)
+  - Prior and Thomason (1967, 1970)
+  - Montague and Kaplan (1973, 1989)
+  - Bimodal logics
+    - NOTE: interaction of existing systems
+- Module 3: Counterfactual Conditionals
+  - Similarity and imposition (1967 - 1979, 2012)
+  - Task semantics for tensed counterfactuals
+    - NOTE: interaction of existing systems
+  - Programmatic semantics
+- Module 4: Constitutive Explanation
+  - Subject-matter and relevance
+  - 'Necessary for' and 'Sufficient for'
+    - NOTE: compare to material and strict implication
+
+### Course Requirements
+
+- Historical Track
+  - [80%] Write a final term paper (5k words)
+    - Historical or contemporary
+  - [10%] Presentation
+    - Lead discussion on a paper or present a special topic
+    - Revising the class notes for that week
+  - [10%] Open (at least) five [issues](https://github.com/benbrastmckie/ModalHistory/issues)
+    - Raise a substantial question or make an observation
+    - Answer a question or otherwise engage with an existing issue
+    - Include issue links along with your term paper for review
+- Formal Track
+  - [40%] Make substantial contributions to all eight collaborative problem sets
+  - [40%] Complete and present a final project by either:
+    - Presenting and discussing an important formal result
+    - Using the model-checker to implement a semantics
+  - [10%] Present a topic in class (ditto above)
+  - [10%] Open (at least) five [issues](https://github.com/benbrastmckie/ModalHistory/issues)
+- Logic Background
+  - I will be revising the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course
+  - These will be gather the formal systems we will be working with in a uniform notation
+  - Important for the problem sets but will not be the focus of seminar meetings
+  - There are links for further reading and I'll put together a bibliography for additional study
+
+### Course Materials
+
+- Public repository
+  - Syllabus
+  - Bibliography
+  - Class notes
+  - Issues
+- Private repository
+  - Readings
+  - Problem sets
+- Tools (_formal track_)
   - Set up a text editor for using the [model-checker](https://github.com/benbrastmckie/ModelChecker)
     - Details are provided for using VSCodium
     - Install LaTeX if you have not already done so
@@ -95,11 +118,17 @@ This week will present an overview of the seminar before presenting the system o
 ## Lecture Notes
 
 - Proof Theory
-  - Axioms and rules for a formal language
-  - Provides precise account of hos to reason with the operators
+  - Axioms and rules stated in a formal language
+  - Stipulates how to reason in that language
   - Need not correspond to anything in natural language
-- The "system of material implication" from _Principia Mathematica_ is the principle example
+    - Might be worried if it did describe (idealized) reasoning in natural language
+    - Not clear what constitutes the target for reasoning in natural language
+    - Presumably we have not always reasoned in the ways we do now in English
+    - A purely descriptive project misses the opportunity to engineer new ways of reasoning
+    - Formal reasoning isn't better overall, but can be better for certain theoretical applications
+- The "system of material implication" from _Principia Mathematica_ (PM) is the principle example
 - Lewis' "system of strict implication" is suggested as an alternative/extension
+  - **Question:** What reasons does Lewis provide for preferring his system to PM?
 
 ### _Principia Mathematica_
 
