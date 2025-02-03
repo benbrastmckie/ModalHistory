@@ -126,9 +126,9 @@ This week will present an overview of the seminar before presenting the system o
 - [p.98] The definition is defended as being "very much more convenient for our purposes than any of its rivals"
 - Warrants _modus ponens_ since 'What is implied by a true proposition is true.'
 - This property leaves open what is "implied by a false proposition".
-- Convenient to also say "if either $p$ is false or $q$ is true, then $'p$ implies $q$' is to be true."
+- Convenient to also say "if either $p$ is false or $q$ is true, then '$p$ implies $q$' is to be true."
 - The definition of material implication $p \rightarrow q := \neg p \vee q$.
-- Slips into using modal language, claiming "if $p$ is true, $q$ must be true."
+- Slips into using modal language, claiming "if $p$ is true, $q$ _must_ be true."
 
 ![Principia Mathematica p.99](assets/PM_99.png)
 
