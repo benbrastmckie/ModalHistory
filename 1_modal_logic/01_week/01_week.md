@@ -17,5 +17,6 @@ Here are two ideas for topics to present on (other ideas are welcome).
 
 > Why does Russell insist that \*1.1 cannot be expressed symbolically?
 
-- Carroll, Lewis. “WHAT THE TORTOISE SAID TO ACHILLES.” Mind IV, no. 14 (April 1895): 278–80. https://doi.org/10.1093/mind/IV.14.278.
+- **[pp. 99] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **Carroll, Lewis. “WHAT THE TORTOISE SAID TO ACHILLES.” Mind IV, no. 14 (April 1895): 278–80. https://doi.org/10.1093/mind/IV.14.278.**
 - **[Sec. 38] Russell, Bertrand. Principles of Mathematics. New York,: Routledge, 1903.**
