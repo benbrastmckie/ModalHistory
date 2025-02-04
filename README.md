@@ -42,7 +42,7 @@ Grades for the seminar will be calculated as follows:
 
 - [10%] Present a topic in class, revising the class notes for that week
 - [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
-- [40%] Make contributions to all eight collaborative problem sets
+- [40%] Make contributions to all eight collaborative problem sets 
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
@@ -74,7 +74,7 @@ Presenters for each week will also be responsible for contributing to the class 
 
 This module focuses on the advantages and limitations of the purely syntactic approaches to modal logic inspired by _Principia Mathematica_ as well as the challenge of interpreting the modal operators that the early pioneers faced.
 
-### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/00_week/00_week.md)
+### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/00_week/00_week.md) (Feb 03)
 
 This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
@@ -85,11 +85,11 @@ This week will present the ambitions for this seminar before presenting the syst
 - Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 - Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
-### [Week 01: Early Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md)
+### [Week 01: Early Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md) (Feb 10)
 
 This week will focus on the proof systems that Lewis and Langford developed for modal logic, as Barcan Marcus' extension to the first-order.
 
-> Problem Set #1: Tooling
+> Problem Set #1: Tooling (due prior to class)
 
 - Lewis, C. I. “A New Algebra of Implications and Some Consequences.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 16 (July 1913): 428–38. https://doi.org/10.2307/2012900.
 - ———. “Alternative Systems of Logic.” The Monist 42, no. 4 (October 1932): 481–507.
@@ -102,7 +102,9 @@ This week will focus on the proof systems that Lewis and Langford developed for 
 - **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 
-### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md)
+### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md) (TUESDAY, Feb 18 due to President's Day)
+
+> Problem Set #2: Axiomatic Proofs (due prior to class)
 
 This week will focus on the quantified modal systems pioneered by Ruth Barcan Marcus and Quine's philosophical criticisms.
 
@@ -124,25 +126,21 @@ This week will focus on the quantified modal systems pioneered by Ruth Barcan Ma
 - Barcan, Ruth C. "Strict Implication, Deducibility and the Deduction Theorem." The Journal of Symbolic Logic 18, no. 3 (1953): 234–36.
 - **Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.**
 
-### Week 03: President's Day (no class)
-
-> Problem Set #2: Axiomatic Proofs
-
 ## Module 2: Intensional Semantics
 
 Semantic approaches to interpretational and metaphysical readings of the modal operators.
 
-### [Week 04: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md)
+### [Week 03: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/03_week/03_week.md) (Feb 24)
 
 > Problem Set #3: Semantic Proofs
 
-### [Week 05: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md)
+### [Week 04: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md) (Mar 3)
 
 > Problem Set #4: Tense Logic
 
-### [Week 06: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md)
+### [Week 05: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md) (Mar 10)
 
-### [Week 07: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/07_week/07_week.md)
+### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
 > Problem Set #5: Bimodal Logic
 
@@ -150,33 +148,33 @@ This week will present the following paper:
 
 - **Brast-McKie, Benjamin. "The Construction of Possible Worlds" (draft)**
 
-### Week 08: Spring Break (no class)
+### Week 07: Spring Break (Mar 24)
 
 ## Module 3: Counterfactual Conditionals
 
 The semantics and logic for counterfactual conditionals.
 
-### [Week 09: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/09_week/09_week.md)
+### [Week 08: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/08_week/08_week.md) (Mar 31)
 
 > Problem Set #6: Counterfactual Semantics
 
-### [Week 10: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md)
+### [Week 9: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
 
 This week will present the forthcoming paper:
 
 - **Brast-McKie, Benjamin. ["Counterfactual Worlds"](https://github.com/benbrastmckie/ModelChecker/blob/master/Counterfactuals.pdf), JPL**
 
-### [Week 11: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/11_week/11_week.md)
+### [Week 10: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md) (Apr 14)
 
 > Problem Set #7: Model-Checker
 
-### Week 12: Patriot's Day (no class)
+### Week 11: Patriot's Day (no class Apr 21)
 
 ## Module 4: Constitutive Explanation
 
 Hyperintensional semantics and logic for constitutive explanatory operators
 
-### [Week 13: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md)
+### [Week 12: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/12_week/12_week.md) (Apr 28)
 
 > Problem Set #8: Hyperintensional Semantics
 
@@ -184,8 +182,8 @@ This week will focus on the first-half of the following paper:
 
 - Brast-McKie, Benjamin. “Identity and Aboutness.” Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. https://doi.org/10.1007/s10992-021-09612-w.
 
-### [Week 14: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/14_week/14_week.md)
+### [Week 13: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md) (May 5)
 
-### [Week 15: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/15_week/15_week.md)
+### [Week 14: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/14_week/14_week.md) (May 12)
 
 Presentations are intended to provide a brief (15min) and accessible overview of each project.
