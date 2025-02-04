@@ -10,6 +10,8 @@
 
 The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
 
+I am always happy to meet after the seminar and to hold office hours by appointment.
+
 ### Further Particulars
 
 The seminar will be divided into the four modules indicated below.
@@ -19,7 +21,7 @@ Please send me an email from the address that you used to sign into GitHub to ga
 Readings for each week will be arranged chronologically where primary readings will be in **bold**.
 
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-Add a star to this repository so that I can see who is taking the course.
+Add a star to this repository so that I can see who is taking the course for credit.
 
 Each week will have a file for notes which I will populate in advance of each class.
 Presenters for each week will be asked to contribute to revising these notes to include their presentation topics.
@@ -33,13 +35,13 @@ Grades for the seminar will be calculated as follows:
 ### Historical Track
 
 - [10%] Present a topic in class, revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to post a substantial question or comment
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
 - [80%] Write a final term paper (5k words)
 
 ### Formal Track
 
 - [10%] Present a topic in class, revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) to post a substantial question or comment
+- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
 - [40%] Make contributions to all eight collaborative problem sets
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
