@@ -1,4 +1,4 @@
-# [Week 01](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-01-lewis--langfords-modal-systems)
+# [Week 01](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-01-early-modal-systems-feb-10)
 
 ## Presentations
 

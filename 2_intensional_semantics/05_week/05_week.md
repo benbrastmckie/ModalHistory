@@ -1,1 +1,1 @@
-# [Week 05](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-05-prior-and-thomasons-semantics)
+# [Week 05](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-05-montague-and-kaplan-mar-10)

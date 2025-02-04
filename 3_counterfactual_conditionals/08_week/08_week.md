@@ -1,1 +1,1 @@
-# [Week 08](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#week-08-the-construction-of-possible-worlds-brast-mckie)
+# [Week 08](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-08-similarity-and-imposition-mar-31)
