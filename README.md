@@ -10,7 +10,7 @@
 
 The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
 
-I am always happy to meet after the seminar and to hold office hours by appointment.
+I am always happy to meet after the seminar and to hold office hours by appointment at `32-D962`.
 
 ### Further Particulars
 
