@@ -158,7 +158,7 @@ The semantics and logic for counterfactual conditionals.
 
 > Problem Set #6: Counterfactual Semantics (due prior to class)
 
-### [Week 9: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
+### [Week 09: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
 
 This week will present the forthcoming paper:
 

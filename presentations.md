@@ -27,7 +27,7 @@
 - NAME, TOPIC/PAPER
 - NAME, TOPIC/PAPER
 
-## Week 09
+## Week 08
 
 - Bailey Fernandez, Kit Fine --- "Truthmaker Semantics" (focus on how it handles modality)
 - NAME, TOPIC/PAPER
