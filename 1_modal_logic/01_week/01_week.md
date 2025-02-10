@@ -17,6 +17,8 @@
 - Does everyone have access to the private repo/emails who wants it?
 - Presentation sign-up 
 - Will leave time to check in about the collaborating with Git
+- Git issues
+- Watch repo
 - Backgrounds in logic and Hilbert's system
 
 ## Topics
@@ -25,26 +27,23 @@
 
 > Last time we saw...
 
-- Inchoate conception and motivations driving Lewis
+- Inchoate conception
   - A logic of the possible and necessary, not just the actual
-  - Necessary as something like, or including, the _a priori_
+  - Wants to reason about the (merely) possible not just the actual
+  - 'Necessary' means something like, or includes, what is _a priori_
   - Aim to extend the vocabulary that PM introduces is a good one
-- Motivation
+- Motivation (and what we can learn from this chapter in history)
   - What should we require of a new program in logic?
   - Perfectly clear theoretical target is too much to ask
-  - Methodology for developing the logic
-  - Consistency is vital
+  - Need some methodology for developing the logic
+  - Proof theory where consistency is critical
   - Motivation from the inadequacies of the existing systems
     - Avoid absurd propositions (these indicate limited meaning of 'implies')
-    - Provide a better reading of 'implies'
+    - Provide a better reading of 'implies' (or at least different)
   - Intended applications (theoretical role)
     - Some appeal what can be known _a priori_
-    - Some appeal to the ability to test/reason about scientific hypotheses
+    - Some appeal to the ability to test/reason about contingent scientific hypotheses
   - Stipulated systems ultimately draw on abductive support
-- Anachronism
-  - Compare the extensional and intensional algebras
-  - Some grounds for resonance with what Lewis writes
-  - Wants to reason about the possible not just the actual
 
 ### Russell, Frege, and Carroll
 
@@ -79,19 +78,24 @@
   - [p. 243] M1 - M7 vs S1 - S11
     - Recall the contrast between replacing material implication and extending it
     - Here we find an extension with clear priority given to strict implication
+  - How to tell two systems apart?
+    - If equivalence can be proven, that is one thing
+    - But if not, then no amount of failing to find proofs will lead us to conclude otherwise
+    - This is what motivates model theory and Lewis uses a primitive version of it
+  - Building proof theories can start rough
     - S7 $\Box(\Box(p \vee q) \rightarrow (p \vee q))$ is a necessitated version of the T axiom
     - S9 $\Box(\Box(p \vee (q \vee r)) \rightarrow \Box(q \vee (p \vee r)))$
       - Derives instances of the paradoxes of strict implication (somehow)
       - Follows in a Hilbert system from N and A1
-  - Notes the absence of the paradoxes from the system of strict implication
+  - Notes the absence of the material paradoxes from the system of strict implication
   - [p. 244] Aim to distinguish the useful theorems writing, "It is easy to demonstrate that an infinity of such absurd propositions follow from the assumptions of material implication. The significant and useful theorems of that calculus thus appear to be, like Gratiano's reasons, two grains of wheat. That they are not hid in two bushels of chaff is due to the restraining intelligence which manipulates the system."
-  - Falsely claims that, "These theorems are absurd only in the sense that they are utterly in applicable to our modes of inference and proof."
+  - Falsely claims that, "These theorems are absurd only in the sense that they are utterly inapplicable to our modes of inference and proof."
 - Interpretation
   - Characterizes, "the nature of any world to which this system of material implication would apply," as:
     - "In such a world, all-possible must be necessary, the contingent cannot exist, the false must be absurd and impossible, and the contrary to fact supposition must be quite meaningless."
-    - "[T]he true must necessarily true, true _a priori_, if 'a proposition is implied by any proposition'."
-    - "[T]he contingent cannot exist, since all facts will be necessarily as they are, and the truth about them _a prori_."
-    - [p.245] "[T]he false will be impossible and absurd"
+      - "[T]he true must be necessarily true, true _a priori_, if 'a proposition is implied by any proposition'."
+      - "[T]he contingent cannot exist, since all facts will be necessarily as they are, and the truth about them _a prori_."
+      - [p.245] "[T]he false will be impossible and absurd"
   - By contrast, "The system of strict implication distinguishes the false from the absurd, the merely contrary to fact from the impossible, and the merely true--- the contingent--- from the necessarily true whose very denial implies it."
     - Considers paradoxes of strict implication, "That the merely contrary to fact implies anything is repugnant to common sense.  But does the impossible--- the absurd supposition--- imply anything and everything? And is the necessarily true, whose denial is absurd, implied by any proposition whatever?"
   - Are there contingent propositions?
@@ -123,10 +127,10 @@
       - [p. 233] "A truth-value system is essentially an abstract mathematical structure. It becomes a system of logical truth only by  interpretation. That the structure of a logical calculus can be  thus considered in abstraction from its logical meaning is a fact  of the greatest importance, and one which has commonly been  overlooked."
   - Matrix Method (proto models) to demonstrate:
     - Consistency
+    - Independence
     - That strict systems are not reducible to system of material implication
       - [p. 495] $\Box(\neg(p \wedge \neg q) \rightarrow \Box(p \rightarrow q))$ "has the value 3 or 4 when p = 1 and q = 2."
-    - Independence
-  - Method: produce a minimal, consistent, and strong logic
+  - Axiomatic method: produce a minimal, consistent, and strong logic
 - C-axioms
   - C10 $\Box(\Box p \rightarrow \Box\Box p)$
     - Converse is deducible from $\Box(p \rightarrow \Diamond p)$
@@ -189,6 +193,7 @@ In addition to Barcan Marcus 1946 which I'll present, there are various topics t
 
 - Fitch's representation of modal functions with a two-valued logic
 - Quine 1943 on quantifying into modal contexts
+- Barcan Marcus 1946
 - Quine 1947 response to Barcan Marcus
 - Smullyan 1948 modality and description
 - Fitch 1949 response to Quine
