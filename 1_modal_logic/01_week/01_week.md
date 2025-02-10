@@ -185,6 +185,15 @@ Here are two ideas for topics to present on (other ideas are welcome).
 
 ### Presentations
 
+In addition to Barcan Marcus 1946 which I'll present, there are various topics to consider:
+
+- Fitch's representation of modal functions with a two-valued logic
+- Quine 1943 on quantifying into modal contexts
+- Quine 1947 response to Barcan Marcus
+- Smullyan 1948 modality and description
+- Fitch 1949 response to Quine
+- Quine 1953 most systematic attack on modal logic
+
 ### Hilbert System
 
 - **N** is a metarule, not a rule of inference
