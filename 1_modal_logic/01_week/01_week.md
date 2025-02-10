@@ -124,7 +124,7 @@
   - Matrix Method (proto models) to demonstrate:
     - Consistency
     - That strict systems are not reducible to system of material implication
-      - [p. 495] "$\neg(p \wedge \neg q) \strictif (p \strictif q)$ has the value 3 or 4 when p = 1 and q = 2."
+      - [p. 495] "$\Box(\neg(p \wedge \neg q) \rightarrow \Box(p \rightarrow q))$ has the value 3 or 4 when p = 1 and q = 2."
     - Independence
   - Method: produce a minimal, consistent, and strong logic
 - C-axioms
