@@ -2,7 +2,7 @@
 
 > A graduate course in _Philosophical Logic_ at MIT covering the modern history of modal logic.
 
->[!INFO] The seminar will cover the modern history of modal logic, focusing on the development of both its proof theories and semantic systems.
+>[!NOTE] The seminar will cover the modern history of modal logic, focusing on the development of both its proof theories and semantic systems.
 > (1) The first module will begin with C.I. Lewis' systems of strict implication 1912 - 1932, focusing on the early motivations and interpretations.
 > The module will conclude with Ruth Barcan Marcus' first-order extensions of the systems of strict implication 1946 and the objections raised by Quine 1943 - 1953 that modal logic will lead back into the "jungle of Aristotelian metaphysics".
 > (2) The second module will focus on the development of intensional semantics by comparing Carnap 1946 and Kripke's 1963 accounts.
@@ -17,7 +17,7 @@
 
 ### Time and Location
 
->[!INFO] The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
+>[!Note] The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
 > I am always happy to meet after the seminar and to hold office hours by appointment at `32-D962`.
 
 ### Further Particulars
