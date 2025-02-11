@@ -6,7 +6,8 @@
 
 >[!Note]
 > There will be a lot fewer readings in the following weeks.
-> Thankfully many of these are short.
+> Thankfully many of the reading this week are short.
+> But all of this controversy makes for many natural presentation topics.
 
 - Fitch, Frederic B. “Modal Functions in Two-Valued Logic.” The Journal of Symbolic Logic 2, no. 23 (1937): 125–28.
 - ———. “Note on Modal Functions.” The Journal of Symbolic Logic 4, no. 3 (1939): 115–16.
