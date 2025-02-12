@@ -1,13 +1,11 @@
 # [Week 02](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-02-quantified-modal-logic-tuesday-feb-18-due-to-presidents-day)
 
->[!Tip]
 > One way to download the readings for this week is to `Sync Changes` in VSCodium (or equivalent).
 > Then they will be on your hard drive and read to open with your preferred pdf viewer.
 
->[!Note]
-> There will be a lot fewer readings in the following weeks.
-> Thankfully many of the reading this week are short.
-> But all of this controversy makes for many natural presentation topics.
+There will be a lot fewer readings in the following weeks.
+Thankfully many of the reading this week are short.
+But all of this controversy makes for many natural presentation topics.
 
 - Fitch, Frederic B. “Modal Functions in Two-Valued Logic.” The Journal of Symbolic Logic 2, no. 23 (1937): 125–28.
 - ———. “Note on Modal Functions.” The Journal of Symbolic Logic 4, no. 3 (1939): 115–16.
@@ -24,5 +22,5 @@
 - Smullyan, Arthur Francis. “Review: W. V. Quine, The Problem of Interpreting Modal Logic.” The Journal of Symbolic Logic 12, no. 4 (1947): 139–41.
 - Quine, W. V. "On What There Is." The Review of Metaphysics 2, no. 5 (September 1948): 21–38.
 - Barcan, Ruth C. "Strict Implication, Deducibility and the Deduction Theorem." The Journal of Symbolic Logic 18, no. 3 (1953): 234–36.
-- **Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.**
+- Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.
 

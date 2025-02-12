@@ -124,16 +124,16 @@ This week will focus on the quantified modal systems pioneered by Ruth Barcan Ma
 - Church, Alonzo. Review of Review of Notes on Existence and Necessity, by Willard V. Quine. The Journal of Symbolic Logic 8, no. 1 (1943): 45–47. https://doi.org/10.2307/2267994.
 - McKinsey, J. C. C. “On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 103 (1945): 83–94.
 - Fitch, Frederic B. “Review: J. C. C. McKinsey, On the Syntactical Construction of Systems of Modal Logic.” The Journal of Symbolic Logic 11, no. 3 (1946): 98–99.
+- **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
+- ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 - **Quine, W. V. "Review: Ruth C. Barcan, A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 3 (September 1946): 96–97. https://doi.org/10.2307/2266766.**
 - Barcan, Ruth C. "The Identity of Individuals in a Strict Functional Calculus of Second Order." The Journal of Symbolic Logic 12, no. 1 (1947): 12–15.
 - **Quine, W. V. "The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 2 (1947): 43–48. https://doi.org/10.2307/2267247.**
-- **Barcan, Ruth C. "Review: W. V. Quine, The Problem of Interpreting Modal Logic." The Journal of Symbolic Logic 12, no. 4 (1947): 139–41.**
+- Smullyan, Arthur Francis. “Review: W. V. Quine, The Problem of Interpreting Modal Logic.” The Journal of Symbolic Logic 12, no. 4 (1947): 139–41.
 - Quine, W. V. "On What There Is." The Review of Metaphysics 2, no. 5 (September 1948): 21–38.
-- Smullyan, Arthur Francis. "Modality and Description." The Journal of Symbolic Logic 13, no. 1 (1948): 31–37.
-- Barcan, Ruth C. "Review: Arthur Francis Smullyan, Modality and Description." The Journal of Symbolic Logic 13, no. 3 (1948): 149–50.
-- Fitch, Frederic B. "The Problem of the Morning Star and the Evening Star." Philosophy of Science 16, no. 2 (April 1949): 137–41.
 - Barcan, Ruth C. "Strict Implication, Deducibility and the Deduction Theorem." The Journal of Symbolic Logic 18, no. 3 (1953): 234–36.
-- **Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.**
+- Quine, W. V. "Three Grades of Modal Involvement." In Proceedings of the 11th International Congress of Philosophy, 14:65–81. Amsterdam: North-Holland, 1953.
+
 
 ## Module 2: Intensional Semantics
 
