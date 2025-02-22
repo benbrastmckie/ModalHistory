@@ -85,6 +85,8 @@ This module focuses on the advantages and limitations of the purely syntactic ap
 
 ### [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/00_week/00_week.md) (Feb 03)
 
+> Problem Set #1: Tooling (due prior to class week 01)
+
 This week will present the ambitions for this seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
 > Entries are arranged in chronological order where **bold** items are primary.
@@ -96,9 +98,9 @@ This week will present the ambitions for this seminar before presenting the syst
 
 ### [Week 01: Early Modal Systems](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/01_week/01_week.md) (Feb 10)
 
-This week will focus on the proof systems that Lewis and Langford developed for modal logic, as Barcan Marcus' extension to the first-order.
+> Problem Set #2: Axiomatic Proofs (due prior to class week 03)
 
-> Problem Set #1: Tooling (due prior to class)
+This week will focus on the proof systems that Lewis and Langford developed for modal logic, as Barcan Marcus' extension to the first-order.
 
 - Lewis, C. I. “A New Algebra of Implications and Some Consequences.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 16 (July 1913): 428–38. https://doi.org/10.2307/2012900.
 - ———. “Alternative Systems of Logic.” The Monist 42, no. 4 (October 1932): 481–507.
@@ -112,8 +114,6 @@ This week will focus on the proof systems that Lewis and Langford developed for 
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 
 ### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory/blob/master/1_modal_logic/02_week/02_week.md) (TUESDAY, Feb 18 due to President's Day)
-
-> Problem Set #2: Axiomatic Proofs (due prior to class)
 
 This week will focus on the quantified modal systems pioneered by Ruth Barcan Marcus and Quine's philosophical criticisms.
 
@@ -141,17 +141,23 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 03: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/03_week/03_week.md) (Feb 24)
 
+> Problem Set #3: Semantic Proofs (due prior to class week 05)
+
+- **Carnap, Rudolf. “Modalities And Quantification.” The Journal of Symbolic Logic, 1946.**
+- Kripke, Saul A. “A Completeness Theorem in Modal Logic.” The Journal of Symbolic Logic 24, no. 1 (March 1959): 1–14. https://doi.org/10.2307/2964568.
+- **———. “Semantical Analysis of Modal Logic I Normal Modal Propositional Calculi.” Mathematical Logic Quarterly 9, no. 5–6 (January 1963): 67–96. https://doi.org/10.1002/malq.19630090502.**
+
 > NOTE: I moved the problem set for this week forward a week.
 
 ### [Week 04: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md) (Mar 3)
 
-> Problem Set #3: Semantic Proofs (due prior to class)
+> Problem Set #4: Bimodal Logic (due prior to class week 06)
 
 ### [Week 05: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md) (Mar 10)
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
-> Problem Set #4: Bimodal Logic (due prior to class)
+> Problem Set #5: Counterfactual Semantics (due prior to class week 08)
 
 This week will present the following paper:
 
@@ -165,11 +171,11 @@ The semantics and logic for counterfactual conditionals.
 
 ### [Week 08: Similarity and Imposition](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/08_week/08_week.md) (Mar 31)
 
-> Problem Set #5: Counterfactual Semantics (due prior to class)
+> Problem Set #6: Model-Checker (due prior to class week 09)
 
 ### [Week 09: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
 
-> Problem Set #6: Model-Checker (due prior to class)
+> Problem Set #7: Programmatic Semantics (due prior to class week 10)
 
 This week will present the forthcoming paper:
 
@@ -177,7 +183,7 @@ This week will present the forthcoming paper:
 
 ### [Week 10: Programmatic Semantics](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/10_week/10_week.md) (Apr 14)
 
-> Problem Set #7: Programmatic Semantics (due prior to class)
+> Problem Set #8: Hyperintensional Semantics (due prior to class week 12)
 
 ### Week 11: Patriot's Day (no class Apr 21)
 
@@ -186,8 +192,6 @@ This week will present the forthcoming paper:
 Hyperintensional semantics and logic for constitutive explanatory operators
 
 ### [Week 12: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/12_week/12_week.md) (Apr 28)
-
-> Problem Set #8: Hyperintensional Semantics (due prior to class)
 
 This week will focus on the first-half of the following paper:
 
