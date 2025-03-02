@@ -154,7 +154,17 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 > Problem Set #4: Bimodal Logic (due prior to class week 06)
 
+- Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
+- ———. “Letter from Saul Kripke to A.N. Prior, Oct. 13, 1958,” October 13, 1958.
+- Prior, Arthur N. Past, Present and Future. Oxford, New York: Oxford University Press, 1967.
+- ———. Time and Modality. Westport, Conn.: Greenwood Press, 1955.
+- **Thomason, Richmond H. “Indeterminist Time and Truth-Value Gaps.” Theoria 36, no. 3 (1970): 264–81. https://doi.org/10.1111/j.1755-2567.1970.tb00427.x.**
+
 ### [Week 05: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md) (Mar 10)
+
+- **Montague, Richard. “The Proper Treatment of Quantification in Ordinary English.” In Approaches to Natural Language: Proceedings of the 1970 Stanford Workshop on Grammar and Semantics, edited by K. J. J. Hintikka, J. M. E. Moravcsik, and P. Suppes, 221–42. Dordrecht: Springer Netherlands, 1973. https://doi.org/10.1007/978-94-010-2506-5_10.**
+- Kaplan, David. “Demonstratives: An Essay on the Semantics, Logic, Metaphysics and Epistemology of Demonstratives and Other Indexicals.” In Themes From Kaplan, edited by Joseph Almog, John Perry, and Howard Wettstein, 481–563. Oxford University Press, 1989.
+- Dorr, Cian, and Jeremy Goodman. “Diamonds Are Forever.” Noûs 54, no. 3 (2020): 632–65. https://doi.org/10.1111/nous.12271.
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
@@ -174,6 +184,16 @@ The semantics and logic for counterfactual conditionals.
 
 > Problem Set #6: Model-Checker (due prior to class week 09)
 
+- Stalnaker, Robert C. “A Theory of Conditionals.” In Studies in Logical Theory, edited by Nicholas Rescher, 2:98–112. American Philosophical Quarterly Monographs. Oxford: Blackwell, 1968.
+- **Lewis, David. Counterfactuals. Harvard: Harvard University Press, 1973.**
+- Bennett, Jonathan. “Counterfactuals and Possible Worlds.” Canadian Journal of Philosophy 4, no. 2 (December 1974): 381–402. https://doi.org/10.1080/00455091.1974.10716947.
+- **Fine, Kit. “Critical Notice.” Mind 84, no. 335 (1975): 451–58.**
+- Nute, Donald. “Counterfactuals and the Similarity of Words.” The Journal of Philosophy 72, no. 21 (1975): 773–78. https://doi.org/10.2307/2025340.
+- Loewer, Barry. “Counterfactuals with Disjunctive Antecedents.” The Journal of Philosophy 73, no. 16 (1976): 531–37. https://doi.org/10.2307/2025717.
+- Lewis, David. “Counterfactual Dependence and Time’s Arrow.” Noûs 13, no. 4 (1979): 455–76. https://doi.org/10.2307/2215339.
+- **Fine, Kit. “Counterfactuals Without Possible Worlds.” Edited by John Smylie. Journal of Philosophy 109, no. 3 (2012): 221–46. https://doi.org/10.5840/jphil201210938.**
+- “———. A Difficulty for the Possible Worlds Analysis of Counterfactuals.” Synthese 189, no. 1 (November 1, 2012): 29–57. https://doi.org/10.1007/s11229-012-0094-y.
+
 ### [Week 09: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
 
 > Problem Set #7: Programmatic Semantics (due prior to class week 10)
@@ -186,6 +206,8 @@ This week will present the forthcoming paper:
 
 > Problem Set #8: Hyperintensional Semantics (due prior to class week 12)
 
+- **Davis, Martin, and Hilary Putnam. “A Computing Procedure for Quantification Theory.” J. ACM 7, no. 3 (July 1, 1960): 201–15. https://doi.org/10.1145/321033.321034.**
+
 ### Week 11: Patriot's Day (no class Apr 21)
 
 ## Module 4: Constitutive Explanation
@@ -194,11 +216,13 @@ Hyperintensional semantics and logic for constitutive explanatory operators
 
 ### [Week 12: Identity and Aboutness (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/12_week/12_week.md) (Apr 28)
 
-This week will focus on the first-half of the following paper:
+This week will present the following paper:
 
 - Brast-McKie, Benjamin. “Identity and Aboutness.” Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. https://doi.org/10.1007/s10992-021-09612-w.
 
-### [Week 13: Necessary and Sufficient](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md) (May 5)
+### [Week 13: The Strongest Objective Modality](https://github.com/benbrastmckie/ModalHistory/blob/master/4_constitutive_explanation/13_week/13_week.md) (May 5)
+
+Reading TBD
 
 ### [Week 14: Formal Track Presentations](https://github.com/benbrastmckie/ModalHistory/tree/master/4_constitutive_explanation/14_week/14_week.md) (May 12)
 
