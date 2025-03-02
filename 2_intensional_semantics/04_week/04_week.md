@@ -6,26 +6,44 @@
 
 ## Presentations
 
-### Kripke Letters
+- McTaggart
+- Linear Semantics
+- Kripke Letters
+- Prior on Indeterminism
+- Thomason's Semantics
 
-> What are Kripke's suggestions in his correspondence with Prior?
-
-- Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
-- ———. “Letter from Saul Kripke to A.N. Prior, Oct. 13, 1958,” October 13, 1958.
-- Øhrstrøm, Peter, Henrik Schärfe, and Thomas Ploug. “Branching Time as a Conceptual Structure.” In Conceptual Structures: From Information to Intelligence, edited by Madalina Croitoru, Sébastien Ferré, and Dickson Lukose, 125–38. Berlin, Heidelberg: Springer, 2010. https://doi.org/10.1007/978-3-642-14197-3_14.
-
-### Thomason's Reconstruction
-
-> Sketch Thomason's Priorian account of tense logic.
-
-### McTaggart's Puzzle
+### McTaggart
 
 > Present McTaggart's argument that time is not real.
 
 - McTaggart, J. Ellis. “The Unreality of Time.” Mind XVII, no. 4 (1908): 457–74. https://doi.org/10.1093/mind/XVII.4.457.
 - Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
 
-### Prior's _Past, Present, and Future_
+### Prior (1955) _Time and Modality_ 
+
+![Time and Modality p.23](assets/Prior_TM_23.png)
+
+- Suggests the matrix is characteristic of S4
+- Matrices as proto-semantics
+- Modern articulation
+  - See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along.
+
+### Kripke Letters
+
+- Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
+
+![Kripke, Spetember 1](assets/Kripke_Sept1.png)
+
+- $\Box\Diamond p \vee \Box\Diamond\neg p$ is valid on Prior's early system but invalid in S4
+
+![Kripke, Spetember 2](assets/Kripke_Sept2.png)
+
+![Kripke, Spetember 3](assets/Kripke_Sept3.png)
+
+- ———. “Letter from Saul Kripke to A.N. Prior, Oct. 13, 1958,” October 13, 1958.
+- Øhrstrøm, Peter, Henrik Schärfe, and Thomas Ploug. “Branching Time as a Conceptual Structure.” In Conceptual Structures: From Information to Intelligence, edited by Madalina Croitoru, Sébastien Ferré, and Dickson Lukose, 125–38. Berlin, Heidelberg: Springer, 2010. https://doi.org/10.1007/978-3-642-14197-3_14.
+
+### Indeterminism in Prior's _Past, Present, and Future_
 
 ![Past, Present, and Future p.vi](assets/Prior_vi.png)
 
@@ -54,4 +72,8 @@
 ![Past, Present, and Future p.132](assets/Prior_132.png)
 
 - Prior (1967, p. 132) provides the Peircean semantics:
+
+### Thomason's Reconstruction
+
+- See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along.
 
