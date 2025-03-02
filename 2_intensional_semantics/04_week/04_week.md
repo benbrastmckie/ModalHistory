@@ -32,9 +32,11 @@
 
 - Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
 
-![Kripke, Spetember 1](assets/Kripke_Sept1.png)
+![Kripke, Spetember 0](assets/Kripke_Sept0.png)
 
 - $\Box\Diamond p \vee \Box\Diamond\neg p$ is valid on Prior's early system but invalid in S4
+
+![Kripke, Spetember 1](assets/Kripke_Sept1.png)
 
 ![Kripke, Spetember 2](assets/Kripke_Sept2.png)
 
