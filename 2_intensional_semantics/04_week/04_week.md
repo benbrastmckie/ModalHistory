@@ -23,27 +23,35 @@
 > Present McTaggart's argument that time is not real.
 
 - McTaggart, J. Ellis. “The Unreality of Time.” Mind XVII, no. 4 (1908): 457–74. https://doi.org/10.1093/mind/XVII.4.457.
+- Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
 
-### Prior on McTaggart
-
-- Prior (p. vi) credits Geach for making him aware of the importance of McTaggart's work on time.
+### Prior's _Past, Present, and Future_
 
 ![Past, Present, and Future p.vi](assets/Prior_vi.png)
 
-- Prior (p. 27) credits Kripke for his branching time matrix for S4.
+- Prior (1967, p. vi) credits Geach for making him aware of the importance of McTaggart's work on time.
+
+![Past, Present, and Future p.20](assets/Prior_20.png)
+
+- Prior (1967, p. 20) sets out the Polish notation that he uses.
 
 ![Past, Present, and Future p.58](assets/Prior_58.png)
 
-- Prior (p. 117) introduces 'now-unpreventably'.
+- Prior (1967, p. 27) credits Kripke for his branching time matrix for S4.
+- Kripke's formula $\Box\Diamond p \vee \Box\Diamond\neg p$
+- "p is true now and will be throughout the _actual_ future"
+- "p is true now and will be throughout all _possible_ futures"
+- Hintikka's formula $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$.
 
 ![Past, Present, and Future p.117](assets/Prior_117.png)
 
-- Prior (p. 126) provides the Ockhamist semantics.
+- Prior (1967, p. 117) introduces 'now-unpreventably'.
 
 ![Past, Present, and Future p.126](assets/Prior_126.png)
 
-- Prior (p. 132) provides the Peircean semantics:
+- Prior (1967, p. 126) provides the Ockhamist semantics.
 
 ![Past, Present, and Future p.132](assets/Prior_132.png)
 
-- Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
+- Prior (1967, p. 132) provides the Peircean semantics:
+
