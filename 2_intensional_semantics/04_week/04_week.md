@@ -26,6 +26,7 @@
 
 ### Prior on McTaggart
 
-> Present Prior's analysis of McTaggart's account
+
+![Principia Mathematica p.94](assets/PM_91.png)
 
 - Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
