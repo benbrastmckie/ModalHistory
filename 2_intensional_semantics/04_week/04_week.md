@@ -26,7 +26,24 @@
 
 ### Prior on McTaggart
 
+- Prior (p. vi) credits Geach for making him aware of the importance of McTaggart's work on time.
 
-![Principia Mathematica p.94](assets/PM_91.png)
+![Past, Present, and Future p.vi](assets/Prior_vi.png)
+
+- Prior (p. 27) credits Kripke for his branching time matrix for S4.
+
+![Past, Present, and Future p.58](assets/Prior_58.png)
+
+- Prior (p. 117) introduces 'now-unpreventably'.
+
+![Past, Present, and Future p.117](assets/Prior_117.png)
+
+- Prior (p. 126) provides the Ockhamist semantics.
+
+![Past, Present, and Future p.126](assets/Prior_126.png)
+
+- Prior (p. 132) provides the Peircean semantics:
+
+![Past, Present, and Future p.132](assets/Prior_132.png)
 
 - Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
