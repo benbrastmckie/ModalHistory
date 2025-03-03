@@ -82,5 +82,17 @@
 
 ### Thomason's Reconstruction
 
+- Linear Semantics makes the future closed
+- Peircian semantics make $Fp \vee F\neg p$ invalid.
+  - Also $PFp$ would not be a logical consequence of $p$.
+  - [p.270] "When all is said and done, the basic issue here seems to be whether or not one is prepared t o accept as meaningful the assertion that there is always, whether we know it or not, a single possible future which, from the perspective of a given time will be its actual future."
+- Inevitability
+  - Comes apart from truth even though $p \vDash Lp$ and $Lp \vDash p$.
+  - Consider any fork, replacing $p$ with a $Fp$.
+- Truth-Value gaps
+  - [p.276] "In our semantic theory this difference between supposing that P will be and supposing that it is now true that P will be is represented by the difference between making FP an antecedent of an implication as in 6.5 and making it a premiss of the consequence relation as in 6.3."
+  - [p.280] "Notions which are particularly worth studying in this way are knowledge, mentioned above, and obligation. A mixed temporal-epistemic language, for instance, is particularly useful for explaining the behavior of the English word ‘might,’ which displays temporal as well as epistemic traits. A semantic interpretation of conditionals can be added t o tense logics such as the one described here by adding selection functions df the kind described in [4] to models."
+
+
 <!-- - See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along. -->
 
