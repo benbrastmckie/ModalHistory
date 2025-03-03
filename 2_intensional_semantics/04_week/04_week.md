@@ -14,12 +14,17 @@
 
 ### McTaggart
 
-> Present McTaggart's argument that time is not real.
+![Past, Present, and Future p.vi](assets/Prior_vi.png)
 
+- Prior (1967, p. vi) credits Geach for making him aware of the importance of McTaggart's work on time.
 - McTaggart, J. Ellis. “The Unreality of Time.” Mind XVII, no. 4 (1908): 457–74. https://doi.org/10.1093/mind/XVII.4.457.
 - Øhrstrøm, Peter. “Time and Logic: A.N. Prior’s Formal Analysis of Temporal Concepts.” In Formal Concept Analysis, edited by Sébastien Ferré and Sebastian Rudolph, 66–81. Berlin, Heidelberg: Springer, 2009. https://doi.org/10.1007/978-3-642-01815-2_6.
 
 ### Prior (1955) _Time and Modality_ 
+
+![Past, Present, and Future p.20](assets/Prior_20.png)
+
+- Prior (1967, p. 20) sets out the Polish notation that he uses (also used in 1955 and so relevant here).
 
 ![Time and Modality p.23](assets/Prior_TM_23.png)
 
@@ -35,8 +40,11 @@
 ![Kripke, Spetember 0](assets/Kripke_Sept0.png)
 
 - $\Box\Diamond p \vee \Box\Diamond\neg p$ is valid on Prior's early system but invalid in S4
+- There is an S4 countermodel
 
 ![Kripke, Spetember 1](assets/Kripke_Sept1.png)
+
+- $\Box p \rightarrow p$, $\Box p \rightarrow \Box\Box p$, $\Box(p \rightarrow q) \rightarrow (\Box p \rightarrow \Box q)$, _and_ $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$.
 
 ![Kripke, Spetember 2](assets/Kripke_Sept2.png)
 
@@ -46,14 +54,6 @@
 - Øhrstrøm, Peter, Henrik Schärfe, and Thomas Ploug. “Branching Time as a Conceptual Structure.” In Conceptual Structures: From Information to Intelligence, edited by Madalina Croitoru, Sébastien Ferré, and Dickson Lukose, 125–38. Berlin, Heidelberg: Springer, 2010. https://doi.org/10.1007/978-3-642-14197-3_14.
 
 ### Indeterminism in Prior's _Past, Present, and Future_
-
-![Past, Present, and Future p.vi](assets/Prior_vi.png)
-
-- Prior (1967, p. vi) credits Geach for making him aware of the importance of McTaggart's work on time.
-
-![Past, Present, and Future p.20](assets/Prior_20.png)
-
-- Prior (1967, p. 20) sets out the Polish notation that he uses.
 
 ![Past, Present, and Future p.58](assets/Prior_58.png)
 
