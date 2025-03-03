@@ -22,16 +22,16 @@
 
 ### Prior (1955) _Time and Modality_ 
 
+> Prior (1967, p. 20) sets out the Polish notation that he uses (also used in 1955 and so relevant here).
+
 ![Past, Present, and Future p.20](assets/Prior_20.png)
 
-- Prior (1967, p. 20) sets out the Polish notation that he uses (also used in 1955 and so relevant here).
-
+- Prior suggests that the following matrix is characteristic of S4:
+-
 ![Time and Modality p.23](assets/Prior_TM_23.png)
 
-- Suggests the matrix is characteristic of S4
 - Matrices as proto-semantics
-- Modern articulation
-  - See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along.
+- Give a modern articulation
 
 ### Kripke Letters
 
@@ -44,7 +44,11 @@
 
 ![Kripke, Spetember 1](assets/Kripke_Sept1.png)
 
-- $\Box p \rightarrow p$, $\Box p \rightarrow \Box\Box p$, $\Box(p \rightarrow q) \rightarrow (\Box p \rightarrow \Box q)$, _and_ $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$.
+- $\Box p \rightarrow p$
+- $\Box p \rightarrow \Box\Box p$
+- $\Box(p \rightarrow q) \rightarrow (\Box p \rightarrow \Box q)$
+- $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$
+  - There is an S4 countermodel to the final principle
 
 ![Kripke, Spetember 2](assets/Kripke_Sept2.png)
 
@@ -58,10 +62,11 @@
 ![Past, Present, and Future p.58](assets/Prior_58.png)
 
 - Prior (1967, p. 27) credits Kripke for his branching time matrix for S4.
-- Kripke's formula $\Box\Diamond p \vee \Box\Diamond\neg p$
-- "p is true now and will be throughout the _actual_ future"
-- "p is true now and will be throughout all _possible_ futures"
-- Hintikka's formula $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$.
+  - Kripke's formula $\Box\Diamond p \vee \Box\Diamond\neg p$
+  - Hintikka's formula $(\Diamond p \wedge \Diamond q) \rightarrow (\Diamond(p \wedge \Diamond q) \vee \Diamond(q \wedge \Diamond p))$.
+- Towards a Piercian reading
+  - From "p is true now and will be throughout the _actual_ future"
+  - To "p is true now and will be throughout all _possible_ futures"
 
 ![Past, Present, and Future p.117](assets/Prior_117.png)
 
@@ -77,5 +82,5 @@
 
 ### Thomason's Reconstruction
 
-- See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along.
+<!-- - See the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) to follow along. -->
 
