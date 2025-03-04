@@ -162,8 +162,8 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 05: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md) (Mar 10)
 
-- **Montague, Richard. “The Proper Treatment of Quantification in Ordinary English.” In Approaches to Natural Language: Proceedings of the 1970 Stanford Workshop on Grammar and Semantics, edited by K. J. J. Hintikka, J. M. E. Moravcsik, and P. Suppes, 221–42. Dordrecht: Springer Netherlands, 1973. https://doi.org/10.1007/978-94-010-2506-5_10.**
-- Kaplan, David. “Demonstratives: An Essay on the Semantics, Logic, Metaphysics and Epistemology of Demonstratives and Other Indexicals.” In Themes From Kaplan, edited by Joseph Almog, John Perry, and Howard Wettstein, 481–563. Oxford University Press, 1989.
+- **[Sec 3] Montague, Richard. “The Proper Treatment of Quantification in Ordinary English.” In Approaches to Natural Language: Proceedings of the 1970 Stanford Workshop on Grammar and Semantics, edited by K. J. J. Hintikka, J. M. E. Moravcsik, and P. Suppes, 221–42. Dordrecht: Springer Netherlands, 1973. https://doi.org/10.1007/978-94-010-2506-5_10.**
+- **[XVIII] Kaplan, David. “Demonstratives: An Essay on the Semantics, Logic, Metaphysics and Epistemology of Demonstratives and Other Indexicals.” In Themes From Kaplan, edited by Joseph Almog, John Perry, and Howard Wettstein, 481–563. Oxford University Press, 1989.**
 - Dorr, Cian, and Jeremy Goodman. “Diamonds Are Forever.” Noûs 54, no. 3 (2020): 632–65. https://doi.org/10.1111/nous.12271.
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
