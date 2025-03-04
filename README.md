@@ -141,7 +141,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 03: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/03_week/03_week.md) (Feb 24)
 
-> Problem Set #3: Semantic Proofs (due prior to class week 05)
+> Problem Set #3: Modality (due prior to class week 05)
 
 - Carnap, Rudolf. Introduction to Semantics. Harvard University Press, 1942.
 - **Carnap, Rudolf. “Modalities And Quantification.” The Journal of Symbolic Logic, 1946.**
@@ -152,7 +152,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 04: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md) (Mar 3)
 
-> Problem Set #4: Bimodal Logic (due prior to class week 06)
+> Problem Set #4: Tense (due prior to class week 06)
 
 - Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
 - ———. “Letter from Saul Kripke to A.N. Prior, Oct. 13, 1958,” October 13, 1958.
@@ -168,7 +168,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
-> Problem Set #5: Counterfactual Semantics (due prior to class week 08)
+> Problem Set #5: Counterfactuals (due prior to class week 08)
 
 This week will present the following paper:
 
