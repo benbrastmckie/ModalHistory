@@ -141,7 +141,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 03: Carnap and Kripke](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/03_week/03_week.md) (Feb 24)
 
-> Problem Set #3: Semantic Proofs (due prior to class week 05)
+> Problem Set #3: Modality (due prior to class week 05)
 
 - Carnap, Rudolf. Introduction to Semantics. Harvard University Press, 1942.
 - **Carnap, Rudolf. “Modalities And Quantification.” The Journal of Symbolic Logic, 1946.**
@@ -152,7 +152,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 04: Prior and Thomason](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/04_week/04_week.md) (Mar 3)
 
-> Problem Set #4: Bimodal Logic (due prior to class week 06)
+> Problem Set #4: Tense (due prior to class week 06)
 
 - Kripke, Saul A. “Letter from Saul Kripke to A. N. Prior, Sept. 3, 1958,” September 3, 1958.
 - ———. “Letter from Saul Kripke to A.N. Prior, Oct. 13, 1958,” October 13, 1958.
@@ -162,13 +162,13 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 05: Montague and Kaplan](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/05_week/05_week.md) (Mar 10)
 
-- **Montague, Richard. “The Proper Treatment of Quantification in Ordinary English.” In Approaches to Natural Language: Proceedings of the 1970 Stanford Workshop on Grammar and Semantics, edited by K. J. J. Hintikka, J. M. E. Moravcsik, and P. Suppes, 221–42. Dordrecht: Springer Netherlands, 1973. https://doi.org/10.1007/978-94-010-2506-5_10.**
-- **Kaplan, David. “Demonstratives: An Essay on the Semantics, Logic, Metaphysics and Epistemology of Demonstratives and Other Indexicals.” In Themes From Kaplan, edited by Joseph Almog, John Perry, and Howard Wettstein, 481–563. Oxford University Press, 1989.**
+- **[Sec 3] Montague, Richard. “The Proper Treatment of Quantification in Ordinary English.” In Approaches to Natural Language: Proceedings of the 1970 Stanford Workshop on Grammar and Semantics, edited by K. J. J. Hintikka, J. M. E. Moravcsik, and P. Suppes, 221–42. Dordrecht: Springer Netherlands, 1973. https://doi.org/10.1007/978-94-010-2506-5_10.**
+- **[XVIII] Kaplan, David. “Demonstratives: An Essay on the Semantics, Logic, Metaphysics and Epistemology of Demonstratives and Other Indexicals.” In Themes From Kaplan, edited by Joseph Almog, John Perry, and Howard Wettstein, 481–563. Oxford University Press, 1989.**
 - Dorr, Cian, and Jeremy Goodman. “Diamonds Are Forever.” Noûs 54, no. 3 (2020): 632–65. https://doi.org/10.1111/nous.12271.
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
-> Problem Set #5: Counterfactual Semantics (due prior to class week 08)
+> Problem Set #5: Counterfactuals (due prior to class week 08)
 
 This week will present the following paper:
 
