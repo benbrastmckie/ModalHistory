@@ -168,7 +168,7 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 ### [Week 06: "The Construction of Possible Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/2_intensional_semantics/06_week/06_week.md) (Mar 17)
 
-> Problem Set #5: Counterfactuals (due prior to class week 08)
+> Problem Set #5: Bimodal Logic (due prior to class week 08)
 
 This week will present the following paper:
 
@@ -185,14 +185,15 @@ The semantics and logic for counterfactual conditionals.
 > Problem Set #6: Model-Checker (due prior to class week 09)
 
 - Stalnaker, Robert C. “A Theory of Conditionals.” In Studies in Logical Theory, edited by Nicholas Rescher, 2:98–112. American Philosophical Quarterly Monographs. Oxford: Blackwell, 1968.
-- **Lewis, David. Counterfactuals. Harvard: Harvard University Press, 1973.**
+- **[pp. 1-19, 48 - 50] Lewis, David. Counterfactuals. Harvard: Harvard University Press, 1973.**
 - Bennett, Jonathan. “Counterfactuals and Possible Worlds.” Canadian Journal of Philosophy 4, no. 2 (December 1974): 381–402. https://doi.org/10.1080/00455091.1974.10716947.
 - **Fine, Kit. “Critical Notice.” Mind 84, no. 335 (1975): 451–58.**
 - Nute, Donald. “Counterfactuals and the Similarity of Words.” The Journal of Philosophy 72, no. 21 (1975): 773–78. https://doi.org/10.2307/2025340.
 - Loewer, Barry. “Counterfactuals with Disjunctive Antecedents.” The Journal of Philosophy 73, no. 16 (1976): 531–37. https://doi.org/10.2307/2025717.
 - Lewis, David. “Counterfactual Dependence and Time’s Arrow.” Noûs 13, no. 4 (1979): 455–76. https://doi.org/10.2307/2215339.
 - **Fine, Kit. “Counterfactuals Without Possible Worlds.” Edited by John Smylie. Journal of Philosophy 109, no. 3 (2012): 221–46. https://doi.org/10.5840/jphil201210938.**
-- “———. A Difficulty for the Possible Worlds Analysis of Counterfactuals.” Synthese 189, no. 1 (November 1, 2012): 29–57. https://doi.org/10.1007/s11229-012-0094-y.
+- ———. “A Difficulty for the Possible Worlds Analysis of Counterfactuals.” Synthese 189, no. 1 (November 1, 2012): 29–57. https://doi.org/10.1007/s11229-012-0094-y.
+- ———. “A Theory of Truthmaker Content I: Conjunction, Disjunction and Negation.” Journal of Philosophical Logic 46, no. 6 (December 2017): 625–74. https://doi.org/10.1007/s10992-016-9413-y.
 
 ### [Week 09: "Counterfactual Worlds" (Brast-McKie)](https://github.com/benbrastmckie/ModalHistory/blob/master/3_counterfactual_conditionals/9_week/9_week.md) (Apr 7)
 
