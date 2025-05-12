@@ -8,3 +8,6 @@
 *.pdf
 *.synctex.gz
 *.tex
+*.glo
+*.ist
+**/__pycache__
