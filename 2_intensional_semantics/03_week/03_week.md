@@ -1,4 +1,10 @@
-# [Week 03](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-03-carnap-and-kripke-feb-24)
+# [Week 03](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-2-intensional-semantics)
+
+## Presentations
+
+- **Carnap, Rudolf. "Modalities And Quantification." The Journal of Symbolic Logic, 1946.**
+- Kripke, Saul A. "A Completeness Theorem in Modal Logic." The Journal of Symbolic Logic 24, no. 1 (March 1959): 1–14. https://doi.org/10.2307/2964568.
+- [Miguel] **Kripke, Saul A. "Semantical Analysis of Modal Logic I Normal Modal Propositional Calculi." Mathematical Logic Quarterly 9, no. 5–6 (January 1963): 67–96. https://doi.org/10.1002/malq.19630090502.**
 
 ## Overview
 
@@ -26,9 +32,9 @@
 - L-truth as explicatum for logical truth
   - L-truth provides a semantic analysis of 'Nec'
   - [p. 2] "[A] proposition p is logically necessary if and only if a sentence expressing p is logically true. That is to say, the modal concept of the logical necessity of a proposition and the semantical concept of the logical truth or analyticity of a sentence correspond to each other."
-  - [p. 2] "C1-1... ‘N(...)’ is to be taken as true if and only if ‘...’ is L-true in S."
+  - [p. 2] "C1-1... 'N(...)' is to be taken as true if and only if '...' is L-true in S."
 - Object language and metalanguage
-  - [p. 2] 'This convention determines our interpretation of ‘N’, but it is not a definition for ‘N’. The sentence ‘N(...)’ cannot be transformed by definition into the sentence “ ‘...’ is L-true in S,” because the first sentence belongs to the object-language S, the second to the metalanguage M; but the first sentence holds, according to the convention, if and only if the second holds.'
+  - [p. 2] 'This convention determines our interpretation of 'N', but it is not a definition for 'N'. The sentence 'N(...)' cannot be transformed by definition into the sentence " '...' is L-true in S," because the first sentence belongs to the object-language S, the second to the metalanguage M; but the first sentence holds, according to the convention, if and only if the second holds.'
 
 ### L-Concepts
 
@@ -102,7 +108,7 @@
   - [p. 3] "If the answer to a given question is merely dependent upon data of the kind I but independent of those of kind II, we call it a logical question; if in addition, data of the kind II are required, we call it a factual question."
   - Compare $A \vee \neg A$, $A \wedge \neg A$, $Pa \wedge \neg Qb$ for L-truth and L-falsity.
 - Shows how to iterate the modal.
-  - [p. 2] "Cl-1 gives a sufficient and necessary condition for the truth of ‘N( ... )’. Now the following two questions remain: (1) if 'N( ... )' is true, is it L-true? If so, 'NN( ... )' is likewise true; in other words, 'Np ⊃ NNp' is always true. (2) If 'N( ... )' is false, is it L-false? ('L-false' is taken as the explicatum for 'logically false,' 'self-contradictory.') If so, '~N( ... )' is L-true and hence 'N~N( ... )' is true; in other words, '~Np ⊃ N~Np' is always true."
+  - [p. 2] "Cl-1 gives a sufficient and necessary condition for the truth of 'N( ... )'. Now the following two questions remain: (1) if 'N( ... )' is true, is it L-true? If so, 'NN( ... )' is likewise true; in other words, 'Np ⊃ NNp' is always true. (2) If 'N( ... )' is false, is it L-false? ('L-false' is taken as the explicatum for 'logically false,' 'self-contradictory.') If so, '~N( ... )' is L-true and hence 'N~N( ... )' is true; in other words, '~Np ⊃ N~Np' is always true."
   - [p. 4] "Suppose that 'N(C)' is true. Then, according to C1-1, 'C' must be L-true. Hence the truth of 'C' is determined by certain semantical rules. Then these same rules together with the rule for 'N' determine the truth of 'N(C)'. Therefore, 'N(C)' is L-true, and hence 'NN(C)' is true. Thus our earlier question (1) is answered in the affirmative."
   - [p. 4] "Let us now suppose that 'C' is L-false and hence 'N(C)' is false. Then those semantical rules which determine the falsity of 'C' together with the rule for 'N' determine the falsity of 'N(C)'. Therefore, 'N(C)' is L-false, and '~N(C)' is L-true."
   - [p. 4] "We found that 'A' [i.e., 'Pa.~Qb'] is neither L-true nor L-false by merely using semantical rules, not using any factual knowledge concerning the individuals occurring in 'A'. Therefore we see that, according to C1-1, 'N(A)' is false and '~N(A)' is true. These results are based merely on the semantical rules for the signs occurring in 'A' and for 'N'. Therefore, 'N(A)' is L-false and '~N(A)' is L-true."
@@ -123,11 +129,11 @@
   - Both are built out of syntax but S is intended to provide an interpretation
   - K is an S5 system
 - MP-reduction
-  - [p. 14] "The reduction of such a formula leads to ‘t’ if and only if every sentence obtainable from the formula by substitutions is L-true by MPL and Ctrue by MPC. In the MP-reductum of any such formula, no ‘N’ occurs in the scope of another ‘N’."
+  - [p. 14] "The reduction of such a formula leads to 't' if and only if every sentence obtainable from the formula by substitutions is L-true by MPL and Ctrue by MPC. In the MP-reductum of any such formula, no 'N' occurs in the scope of another 'N'."
 - Advantages of S5
-  - [p. 14-5] "The completeness of this system is a further advantage. On the basis of the interpretation given by MPL, all sentences C-true (provable) in MPC and MPCv are L-true, while those principles of other systems which go beyond Lewis’s S5 are L-false."
+  - [p. 14-5] "The completeness of this system is a further advantage. On the basis of the interpretation given by MPL, all sentences C-true (provable) in MPC and MPCv are L-true, while those principles of other systems which go beyond Lewis's S5 are L-false."
   - [p. 15] "My chief reason for preferring the interpretation given by MPL is the simple parallelism between the modalities in this system and the semantical L-concepts, in particular between necessity and L-truth. It is true that these semantical concepts could be defined in a different way so as to correspond to a different conception of the modalities."
-  - "However, the definition of L-truth here chosen, which is based on Wittgenstein’s conception of the nature of logical truth, has the advantage of great simplicity, taking as criterion the universality of the range (D7-6a)."
+  - "However, the definition of L-truth here chosen, which is based on Wittgenstein's conception of the nature of logical truth, has the advantage of great simplicity, taking as criterion the universality of the range (D7-6a)."
 
 ### Proof Theory
 
@@ -145,7 +151,7 @@
   - N Si , where Si has one of the forms D8-1b to h, respectively (primitive sentences of FC).
   - N( )[(ik)N(Mi) ⊃ N(ik)(Mi)].
   - N( )[N(ik)(Mi) ⊃ (ik)N(Mi )].
-  - N( )[ii = ik1 ∨ ii = ik2 ∨ ... ∨ ii = ikn ∨ ~NMi ∨ NMi]; here Mi does not contain ‘=’, ‘N’, any quantifier with ii
+  - N( )[ii = ik1 ∨ ii = ik2 ∨ ... ∨ ii = ikn ∨ ~NMi ∨ NMi]; here Mi does not contain '=', 'N', any quantifier with ii
 - [p. 24] Theorems
   - ( )[( ∃ ik)N(Mk) ⊇ N( ∃ ik)(Mk)]
   - ( )[◊( ik)(Mk) ⊇ (ik)◊(Mk)]

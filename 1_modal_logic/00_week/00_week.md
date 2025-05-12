@@ -1,11 +1,11 @@
-# [Week 00](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-00-introduction-and-origins-feb-03)
+# [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-1-modal-logic)
 
-This week will present an overview of the seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication.
+This week will present an overview of the seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 
-- **[pp. 91, 94-104] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
-- **Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
-- Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
-- Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
+- **[pp. 91, 94-108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **Lewis, C. I. "Implication and the Algebra of Logic." Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.**
+- Lewis, C. I. "Interesting Theorems in Symbolic Logic." The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
+- Lewis, C. I. "The Issues Concerning Material Implication." The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
 ## Course Overview
 
@@ -132,7 +132,7 @@ This week will present an overview of the seminar before presenting the system o
 
 ### _Principia Mathematica_
 
-- **[pp. 91, 94-104] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
+- **[pp. 91, 94-108] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
 
 ![Principia Mathematica p.94](assets/PM_91.png)
 
@@ -189,7 +189,7 @@ This week will present an overview of the seminar before presenting the system o
 
 ### "Implication and the Algebra of Logic" 
 
-> Lewis, C. I. “Implication and the Algebra of Logic.” Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.
+> Lewis, C. I. "Implication and the Algebra of Logic." Mind XXI, no. 84 (1912): 522–31. https://doi.org/10.1093/mind/XXI.84.522.
 
 ![Implication and the Algebra of Logic p.522](assets/IAL_522.png)
 
@@ -277,7 +277,7 @@ This week will present an overview of the seminar before presenting the system o
 
 ### "Interesting Theorems in Symbolic Logic"
 
-> Lewis, C. I. “Interesting Theorems in Symbolic Logic.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
+> Lewis, C. I. "Interesting Theorems in Symbolic Logic." The Journal of Philosophy, Psychology and Scientific Methods 10, no. 9 (April 1913): 239–42. https://doi.org/10.2307/2012471.
 
 - [p.241] Provides a list of theorems that demonstrate, "the divergence of the meaning of "implies" in the algebra of logic from the "implies" of valid inference." 
 - Claims that the calculus of propositions grew out the calculus of classes, where this explains why these these theorems have been incorporated.
@@ -285,7 +285,7 @@ This week will present an overview of the seminar before presenting the system o
 
 ### "The Issues Concerning Material Implication"
 
-> Lewis, C. I. “The Issues Concerning Material Implication.” The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
+> Lewis, C. I. "The Issues Concerning Material Implication." The Journal of Philosophy, Psychology and Scientific Methods 14, no. 13 (June 1917): 350–56. https://doi.org/10.2307/2940255.
 
 - [p.351] "There is no sound reason why we should abandon our usual meaning of 'implies' for this unusual one."
 - "In any system of material implication, the theorems which we have spoken of as 'peculiar' admit of valid use as premises. But they can not profitably be used as rules of inference, either within or outside of the system. "

@@ -1,4 +1,4 @@
-# [Week 9](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-9-counterfactual-worlds-brast-mckie-apr-7)
+# [Week 09](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-3-counterfactual-conditionals)
 
 This week will present the forthcoming paper:
 

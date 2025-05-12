@@ -1,2 +1,3 @@
-# [Week 06](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-06-the-construction-of-possible-worlds-brast-mckie-mar-17)
+# [Week 06](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-2-intensional-semantics)
 
+- **Brast-McKie, Benjamin. "The Construction of Possible Worlds" ([draft](possible_worlds.pdf))**

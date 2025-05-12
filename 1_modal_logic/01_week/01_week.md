@@ -1,13 +1,17 @@
-# [Week 01](https://github.com/benbrastmckie/ModalHistory/tree/master?tab=readme-ov-file#week-01-early-modal-systems-feb-10)
+# [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-1-modal-logic)
 
-- Lewis, C. I. “A New Algebra of Implications and Some Consequences.” The Journal of Philosophy, Psychology and Scientific Methods 10, no. 16 (July 1913): 428–38. https://doi.org/10.2307/2012900.
-- ———. “Alternative Systems of Logic.” The Monist 42, no. 4 (October 1932): 481–507.
-- ———. “Strict Implication–An Emendation.” The Journal of Philosophy, Psychology and Scientific Methods 17, no. 11 (May 1920): 300–302. https://doi.org/10.2307/2940598.
-- **———. “The Calculus of Strict Implication.” Mind, New Series, 23, no. 90 (April 1914): 240–47.**
-- ———. “The Matrix Algebra for Implications.” The Journal of Philosophy, Psychology and Scientific Methods 11, no. 22 (October 1914): 589–600. https://doi.org/10.2307/2012652.
-- ———. “The Structure of Logic and Its Relation to Other Systems.” The Journal of Philosophy 18, no. 19 (September 1921): 505–16. https://doi.org/10.2307/2939309.
+This week will focus on the proof systems that Lewis and Langford developed for modal logic.
+
+> Problem Set #1: Tooling
+
+- Lewis, C. I. "A New Algebra of Implications and Some Consequences." The Journal of Philosophy, Psychology and Scientific Methods 10, no. 16 (July 1913): 428–38. https://doi.org/10.2307/2012900.
+- ———. "Alternative Systems of Logic." The Monist 42, no. 4 (October 1932): 481–507.
+- ———. "Strict Implication–An Emendation." The Journal of Philosophy, Psychology and Scientific Methods 17, no. 11 (May 1920): 300–302. https://doi.org/10.2307/2940598.
+- **———. "The Calculus of Strict Implication." Mind, New Series, 23, no. 90 (April 1914): 240–47.**
+- ———. "The Matrix Algebra for Implications." The Journal of Philosophy, Psychology and Scientific Methods 11, no. 22 (October 1914): 589–600. https://doi.org/10.2307/2012652.
+- ———. "The Structure of Logic and Its Relation to Other Systems." The Journal of Philosophy 18, no. 19 (September 1921): 505–16. https://doi.org/10.2307/2939309.
 - **[Appendix II] Lewis, C. I., and C. H. Langford. Symbolic Logic. New York: Century Company, 1932.**
-- McKinsey, J. C. C. “A Reduction in Number of the Postulates for C. I. Lewis’ System of Strict Implication.” Bulletin of the American Mathematical Society 40, no. 6 (1934): 425–28. https://doi.org/10.1090/S0002-9904-1934-05881-6.
+- McKinsey, J. C. C. "A Reduction in Number of the Postulates for C. I. Lewis' System of Strict Implication." Bulletin of the American Mathematical Society 40, no. 6 (1934): 425–28. https://doi.org/10.1090/S0002-9904-1934-05881-6.
 - **Barcan, Ruth C. "A Functional Calculus of First Order Based on Strict Implication." The Journal of Symbolic Logic 11, no. 4 (1946): 115–18. https://doi.org/10.2307/2269159.**
 - ———. "The Deduction Theorem in a Functional Calculus of First Order Based on Strict Implication." Journal of Symbolic Logic 11, no. 4 (1946): 115–18.
 
@@ -49,8 +53,8 @@
 
 > Why does Russell insist that \*1.1 cannot be expressed symbolically?
 
-- **[sec. 2] Heijenoort, Jean van, ed. “Begriffsschrift, a Formula Language, Modeled upon That of Arithmetic, for Pure Thought: GOTTLOB FREGE(1879).” In Frege and Gödel: Two Fundamental Texts in Mathematical Logic, 1–82. Harvard University Press, 2013. https://doi.org/10.4159/harvard.9780674864603.c2.**
-- **Carroll, Lewis. “WHAT THE TORTOISE SAID TO ACHILLES.” Mind IV, no. 14 (April 1895): 278–80. https://doi.org/10.1093/mind/IV.14.278.**
+- **[sec. 2] Heijenoort, Jean van, ed. "Begriffsschrift, a Formula Language, Modeled upon That of Arithmetic, for Pure Thought: GOTTLOB FREGE(1879)." In Frege and Gödel: Two Fundamental Texts in Mathematical Logic, 1–82. Harvard University Press, 2013. https://doi.org/10.4159/harvard.9780674864603.c2.**
+- **Carroll, Lewis. "WHAT THE TORTOISE SAID TO ACHILLES." Mind IV, no. 14 (April 1895): 278–80. https://doi.org/10.1093/mind/IV.14.278.**
 - **[Sec. 38] Russell, Bertrand. Principles of Mathematics. New York,: Routledge, 1903.**
 - **[pp. 99] Russell, Bertrand, and Alfred North Whitehead. _Principia Mathematica_. 2nd ed. Vol. 1. Cambridge: Cambridge University Press, 1910.**
 
@@ -63,7 +67,7 @@
   - $p \rightarrow q$ does not _assert_ either $p$ or $q$, though these propositions are considered
   - The relation _therefore_ only holds between asserted propositions
   - Cites Frege's discussion of assertion
-  - [p. 52] "Wherever therefore occurs, the hypothesis may be dropped, and the conclusion asserted by itself. This seems to be the first step in answering Lewis Carroll’s puzzle."
+  - [p. 52] "Wherever therefore occurs, the hypothesis may be dropped, and the conclusion asserted by itself. This seems to be the first step in answering Lewis Carroll's puzzle."
 - Frege introduces the turnstile $\vdash$ to express a _judgement_
   - Contrasts this with a, "mere combination of ideas"
 
@@ -176,10 +180,10 @@
 
 > To what extent did MacColl anticipate the development of modal logic?
 
-- **McColl, Hugh. “Symbolical Reasoning.” Mind 5, no. 17 (1880): 45–60.**
-- MacColl, Hugh. “Symbolic Logic (A Reply).” Mind 16, no. 63 (1907): 470–73.
-- Rahman, Shahid. “Hugh MacColl and George Boole on Hypotheticals.” In A Boole Anthology: Recent and Classical Studies in the Logic of George Boole, edited by James Gasser, 287–310. Dordrecht: Springer Netherlands, 2000. https://doi.org/10.1007/978-94-015-9385-4_16.
-- Astroh, Michael, Ivor Grattan-Guinness, and Stephen Read. “‪A Survey of the Life of Hugh MacColl (1837-1909)‪.” Philosophia Scientiæ 151, no. 1 (2011): 7–29. https://doi.org/10.4000/philosophiascientiae.357.
+- **McColl, Hugh. "Symbolical Reasoning." Mind 5, no. 17 (1880): 45–60.**
+- MacColl, Hugh. "Symbolic Logic (A Reply)." Mind 16, no. 63 (1907): 470–73.
+- Rahman, Shahid. "Hugh MacColl and George Boole on Hypotheticals." In A Boole Anthology: Recent and Classical Studies in the Logic of George Boole, edited by James Gasser, 287–310. Dordrecht: Springer Netherlands, 2000. https://doi.org/10.1007/978-94-015-9385-4_16.
+- Astroh, Michael, Ivor Grattan-Guinness, and Stephen Read. "‪A Survey of the Life of Hugh MacColl (1837-1909)‪." Philosophia Scientiæ 151, no. 1 (2011): 7–29. https://doi.org/10.4000/philosophiascientiae.357.
 
 ### Quantified Modal Logic
 

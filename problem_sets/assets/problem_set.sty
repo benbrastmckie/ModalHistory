@@ -1,0 +1,155 @@
+%!TEX root = LogicNotes.tex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{problem_set}[2025/01/29 Support for MIT logic texts]
+
+%% ========== Bibliography and Citations ==========
+\usepackage[round]{natbib}       % Bibliography support
+\usepackage{bibentry}            % Inline bibliography entries
+\usepackage{verbatim}            % Verbatim text support
+\setcitestyle{aysep={}}
+ %   \citet{key} ==>>                Jones et al. (1990)
+ %   \citet*{key} ==>>               Jones, Baker, and Smith (1990)
+ %   \citep{key} ==>>                (Jones et al., 1990)
+ %   \citep*{key} ==>>               (Jones, Baker, and Smith, 1990)
+ %   \citep[chap. 2]{key} ==>>       (Jones et al., 1990, chap. 2)
+ %   \citep[e.g.][]{key} ==>>        (e.g. Jones et al., 1990)
+ %   \citep[e.g.][p. 32]{key} ==>>   (e.g. Jones et al., p. 32)
+ %   \citeauthor{key} ==>>           Jones et al.
+ %   \citeauthor*{key} ==>>          Jones, Baker, and Smith
+ %   \citeyear{key} ==>>             1990
+\usepackage{etoolbox} %%For \citepos
+\usepackage{xstring} %%For \citepos
+
+\makeatletter %definition of \citepos
+% \patchcmd{\NAT@test}{\else \NAT@nm}{\else \NAT@nmfmt{\NAT@nm}}{}{} %turn on for numeric citations
+\DeclareRobustCommand\citepos% define \citepos
+  {\begingroup
+   \let\NAT@nmfmt\NAT@posfmt% same as for citet except with a different name format
+   \NAT@swafalse\let\NAT@ctype\z@\NAT@partrue
+   \@ifstar{\NAT@fulltrue\NAT@citetp}{\NAT@fullfalse\NAT@citetp}
+  }
+   
+\let\NAT@orig@nmfmt\NAT@nmfmt %makes adapt to last names ending with an 's'.
+\def\NAT@posfmt#1{%
+  \StrRemoveBraces{#1}[\NAT@temp]%
+  \IfEndWith{\NAT@temp}{s}
+    {\NAT@orig@nmfmt{#1'}}
+    {\NAT@orig@nmfmt{#1's}}}
+\makeatother
+
+%% ========== Graphics and Color ==========
+\usepackage{graphicx}            % Image support
+\usepackage{adjustbox}           % Graphics adjustments
+\usepackage[dvipsnames]{xcolor}  % Color support
+
+% Default answer box colors - can be redefined in individual documents
+\definecolor{headercolor}{RGB}{235,241,233}  % Light olive green
+\definecolor{framecolor}{RGB}{106,142,95}  % Darker olive green
+
+% Command to set answer box colors - takes two arguments:
+% #1: background color name or specification
+% #2: frame color name or specification
+\newcommand{\setanswerboxcolors}[2]{%
+  % Allow both named colors and direct RGB/etc specifications
+  \colorlet{headercolor}{#1}%
+  \colorlet{framecolor}{#2}%
+}
+
+%% ========== Font Configuration ==========
+\usepackage[T1]{fontenc}          % Required for accented characters
+\usepackage{lmodern}              % Latin Modern fonts
+\usepackage{mathpazo}             % Use Palatino font
+\usepackage{microtype}            % Micro-typographic refinements
+
+%% ========== Layout and Structure ==========
+\usepackage{multicol}            % Multiple column support
+\usepackage{adjmulticol}         % Enhanced multicol
+\usepackage{array}               % Enhanced table support
+\usepackage[breakable]{tcolorbox}           % Colored boxes for answers
+\usepackage{enumitem}            % Customizable lists
+\usepackage{wrapfig}             % Wrapped figures
+\usepackage{setspace}            % Line spacing control
+\usepackage{titlesec}            % Section title formatting
+\usepackage{apptools}            % Appendix tools
+
+%% ========== Hyperlinks (load last) ==========
+
+\usepackage[
+    linktocpage=true,
+    pdfusetitle
+]{hyperref}
+
+% Configure hyperlink colors
+\definecolor{URLblue}{RGB}{0,0,150}
+\hypersetup{
+    colorlinks   = true,         % Use colored links instead of boxes
+    urlcolor     = URLblue,      % Color for external hyperlinks
+    linkcolor    = URLblue,      % Color of internal links
+    citecolor    = URLblue          % Color of citations
+}
+
+%    ****************************************
+%    *          TITLE                       *
+%    ****************************************
+
+\makeatletter
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+
+\makeatletter
+\def\pset#1{\gdef\@pset{#1}} % Define \pset command
+% \def\@pset{\@latex@error{No \noexpand\pset given}\@ehc} % Error if \pset not set
+
+\raggedbottom    % Put gaps at bottom of pages with insufficient content
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\bf \LARGE\@title} % Increase the font size of the title
+
+\vspace{5pt} % Some vertical space between the title and author name
+
+% {\sc \Large\@author} % Author name
+{\sc \Large\@pset} % Problem set number/name
+
+\vspace{5pt} % Some vertical space between the title and author name
+
+{\it Updated: \today}
+
+\vspace{20pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%    ****************************************
+%    *          HEADERS                     *
+%    ****************************************
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}} %defined below
+\headsep=12pt
+\headheight=15pt
+
+%    ****************************************
+%    *       BOXES                          *
+%    ****************************************
+
+\newcommand{\answer}[2]{%
+  \par\noindent
+  \begin{tcolorbox}[
+    colback=headercolor,
+    colframe=framecolor,
+    title={Solution\hfill\mbox{#1}},
+    before upper={\parindent=1em},
+    breakable,
+  ]
+    \noindent
+    #2
+  \end{tcolorbox}
+}
+% \setanswerboxcolors{RawSienna!15}{RawSienna!50}   % For orange theme
+% \setanswerboxcolors{Plum!10}{Purple!50}           % For purple theme
+% \setanswerboxcolors{Gray!10}{Gray!80}             % For gray theme
+% \setanswerboxcolors{blue!5}{blue!40}              % For blue theme
+
+\newcommand{\factoidbox}[1]{\begin{quote}\framebox{\parbox{\dimexpr\linewidth-3\fboxsep\relax}{#1}}\end{quote}}
+
+\newcommand{\tablefbox}[1]{\multicolumn{1}{|p{10em}|}{#1}}
