@@ -1,5 +1,7 @@
 # Collaboration
 
+> The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) which provide essential theoretical background for the course
+
 Work together to complete the solutions for each week by observing the following protocols, where further details will be provided below:
 
 > 1. Make sure to pull changes (sync) before starting to work on any problems

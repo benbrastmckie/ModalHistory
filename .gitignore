@@ -11,3 +11,5 @@
 *.glo
 *.ist
 **/__pycache__
+SPECS.md
+TODO.md
