@@ -11,33 +11,49 @@ These instructions will provide some discussion of the problem set for that week
 
 > Problem Set #1: Tooling (due prior to class week 01)
 
+Here are the [instructions](01_tooling/tooling.md) for this problem set.
+
 ### [Problem Set #2: Axiomatic Proofs](/02_axiomatic_proofs/axiomatic_proofs.md)
 
 > Problem Set #2: Axiomatic Proofs (due prior to class week 03)
 
-### [Problem Set #3: Modality](/03_semantic_proofs/semantic_proofs.md)
+Here are the [instructions](02_axiomatic_proofs/axiomatic_proofs.md) for this problem set.
+
+### [Problem Set #3: Modality](/03_semantic_proofs/semantic_proofs.md) [PDF](/03_semantic_proofs/03_solutions.pdf)
 
 > Problem Set #3: Semantic Proofs (due prior to class week 05)
 
-### [Problem Set #4: Tense](/04_tense_logic/tense_logic.md)
+Here are the [instructions](03_semantic_proofs/semantic_proofs.md) for this problem set.
+
+### [Problem Set #4: Tense](/04_tense_logic/tense_logic.md) [PDF](/04_tense_logic/04_solutions.pdf)
 
 > Problem Set #4: Tense Logic (due prior to class week 06)
 
-### [Problem Set #5: Bimodal Logic](/05_bimodal_logic/bimodal_logic.md)
+Here are the [instructions](04_tense_logic/tense_logic.md) for this problem set.
+
+### [Problem Set #5: Bimodal Logic](/05_bimodal_logic/bimodal_logic.md) [PDF](/05_bimodal_logic/05_solutions.pdf)
 
 > Problem Set #5: Bimodal Logic (due prior to class week 08)
+
+Here are the [instructions](05_bimodal_logic/bimodal_logic.md) for this problem set.
 
 ### [Problem Set #6: Model-Checker](/06_model_checker/model_checker.md)
 
 > Problem Set #6: Model-Checker (due prior to class week 09)
 
+Here are the [instructions](06_model_checker/model_checker.md) for this problem set.
+
 ### [Problem Set #7: Bimodal Semantics](/07_bimodal_semantics/bimodal_semantics.md)
 
 > Due before Apr 18 (Week 11)
 
+Here are the [instructions](07_bimodal_semantics/bimodal_semantics.md) for this problem set.
+
 ### [Problem Set #8: State Semantics](/08_state_semantics/state_semantics.md)
 
 > Due before class on Apr 28 (Week 12)
+
+Here are the [instructions](08_state_semantics/state_semantics.md) for this problem set.
 
 ## Collaboration
 
