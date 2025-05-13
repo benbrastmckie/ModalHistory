@@ -1,13 +1,11 @@
 # [Problem Set #1: Tooling](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Problem Set #1: Tooling (due prior to class week 01)
-
 Here is an outline of what is to come:
 
 - Install a general purpose text editor (IDE) if you do not have one already.
 - Install LaTeX if you have not already done so.
-- Configure Git and learn how to push changes to repositories, adding an SSH key as needed.
 - Add an SSH key to your GitHub account.
+- Configure Git and learn how to push changes to repositories, adding an SSH key as needed.
 - Use Git to clone the repository and push changes.
 
 This is an opportunity to upgrade your toolkit and gain experience with Git collaboration if you haven't used it before. No prior experience is required.
@@ -206,7 +204,7 @@ Here is a brief overview of the steps to be completed:
 
 Remember: Never share your private key (the file without .pub extension). Only share the public key (.pub file) with GitHub.
 
-### Using Git in VSCodium
+### Configure Git
 
 1. **Add Two-Factor Authentication in GitHub**:
   - Go to GitHub Settings → Password and Authentication

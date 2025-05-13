@@ -1,7 +1,5 @@
 # [Problem Set #2: Axiomatic Proofs](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Instructions for the problem set for this week
-
 This problem set concerns _classical propositional logic_ in the guise of a Hilbert system and an extension thereof to a number of _propositional modal logics_.
 A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
 Please read the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) up to the end of the section on quantified modal logics (you are welcome to skip over the Fitch system of pages 2-3).

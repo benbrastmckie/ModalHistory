@@ -1,7 +1,5 @@
 # [Problem Set #3: Semantic Proofs](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Instructions for the problem set for this week
-
 This problem set concerns the semantics for _propositional modal logic_.
 A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
 Please read the relevant portion of the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for the definitions.

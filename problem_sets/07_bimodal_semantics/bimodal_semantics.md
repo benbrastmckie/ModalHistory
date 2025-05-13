@@ -1,7 +1,5 @@
 # [Problem Set 07: Model-Checker](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Problem set on the bimodal semantics implemented in the `model-checker`.
-
 In a surprise upset in the ongoing battle between me and the `model-checker`, I have managed to get an implementation of the bimodal semantics working.
 This is _good news_ because it means you can begin to familiarize yourself with this new methodology while working in familiar territory.
 This is _bad news_ because it means there are still likely to be problems with the implementation, yielding undesired results.

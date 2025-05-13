@@ -1,7 +1,5 @@
 # [Problem Set 06: Model-Checker](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Instructions for the problem set for this week
-
 This problem set asks you to install the [model-checker](https://github.com/benbrastmckie/ModelChecker), read the documentation, and run a few tests.
 Rather than continuing to write proofs, the aim of this problem set is to begin to familiarize yourself with an alternative methodology.
 As this is a work in progress, if there are issues that feel less than totally clear, don't hesitate to open an [issue](https://github.com/benbrastmckie/ModalHistory/issues).

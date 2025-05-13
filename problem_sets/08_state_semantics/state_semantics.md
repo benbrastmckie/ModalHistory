@@ -1,7 +1,5 @@
 # [Problem Set 08: State Semantics](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Use the `model-checker` to explore the state semantics for counterfactual conditionals and constitutive explanatory operators.
-
 This problem set will be very similar to the previous problem set, only this time we will be using the `model-checker` to explore the state semantics for counterfactual conditionals.
 Instead of encountering the state semantics first through writing semantic proofs, we will begin by using the `model-checker` to explore the theory's extension. 
 This has its advantages in that it allows you to survey the system much more quickly, however, there is also the major disadvantage in that it is harder to make sense of the models that the `model-checker` finds.

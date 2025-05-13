@@ -1,7 +1,5 @@
 # [Problem Set #4: Tense Logic](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Instructions for the problem set for this week
-
 This problem set concerns the semantics for _propositional tense logic_.
 Please read the relevant portion of the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for the definitions.
 A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
