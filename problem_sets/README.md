@@ -17,25 +17,25 @@ Here are the [instructions](01_tooling/tooling.md) for this problem set.
 
 > Problem Set #2: Axiomatic Proofs (due prior to class week 03)
 
-Here are the [instructions](02_axiomatic_proofs/axiomatic_proofs.md) for this problem set and the [PDF](/02_axiomatic_proofs/02_solutions.pdf).
+Here are the [instructions](02_axiomatic_proofs/axiomatic_proofs.md) for this problem set and the [PDF](02_axiomatic_proofs/02_solutions.pdf).
 
 ### [Problem Set #3: Modality](/03_semantic_proofs/semantic_proofs.md)
 
 > Problem Set #3: Semantic Proofs (due prior to class week 05)
 
-Here are the [instructions](03_semantic_proofs/semantic_proofs.md) for this problem set and the [PDF](/03_semantic_proofs/03_solutions.pdf).
+Here are the [instructions](03_semantic_proofs/semantic_proofs.md) for this problem set and the [PDF](03_semantic_proofs/03_solutions.pdf).
 
 ### [Problem Set #4: Tense](/04_tense_logic/tense_logic.md)
 
 > Problem Set #4: Tense Logic (due prior to class week 06)
 
-Here are the [instructions](04_tense_logic/tense_logic.md) for this problem set and the [PDF](/04_tense_logic/04_solutions.pdf).
+Here are the [instructions](04_tense_logic/tense_logic.md) for this problem set and the [PDF](04_tense_logic/04_solutions.pdf).
 
 ### [Problem Set #5: Bimodal Logic](/05_bimodal_logic/bimodal_logic.md)
 
 > Problem Set #5: Bimodal Logic (due prior to class week 08)
 
-Here are the [instructions](05_bimodal_logic/bimodal_logic.md) for this problem set [PDF](/05_bimodal_logic/05_solutions.pdf).
+Here are the [instructions](05_bimodal_logic/bimodal_logic.md) for this problem set [PDF](05_bimodal_logic/05_solutions.pdf).
 
 ### [Problem Set #6: Model-Checker](/06_model_checker/model_checker.md)
 
