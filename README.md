@@ -15,7 +15,37 @@ I will then present the extension that I have developed of Fine's semantics for 
 
 ## Overview
 
-> Course information
+```bash
+ModalHistory/
+├── 1_modal_logic/                 # MODULE 1 MATERIALS
+│   ├── 00_week/                   # Introduction and Origins
+│   ├── 01_week/                   # Early Modal Systems
+│   └── 02_week/                   # Quantified Modal Logic
+├── 2_intensional_semantics/       # MODULE 2 MATERIALS
+│   ├── 03_week/                   # Carnap and Kripke
+│   ├── 04_week/                   # Prior and Thomason
+│   ├── 05_week/                   # Montague and Kaplan
+│   └── 06_week/                   # The Construction of Possible Worlds
+├── 3_counterfactual_conditionals/ # MODULE 3 MATERIALS
+│   ├── 08_week/                   # Similarity and Imposition
+│   ├── 09_week/                   # Counterfactual Worlds
+│   └── 10_week/                   # Programmatic Semantics
+├── 4_constitutive_explanation/    # MODULE 4 MATERIALS
+│   ├── 12_week/                   # Identity and Aboutness
+│   ├── 13_week/                   # Necessary and Sufficient
+│   └── 14_week/                   # Formal Track Presentations
+├── final_projects/                # FINAL PROJECT MATERIALS AND EXAMPLES
+├── problem_sets/                  # PROBLEM SETS AND SOLUTIONS
+│   ├── 01_tooling/                # Git and LaTeX setup
+│   ├── 02_axiomatic_proofs/       # Axiomatic proof systems
+│   ├── 03_semantic_proofs/        # Model theory and semantics
+│   ├── 04_tense_logic/            # Temporal logic
+│   ├── 05_bimodal_logic/          # Multiple modalities
+│   ├── 06_model_checker/          # Programmatic verification
+│   ├── 07_bimodal_semantics/      # Advanced semantic systems
+│   └── 08_state_semantics/        # Hyperintensional semantics
+└── README.md                      # COURSE OVERVIEW AND SYLLABUS
+```
 
 ### Time and Location
 
