@@ -69,9 +69,9 @@ You can find further resources for how to set up a LaTeX project in this [latex_
 
 To build your `tex` file, LaTeX will look for the bibliography citation style `bst` file and bibliography specified at the bottom of the template LaTeX file with:
 
-```
-\bibliographystyle{bib_style} %%bib style found locally or in textmf/bibtex/bst
-\bibliography{../../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
+```latex
+  \bibliographystyle{../assets/bib_style} %%bib style found locally or in textmf/bibtex/bst
+  \bibliography{../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
 ```
 
 The easiest thing to do is to put the [`bib_style.bst`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/bib_style.bst) file in the `/texmf/bibtex/bst/` directory on your computer as explained [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/latex.md) so that you don't need to worry about always including a `bst` file in the same directory as your LaTeX file.
