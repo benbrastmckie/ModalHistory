@@ -1,0 +1,725 @@
+\documentclass[a4paper, 11pt]{article}                  % paper and font size
+\usepackage[top=1.1in, bottom=1.1in]{geometry}          % margins
+\usepackage[protrusion=true,expansion=true]{microtype}  % better typography
+\usepackage{../assets/problem_set}                   % imports style file
+\usepackage{../assets/notation}                   % imports style file
+
+% Set the colors for answer boxes in this document (default is olive green)
+% \setanswerboxcolors{Gray!10}{Gray!80}             % For gray theme
+% \setanswerboxcolors{blue!5}{blue!40}            % Blue theme
+% \setanswerboxcolors{RawSienna!15}{RawSienna!50} % Orange theme  
+% \setanswerboxcolors{Plum!10}{Purple!50}         % Purple theme
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{The Modern History of Modal Logic}  % Title
+\pset{Problem Set 05: Due March 31st}              % Problem Set
+\date{\today}                              % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle              % Print the title section
+\thispagestyle{empty}   % Drop header and page number from the first page
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%
+%%% INSTRUCTIONS %%%
+%%%%%%%%%%%%%%%%%%%%
+
+% 1. Make sure to pull changes (sync) before starting to work on any problems
+% 2. Add your name to the problems you want to work on, pushing changes immediately to "check out" the problems
+% 3. If a problem has been checked out once, make a copy of the solution block below to contribute your solution below
+% 4. If there are already two people working on a problem, try to find another problem to work on
+% 5. If you make some progress (even partial) and get stuck, push changes for others to see/help/etc.
+% 6. If you have questions or comments, please open a new issue (it's possible to link line numbers) 
+% 7. It is best practice to have one sentence per numbered line, making it easier to add comments
+% 8. If possibly, try to avoid breaking formal expressions across lines to improve readability
+% 9. I will comment on your solutions, adding my name to the reviewers (feel free to add comments/questions as well)
+% 10. If the comments have been addressed or no longer relevant, feel free to remove comments
+% 11. If you want to add comments, make sure to create a new line below to do so (this will help avoid conflicts)
+% 12. All the defined commands can be found in assets/notation.sty but feel free to use what you like
+% 13. I will try to include comments alongside the definition of environments in notation.sty to explain their use
+% 14. Make sure that the document builds without errors before pushing changes
+% 15. Please try to choose a diversity of problem types to work on
+% 16. To streamline your proofs, try to unpack claims with an existential flavor before those with a universal flavor
+% 17. In using reductio proofs, think about what the easiest thing to negate would be given the intended conclusion
+% 18. Sometimes a contraposition style proof is just as easy as a reductio, and sometimes direct is the best of all
+% 19. Try to neither skip substantial steps nor to make any unforced moves
+% 20. Cutting and pasting from your or other's proofs is perfectly fine as long as the end result is good
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Cartesian Semantics}
+
+\begin{enumerate}
+
+	\item[\bf Countermodels:] Evaluate the following, providing a proof or $\BLC$ countermodel.
+
+    \item \textit{If} $\Gamma \MLmodels[] \metaA$, \textit{then} $\Box\Gamma \MLmodels[] \Box\metaA$.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Assume that $\Gamma \MLmodels \metaA$.
+        We want to show that $\Box\Gamma \MLmodels \Box\metaA$.
+
+        We know $\Gamma \MLmodels \metaB$ just in case $\M, w, x \MLmodels \metaB$ whenever $\M, w, x \MLmodels \gamma$ for all $\gamma \in \Gamma$.
+        So let $M=\tuple{W, R, T, <, \I}, w\in W, x\in T$ be such that $\M, w, x \MLmodels \gamma$ for all $\gamma \in \Box\Gamma$.
+        We now want to show that $\M, w, x \MLmodels \Box \metaA$.
+        
+        Assume towards a contradiction that $\M, w, x \not\MLmodels \Box \metaA$.
+        Hence, it is not the case that $\M, u, x \MLmodels \metaA$ for every $u \in W$.
+        So $\M, u, x \not\MLmodels \metaA$ for some $u \in W$.
+        
+        If $\M, u, x \MLmodels \gamma$ for every $\gamma \in \Gamma$, then we know that $\M, u, x \MLmodels \metaA$ since $\Gamma \MLmodels \metaA$, which would be a contradiction, so we may conclude that it is not the case that $\M, u, x \MLmodels \gamma$ for every $\gamma \in \Gamma$.
+        % [Ben] instead of 'so assume' use 'so we may conclude that'
+        
+        Hence, $\M, u, x \not\MLmodels \gamma$ for some $\gamma \in \Gamma$.
+        But we know that $\M, w, x \MLmodels \Box\gamma$ by assumption, since $\Box\gamma \in \Box\Gamma$.
+        So $\M, v, x \MLmodels \gamma$ for every $v \in W$.
+        And in particular, $\M, u, x \MLmodels \gamma$, which is a contradiction.
+        
+        Therefore, we conclude that $\M, w, x \MLmodels \Box \metaA$. \qed
+        % [Ben] This is great! Since the content of the proof is perfect, all that remains to optimize on is presentation
+        % Paragraph breaks could help the flow
+      }
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \metaA$.
+       \answer{ Helena
+       [Ben] % Reviewers
+       }{% body of the argument
+          Let $\M$ be a $\BLC$ model where $\M = \tuple{W,R,T,<, \I}$ and consider arbitrary $w \in W$, $x \in T$. 
+          % [Ben] as a stylistic point, introducing arbitrary elements suggests element tracing as a strategy
+          % But you are using a reductio which makes sense here
+          % So clearer would be to start off with the assumption on the next line, following this with the clause 'for some \BLC model \M, world w \in W, and time x \in T.'
+
+          Assume for contradiction that $\M, w, x \nMLmodels \Box \metaA \rightarrow \metaA$. 
+          By the semantics for `$\rightarrow$', we know $\M,w,x \MLmodels \Box \metaA$ and $\M,w,x \nMLmodels \metaA$.
+          By the semantics for `$\Box$', we know $\M,u, x \MLmodels \metaA$ for every $u \in W$.
+          Since $w \in W$, it follows  that $\M, w,x \MLmodels \metaA$.
+          But we also know that $\M,w,x \nMLmodels \metaA$.
+          Contradiction.
+          
+          Generalizing on $\M, w,x$, we conclude that $\MLmodels \Box \metaA \rightarrow \metaA$.
+          \qed
+          % [Ben] Perfect!
+       }
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \Box\Box\metaA$.
+      \answer{ Helena
+       [Ben] % Reviewers
+       }{% body of the argument
+        Let $\M$ be a $\BLC$ model where $\M = \tuple{W,R,T,<, \I}$ and consider arbitrary $w \in W$, $x \in T$. 
+        % [Ben] ditto
+
+        Assume for contradiction that $\M, w, x \nMLmodels \Box\metaA \rightarrow \Box\Box\metaA$.
+        By the semantics for `$\rightarrow$', we know that (i) $\M,w,x \MLmodels \Box \metaA$ and (ii) $\M,w,x \nMLmodels \Box \Box \metaA$.
+        By the semantics for `$\Box$', from (i) we know that (iii) $\M,u, x \MLmodels \metaA$ for every $u \in W$.
+        From (ii) we know that there is some $v \in W$ such that $\M,v,x \nMLmodels \Box \metaA$.
+        Again by the semantics for `$\Box$', it follows that there is some $v' \in W$ such that $\M, v', x \nMLmodels \metaA$. % running out of alphabets!
+        But since $v' \in W$, from (iii) we know that $\M, v', x \MLmodels \metaA$.
+        Contradiction.
+
+        Generalizing on $\M,w,x$, we conclude that $\MLmodels[] \Box\metaA \rightarrow \Box\Box\metaA$.
+        \qed
+        % [Ben] Really clear!
+       }
+
+    \item $\MLmodels[] \metaA \rightarrow \Box\Diamond\metaA$.
+       \answer{ Bailey 
+      [Ben] % Reviewers
+      }{ %body of the argument
+         We first define $\Diamond \metaA$ := $\neg \Box \neg \metaA$, as this is not given in the Notes. 
+         % [Ben] It could be more explicit, but I say "We maintain the abbreviations from \ML..." on p.14
+         % But great to state here explicitly
+
+         Let $\M$ be a $\BLC$ model where $\M = \tuple{W,R,T,<, \I}$ and consider arbitrary $w \in W$, $x \in T$, as in 1.3
+        % [Ben] As a stylistic point, introducing arbitrary elements suggests element tracing as a strategy
+        % But you are using a reductio which makes sense here
+        % So clearer would be to start off with the assumption on the next line, following this with the clause 'for some \BLC model \M, world w \in W, and time x \in T.'
+        % Similar applies to #1.2 and #1.3 though this does not effect the content of those proofs
+
+         Suppose for contradiction that $M, w, x \MLmodels \metaA$ and $M,w,x \nMLmodels \Box \Diamond \metaA$. For ease of comparison, we rewrite the right conjunct as $ \MLmodels \neg \Box \neg \Box \neg \metaA$. 
+         % [Ben] You might as well start with the material conditional claim itself to streamline the end of the proof
+         % replace 'conjunct' with 'consequent'
+         % replace '\MLmodels' with '\nMLmodels' in the last clause for clarity
+         
+         Let us start from the operators on the left of the rewritten right conjunct and work rightwards. From the rules of $\neg$ and $\Box$, it is not the case that for all $u \in W$,  $\neg \Box \neg \metaA$ is true. Or, using standard quantifier reasoning, there is some $v \in W$ s.t. $M,v,x \MLmodels \Box \neg \metaA$. Now again from the semantics for $\Box$, this tell us that for all $u \in W$, $M, u, x \MLmodels \neg \metaA$. But by assumption, there is some world $u$ -- namely $x$ --- where $M,w,x \MLmodels \metaA$. So $M,w,x \MLmodels \metaA$ and $M,w, x \nMLmodels \neg \metaA$. Contradiction. 
+         % [Ben] good to use one sentence per line number
+         % You can drop the first sentence (though it is certainly true)
+         % replace 'Or' with 'So'
+         % you are skipping steps which, although permissible if the proof can be clearly presented despite this, is dangerous since it is very easy to flip a negation etc., and makes it hard to follow
+         % One more step remains to get to the material conditional
+         
+         Notice that this formula is the B axiom from classical modal logic. Thus, this result shows that for this “Cartesian Semantics” for modal logic, the B axiom must always be validated. \qed
+         % Nice work!
+      }
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \sometimes\metaA$.
+       \answer{ Bailey
+       [Ben] % Reviewers
+       }{
+        Note: I was a bit confused by a discrepancy between the problem listed in the LaTex doc and the one in the Logic Notes. This is reflected in the underlying code, where the $\always$ operator is coded as "always" and the $\sometimes$ operator is coded as "sometimes." I have opted to prove $\Box \metaA \rightarrow \always \metaB$, i.e. that what is necessarily true is sometimes true. 
+       % [Ben] my mistake. I fixed the notation (the definitions of sometimes and always were swapped in notation.sty) so I changed this problem to reflect the content of the proof you wrote.
+       % I did not make changes to the proof itself, where \always and \sometimes should now be swapped
+        
+        This claim holds.
+        
+        First, we must define the $\always$ operator, as it is not given. Let $\sometimes \metaA$ := $\Past \metaA \wedge \metaA \wedge \Future \metaA$. We then define $\always \metaA$:=$\neg \sometimes \neg \metaA$
+        % [Ben] ditto above but great to include the definition here
+        
+        Let $\M$ be a $\BLC$ model where $\M = \tuple{W,R,T,<, \I}$ and consider arbitrary $w \in W$, $x \in T$. 
+        % [Ben] ditto above
+        
+        Suppose for contradiction that $M, w, x \nMLmodels \Box \metaA \rightarrow \always \metaA$. By the semantics for $\rightarrow$, $M, w, x \MLmodels \Box \metaA$ and $M, w ,x \nMLmodels \always \metaA$. 
+        % [Ben] Perfect
+        
+        We know from the left conjunct and the semantics for $\Box$ that for all $u \in W$, $M,u,x \MLmodels \metaA$. Stated intuitively, $\metaA$ is true at all worlds $u$ at time $x$. Since $w$ is some such world $u$, $M,w,x \MLmodels \metaA$.
+        
+        Now consider the right conjunct. By the meaning of $\nMLmodels$, this claim can be rewritten $M, w, x \MLmodels \neg(\always \metaA$). From reduction on the definition of $\always$ and double negation elimination, we get $M, w , x \MLmodels \Past \neg \metaA \wedge \neg \metaA \wedge \Future \neg \metaA$. From the semantics for $\wedge$, we may eliminate the other two conjuncts and get $M, w, x \MLmodels \neg \metaA$. Contradiction.
+        % [Ben] don't need parentheses following negation
+        % The reduction you provide is adding rather than subtracting syntactic complexity
+        % By the meaning of \nMLmodels we get that a negated sentence is not true
+        % Then it goes by the semantics for negation
+        % So double negation elimination is not needed (or happens in the  metalanguage)
+        % Otherwise the reasoning here is perfect, where this issue is really just cosmetic
+        
+        Notice that this reuslt is produced despite the fact that $\Box$ does not quantify over times. Rather, it is produced because the semantics stipulates that \textit{some} time must be specified in the model. \qed
+        % [Ben] Nice work!
+      }
+
+    \item $\MLmodels[] \boxtimes\metaA \leftrightarrow \Box\always\metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\MLmodels[] \boxtimes\metaA \rightarrow \metaA$.
+       \answer{ David
+       [Ben] % Reviewers
+       }{Let $\M$ be a $\BLC$ model where $\M$ = $\tuple{W, R, T, <, \I}$ and consider some arbitrary $w \in W$, $x \in T$. 
+      % [Ben] As a stylistic point, introducing arbitrary elements suggests element tracing as a strategy
+      % But you are using a reductio which makes sense here
+      % So clearer would be to start off with the assumption on the next line, following this with the clause 'for some \BLC model \M, world w \in W, and time x \in T.'
+      % Similar applies to #1.2, #1.5, etc. above, though this does not effect the content of those proofs
+       Assume for contradiction that: $\M, w, x \nMLmodels \boxtimes\metaA \rightarrow \metaA$. 
+       By the semantics for `$\rightarrow$', we know that (i) $\M, w, x \MLmodels \boxtimes\metaA$ and (ii) $\M, w, x \nMLmodels \metaA$. 
+       By the semantics for `$\boxtimes$', we know that: (iii) $\M, w, x \MLmodels \boxtimes\metaA$ iff $\M, u, y \MLmodels \metaA, \forall u \in W, \forall y \in T$. 
+       % [Ben] Purely cosmetic, but it can streamline things to just state the right hand side of (iii)
+       According to (ii), $\M, w, x \nMLmodels \metaA$. 
+       But, since $w \in W$ and $x \in T$, we get a contradiction. 
+       (iii) says that $\forall u \in W$ and $\forall y \in T$, $\M, u, y \MLmodels \metaA$. But, (ii) says that $\M, w, x \nMLmodels \metaA$. Hence, contradiction. 
+       Generalising on $\M, w, x$, we can conclude that $\MLmodels \boxtimes\metaA \rightarrow \metaA$. 
+       \qed
+       % [Ben] This is perfect!
+         
+       }
+
+    \item $\MLmodels[] \boxtimes\metaA \rightarrow \boxtimes\boxtimes\metaA$.
+      \answer{ Miguel
+      [Ben] % Reviewers
+      }{% body of the argument
+        Assume for contradiction that there exists a model $\M = \tuple{W, R, T, <, \I}$ such that for some $w \in W, x \in T$, $\M, w, x \nMLmodels \boxtimes \metaA \rightarrow \boxtimes \boxtimes \metaA$. 
+        % [Ben] Nice setup!
+        By the semantics of $\rightarrow$, we know (a) $\M, w, x \MLmodels \boxtimes \metaA$ and (b) $\M, w, x \nMLmodels \nMLmodels \boxtimes \boxtimes \metaA$. 
+        % [Ben] Typo
+        By the semantics of $\boxtimes$ on (a), $\M, u, y \MLmodels \metaA$ for every $u \in W$ and $y \in T$. 
+        By the semantics of $\boxtimes$ on (b), it is not the case that $\M, u, y \MLmodels \boxtimes \metaA$ for every $u \in W$ and $y \in T$. 
+        This is equivalent to saying that there is a $u \in W$ and $y \in T$ such that $\M, u, y \nMLmodels \boxtimes \metaA$. 
+        By the semantics of $\boxtimes$ on that last result, it is not the case that for all $v \in W$ and $z \in T$, $\M, v, z \MLmodels \metaA$. 
+        But this contradicts our earlier result. So we negate our assumption that there exists a model $\M = \tuple{W, R, T, <, \I}$ such that for some $w \in W, x \in T$, $\M, w, x \nMLmodels \boxtimes \metaA \rightarrow \boxtimes \boxtimes \metaA$. 
+        This means that for every model $\M = \tuple{W, R, T, <, \I}$ and every $w \in W$ and $x \in T$, $\M, w, x \MLmodels \boxtimes \metaA \rightarrow \boxtimes \boxtimes \metaA$. 
+        By definition of logical consequence, since $\boxtimes \metaA \rightarrow \boxtimes \boxtimes \metaA$ holds at every model and every world-time pair in it, $\MLmodels[] \boxtimes\metaA \rightarrow \boxtimes\boxtimes\metaA$. \qed
+        % [Ben] Perfect!
+      }
+
+    \item $\MLmodels[] \metaA \rightarrow \boxtimes\diamondtimes\metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\MLmodels[] \boxtimes\metaA \rightarrow \sometimes\metaA$.
+       \answer{ David
+      [Ben] % Reviewers
+       }{Note: Like Bailey, I thought the upside-down triangle, $\always$, was intended to be read as `sometimes' -- defined in terms of the $\past$ and $\future$. I've done the proof with this in mind. I take the claim to be, in words: if $\boxtimes\metaA$, then sometimes $\metaA$. 
+       % [Ben] my mistake. I fixed the notation (the definitions of sometimes and always were swapped in notation.sty) but then changed this problem to reflect the proof you wrote.
+       % I did not change the notation in the proof where now \always and \sometimes will have to be swapped
+
+        Let $\M$ be a $\BLC$ model where $\M$ = $\tuple{W,R,T,<,\I}$ and consider some arbitrary $w \in W$ and $x \in T$. 
+       % [Ben] Ditto above
+       Assume for contradiction that: $\M, w, x \nMLmodels \boxtimes \metaA \rightarrow \always \metaA$. 
+       By the semantics for `$\rightarrow$', we know that (i) $\M, w, x \MLmodels \boxtimes \metaA$ and (ii) $\M, w, x \nMLmodels \always \metaA$. 
+       The semantics for `$\always$' is disjunctive. $\M, w, x \MLmodels \always \metaA$ iff $\M, w, x \MLmodels \past \metaA$, $\M, w, x  \MLmodels \metaA$, or $\M, w, x \MLmodels \future \metaA$. 
+       % [Ben] This is nice and clear. If you wanted, you could streamline the proof by just asserting that the right hand side follows.
+       In order to show that $\M, w, x \nMLmodels \always \metaA$, we need to show that $\M, w, x \nMLmodels \past \metaA$, $\M, w, x \nMLmodels \future \metaA$ and that $\M, w, x \nMLmodels \metaA$. 
+       % [Ben] Merely stylistic, replace 'In order to show' with 'It follows that' skipping right to the final clause of the sentence above
+       It will suffice to show that one of these conjuncts is false. If one of the conjuncts is false, then the always claim holds. I'm going to focus on the following: $\M, w, x \nMLmodels \metaA$. Call this (NA).
+       % [Ben] might add 'to produce a contradiction' to the first sentence
+       By the semantics for `$\boxtimes$', we know that: $\M, w, x \MLmodels \boxtimes\metaA$ iff $\M, u, y \MLmodels \metaA, \forall u \in W, \forall y \in T$. But, this contradicts (NA). After all, $w \in W$ and $x \in T$. But, the semantics for `$\boxtimes$' says that $\forall u \in W$ and $\forall y \in T, \MLmodels \metaA$. 
+       % [Ben] ditto asserting the right hand side. Stylistic matters aside, the content is perfect.
+       Hence, contradiction. 
+
+       Generalising on $\M, w, x$, we can conclude that $\MLmodels \boxtimes \metaA \rightarrow \always \metaA$. 
+       \qed
+       % [Ben] Nice work!
+       }
+
+\end{enumerate}
+
+
+
+
+
+\section{Task Semantics}
+
+\begin{enumerate}
+
+	\item[\bf Validity:] Evaluate the following, providing a proof or $\BL$ countermodel.
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \Box\Future\metaA$.
+      \answer{ Helena
+       [Ben] % Reviewers
+       }{% body of the argument
+        Consider a $\BL$ model $\M = \tuple{W, \rightarrow, \set{1,2}, <, \I}$, where: % assuming for simplicity that there are only two time indices: i guess it's okay?
+        % [Ben] This looks great! Could be nice to use T instead of \set{1, 2} and then say T = \set{1, 2} below for consistency and clarity
+
+        \begin{enumerate}
+          \item $W = \set{w_1^1,w_2^1,w_1^2,w_2^2}$, where $w_i^j$ indicates the world state in world $i$ at time $j$; % world states
+          \item $H_{\set{1,2}} = \set{\tau_1,\tau_2}$, where $\tau_1 = \set{\tuple{1,w_1^1}, \tuple{2,w_1^2}}$, $\tau_2 = \set{\tuple{1,w_2^1},\tuple{2,w_2^2}}$; % possible worlds as time/world state pairs
+          \item $\rightarrow = \set{\tuple{w_1^1,w_1^2},\tuple{w_2^1,w_2^2}}$; % order of time
+          % [Ben] This is correct, however, H is defined rather than primitive, so worth postponing
+          \item $< = \set{\tuple{1,2}}$; % standard order of time
+          \item $\I(p_1) = \set{w_1^1,w_2^1}$. % p_1 is only true at time 1 across worlds
+        \end{enumerate}
+
+        % making lots of things up???
+        % [Ben] This works! Soon we will have the model-checker help us to make things up since its hard work to find models
+        % i also realized later that dialectically i only need one world in the model but whatever
+        % [Ben] true
+
+        We want to show that $\M, \tau_1, 1 \nMLmodels \Box p_1 \rightarrow \Box\Future p_1$.
+
+        First show that $\M, \tau_1, 1 \MLmodels \Box p_1$.
+        Since $\tau_1(1) = w_1^1 \in \I(p_1)$, by the semantics for `$\MLmodels$', we know that $\M, \tau_1, 1 \MLmodels p_1$. 
+        Similarly, since $\tau_2(1) = w_2^1 \in \I(p_1)$, we know that $\M, \tau_2, 1 \MLmodels p_1$.
+        Since $H_{\set{1,2}} = \set{\tau_1,\tau_2}$, we may conclude that every $\sigma \in H_{\set{1,2}}$ is such that $\M, \sigma, 1 \MLmodels p_1$.
+        By the semantics for `$\Box$', we know that $\M, \tau_1,1 \MLmodels \Box p_1$.
+        % [Ben] this is great!
+        
+        Then show that $\M,\tau_1,1 \nMLmodels \Box\Future p_1$.
+        Note that $\tau_1(2) = w_1^2 \not \in \I(p_1)$.
+        Then by the semantics for `$\MLmodels$', $\M, \tau_1,2\nMLmodels p_1.$
+        Since $1 < 2$, by the semantics for `$\Future$', $\M, \tau_1,1 \nMLmodels \Future p_1$.
+        Moreover, by the semantics for `$\Box$', we know that $\M, \tau_1,1 \nMLmodels \Box \Future p_1$.
+
+        Since we have shown that $\M, \tau_1, 1 \MLmodels \Box p_1$ and that $\M,\tau_1,1 \nMLmodels \Box\Future p_1$, by the semantics for `$\rightarrow$', we know that $\M, \tau_1, 1 \nMLmodels \Box p_1 \rightarrow \Box\Future p_1$.
+
+        Therefore, $\nMLmodels \Box \metaA \rightarrow \Box \Future \metaA$.
+        \qed
+        % [Ben] Perfect!
+        
+       }
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \always\metaA$.
+       \answer{ Bailey
+      % % Reviewers
+       }{% body of the argument
+      %   Begin
+      }
+
+    \item $\MLmodels[] \Box\metaA \rightarrow \Future\Box\metaA$.
+      \answer{Holden % Collaborators
+      % Reviewers
+      }{% body of the argument      
+      We want to show that $\varnothing \MLmodels \Box \metaA \to \Future\Box\metaA$.
+      We know $\varnothing \MLmodels \Box \metaA \to \Future\Box\metaA$ just in case for any model $\M=\tuple{W, \to, \Z, <, \I}$ of $\BL$, world $\tau \in H_\Z$, and time $x\in \Z$, if $\M, \tau, x \MLmodels \gamma$ for all $\gamma\in\varnothing$, then $\M, \tau, x \MLmodels \Box \metaA \to \Future\Box\metaA$.
+      Since $\varnothing$ is empty, we have vacuously that $\M, \tau, x \MLmodels \gamma$ for all $\gamma \in \varnothing$, so we need that $\M, \tau, x \MLmodels \Box \metaA \to \Future\Box\metaA$ for every model $\M$, world $\tau$, and time $x$.
+      From the semantics for $\to$, this happens just in case $\M, \tau, x \not\MLmodels \Box\metaA$ or $\M, \tau, x \MLmodels \Future\Box\metaA$.
+      
+      Assume towards a contradiction that this is not the case.
+      Hence, $\M,\tau,x \MLmodels \Box\metaA$ and $\M,\tau,x \not\MLmodels \Future\Box\metaA$.
+      We know from the semantics for $\Box$ that $\M, \sigma, x \MLmodels \metaA$ for every $\sigma \in H_\Z$.
+      We also know from the semantics for $\Future$ that it is not the case that $\M, \tau, y \MLmodels \Box\metaA$ for every $y\in \Z$ such that $x<y$.
+      Hence, for some $y\in \Z$ such that $x<y$, $\M, \tau, y \not \MLmodels \Box\metaA$.
+      Then, from the semantics for $\Box$, we know that it is not the case that $\M, \omega, y \MLmodels \metaA$ for every $\omega \in H_\Z$.
+      So for some $\omega \in H_\Z$, we have $\M, \omega, y \not\MLmodels \metaA$.
+
+      Consider the function:
+      \[
+      \sigma(n): n \mapsto \omega(n + y - x)
+      \]
+      First, note that it is a fuction from times to world states.
+      We have that $x<y$, so $y-x$ is necessarily a positive natural number, and $\omega(n + y - x)$ is always well-defined.
+      Next, note that $\sigma(n) = \omega(n + y - x)$ and $\sigma(n + 1) = \omega(n + y - x + 1)$, and since we assume that $\omega$ is a valid possible world, it follows that $\omega(n + y - x) \to \omega(n + y - x + 1)$, and hence $\sigma(n) \to \sigma(n + 1)$.
+      Since $\sigma$ satisfies this property, it is a valid possible world.
+      Finally, note that $\sigma(x) = \omega(x + y - x) = \omega(y)$.
+
+      Now, we know that $\M, \sigma, x \MLmodels \metaA$ and $\M, \omega, y \not\MLmodels \metaA$ and $\sigma(n)=\omega(n + y - x)$.
+      I claim this is a contradiction.
+      In particular, I will prove that, in general, if $\M, \tau, x \MLmodels \metaA$, and if $\tau(n)=\sigma(n + y - x)$, then $\M, \sigma, y \MLmodels \metaA$, which will give us a contradiction.
+
+        We will prove that, for any $x, y \in \Z$, if $\tau(n)=\sigma(n+k)$ where $k=y-x$ for all $n \in \Z$, then $\M, \sigma, y \MLmodels \metaA$ if and only if $\M, \tau, x \MLmodels \metaA$ by induction on the complexity of $\metaA$, denoted $\comp{\metaA}$ where $\comp{\metaA}$ is:
+        \begin{itemize}
+          \item 0 if $\metaA$ is a sentence letter or $\bot$
+          \item $\comp{\metaB}+1$ if $\metaA$ is of the form $\lnot\metaB$, $\Past\metaB$, $\Future\metaB$, or $\Box\metaB$
+          \item $\max{\comp{\metaB},\comp{\metaC}} + 1$ if $\metaA$ is of the form $\metaB\to\metaC$
+        \end{itemize}
+
+        Assume $\tau(n)=\sigma(n + k)$ where $k=y-x$ for all $n \in \Z$.
+        For the base case, we have $\comp{\metaA}=0$. 
+        In this case, we know $\metaA$ is a sentence letter or $\bot$.
+        If $\metaA$ is $\bot$, then we necessarily have $\M, \tau, x \not\MLmodels \bot$ and $\M, \sigma, y \not\MLmodels \bot$ by the semantics for $\bot$, so we have $\M, \tau, x \not\MLmodels \metaA$ if and only if $\M, \sigma, y \not\MLmodels \bot$.
+        Assume, on the other hand, that $\metaA$ is a sentence letter.
+        Then, we know:
+        \setcounter{equation}{0}
+        \begin{align}
+          \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \tau(x) \in \I(\metaA)\\
+          \textit{iff}\quad & \sigma(x+k)\in \I(\metaA)\\
+          \textit{iff}\quad & \sigma(y)\in \I(\metaA)\\
+          \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+        \end{align}
+        \begin{enumerate}[label=(\arabic*)]
+          \item follows from the semantics for $p_i$
+          \item follows from the definition of $\tau$
+          \item follows from the definition of $k$
+          \item follows from the semantics for $p_i$
+        \end{enumerate}
+
+        Now, assume by induction that $\M, \sigma, y \MLmodels \metaA$ just in case $\M, \tau, x \MLmodels \metaA$ for all $\metaA$ with $\comp{\metaA} \le n$.
+        Let $\metaA$ have $\comp{\metaA} = n + 1$.
+        We know $\comp{\metaA$} is at least $1$, so $\metaA$ is not $\bot$ or a sentence letter.
+
+        \begin{itemize}
+          \item Consider $\metaA$ of the form $\lnot \metaB$. Then:
+          \setcounter{equation}{0}
+          \begin{align}
+            \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \M, \tau, x \MLmodels \lnot\metaB\\
+            \textit{iff}\quad & \M, \tau, x \not\MLmodels \metaB\\
+            \textit{iff}\quad & \M, \sigma, y \not\MLmodels \metaB\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \lnot\metaB\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+          \end{align}
+          \begin{enumerate}[label=(\arabic*)]
+            \item follows by assumption on the form of $\metaA$
+            \item follows from the semantics for $\lnot$
+            \item follows by the inductive hypothesis since $\comp{\metaB} \le n$
+            \item follows from the semantics for $\lnot$
+            \item follows by assumption on the form of $\metaA$
+          \end{enumerate}
+
+          \item Consider $\metaA$ of the form $\metaB \to \metaC$. Then:
+          \setcounter{equation}{0}
+          \begin{align}
+            \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \M, \tau, x \MLmodels \metaB\to\metaC\\
+            \textit{iff}\quad & \M, \tau, x \not\MLmodels \metaB \text{ or } \M, \tau, x \MLmodels \metaC \\
+            \textit{iff}\quad & \M, \sigma, y \not\MLmodels \metaB \text{ or } \M, \sigma, y \MLmodels \metaC \\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaB \to \metaC\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+          \end{align}
+          \begin{enumerate}[label=(\arabic*)]
+            \item follows by assumption on the form of $\metaA$
+            \item follows from the semantics for $\to$
+            \item follows by the inductive hypothesis since $\comp{\metaB} \le n$ and $\comp{\metaC} \le n$
+            \item follows from the semantics for $\to$
+            \item follows by assumption on the form of $\metaA$
+          \end{enumerate}
+
+          \item Consider $\metaA$ of the form $\Past\metaB$. Then:
+          \setcounter{equation}{0}
+          \begin{align}
+            \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \M, \tau, x \MLmodels \Past\metaB\\
+            \textit{iff}\quad & \M, \tau, z \MLmodels \metaB \text{ for every } z < x\\
+            \textit{iff}\quad & \M, \sigma, z+k \MLmodels \metaB \text{ for every } z < x\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t - k < x\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t < x + k\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t < y\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \Past\metaB\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+          \end{align}
+          \begin{enumerate}[label=(\arabic*)]
+            \item follows by assumption on the form of $\metaA$
+            \item follows from the semantics for $\Past$
+            \item follows by the inductive hypothesis since $\comp{\metaB} \le n$
+            \item follows by introducing a new arbitrary variable $t = z + k$
+            \item follows from addition rules
+            \item follows from the definition of $k$
+            \item follows from the semantics for $\Past$
+            \item follows by assumption on the form of $\metaA$
+          \end{enumerate}
+
+          \item Consider $\metaA$ of the form $\Future\metaB$. Then:
+          \setcounter{equation}{0}
+          \begin{align}
+            \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \M, \tau, x \MLmodels \Future\metaB\\
+            \textit{iff}\quad & \M, \tau, z \MLmodels \metaB \text{ for every } z > x\\
+            \textit{iff}\quad & \M, \sigma, z+k \MLmodels \metaB \text{ for every } z > x\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t - k > x\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t > x + k\\
+            \textit{iff}\quad & \M, \sigma, t \MLmodels \metaB \text{ for every } t > y\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \Future\metaB\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+          \end{align}
+          \begin{enumerate}[label=(\arabic*)]
+            \item follows by assumption on the form of $\metaA$
+            \item follows from the semantics for $\Future$
+            \item follows by the inductive hypothesis since $\comp{\metaB} \le n$
+            \item follows by introducing a new arbitrary variable $t = z + k$
+            \item follows from addition rules
+            \item follows from the definition of $k$
+            \item follows from the semantics for $\Future$
+            \item follows by assumption on the form of $\metaA$
+          \end{enumerate}
+
+          \item Consider $\metaA$ of the form $\Box\metaB$. Then:
+          \setcounter{equation}{0}
+          \begin{align}
+            \M, \tau, x \MLmodels \metaA \quad \textit{iff}\quad & \M, \tau, x \MLmodels \Box\metaB\\
+            \textit{iff}\quad & \M, \omega, x \MLmodels \metaB \text{ for every } \omega \in H_\Z\\
+            \textit{iff}\quad & \M, \omega_k, y \MLmodels \metaB \text{ for every } \omega \in H_\Z\\
+            \textit{iff}\quad & \M, \omega, y \MLmodels \metaB \text{ for every } \omega \in H_\Z\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \Box\metaB\\
+            \textit{iff}\quad & \M, \sigma, y \MLmodels \metaA
+          \end{align}
+          \begin{enumerate}[label=(\arabic*)]
+            \item follows by assumption on the form of $\metaA$
+            \item follows from the semantics for $\Box$
+            \item follows by the inductive hypothesis since $\comp{\metaB} \le n$, where $\omega_k(n):=\omega(n - k)$
+            \item follows from the fact that $\{\omega_k: \omega \in H_\Z\}=\{\omega: \omega \in H_\Z\}$
+            \item follows from the semantics for $\Box$
+            \item follows by assumption on the form of $\metaA$
+          \end{enumerate}
+        \end{itemize}
+
+        In all cases, we have that $\M, \tau, x \MLmodels \metaA$ just in case $\M, \sigma, y \MLmodels \metaA$, so we conclude by induction that the statement holds for $\metaA$ of any complexity. This is in contradiction with the conclusion we arrived at previously, so we conclude that $\MLmodels \Box \metaA \to \Future \Box \metaA$. \qed
+      }
+
+
+    \item $\MLmodels[] \sometimes\metaA \rightarrow \Diamond\metaA$.
+      \answer{ Miguel
+      % Reviewers
+      }{% body of the argument
+        Replacing metalinguistic abbreviations, we must show that $\MLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA) \rightarrow \neg \Box \neg \metaA$. 
+        Assume for contradiction that there exists a model $\M = \tuple{W, \to, \Z, <, \I}$ such that for some $\tau \in H_\Z$ and $x \in \Z$, $\M, \tau, x \nMLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA) \rightarrow \neg \Box \neg \metaA$. 
+        By the semantics of $\rightarrow$, $\M, \tau, x \MLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA)$ and $\M, \tau, x \nMLmodels \neg \Box \neg \metaA$. 
+        By the semantics of $\wedge$,\footnote{Technically (per the logic notes, I think) $\wedge$ is not a symbol in our language; ultimately we'd have to express this in terms of $\rightarrow$. Since it seems pretty clear this can be done and we'd get the same result but it'd be really tedious, I'll just pretend we have $\wedge$ in our language with the usual semantic clause.} $\M, \tau, x \MLmodels \metaA$. 
+        By the semantics of $\neg$ on $\M, \tau, x \nMLmodels \neg \Box \neg \metaA$, $\M, \tau, x \MLmodels \Box \neg \metaA$. 
+        By the semantics of $\Box$, $\M, \sigma, x \MLmodels \neg \metaA$ for $x$ and every $\sigma \in H_\Z$. 
+        Since $\tau \in H_\Z$, it follows that $\M, \tau, x \MLmodels \neg \metaA$. 
+        By the semantics of $\neg$, $\M, \tau, x \nMLmodels \metaA$. 
+        However this contradicts our earlier result that $\M, \tau, x \MLmodels \metaA$. 
+        So we must negate the assumption that there exists a model $\M = \tuple{W, \to, \Z, <, \I}$ such that for some $\tau \in H_\Z$ and $x \in \Z$, $\M, \tau, x \nMLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA) \rightarrow \neg \Box \neg \metaA$. 
+        This means that for every model $\M = \tuple{W, \to, \Z, <, \I}$ and every $\tau \in H_\Z$ and every $x \in \Z$, $\M, \tau, x \MLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA) \rightarrow \neg \Box \neg \metaA$. 
+        By definition of logical consequence, $\MLmodels (\Past \metaA \wedge \metaA \wedge \Future \metaA) \rightarrow \neg \Box \neg \metaA$. 
+        With metalinguistic abbreviations, this is equivalent to $\MLmodels[] \sometimes\metaA \rightarrow \Diamond\metaA$. \qed
+      }
+
+
+\end{enumerate}
+
+
+
+
+
+\section{Extensions}
+
+\begin{enumerate}
+
+	\item[\bf Regimentation:] Regiment the following in $\BL$ and $\BLP$ disambiguating as needed.
+
+    \item If it could rain, it will eventually stop.
+      \answer{ Holden % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Letting $R$ denote `It is raining', in $\BL$ we may regiment as follows:
+        \[
+        \Diamond \future R \to \lnot \Future R
+        \]
+        What this says is that, if it is possible for it to rain in the future, then it will not always be the case that it is raining. Rewriting abbreviations, this reads
+        \[
+        \lnot \Box \Future \lnot R \to \lnot \Future R
+        \]
+        which says that, if it is not always going to be the case that it is not raining, then it is not always going to be raining.
+
+        Alternatively, we in $\BLP$, we may take `will eventually' to be represented as $\will$, and we may regiment the sentence as follows:
+        \[
+        \Diamond \future R \to \will \lnot R
+        \]
+        What this says is that, if it is possible for it to rain in the future, then it will eventually not be raining. Or, if we rewrite the abbreviations, it says
+        \[
+        \lnot \Box \Future \lnot R \to \Inevitably \future \lnot R
+        \]
+        which means that if it is not always going to be the case that it is not raining, then it will inevitably be the case that at some point in the future it will not be raining.
+
+        In my opinion, the second regimentation captures the meaning of the sentence a litte better, although both don't do a great job with `stop', which implies a form of change from the continuous raining to the stopping of the rain, rather than simply saying that it will at some point not be raining, and our languages don't seem well suited to talk about a change in this way.
+      }
+
+    \item Either it will always eventually rain or it could eventually always rain.
+       \answer{ David
+      % % Reviewers
+       }{% body of the argument
+      %   Begin
+       }
+
+    \item If it has always been raining, then it will eventually stop.
+       \answer{Bailey
+       % Reviewers
+       }{% body of the argument
+         Transpose Holden's argument in 3.1 for the regimentation of "it will eventually stop raining" as     
+         \[
+          \will \lnot R
+          \]
+          Assuming the same operators and logical sentences defined there, we thus already have a regimentation for the consequent of the specified conditional. 
+
+          A first, flat-footed attempt at a regimentation for this sentence might look like: 
+          \[
+          \Past R \rightarrow \will \lnot R
+          \]
+          where $\Past R$ regiments "it has always been raining." 
+
+          I am not quite satisifed with this regimentation. The reason is that, on this reading, we translate "It has always been raining" the same way we translate "It has always rained." But my intuition is that these sentences do \textit(not) actually have the same truth conditions in natural language. Consider:
+
+          \begin{enumerate}[label=(\arabic*)]
+            \item It has always rained, and it has always stopped.
+            \item It has always been raining, and it has always been stopping. 
+            \item It has always been raining, and it has always stopped.
+            \item It has always rained, and it has always been stopping. 
+          \end{enumerate}
+          To me, these sentences read with decreasing intelligibility, with the last being outright infelicitious and the first being fairly intelligible. It is a weak example, but hopefully enough to motivate the claim that "has always" and "has always been" should not have the same regimentation. 
+
+          Here is an intuition to ground the distinction. "It has always been raining" implies that throughout the whole duration of the past, it has rained continuously, while "it has always rained" implies that, throughout the whole duration of the past, it has only periodically rained. We might then use the $\Inevitably$ operator to try and capture the distinction, producing: 
+          \[
+            \Past \Inevitably R \rightarrow \will \lnot R
+          \]
+          This reads that "if it was always the case that it inevitably rains, then it will eventually not rain." This seems to capture some of the distinctiion we are after. However, I do wonder about a different approach -- beyond the scope of what can be sketched here -- that tries to account for the distinction through context-sensitive toggling between discrete and dense frames. That is, "it has always rained" is evaluated over a discrete frame and "it has always been raining" is evaluated over a dense one. When compared, we compare them over the dense frame, producing the result that the first does not quantify over all times in the second. This is of course rather sketchy. 
+
+          A final note: "It will eventually stop" could be read with modal as well as temporal force. That is, we can read the "will" with the force of "must." On this reading, we might consider a regimentation like: 
+
+          \[
+            \Past \Inevitably R \rightarrow \Box \will \lnot R
+          \]
+          This reading was not included in 3.1, but I find it plausible. 
+    
+       }
+
+    \item Either it could always rain, or it has been raining and will rain again.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item If it could eventually always rain, then it eventually it could always rain.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item Either it has been raining or it will eventually rain.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item If it could eventually stop raining, then it has been raining.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item If it will be raining, then it could have always been raining.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item If it has always been raining, then it could eventually stop.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item If it could eventually always rain, then it will always rain.
+      \answer{ Miguel
+      % Reviewers
+      }{% body of the argument
+        Note: Need to add justifications
+
+        The truth conditions of the antecedent are inuitively ``it is possible that in the future there is a point from which it will always rain,'' and the truth conditions of the consequent are intuitively ``at some point in the future it is the case that every point beyond it is a point at which it is raining.'' The consequent by itself also has the reading more similar to $\Future$—i.e., every point from now onwards is a raining point—but I don't think this reading is the intended one with the statement (or else the conditional wouldn't make much sense). 
+
+        In $\BL$, we could regiment the claim as $\diamondtimes \Future R \rightarrow \Box \Future R$. 
+
+        In $\BLP$, we could regiment the claim as $\could \Will R \rightarrow \Will R$. 
+      }
+
+	\item[\bf Mixed Modals:] Evaluate the following, providing a proof or $\BLP$ countermodel.
+
+    \item $\Inevitably\metaA \MLmodels[] \Openpast\metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\Openpast\metaA \wedge \Openfuture\metaA \MLmodels[] \metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\Will\metaA \MLmodels[] \Past\Will\metaA$
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\Inevitably\metaA \MLmodels[] \Openfuture\metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\metaA \MLmodels[] \Openpast\metaA \wedge \Openfuture\metaA$.
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+    \item $\could\metaA \MLmodels[] \Past\could\metaA$
+      % \answer{ % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin
+      % }
+
+
+\end{enumerate}
+
+
+
+%%% Bibliography %%%
+
+% \vfill
+% \begin{small} %%Makes bib small text size
+%   \singlespacing %%Makes single spaced
+%   \bibliographystyle{../../assets/bib_style} %%bib style found locally or in textmf/bibtex/bst
+%   \setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
+%   \bibliography{../../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
+%   \thispagestyle{empty} %%Removes page numbers
+% \end{small} %%End makes bib small text size
+
+\end{document}

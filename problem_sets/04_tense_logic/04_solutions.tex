@@ -1,0 +1,801 @@
+\documentclass[a4paper, 11pt]{article}                  % paper and font size
+\usepackage[top=1.1in, bottom=1.1in]{geometry}          % margins
+\usepackage[protrusion=true,expansion=true]{microtype}  % better typography
+\usepackage{../assets/problem_set}                   % imports style file
+\usepackage{../assets/notation}                   % imports style file
+
+% Set the colors for answer boxes in this document (default is olive green)
+% \setanswerboxcolors{Gray!10}{Gray!80}             % For gray theme
+% \setanswerboxcolors{blue!5}{blue!40}            % Blue theme
+% \setanswerboxcolors{RawSienna!15}{RawSienna!50} % Orange theme  
+% \setanswerboxcolors{Plum!10}{Purple!50}         % Purple theme
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{The Modern History of Modal Logic}  % Title
+\pset{Problem Set 04: Due March 17rd}              % Problem Set
+\date{\today}                              % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle              % Print the title section
+\thispagestyle{empty}   % Drop header and page number from the first page
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%
+%%% INSTRUCTIONS %%%
+%%%%%%%%%%%%%%%%%%%%
+
+% 1. Make sure to pull changes (sync) before starting to work on any problems
+% 2. Add your name to the problems you want to work on, pushing changes immediately to "check out" the problems
+% 3. If a problem has been checked out once, make a copy of the solution block below to contribute your solution below
+% 4. If there are already two people working on a problem, try to find another problem to work on
+% 5. If you make some progress (even partial) and get stuck, push changes for others to see/help/etc.
+% 6. If you have questions or comments, please open a new issue (it's possible to link line numbers) 
+% 7. It is best practice to have one sentence per numbered line, making it easier to add comments
+% 8. If possibly, try to avoid breaking formal expressions across lines to improve readability
+% 9. I will comment on your solutions, adding my name to the reviewers (feel free to add comments/questions as well)
+% 10. If the comments have been addressed or no longer relevant, feel free to remove comments
+% 11. If you want to add comments, make sure to create a new line below to do so (this will help avoid conflicts)
+% 12. All the defined commands can be found in assets/notation.sty but feel free to use what you like
+% 13. I will try to include comments alongside the definition of environments in notation.sty to explain their use
+% 14. Make sure that the document builds without errors before pushing changes
+% 15. Please try to choose a diversity of problem types to work on
+% 16. To streamline your proofs, try to unpack claims with an existential flavor before those with a universal flavor
+% 17. In using reductio proofs, think about what the easiest thing to negate would be given the intended conclusion
+% 18. Sometimes a contraposition style proof is just as easy as a reductio, and sometimes direct is the best of all
+% 19. Try to neither skip substantial steps nor to make any unforced moves
+% 20. Cutting and pasting from your or other's proofs is perfectly fine as long as the end result is good
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Regimentation}
+
+\begin{enumerate}
+
+  \item[\bf Negation:] Provide a definition of negation using the other operators in $\TL$.
+  \answer {Bailey
+  [Ben] % Reviewers
+  } { %Bailey: will fix notation conventions
+    The most straight forward definition of $\neg \metaA$ is $ \neg \metaA:= \metaA\rightarrow \bot$ , where $\metaA$ is any $wfs$ contained in the language $\TL$.
+     Why is this a definition? What we want is an operator which makes $\metaA$ true whenever $\metaA$ is false, and false whenever $\metaA$ is true. 
+     Recall that from the semantics for material implication, $ \metaA \rightarrow \bot$ is true whenever $\metaA$ is false or $\bot$ is true.
+     
+     Suppose $\metaA$ is false. Then by the standard semantics for material implication, the conditional is true. 
+     Thus $\neg \metaA$ is true when $\metaA$ is false as desired. 
+
+     Now suppose $\metaA$ is true. 
+     Since $\bot$ is always false, then $\metaA \rightarrow \bot$ must also be false. 
+     This likewise produces a sentence which is false when $\metaA$ is true, as desired. 
+     % [Ben] This is great! The only modification is to use \metaA throughout in place of p which is reserved for sentence letters
+
+  }
+    % \answer{}{}
+
+	\item[\bf Regimentation:] Regiment the following in $\TL$ and $\TLI$ disambiguating as needed.
+
+    \item If it is raining, it will stop.
+      \answer{ Ben % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Letting $R$ symbolize `It is raining', we may regiment the claim by $R \rightarrow \future\neg R$ in $\TL$.
+        This asserts that if it is raining, there is a time in the actual future in which it stops raining.
+
+        Alternatively, we may take `will' to convey that if it is raining, then for every future there is a time in which the rain stops.
+        We may capture this reading in $\TLI$ with the regimentation $R \rightarrow \Inevitably\future\neg R$. 
+      }
+
+    \item If it wasn't that cold before, it might still be that cold at some point.
+      \answer{ Miguel % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Letting $C$ symbolize `it is that cold,' we can regiment the claim by $\neg \past C \rightarrow \Diamond \future C$. 
+        This asserts that if was not the case that at some point in the past it was that cold, then it is possible that at some point in the future it will be that cold. 
+        % [Ben] Note that although we have \inevitably in \TLI, we don't have \Diamond
+
+        The adverb `before' suggests that we are making reference to some point in the past not all the past, hence we use $\past$ instead of $\Past$. The consequent seems to be implied to be in the future (that is the most salient reading)—perhaps the `still' suggests that—but we can also regiment the claim as $\neg \past C \rightarrow \Diamond \sometimes C$. 
+        % [Not done—missing explanation]
+        % $ \neg \past C \rightarrow \Diamond \future C$
+        % Begin argument...
+      }
+
+    \item Either it has rained or it will snow.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Letting $R$ symbolize `It is raining' and $S$ symbolize `It is snowing', we may regiment the claim by $\past R \lor \future S$ in $\TL$.
+        This asserts that either it rained in the past, or it will show in the future (or both).
+
+        Alterntaively, we may consider the definition of $\metaA \lor \metaB$ as $\lnot \metaA \to \metaB$, in which case we may take `will' to mean that if it has not rained, thne for every future there is a time in which it will snow.
+        We may capture this reading in $\TLI$ with the regimentation $\lnot \past R \to \Inevitably\future S$, or equivalently, $\past R \lor \Inevitably\future S$.
+      }
+
+    \item If it will rain, then it has always been so.
+      \answer{ David % Collaborators
+      [Ben] % Reviewers
+       }{% body of the argument
+       Letting \textit{R} symbolise `it is raining'. We can regiment the claim in $\TL$ as follows: $\future R \rightarrow \Past R$. This says that if there is a time in the future at which $R$, then, at any past time, it is the case that $R$. 
+       % [Ben] this works, though one other option is to take the 'it' to be the claim '\future R' so that the consequent is '\Past\future R'.
+
+       In $\TLI$, we might read `will' as referring to every future. We then get: $\Inevitably\future R \rightarrow \Past R$. Informally, this says: if, for every future, there is a time at which it rains, then, at every past time, it rains. 
+       % [Ben] ditto above
+       }
+
+    \item If it will always rain, then it must have rained before.
+       \answer{ David % Collaborators
+      % Reviewers
+       }{% body of the argument
+       Let $R$ symbolise `it is raining'. We can then regiment in $\TL$ as follows: $\Future R \rightarrow \past R$. 
+       Informally: if, at every future time, it is raining, then there is a past time at which it is raining. 
+       % [Ben] It seems like we can take 'it will rain' to be true even if there are future times where it doesn't rain
+       % taking \future R \rightarrow \past R would also match with what you have below
+       
+       As Miguel noted above, the use of the adverb `before' suggests we are referring to some point in the past, rather than all the past. Hence, the use of: $\past$ instead of $\Past$. 
+
+       In $\TLI$, one might read `it will always rain' as `in every future, there is some time at which it rains'. We'd then regiment the claim as follows: $\Inevitably\future R \rightarrow \past R$. 
+       % [Ben] perfect!
+
+       }
+
+    \item It has always been true that it either will rain or it won't.
+       \answer{ David % Collaborators
+      [Ben] % Reviewers
+       }{% body of the argument
+       Let $R$ be `it is raining'. The `It has always been true that' will be represented by $\Past$. 
+       `It either will rain or it won't' is ambiguous between two readings, in natural language. It could be read as: `either: it will rain or it will not rain'. Or: `it will be the case that: either it rains or it doesn't rain'. I take the latter reading to be the more natural. 
+       There is a further ambiguity as to how to read the future-tense operator over the disjunction. The weaker reading suggests $\future$. Here: there is some future time at which either it rains or it doesn't rain. The stronger reading suggests: $\Future$. Here: at each future time, it is the case that either it rains or it doesn't rain. 
+       We can regiment the weaker reading in $\TL$ as follows: $\Past [\future (R \lor \neg R)]$. 
+       We can regiment the stronger reading as follows: $\Past [\Future (R \lor \neg R)]$. 
+       % [Ben] this is great!
+
+       }
+
+    \item If it has always rained, then it will always have been that it rained before.
+       \answer{ Sam % Collaborators
+      % % Reviewers
+       }{ Letting $R$ symbolize 'It is raining', we may regiment the claim by $\Past R \rightarrow \Future \Past R$. This asserts that if at every past time it is raining, then for every future time it is the case that there is a past time where it rains.
+       Alternatively, we may interpret `will' to only specify a singular time in the future, in which case we may regiment the claim by $\Past R \rightarrow \future \Past R$. This asserts that if at every past time it is raining, then for some future time it is the case that there is a past time where it rains.
+       % [Ben] this is great! how about the stronger reading of 'will' which also quantifies over all futures?
+       }
+
+    \item If it has always rained, then it has always been that it has rained.
+      \answer{ Miguel % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Taking $R$ to symbolize `it rains,' we can regiment the claim as $\Past R \rightarrow \Past \past R$. 
+
+        Since there is no negation (so no scope ambiguities), `has always' regiments very clearly to $\Past$, `has' regiments very clearly to $\past$, and a clause separates the two operators in the consequent (so again no scope ambiguities), this is (it seems to me) the only reading. 
+        % [Not done—missing explanation]
+        % $\Past R \rightarrow \Past \past R$
+        % Begin argument...
+      }
+
+    \item If it will always rain, then it cannot have always not rained.
+      \answer{ Miguel % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Taking $R$ to symbolize `it rains,' we can regiment this claim as $\Future R \rightarrow \neg \Past \neg  R$. The antecedent regiments rather clearly into $\Future R$; the consequent however is messy because it has potentially four different operators—something that looks modal, something tense-like, and two negatiosn. The tense regiments nicely to $\past$, and this intuitively scopes over the rightmost negation, giving $\past \neg R$. To the left we have `cannot', which is regimented naturally as $\neg \Diamond$. However, this `can' does not seem to have the force of metaphysical modality, rather seeming to strengthen the negation (much like we saw Russell use `must' in PM without meaning anything modal). So we will leave `cannot' as $\neg$. 
+
+        However, if we take the modal `can' in the consequent to mean metaphysical possibility, we could regiment the claim as $\Future R \rightarrow \neg \Diamond \Past \neg  R$. This in turn is equivalent to $\Future R \rightarrow \Box \past R$, a regimentation that implies the first regimentation given above, but is stronger than it due to the modal operator. 
+        % [Ben] the other salient modal to consider are the historical modals included in \TLI
+
+
+        % [Not done—missing explanation]
+        % $\Future R \rightarrow \neg \Past \neg R$
+        % Begin argument...
+      }
+
+    \item If has rained and snowed, then it could tomorrow.
+      \answer{ Juan % Collaborators
+      % % Reviewers
+      }{Let $R$ symbolize `it rains' and $S$ symbolize `it snows.' Then we can regiment the claim (to a first approximation) as $\past(R \wedge S) \rightarrow \Diamond \future (R \wedge S)$. This says that if there's a past time on which it rained and snowed, then it's (nomologically or metaphysically) possible that there is a future time on which it rains and snows. 
+      %[NB: This is a first approximation because we haven't captured the fact that the future time on which it could rain is \textit{tomorrow}. I don't know how to model that with our language. 'Could' also admits of multiple readings in principle, but in natural language it's usually interpreted as a metaphysical or circumstancial modal.]
+      This is because `it has rained and snowed' is naturally regimented as saying that there is a past time on which it has both rained as snowed. And the consequent `it could tomorrow' is naturally interpreted as eliptical for `it could rain and snow tomorrow', which is somewhat but not fully regimented as saying that it's possible that there's a future time on which it both rains and snows. 
+      %   Begin argument...
+      }
+
+    \item If rain has always implied clouds, it will always be cloudy if it always rains.
+      \answer{ Sam % Collaborators
+      % % Reviewers
+      }{% body of the argument
+      Taking $R$ to symbolize `It rains' and $C$ to symbolize `It is cloudy', we can regiment the claim as $\Past(R \rightarrow C) \rightarrow (\sometimes R \rightarrow \Future C)$. This asserts that if at every past time if it rains, then it is cloudy, then if at every time it rains, then at every future time it is cloudy.
+      Alternatively, we may interpret `it always rains' inside the scope of `will' in which case we can regiment the claim as, $\Past(R \rightarrow C) \rightarrow (\Future R \rightarrow \Future C)$. This asserts that if at every past time if it rains, then it is cloudy, then if at every future time it rains, then at every future time it is cloudy.
+      % [Ben] there are also the historical modals in \TMI that can strengthen/weaken the 'will'
+      }
+
+    \item If rain lead to snow before, then snow might lead to rain.
+      \answer{ Juan % Collaborators
+      % % Reviewers
+      }{Let $R$ symbolize `it rains' and $S$ symbolize `it snows.' The left-hand side only admits of one reading: it says that there is a previous time on which rain lead to snow. We can regiment this as $\past (R \rightarrow S)$. 
+      However, the right-hand side admits of two interpretations. It depends on how we interpret `might.' On one reading it picks out a pure metaphysical modal. On this reading the right-hand side simply says that it's possible that snow leads to rain. On the other reading, however, `might' picks out a historical modal. On this reading it says that there is a possible \textit{time}---in the past, present, or future---on which snow leads to rain.
+
+      This gives us two ways of regimenting the full sentence. The first regimentation is $\past(R \rightarrow S) \rightarrow \Diamond (S \rightarrow R)$. This says that if there's a previous time on which rain lead to snow, it's possible that snow leads to rain. The second regimentation is $\past (R \rightarrow S) \rightarrow \always (S \rightarrow R)$. This says that if there's a previous time on which rain lead to snow, there is some time---past, present, or future---on which snow leads to rain.
+      % NB: The 'might' here is most naturally interpreted epistemically, but I wasn't sure whether we were being asked to worry about epistemic possibility here.
+      %   Begin argument...
+      }
+
+\end{enumerate}
+
+
+
+
+
+\section{Temporal Frame Constraints}
+
+\begin{enumerate}
+
+	\item[\bf Relations:] Evaluate the following, providing a proof or counterexample:
+
+    \item Every asymmetric frame is irreflexive.
+     \answer{ Helena % Collaborators
+     [Ben] % Reviewers
+     }{
+     Let $\F = \tuple{T, <}$ be an asymmetric frame s.t. if $x<y$, then $y \not > x$ for arbitrary $x,y\in T$.
+
+     Assume for contradiction that $\F$ is not irreflexive, i.e. for some $x \in T$, $x < x$. % we can assume this because T is non-empty
+     But since $x < x$ and $\F$ is asymmetric, it follows that $x \not > x$.
+     By definition of `'$\not >$', $x \not < x$, and by definition of `$\not <$', $\lnot (x < x)$.
+     Contradiction.
+     Since $\F$ is an arbitrary asymmetric frame, we may conclude that every asymmetric frame is irreflexive.\qed
+     % [Ben] Really clear!
+
+     }
+
+    \item Every irreflexive transitive frame is asymmetric.
+     \answer{ Helena % Collaborators
+     [Ben] % Reviewers
+     }{
+      Let $\F = \tuple{T, <}$ be an irreflexive transitive frame s.t. (i) $x \not < x$ for arbitrary $x \in T$ and (ii) whenever $x<y$ and $y<z$, then $x<z$ for arbitrary $x,y,z \in T$.
+
+      Assume for contradiction that $\F$ is not asymmetric, i.e. for some $x,y\in T$, $x<y$ and $y<x$. % we can assume this because T is non-empty
+      Since $\F$ is transitive and since $x<y$ and $y<x$, it follows that $x<x$.
+      But recall that $\F$ is irreflexive, so $x \not < x$.
+      By definition of `$\not <$', we know $\lnot (x<x)$.
+      Contradiction.     
+      Since $\F$ is an arbitrary irreflexive transitive frame, we may conclude that every irreflexive transitive frame is asymmetric.\qed
+      % [Ben] Perfect!
+     }
+
+    \item Every frame that is not irreflexive has neither beginning nor end.
+     \answer{ Helena % Collaborators
+     % Reviewers
+     }{
+      This claim is equivalent to saying that every frame that doesn't satisfy \textsc{irr} satisfies both \textsc{inf} and \textsc{inp}. 
+      %i think so??? there's no proper def of beginning or end in the notes so i'm just understanding it based on ben's answer to Q10
+      % [Ben] yes exactly
+
+      Consider the frame $\F = \tuple{\set{0,1}, <}$ where $< = \set{\tuple{0,0}, \tuple{0,1}}$.
+      The frame is not irreflexive because $0<0$. 
+      Consider $1 \in T$: there is no $y \in T$ such that $1 < y$. Hence this frame doesn't satisfy \textsc{inf}.
+
+      (Similarly, we may consider the frame $\F'=\tuple{\set{0,1},<}$ where
+       $< = \set{\tuple{0,1}, \tuple{1,1}}$.
+      This frame is not irreflexive because $1<1$.
+      But since there is no $y \in T$ such that $y < 0$, this frame doesn't satisfy \textsc{inp}.)
+      % dialectically i think we only need one of these examples to show that the claim is false? including both just in case
+      % [Ben] true
+
+      Therefore, since $F$ is not irreflexive but has an end, i.e. doesn't satisfy \textsc{inf}, we may conclude that it is not the case that every frame that is not irreflexive has neither beginning nor end.\qed
+
+      % i guess a stronger claim which says sth like, every frame that is reflexive has neither beginning nor end, is true?
+      % [Ben] yes, exactly. This is the temporal analogue of reflexivity implying seriality (T is stronger than D)
+     }
+
+    \item Every left and right linear frame is total.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Consider the frame $\F = \tuple{\{0, 1\}, <}$ where $<$ is the empty set.
+        It is clear that this set is not total because we do not have $0<1$, $1<0$, or $0=1$.
+        However, it is left and right linear. We do not have $x<y$ for any $x$ or $y$, so there is no situation in which $y<x$ and $z<x$ for any $x,y,z$. 
+        Hence, it is vacuously true that $y<z$, $y=z$, or $z<y$ whenever both $y<x$ and $z<x$ and the frame is left linear. 
+        A nearly identical argument shows that it is also vacuously right linear.
+        Since it is both left and right linear but not total, we conclude that it is not the case that every left and right linear frame is total.\qedp
+      }
+
+    \item Every total frame is left and right linear.
+      \answer{ Ben % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Let $\F = \tuple{T, <}$ be a total frame where both $y < x$ and $z < x$ for arbitrary $x, y, z \in T$. 
+        By \textsc{tot}, either $y < z$, $y = z$, or $y > z$. 
+        Since $x, y, z \in T$ were arbitrary, we may conclude that $\F$ is left linear. 
+
+        Assuming instead that $y > x$ and $z > x$ for arbitrary $x, y, z \in T$, either $y < z$, $y = z$, or $y > z$ follows by \textsc{tot}. 
+        Generalizing on $x, y, z \in T$, $\F$ is also right linear. 
+        Since $\F$ was an arbitrary total frame, we may conclude that every total frame is left and right linear. 
+        \qed
+      }
+
+    \item Every frame that is left and right linear is transitive.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Consider the frame $\F=\tuple{\{0, 1, 2\}, <}$ where $<=\{\tuple{0, 1}, \tuple{1,2}\}$.
+        It is clear that this set is not transitive because we have $0<1$ and $1<2$, but not $0<2$.
+        However, we will show that it is both left and right linear.
+        
+        Consider the case where $y<x$ and $z<x$.
+        There are two possibilities for $x, y, z$ that satisfy these conditions, namely $y=z=1,x=2$ and $y=z=0,x=1$. 
+        In the first case, we have $1<2$ and $1<2$ and $1=1$.
+        In the second case, we have $0<1$ and $0<1$ and $0=0$.
+        Both of these cases satisfy left linearity.
+        
+        On the other hand, consider the case where $x<y$ and $x<z$.
+        There are two possibilities for $x, y, z$ that satisfy these conditions, namely $y=z=1,x=0$ and $y=z=2,x=1$.
+        In the first case, we have $0<1$ and $0<1$ and $1=1$.
+        In the second case, we have $1<2$ and $1<2$ and $2=2$.
+        Both of these cases satisfy right linearity.
+
+        Hence, the frame is both left and right linear, bu tnot transitive, so we conclude that it is not the case that every left and right linear frame is transitive. \qedp
+        % Really clear!
+      }
+
+    \item Every frame that is not right linear is right discrete.
+       \answer{ David % Collaborators
+      % % Reviewers
+       }{% body of the argument
+               Here's a counterexample. Consider the frame $\F = \tuple{\{0, 1, 2\}, <}$, where ${(0<1), (0<2)}$. The frame is not right linear as we have: $0<1$ and $0<2$, but do not have $1<2$, $1>2$ or $1=2$.
+
+         We know that the antecedent of right discreteness holds. In the frame defined above, $x<y$ can either represent $0<1$ or $0<2$. In what follows, let $x=0$ and $y=2$. 
+         % [Ben] good to first say for what values of x and y that the antecedent holds
+         
+         If the frame is right discrete, then: there is some $z$, where $z>0$ such that for all $u>0$, $u>z$. Let $z=1$. In our frame $z>x$ (i.e., $1>0$). It's false that: for every $u>x$, $u>z$. Let $u=2$. It is true that: $2>0$, but false that $2>1$. 
+         
+         Put more informally: the reason the frame is not right linear is because we did not define a relation between 1 and 2. But, right discreteness requires there be some relation between 1 and 2, if $1>0$ and $2>0$. 
+         % [Ben] this is great, however, I realize I made a mistake in the definitions
+         % I changed them to better reflect discreteness in non-linear frames
+         % Although I haven't added my name above, this doesn't mean you don't get credit for this (I just don't want to mislead given how the definitions have changed)
+
+       }
+
+    \item Every frame that is dense is both left and right linear.
+       \answer{ David % Collaborators
+      % % Reviewers
+       }{% body of the argument
+         Let's start with right linearity. A frame is right linear just in case: when $x<y$ and $x<z$, either $y<z$, $y=z$ or $y>z$. 
+
+        Density says: when $x<z$ there is some $y \in T$ such that $x<y$ and $y<z$. 
+         By assumption, the frame is dense. It can either be dense vacuously or not. 
+
+         The vacuous case: there are no values for $x$ and $z$ such that $x<z$. If it is dense vacuously, then it is right linear vacuously. The antecedent of right linearity included $x<z$ too.  
+
+         If it is dense non-vacuously, then we can suppose $x<z$. 
+         By density, it follows that: there is some $y \in T$ such that $x<y$ and $y<z$. 
+         This frame then has the following relations: ${(x<z), (x<y), (y<z)}$. 
+         The frame is, therefore, right linear. It is the case that: when $x<y$, $x<z$, either $y<z$, $y=z$ or $y>z$. In this frame, $y>z$. Therefore, any dense frame is a right linear one. 
+         % [Ben] this one is right linear as well, but it needn't be so. consider the rationals between 0 and 1 ordered in the usual way. then take a copy of them also starting from 0 but otherwise including a bar over each number. let these also be ordered in the usual way, but bear no order relations to the normal rationals between 0 and 1. Although both of these branches off from 0 are dense, they are not right linear.
+
+         The proof for left linearity is nearly identical. Therefore, every frame that is dense is both left and right linear. 
+
+         
+
+
+       }
+
+    \item Every frame that is asymmetric and left linear is transitive.
+       \answer{ Sam % Collaborators
+      [Ben] % % Reviewers
+      }{% body of the argument
+      Consider the frame $\F=\tuple{\{0, 1, 2\}, <}$ where $<=\{\tuple{0, 1}, \tuple{1,2}\}$.
+        Following Holden in 6, it is clear that this set is not transitive because we have $0<1$ and $1<2$, but not $0<2$. We will show that it is both asymmetric and left linear. 
+
+        For left linearity, we need to check when $y<x$ and $z<x$ whether $y<z$, $y=z$ or $z=y$ obtains. Again following Holden in 6, there are two possibilities for x, y, z that satisfy these conditions, namely $y=z=1$, $x=2$ and $y=z=0$, $x=1$. Both of these cases satisfy left linearity.
+
+        For asymmetry, we need to check when $x<y$ whether $y \not > x$. This means that we need to check whether $\tuple{1, 0}$ and $\tuple{2, 1}$ are in our frame, and they are both not, so our frame is asymetric. 
+        Hence, the frame is both left linear and asymetric, but not transitive, so we conclude that it is not the case that every left linear and asymetric frame is transitive.
+        \qed
+        % [Ben] perfect!
+       }
+
+    \item There is a dense frame with both a beginning and end.
+      \answer{ Ben % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Consider the frame $\F = \tuple{[0,1], <}$ where $[0,1] \subseteq \mathbb{Q}$ and $<$ is the standard ordering of rational numbers.
+        Thus for all $i \in (0,1)$, we have:
+        \begin{center}
+          \begin{tikzpicture}
+            % Define the worlds
+            \node[world] (0) at (0,0) {$0$};
+            \node        (a) at (1.5,0) {\ldots};
+            \node[world] (i) at (2.25,0) {$i$};
+            \node        (b) at (3,0) {\ldots};
+            \node[world] (1) at (4.5,0) {$1$};
+            
+            % Draw arrows
+            \draw[arrow] (0) to (a);
+            % \draw[arrow] (a) to (i);
+            % \draw[arrow] (i) to (b);
+            \draw[arrow] (b) to (1);
+          \end{tikzpicture}
+        \end{center}
+        Since $0 < i < 1$ for all $i \in (0,1)$, it follows that $\F$ has both a beginning and end (it is bounded below and above) and so neither \textsc{inf} or \textsc{inp} hold.
+
+        Given any $x, z \in [0,1]$ where $x < z$, we may let $y = x + \frac{z-x}{2}$ where this is the rational number between $x$ and $z$, and so $x < y < z$.
+        Since $x, z \in [0, 1]$ were arbitrary, $\F$ satisfies \textsc{den} as desired.
+        \qedp
+      }
+
+    \item The relational image of a frame with a beginning and end is finite.
+      \answer{ Miguel % Collaborators
+      % Reviewers
+      }{% body of the argument
+        This is false. Note that for a frame to have a beginning and an end is for it not to have frame constraints \textsc{inf} and \textsc{inp}. That is, it must meet the constraints, for $x,y \in T$, $\exists x \forall y \left[ x \notin (y)_< \right]$ (the negation of \textsc{inp}) and $\exists x \forall y \left[ y \notin (x)_< \right]$ (the negation of \textsc{inf}). 
+        % [Ben] the notation could be simplified, using y \nless x rather than x \notin (y)_<
+        So we can give a counterexample to the claim with a frame $\langle T, < \rangle$ where $T=\Z$ and we have frame constraints $\forall n \in \Z \left[ n \notin (1)_< \right]$, $\forall n \in \Z \left[ 0 \notin (n)_< \right]$, and every other element of $T$ can is <-related to an infinite number of other elements in $T$ (achieved by e.g. $\forall n,m \in \Z \left[ (n,m) \notin \set{0,1}^2 \rightarrow n \in (m)_< \right]$). 
+        % [Ben] ditto notation; because everything besides 0 and 1 are related, there will be finitely many equivalence classes in the relational image
+        % it is true that there those equivalence classes will have an infinite number of members, but the relational image will be finite
+        % one other point is that the integers don't make for the most natural starting point since intuitively they have neither beginning nor end
+        % this can be overcome but at a cost to the naturalness of the example, so worth thinking about cases that do naturally have a beginning and end first
+        This frame has a beginning because there is an $x$ that meets the conditions in the negation of \textsc{Inp} (namely 0) and has an end because there is an $x$ that meets the conditions in the negation of \textsc{Inf} (namely 1). 
+        The relational image of every other element that is not the beginning and the end however is infinite (by the last frame constraint), since $T$ is infinite. 
+        So, having a frame with a beginning and end whose relational image is infinite, we have a counterexample to the claim. \qed 
+        
+        % This is true. Consider a generic frame $\langle T, < \rangle$, and consider any $T$ that is finite. % actually I'm not sure what beginning and end mean
+      }
+
+    \item The relational image of an asymmetric frame is not a partition.
+      \answer{ Miguel % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        This is false. Consider the counterexample with a frame $\langle T, < \rangle$, $T= \set{a,b,c}$ with relational images $(a)_< = \set{b}$, $(b)_< = \set{c}$, and $(c)_< = \set{a}$. 
+        Asymmetry holds since $a \notin (b)_<$, $b \notin (c)_<$, and $c \notin (a)_<$. 
+        The relational image of $<$ is a partition because the relational images for each element are disjoint and their union forms $T$. 
+        So we have a counterexample to the claim. \qed
+        % [Ben] Perfect!
+      }
+
+\end{enumerate}
+
+
+
+
+\section{Characterization}
+
+\begin{enumerate}
+	\item[\bf Countermodels:] Evaluate the following, providing a proof or $\TL$ countermodel.
+    If there is a countermodel, strengthen $\MLmodels[]$ by imposing the weakest set of constraints $C$ which make that claim valid. 
+    (You do not need to prove that it is the weakest set of constraints.)
+
+    \item $\MLmodels[] \Past(\metaA \rightarrow \metaB) \rightarrow (\Past\metaA \rightarrow \Past\metaB)$.
+     \answer{ Helena % Collaborators
+     [Ben] % Reviewers
+     }{% body of the argument
+       Let $\M$ be an $\TL$ model where $\M = \tuple{T, <, \I}$ and $x \in T$. 
+       Assume for contradiction that $\M, x \not \MLmodels \Past(\metaA \rightarrow \metaB) \rightarrow (\Past\metaA \rightarrow \Past\metaB)$.
+       By the semantics for `$\rightarrow$', we know that (i) $\M, x \MLmodels \Past(\metaA \rightarrow \metaB)$ and (ii) $\M, x \not \MLmodels \Past\metaA \rightarrow \Past\metaB$.
+
+       Given (i), by the semantics for `$\Past$', we know that for every $y \in T$ s.t. $y < x$, $\M, y \MLmodels \metaA \rightarrow \metaB$.
+       % [Ben] doesn't make too much difference here, but often good to unpack all existential claims before unpacking any universal claims to improve readability
+       % this is still very clear though
+       Given (ii), by the semantics for `$\rightarrow$', we know that $\M, x \MLmodels \Past \metaA$ and $\M, x \not \MLmodels \Past \metaB$.
+       Hence by the semantics for `$\Past$', for all $y \in T$ s.t. $y < x$, $\M, y \MLmodels \metaA$, but there's some $y' \in T$ s.t. $y' < x$ and $\M, y' \not\MLmodels \metaB$.
+       Since $y' \in T$ and $y' < x$, we know that $\M, y' \MLmodels \metaA$.
+       Since $\M, y' \MLmodels \metaA$ and $\M, y' \not \MLmodels \metaB$, by the semantics for `$\rightarrow$', we know that $\M, y' \not \MLmodels \metaA \rightarrow \metaB$.
+       But we also know that for every $y \in T$ s.t. $y < x$, $\M,y \MLmodels \metaA \rightarrow \metaB$.
+       So $\M, y' \MLmodels \metaA \rightarrow \metaB$.
+       Contradiction.
+
+       Generalizing on $\M, x$, we conclude that $\MLmodels \Past(\metaA \rightarrow \metaB) \rightarrow (\Past\metaA \rightarrow \Past\metaB)$.\qed
+       % [Ben] Great!
+     }
+
+    \item $\MLmodels[] \past\top$.
+     \answer{ Helena % Collaborators
+     [Ben] % Reviewers
+     }{% body of the argument
+      By the definition of `$\past$', this claim is equivalent to $\MLmodels \lnot \Past \lnot \top$.
+      By the definition of  `$\top$', it's equivalent to $\MLmodels \lnot \Past \lnot \lnot \bot$. Then  by the semantics for $`\lnot'$, we know it's saying $\not \MLmodels \Past \bot$.
+     
+      Consider an $\TL$ model $\M = \tuple{T, <, \I}$ where $T = \set{0}$, $< = \emptyset$, and $\I$ is any arbitrary interpretation. 
+      Since there is no $x \in T$ where $x < 0$, by the semantics for `$\Past$', it's vacuously true that $\M, 0 \MLmodels \Past \bot$.
+
+      We can show that $\MLmodels[\textsc{inp}] \past\top$. 
+      Let $\M$ be an $\TL$ model $\M = \tuple{T, <, \I}$ that satisfies $\textsc{inp}$.
+      Assume for contradiction that $\M, x \nMLmodels[\textsc{inp}] \past \top$.
+      As shown, this is equivalent to $\M, x \MLmodels[\textsc{inp}] \Past \bot$.
+      Since $\M$ satisfies \textsc{inp}, there is some $y \in T$ where $y < x$.
+      And by the semantics for `$\Past$', we know that $\M, y \MLmodels[\textsc{inp}] \bot$.
+      But by the semantics for `$\bot$', for all $x \in T$, $\M, x \nMLmodels[\textsc{inp}] \bot$. % i think this is right???
+      Hence $\M, y \nMLmodels[\textsc{inp}] \bot$. 
+      Contradiction.
+
+      Generalizing on $\M, x$, we conclude that $\MLmodels[\textsc{inp}] \past\top$.\qed
+      % [Ben] This is great!
+     }
+
+    \item $\MLmodels[] \metaA \rightarrow \Future \past \metaA$.
+     \answer{ Helena % Collaborators
+     [Ben] % Reviewers
+     }{% body of the argument
+       Let $\M$ be an $\TL$ model where $\M = \tuple{T, <, \I}$ and $x \in T$. 
+       Assume for contradiction that $\M, x \not \MLmodels \metaA \rightarrow \Future \past \metaA$.
+       By the semantics for `$\rightarrow$', we know that $\M,x \MLmodels \metaA$ and $\M, x \not \MLmodels \Future \past \metaA$.
+       By the semantics for `$\Future$', we know that there's some $y \in T$ s.t. $x < y$ and $\M, y \not \MLmodels \past \metaA$.
+       By the definition for `$\past$', this is equivalent to $\M, y \not \MLmodels \lnot \Past \lnot \metaA$, which by the definition of `$\lnot$' is equivalent to $\M, y \MLmodels \Past \lnot \metaA$.
+       By the semantics for `$\Past$', we know that for all $z \in T$ s.t. $z < y$, $\M, z \MLmodels \lnot \metaA$.
+       Since $x < y$, $\M, x \MLmodels \lnot \metaA$.
+       By the semantics for `$\lnot$', $\M, x \not \MLmodels \metaA$.
+       Contradiction.
+       
+       Generalizing on $\M, x$, we conclude that $\MLmodels \metaA \rightarrow \Future \past \metaA$.\qed
+       % [Ben] Perfect!
+     }
+
+    \item $\MLmodels[] \Past\Past\metaA \rightarrow \Past\metaA$.
+      \answer{ Sam % Collaborators
+      % % Reviewers
+      }{% body of the argument
+      Consider an $\TL$ model $\M=\tuple{T, <, \I}$ where $T = \{0, 1, 2\}$ with the relation $< = \{\tuple{0, 1}, \tuple{1, 2}\}$ and interpretation $\I(p_1)=\{0\}$:
+      \begin{center}
+        \begin{tikzpicture}
+          % Define the worlds
+          \node[world] (0) at (0,0) {$0$};
+          \node[below] at (0,-0.5) {$p_1$};
+          \node[world] (1) at (3,0) {$1$};
+          \node[below] at (3,-0.5) {$\Past p_1, \neg p_1$};
+          \node[world] (2) at (6,0) {$2$};
+          \node[below] at (6,-0.5) {$\Past \Past p_1, \neg \Past p_1$};
+          
+          % Draw arrows
+          \draw[arrow] (0) to (1);
+          \draw[arrow] (1) to (2);
+        \end{tikzpicture}
+      \end{center}
+      We have $\M, 0 \MLmodels[] p_1$ since $0\in\I(p_1)$. Since 0 is the only $w\in T$ such that $w<1$, we know that $\M, 1 \MLmodels[] \Past p_1$. Again, since 1 is the only $w\in T$ such that $w<2$, we know that $\M, 2 \MLmodels[] \Past \Past p_1$. It also happens that $\M, 1 \nMLmodels[] p_1$, and $1<2$, so it is not the case that $\M, 2 \MLmodels[] \Past p_1$. The result is that $\M, 2 \MLmodels[] \Past \Past p_1$ and $\M, 2 \nMLmodels[] \Past p_1$ which is a falsification of $\Past \Past \metaA \rightarrow \Past \metaA$, according to the semantics of $\rightarrow$.
+      % [Ben] This is a great countermodel!
+      % But what constraints would validate the principle?
+      }
+
+    \item $\MLmodels[] \Past\bot \vee \past\Past\bot$.
+      \answer{% Collaborators
+      % % Reviewers
+      }{% body of the argument
+      %   Begin argument...
+      }
+
+    \item $\MLmodels[] \Past\Future\metaA \rightarrow \always\metaA$.
+      \answer{ Miguel % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Begin argument...
+      }
+
+    \item $\MLmodels[] \Past\metaA \rightarrow \Past\Past\metaA$.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+      Consider an $\TL$ model $\M=\tuple{T, <, \I}$ where $T = \{0, 1, 2\}$ and $<=\{\tuple{0, 1}, \tuple{1, 2}\}$, and $\I(p_1)=\{1\}$:
+      \begin{center}
+        \begin{tikzpicture}
+          % Define the worlds
+          \node[world] (0) at (0,0) {$0$};
+          \node[below] at (0,-0.5) {$\lnot p_1$};
+          \node[world] (1) at (3,0) {$1$};
+          \node[below] at (3,-0.5) {$p_1, \lnot \Past p_1$};
+          \node[world] (2) at (6,0) {$2$};
+          \node[below] at (6,-0.5) {$\Past p_1, \lnot \Past \Past p_1$};
+          
+          % Draw arrows
+          \draw[arrow] (0) to (1);
+          \draw[arrow] (1) to (2);
+        \end{tikzpicture}
+      \end{center}
+      We have $\M, 1 \MLmodels[] p_1$ since $1\in\I(p_1)$.
+      Since $1$ is the only $w\in T$ such that $w<2$, we know that $\M, w \MLmodels[] p_1$ for every $w < 2$, so $\M, 2 \MLmodels[] \Past p_1$.
+      However, $\M, 0 \nMLmodels[] p_1$, and $0<1$, so it is not the case that $\M, 1 \MLmodels[] \Past p_1$, by the semantics for $\Past$.
+      Then, since $1<2$ and $1 \nMLmodels[] \Past p_1$, we know that $2 \nMLmodels[] \Past \Past p_1$ by the semantics for $\Past$.
+      Hence, we have $\M 2 \MLmodels[] \Past p_1$ and $\M 2 \nMLmodels[] \Past \Past p_1$, so it is not the case that $\M 2 \MLmodels[] \Past p_1 \to \Past \Past p_1$ by the semantics for $\to$.
+
+      However, we can show that $\MLmodels[\textsc{tra}]\Past \metaA \to \Past \past \metaA.$
+        Let $\M$ be an $\TL$ model $\M=\tuple{T, <, \I}$ that satisfies \textsc{tra}. 
+        Assume that $\M, w \MLmodels[\textsc{tra}] \Past \metaA$.
+        We want to show that $\M, w \MLmodels[\textsc{tra}] \Past \Past \metaA$.
+        
+        Assume towards a contradiction that $\M, w \nMLmodels[\textsc{tra}] \Past \Past \metaA$.
+        Then, it is not the case that $\M, y \MLmodels[\textsc{tra}] \Past \metaA$ for every $y\in T$ such that $y<w$.
+        So, for some $y\in T$ where $y<w$, we have $\M, y \nMLmodels[\textsc{tra}] \Past \metaA$.
+        Then, for that $y$, it is not the case that $\M, z \MLmodels[\textsc{tra}] \metaA$ for every $z\in T$ such that $z<y$.
+        So, for some $z\in T$ where $z<y$, we have $M, y \nMLmodels[\textsc{tra}] \metaA$.
+        However, since $z<y$ and $y<w$, we have $z<w$ by \textsc{tra}, and since $\M, w \MLmodels[\textsc{tra}] \Past \metaA$, we know $\M, z \MLmodels[\textsc{tra}] \metaA$, which is a contradiction.
+        Hence, $\M, w \MLmodels[\textsc{tra}] \Past \Past \metaA$.
+        \qed
+        % Perfect!
+      }
+
+    \item $\MLmodels[] (\past\top \wedge \metaA \wedge \Future\metaA) \rightarrow \past\Future\metaA$.
+       \answer{ Bailey % Collaborators
+      % % Reviewers
+       }{
+       
+       }
+
+
+    \item $\MLmodels[] \Future(\metaA \rightarrow \metaB) \rightarrow (\Future\metaA \rightarrow \Future\metaB)$.
+      \answer{ Juan % Collaborators
+      % % Reviewers
+      }{
+      %   Begin argument...
+      }
+
+    \item $\MLmodels[] \future\top$.
+  
+      \answer{ Bailey% Collaborators
+      % % Reviewers
+       }{
+      This result is similar to 3.2. By the semantics for $\future$, this claim is equivalent to $\MLmodels \neg \Future \neg \top$. 
+      From the definition of $\top$, $\top$ can be rewritten as $\neg \bot$, and the whole formula can be rewritten $\MLmodels \neg \Future \neg \neg \bot$. 
+      By the semantics for $\neg$, this is equivalent to $\nMLmodels \bot$. 
+
+      The counterexample is also similar to 3.2 Let $M$ be an $\TL$ model $<T, <, I>$ where $T = \set{0}$, $< = \emptyset$, and $I$ is an arbitrary interpretation. 
+      Since there is no $x \in T$ s.t. $0 < x$, by the semantics of $\Future$ it is vacuously true that $M, 0 \MLmodels \Future \bot$. 
+
+      $\MLmodels[\textsc{inf}] \future\top$ holds for similar reasons to $\MLmodels[\textsc{ifp} \top]$ in 3.2. 
+      The proof is identical except that $\MLmodels[\textsc{ifp}]$ is replaced by $\MLmodels[\textsc{inf}]$ and $ y<x$ is replaced by $x<y$. 
+       }
+
+    \item $\MLmodels[] \metaA \rightarrow \Past \future \metaA$.
+      \answer{ Holden % Collaborators
+      [Ben] % Reviewers
+      }{% body of the argument
+        Let $\M$ be an $\TL$ model $\M=\tuple{T,<,\I}$ and $w \in T$. 
+        Assume towards a contradiction that $M,w \nMLmodels \metaA \to \Past \future \metaA$.
+        By the semantics for $\to$, it must be the case that $M,w  \MLmodels \metaA$ and $\M,w \nMLmodels \Past \future \metaA$.
+        By the semantics for $\Past$, we know it is not the case that $\M, y \MLmodels \future \metaA$ for every $y\in T$ such that $y<w$.
+        So $\M, y \nMLmodels \future \metaA$ for some $y < w$.
+        By the definition of $\future$, we know $\M, y \nMLmodels \lnot \Future \lnot \metaA$.
+        By the semantics for $\lnot$, $\M, y \MLmodels \Future \lnot \metaA$.
+        By the semantics for $\Future$, $\M, z \MLmodels \lnot \metaA$ for every $z \in T$ such that $y < z$.
+        But we know $y < w$, so $\M, w \MLmodels \lnot \metaA$.
+        And by the semantics for $\lnot$, $\M, w \nMLmodels \metaA$, which is a contradiction.
+        Hence, we conclude that $\M, w \MLmodels \metaA \to \Past \future \metaA$.
+        Generalizing on $\M, w$, we conclude that $\MLmodels \metaA \to \Past \future \metaA$. \qed
+        % Great!
+      }
+
+    \item $\MLmodels[] \Future\Future\metaA \rightarrow \Future\metaA$.
+      \answer{ Ben % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Consider an $\TL$ model $\M = \tuple{T, <, \I}$ where $T = \set{w, u}$, only $w < u$, and $\I(p_1) = \varnothing$ (the interpretation of all other sentence letters is arbitrary):
+        \begin{center}
+          \begin{tikzpicture}
+            % Define the worlds
+            \node[world] (w) at (0,0) {$w$};
+            \node[below] at (0,-0.5) {$\Future\Future p_1,\ \neg\Future p_1$};
+            \node[world] (u) at (3,0) {$u$};
+            \node[below] at (3,-0.5) {$\neg p_1,\ \Future p_1$};
+            
+            % Draw arrows
+            \draw[arrow] (w) to (u);
+          \end{tikzpicture}
+        \end{center}
+        Vacuously, every $v \in T$ where $u < v$ is such that $v \in \I(p_1)$, and so $\M, v \MLmodels[] p_1$. 
+        Thus $\M, u \MLmodels[] \Future p_1$ by the semantics for $\Future$, and so $\M, w \MLmodels[] \Future\Future p_1$ since $u$ is the only element of $T$ where $w < u$. 
+        At the same time, $u \notin \I(p_1)$, and so $\M, u \nMLmodels[] p_1$.
+        Since $w < u$, it follows that $\M, w \nMLmodels[] \Future p_1$ by the semantics for $\Future$.
+        Thus $\M, w \nMLmodels[] \Future\Future p_1 \rightarrow \Future p_1$ by the semantics for $\rightarrow$. 
+
+        Nevertheless, we may show that $\nMLmodels[\textsc{den}] \Future\Future\metaA \rightarrow \Future\metaA$ by assuming for contradiction that there is an $\TL$ model $\M = \tuple{T, <, \I}$ that satisfies \textsc{den} where $\M, w \nMLmodels[\textsc{den}] \Future\Future\metaA \rightarrow \Future\metaA$ for some $w \in T$. 
+        It follows by the semantics for $\rightarrow$ that both: (1) $\M, w \MLmodels[\textsc{den}] \Future\Future\metaA$; and (2) $\M, w \nMLmodels[\textsc{den}] \Future\metaA$.
+        It follows from the latter that $\M, u \nMLmodels[\textsc{den}] \metaA$ for some $u \in T$ where $w < u$. 
+        Since $\M$ satisfies \textsc{den}, there is some $v \in T$ where $w < v < u$, and so we have:
+        \begin{center}
+          \begin{tikzpicture}
+            % Define the worlds
+            \node[world] (w) at (0,0) {$w$};
+            \node[below] at (0,-0.5) {$\Future\Future\metaA$};
+            \node[world] (v) at (3,-1) {$v$};
+            \node[below] at (3,-1.5) {$\Future\metaA$};
+            \node[world] (u) at (6,0) {$u$};
+            \node[below] at (6,-0.5) {$\neg\metaA,\ \metaA$};
+            
+            % Draw arrows
+            \draw[arrow] (w) to (v);
+            \draw[arrow] (w) to (u);
+            \draw[arrow] (v) to (u);
+          \end{tikzpicture}
+        \end{center}
+        Since $w < v$, it follows from (1) that $\M, v \MLmodels[\textsc{den}] \Future\metaA$, and so $\M, u\MLmodels[\textsc{den}] \metaA$, contradicting the above.
+        Thus $\MLmodels[\textsc{den}] \Future\Future\metaA \rightarrow \Future\metaA$ as desired. 
+        \qed
+      }
+
+    \item $\MLmodels[] \Future\bot \vee \future\Future\bot$.
+      % \answer{ Name % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin argument...
+      % }
+
+    \item $\MLmodels[] \Future\Past\metaA \rightarrow \always\metaA$.
+      % \answer{}{}
+
+    \item $\MLmodels[] \Future\metaA \rightarrow \Future\Future\metaA$.
+      \answer{}{}{% body of the argument
+      %   Begin argument...
+      % }
+
+\end{enumerate}
+
+
+\section{Indeterminacy}
+
+\begin{enumerate}
+
+  \item[\bf Evaluate:] Without imposing any restriction on the models of $\TL_\square$, evaluate the following where $p_i \in \SL$, providing a proof or countermodel:
+
+    \item $\MLmodels[] p_i \rightarrow \inevitably p_i$.
+    \answer {Bailey}
+      % \answer{}{}
+
+    \item $\MLmodels[] \metaA \rightarrow \inevitably\metaA$.
+      \answer{Juan % Collaborators
+      % % Reviewers
+      }{
+      %   Begin argument...
+      }
+
+    \item $\MLmodels[] \past\metaA \vee \past\neg\metaA$.
+      \answer{Juan % Collaborators
+      % % Reviewers
+      }{
+      %   Begin argument...
+      }
+
+    \item $\MLmodels[] \metaA \rightarrow \Future\past\metaA$.
+    \answer {Bailey}
+      % \answer{}{}
+
+    \item $\MLmodels[] \Past\Future\metaA \rightarrow \always\metaA$.
+      \answer{}{}{% body of the argument
+      %   Begin argument...
+      % }
+
+    \item $\MLmodels[] \metaA \rightarrow \Inevitably\metaA$.
+      % \answer{}{}
+
+    \item $\MLmodels[] \future\metaA \vee \future\neg\metaA$.
+      \answer{ Ben % Collaborators
+      % Reviewers
+      }{% body of the argument
+        Consider a minimal model $\M = \tuple{T, <, \I}$ for $\TLI$ where $T = {x}$ has just one time, $x \nless x$, and $\I$ is arbitrary. 
+        Letting $\T_i = \tuple{T, <}$, we may observe that $\M, \T_i, x \nMLmodels[] \future\metaA$ since there is no $y \in T_i$ where $x < y$ and $\M, \T_i, y \nMLmodels[] \metaA$, and so $\M, \T_i, y \MLmodels[] \neg\metaA$ by the semantics for negation.
+        Moreover, $\M, \T_i, x \nMLmodels[] \future\neg\metaA$ since neither is there a $y \in T_i$ where $x < y$ and $\M, \T_i, y \nMLmodels[] \neg\metaA$. 
+        It follows that $\M, \T_i, x \nMLmodels[] \neg\future\metaA \rightarrow \future\neg\metaA$ by the semantics for $\rightarrow$, and so $\nMLmodels[] \neg\future\metaA \rightarrow \future\neg\metaA$ by the definition of logical consequence.
+        Thus $\nMLmodels[] \future\metaA \vee \future\neg\metaA$ by abbreviation.
+        \qedp
+      }
+
+    \item $\MLmodels[] \metaA \rightarrow \Past \future \metaA$.
+      % \answer{ Name % Collaborators
+      % % Reviewers
+      % }{% body of the argument
+      %   Begin argument...
+      % }
+
+    \item $\MLmodels[] \Future\Past\metaA \rightarrow \always\metaA$.
+      % \answer{}{}
+
+\end{enumerate}
+
+%%% Bibliography %%%
+
+% \vfill
+% \begin{small} %%Makes bib small text size
+%   \singlespacing %%Makes single spaced
+%   \bibliographystyle{../../assets/bib_style} %%bib style found locally or in textmf/bibtex/bst
+%   \setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
+%   \bibliography{../../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
+%   \thispagestyle{empty} %%Removes page numbers
+% \end{small} %%End makes bib small text size
+
+\end{document}

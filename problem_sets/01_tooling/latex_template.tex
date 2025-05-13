@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+\usepackage[round]{natbib}       % Bibliography support
+\usepackage{bibentry}            % Inline bibliography entries
+\setcitestyle{aysep={}}
+ 
+\usepackage{amsmath,colonequals,amssymb} %for align* environment and gather*
+\usepackage{enumitem} %%Enables control over enumerate and itemize environments
+\usepackage{tcolorbox}
+\usepackage{setspace}
+ 
+\newcommand{\corner}[1]{\ulcorner#1\urcorner} %%Corner quotes
+\newcommand{\concat}[2]{{#1}{\raisebox{4pt}{\smallfrown}}{#2}} %%Corner quotes
+\newcommand{\tuple}[1]{\langle#1\rangle} %%Corner quotes
+\renewcommand{\vert}[1]{\lvert#1\rvert}
+\newcommand{\set}[1]{\lbrace#1\rbrace} %%Corner quotes
+\newcommand{\M}{\mathcal{M}} %%
+\newcommand{\N}{\mathbb{N}} %%
+\newcommand{\comp}{\texttt{Comp}} %%
+
+% Define the \answer{} command
+\newcommand{\answer}[1]{%
+  \par\noindent
+  \begin{tcolorbox}[colback=gray!10, colframe=gray!80, title=Proof]
+    #1
+  \end{tcolorbox}
+}
+\newcommand{\factoidbox}[1]{\begin{quote}\framebox{\parbox{\dimexpr\linewidth-3\fboxsep\relax}{#1}}\end{quote}}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+  \Large Problem Set Template\\[1ex] 
+  Due DATE
+  \vspace{.15in}
+\end{center}
+
+
+
+\begin{enumerate}[leftmargin=.75in]
+  \item Here a first problem with some symbols: $\Box\varphi, \Diamond\Box\psi \rightarrow \psi,\ldots$
+    \answer{
+      This is where your answer goes\ldots
+    }
+\end{enumerate}
+
+
+%%% Bibliography %%%
+
+\vfill
+\begin{small} %%Makes bib small text size
+  \singlespacing %%Makes single spaced
+  \bibliographystyle{../../assets/bib_style} %%bib style found locally or in textmf/bibtex/bst
+  \setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
+  \bibliography{../../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
+  \thispagestyle{empty} %%Removes page numbers
+\end{small} %%End makes bib small text size
+
+
+
+\end{document}
+

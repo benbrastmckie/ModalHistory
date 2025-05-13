@@ -1,0 +1,581 @@
+\documentclass[a4paper, 11pt]{article}                  % paper and font size
+\usepackage[top=1.1in, bottom=1.1in]{geometry}          % margins
+\usepackage[protrusion=true,expansion=true]{microtype}  % better typography
+\usepackage{../assets/problem_set}                   % imports style file
+\usepackage{../assets/notation}                   % imports style file
+
+% Set the colors for answer boxes in this document (default is olive green)
+% \setanswerboxcolors{Gray!10}{Gray!80}             % For gray theme
+% \setanswerboxcolors{blue!5}{blue!40}            % Blue theme
+% \setanswerboxcolors{RawSienna!15}{RawSienna!50} % Orange theme  
+% \setanswerboxcolors{Plum!10}{Purple!50}         % Purple theme
+% \setanswerboxcolors{Green!10}{Green!50}         % Green theme
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{The Modern History of Modal Logic}  % Title
+\pset{Problem Set 02: February 10th}              % Problem Set
+\date{\today}                              % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle              % Print the title section
+\thispagestyle{empty}   % Drop header and page number from the first page
+
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%
+%%% INSTRUCTIONS %%%
+%%%%%%%%%%%%%%%%%%%%
+
+% 1. Make sure to pull changes (sync) before starting to work on any problems
+% 2. Add your name to the problems you want to work on, pushing changes immediately to "check out" the problems
+% 3. If a problem has been checked out once, make a copy of the solution block below to contribute your solution below
+% 4. If there are already two people working on a problem, try to find another problem to work on
+% 5. If you make some progress (even partial) and get stuck, push changes for others to see/help/etc.
+% 6. If you have questions or comments, please open a new issue (it's possible to link line numbers) 
+% 7. It is best practice to have one sentence per numbered line, making it easier to add comments
+% 8. If possibly, try to avoid breaking formal expressions across lines to improve readability
+% 9. I will comment on your solutions, adding my name to the reviewers (feel free to add comments/questions as well)
+% 10. If the comments have been addressed or no longer relevant, feel free to remove comments
+% 11. If you want to add comments, make sure to create a new line below to do so (this will help avoid conflicts)
+% 12. All the defined commands can be found in assets/notation.sty but feel free to use what you like
+% 13. I will try to include comments alongside the definition of environments in notation.sty to explain their use
+% 14. Make sure that the document builds without errors before pushing changes
+% 15. Please try to choose a diversity of problem types to work on
+% 16. To streamline your proofs, try to unpack claims with an existential flavor before those with a universal flavor
+% 17. In using reductio proofs, think about what the easiest thing to negate would be given the intended conclusion
+% 18. Sometimes a contraposition style proof is just as easy as a reductio, and sometimes direct is the best of all
+% 19. Try to neither skip substantial steps nor to make any unforced moves
+% 20. Cutting and pasting from your or other's proofs is perfectly fine as long as the end result is good
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Metalinguistic Abbreviation}
+
+Let $\PLP$ include the symbols in $\PL$ together with the sentential operators `$\vee$', `$\wedge$', and `$\leftrightarrow$' which are to be read `or', `and', and `if and only if', respectively.
+
+\begin{enumerate}
+
+	\item Although they are not typically written, why are quotes included in the semantics?
+	      % \answer{ Collaborators %
+	      % }{% body of the argument
+	      %   Begin argument...
+	      % }
+
+	\item Provide a recursive definition of the set $\wfs{\PLP}$ of wfss of $\PLP$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item Provide a semantics for $\PLP$ by defining the models of $\PLP$ and $\vDash^+$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+	      % not sure if the use of quotations are right here; copying the style on the logic notes though.
+
+	\item Prove that $\metaA \vee \metaB$, $\metaA \vee (\metaA \wedge \metaB)$, and $\metaA\leftrightarrow \metaB$ are logically equivalent to wfss of $\PL$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item For each new operator in $\PLP$, provide two logical truths including that operator.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+\end{enumerate}
+
+
+
+
+\section{Derived Metarules}
+
+Derive the following metarules in the Hilbert proof system:
+
+\begin{enumerate}
+
+	\item \textit{Weakening} (\textbf{WK}): if $\MetaG \PLproves \metaB$ and $\MetaG \subseteq \MetaS$, then $\MetaS \PLproves \metaB$.
+	      \answer{ Ben %
+	      }{% body of the argument
+		      Assume $\MetaG \PLproves \metaB$ and $\MetaG \subseteq \MetaS$ for arbitrary $\MetaG, \MetaS,$ and $\metaB$.
+		      We aim to show that $\MetaS \PLproves \metaB$ by appealing to the definitions.
+
+		      By the definition of $\PLproves$, there is some Hilbert proof $X$ of $\metaA$ from $\MetaG$.
+		      By the definition of a Hilbert proof, every wfs $\metaA$ in $X$ is either:
+		      (1) a \textit{premise} in $\MetaG$;
+		      (2) an \textit{axiom}; or
+		      (3) follows from previous wfss $\metaC$ and $\metaC \rightarrow \metaA$ in $X$ by a \textit{rule}.
+		      Since $\MetaG \subseteq \MetaS$, any premise in $X$ also belongs to $\MetaS$.
+		      Thus $X$ satisfies the definition of a Hilbert proof of $\metaB$ from $\MetaS$.
+		      \qed
+	      }
+	      NOTE: This proof is rather verbose for such a trivial result, but it is good to err on the side of being \textit{too explicit} so that every step is easy to follow for all.
+
+	\item \textit{Cut elimination} (\textbf{CUT}): if $\MetaG \PLproves \metaA$ and $\MetaS, \metaA \PLproves \metaB$, then $\MetaS,\MetaG \PLproves \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Principle of detachment} (\textbf{PD}): if $\MetaG \PLproves \metaA \rightarrow \metaB$ and $\MetaS \PLproves \metaA$, then $\MetaG, \MetaS \PLproves \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Deduction theorem} (\textbf{DT}): if $\MetaG, \metaA \PLproves \metaB$, then $\MetaG \PLproves \metaA \rightarrow \metaB$.
+	      % HINT: this requires mathematical induction
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Reverse deduction} (\textbf{RD}): if $\MetaG \PLproves \metaA \rightarrow \metaB$, then $\MetaG, \metaA \PLproves \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+\end{enumerate}
+
+
+
+\section{Axiomatic Proofs}
+
+You may appeal previous results (proofs before the proof you are working on) to derive the following in the Hilbert proof system, justifying each step where premises are indicated with `\textbf{PR}' and any assumed rules of the form $\MetaG \PLproves \metaB$ with `\textbf{AS}':
+
+\begin{enumerate}
+
+	\item \textit{Hypothetical syllogism} (\textbf{HS}): $\metaA \rightarrow \metaB, \metaB \rightarrow \metaC \PLproves \metaA \rightarrow \metaC$.
+	      \answer{Ben % collaborator names
+	      }{% body of the argument
+		      The proof goes by an easy derivation given the added premise $\metaA$ to start.
+		      \begin{hilbert}
+			      \from{PR} {\metaA \rightarrow \metaB}
+			      \from{PR} {\metaB \rightarrow \metaC}
+			      \from{PR} {\metaA}
+			      \from{MP: 1,3} {\metaB}
+			      \from{MP: 2,4} {\metaC}
+		      \end{hilbert}
+		      The proof above establishes that $\metaA \rightarrow \metaB, \metaB \rightarrow \metaC, \metaA \PLproves \metaC$.
+		      It follows from \textbf{DT} that $\metaA \rightarrow \metaB, \metaB \rightarrow \metaC \PLproves \metaA \rightarrow \metaC$ as desired.
+		      \qed
+	      }
+
+	\item \textit{Hypothetical exchange} (\textbf{HE}): $\metaA \rightarrow (\metaB \rightarrow \metaC) \PLproves \metaB \rightarrow (\metaA \rightarrow \metaC)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Reductio ad absurdum} (\textbf{RAA}): $\PLproves \metaA \rightarrow (\neg\metaA \rightarrow \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Ex falso quidlobet} (\textbf{EFQ}): $\PLproves \neg\metaA \rightarrow (\metaA \rightarrow \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Reverse contraposition} (\textbf{RCP}): $\neg\metaA \rightarrow \neg\metaB \PLproves \metaB \rightarrow \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Double negation elimination} (\textbf{DNE}): $\PLproves \neg\neg\metaA \rightarrow \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Double negation introduction} (\textbf{DNI}): $\PLproves \metaA \rightarrow \neg\neg\metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Contraposition} (\textbf{CP}): $\metaA \rightarrow \metaB \PLproves \neg\metaB \rightarrow \neg\metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Negation elimination} (\textbf{NE}): if $\MetaG, \neg\metaA \PLproves \neg\metaB$ and $\MetaG, \neg\metaA \PLproves \metaB$, then $\MetaG \PLproves \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Negation introduction} (\textbf{NI}): if $\MetaG, \metaA \PLproves \neg\metaB$ and $\MetaG, \metaA \PLproves \metaB$, then $\MetaG \PLproves \neg\metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Ex contradictione quidlobet} (\textbf{ECQ}): $\metaA, \neg\metaA \PLproves \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Left disjunction introduction} (\textbf{LDI}): $\metaA \PLproves \metaA \vee \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Right disjunction introduction} (\textbf{RDI}): $\metaB \PLproves \metaA \vee \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Conjunction introduction} (\textbf{CI}): $\metaA, \metaB \PLproves \metaA \wedge \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Left conjunction elimination} (\textbf{LCE}): $\metaA \wedge \metaB \PLproves \metaA$.
+	      \answer{ Ben % Collaborators
+	      }{% body of the argument
+		      Expressed in primitive notation, we must show that $\neg(\metaA \rightarrow \neg\metaB) \PLproves \metaA$.
+		      By drawing on previous results, we use the metarules to reason as follows:
+		      \begin{hilbert}
+			      \from{EFQ: $\neg\metaB/\metaB$} {\PLproves \neg\metaA \rightarrow (\metaA \rightarrow \neg\metaB)}
+			      \from{CUT: 1, CP} {\PLproves \neg(\metaA \rightarrow \neg\metaB) \rightarrow \neg\neg\metaA}
+			      \from{CUT: 2, DNE} {\PLproves \neg(\metaA \rightarrow \neg\metaB) \rightarrow \metaA}
+			      \from{RD: 3} {\neg(\metaA \rightarrow \neg\metaB) \PLproves \metaA}
+		      \end{hilbert}
+		      Instead of providing an explicit Hilbert derivation, we prove that there is such a derivation by relying on the previous results as cited above.
+		      \qed
+	      }
+
+	\item \textit{Right conjunction elimination} (\textbf{RCE}): $\metaA \wedge \metaB \PLproves \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \mbox{\textit{Disjunction elimination} (\textbf{DE}): if $\MetaG, \metaA \PLproves \metaC$ and $\MetaG, \metaB \PLproves \metaC$, then $\MetaG, \metaA \vee \metaB \PLproves \metaC$.}
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Biconditional introduction} (\textbf{BI}): if $\MetaG, \metaA \PLproves \metaB$ and $\MetaG, \metaB \PLproves \metaA$, then $\MetaG \PLproves \metaA \leftrightarrow \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \textit{Left biconditional elimination} (\textbf{LBE}): $\metaA \leftrightarrow \metaB, \metaA \PLproves \metaB$.
+	      \answer
+	      {}
+
+	\item \textit{Right biconditional elimination} (\textbf{RBE}): $\metaA \leftrightarrow \metaB, \metaB \PLproves \metaA$.
+	      \answer
+	      {}
+
+\end{enumerate}
+
+
+
+
+
+\section{Regimentation}
+
+Regiment the following in $\ML$ using metalinguistic abbreviations, resolving ambiguities.
+
+\begin{enumerate}
+
+	\item If sugar is sweet, then if roses are red, sugar is sweet.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If snow is not green, then if snow is green, roses are red.
+	      \answer{ Ben % Collaborators
+	      }{% body of the argument
+		      Taking `If\ldots, then' to express the material conditional, we have:
+		      $$ \neg G \rightarrow (G \rightarrow R) $$
+		      However, if \cite{Lewis1912} is to have his way, we get
+		      $$ \neg G \strictif (G \strictif R) $$
+		      This reading follows from taking `If\ldots, then' to express the strict conditional rather than the material conditional. This is equivalent to the following:
+		      $$ \Box(\neg G \rightarrow \Box(G \rightarrow R)) $$
+		      That is, in any possibility in which snow is not green it is also the case that in any possibility in which snow is green, roses are red.
+		      We need only consider a possibility in which snow is green and roses are not read to make the consequent false.
+		      If there is a possibility in which snow is not green (like the actual world) where it is also possible that snow is green and roses are not red, then this regimentation of the sentence is false.
+		      Lewis takes it to be an advantage of his system of strict implication that such claims are not theorems, and so are permitted to have false instances.
+	      }
+
+	\item Either it could rain or not.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item It's necessarily possible that it either rains or doesn't.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If rain is possibly necessary, then it's necessarily possible.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item It cannot both necessarily rain and necessarily not rain.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If rain is necessary, then it cannot necessarily not rain.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If rain and snow are jointly possible, then each is possible individually.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If rain could imply snow, then it could snow if it necessarily rains.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If rain or snow are necessary, then either rain is necessary or snow is possible.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+\end{enumerate}
+
+
+
+
+\subsection{Interpretations}
+
+Evaluate the plausibility of each modal axioms when `$\Box$' and `$\Diamond$' are read:
+
+\begin{enumerate}
+
+	\item ($\Box$) `It is necessary that'. ($\Diamond$) `It is possible that'.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item ($\Box$) `It is obligatory that'. ($\Diamond$) `It is permissible that'.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item \mbox{($\Box$) `It is always going to be the case that'. ($\Diamond$) `It is going to be the case that'.}
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item ($\Box$) `It has always been the case that'. ($\Diamond$) `It has been the case that'.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item ($\Box$) `It must be the case that'. ($\Diamond$) `It might be the case that'.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+
+\end{enumerate}
+
+\section{Modal Axiomatic Proofs}
+
+As above, you may appeal to previous results to derive the following rules in the modal proof system indicated by the turnstile, justifying each step:
+
+\begin{enumerate}
+
+	\item If $\Kproves \metaA \rightarrow \metaB$, then $\Kproves \Box\metaA \rightarrow \Box\metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If $\metaA \Kproves \metaB$, then $\Box\metaA \Kproves \Box\metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Kproves \Box(\metaA \wedge \metaB) \leftrightarrow (\Box \metaA \wedge \Box \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Kproves (\Box \metaA \vee \Box \metaB) \rightarrow \Box(\metaA \vee \metaB)$.
+	      \answer{ Ben %
+	      }{% body of the argument
+		      Here it is natural to think about the last step first.
+		      If we can show that both $\Kproves \Box\metaA \rightarrow \Box(\metaA \vee \metaB)$ and $\Kproves \Box\metaB \rightarrow \Box(\metaA \vee \metaB)$, then the theorem follows from \textbf{DE}.
+		      In primitive terms, this amount to showing that $\Box\metaA \Kproves \Box(\neg\metaA \rightarrow \metaB)$ and $\Box\metaB \Kproves \Box(\neg\metaA \rightarrow \metaB)$.
+		      We may establish these as follows:
+		      \begin{hilbert}
+			      \from{RAA} {\Kproves \metaA \rightarrow (\neg\metaA \rightarrow \metaB)}
+			      \from{\#5.1: 1} {\Kproves \Box\metaA \rightarrow \Box(\neg\metaA \rightarrow \metaB)}
+			      \from{RD: 2} {\Box\metaA \Kproves \Box(\neg\metaA \rightarrow \metaB)}
+			      \from{A1: $\metaB/\metaA$, $\neg\metaA/\metaB$} {\Kproves \metaB \rightarrow (\neg\metaA \rightarrow \metaB)}
+			      \from{\#5.1: 4} {\Kproves \Box\metaB \rightarrow \Box(\neg\metaA \rightarrow \metaB)}
+			      \from{RD: 5} {\Box\metaB \Kproves \Box(\neg\metaA \rightarrow \metaB)}
+			      \from{DE: 3, 6} {\Kproves (\Box\metaA \vee \Box\metaB) \rightarrow \Box(\neg\metaA \rightarrow \metaB)}
+		      \end{hilbert}
+		      By metalinguistic abbreviation, \textbf{7} is $\Kproves (\Box\metaA \vee \Box\metaB) \rightarrow \Box(\metaA \vee \metaB)$.
+	      }
+
+	\item $\Kproves \Box(\metaA\rightarrow \metaB)\rightarrow\Box(\neg \metaB\rightarrow \neg \metaA)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item If $\Kproves \metaA \rightarrow \metaB$, then $\Kproves \Diamond\metaA \rightarrow \Diamond\metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Kproves \Diamond(\metaA \vee \metaB)\leftrightarrow(\Diamond \metaA \vee \Diamond \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Tproves \Box\metaA\rightarrow\Diamond\metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Tproves \neg\Box(\metaA\wedge \neg \metaA)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Dproves \Diamond(\metaA \rightarrow \metaA)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Bproves \Box\metaA\rightarrow\Diamond\metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fourproves (\Diamond \metaA\wedge\Box \metaB)\rightarrow\Diamond(\metaA\wedge\Box \metaB).$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fourproves \Box \metaA\rightarrow\Box\Diamond\Box \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fourproves \Diamond\Diamond \metaA\leftrightarrow\Diamond \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fourproves \Diamond\Box\Diamond \metaA\leftrightarrow\Diamond \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \Diamond(\metaA\wedge\Diamond \metaB)\leftrightarrow(\Diamond \metaA\wedge\Diamond \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \Diamond(\metaA\wedge\Diamond \metaB)\leftrightarrow(\Diamond \metaA\wedge\Diamond \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \Diamond\Box \metaA\leftrightarrow\Box \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \Box \metaA \rightarrow \Box\Box \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \metaA \rightarrow \Box\Diamond \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+	\item $\Fiveproves \Diamond\Box \metaA \rightarrow \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
+
+
+\end{enumerate}
+
+
+%%% Bibliography %%%
+
+\vfill
+\begin{small} %%Makes bib small text size
+	\singlespacing %%Makes single spaced
+	\bibliographystyle{../../assets/bib_style} %%bib style found locally or in textmf/bibtex/bst
+	\setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
+	\bibliography{../../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
+	\thispagestyle{empty} %%Removes page numbers
+\end{small} %%End makes bib small text size
+
+\end{document}

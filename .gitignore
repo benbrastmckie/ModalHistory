@@ -7,7 +7,7 @@
 *.out
 *.pdf
 *.synctex.gz
-*.tex
+# *.tex
 *.glo
 *.ist
 **/__pycache__
