@@ -88,6 +88,7 @@ Here are a few points to keep in mind to make the process of writing LaTeX docum
 1. SyncTex and BackSync
   - You can use `Cmd + click` (Mac) or `Ctrl + click` (Windows/Linux) on the PDF to find the same spot in the LaTeX.
   - You can also use `Ctrl + Alt + J` (Windows/Linux) or `Cmd + Alt + J` (Mac) to highlight the spot in the PDF corresponding to where the cursor is in the LaTeX document
+
 2. Kill auxiliary files
  - You may need to delete auxiliary files when LaTeX builds fail or become corrupted
  - To clean auxiliary files in VSCodium:
@@ -96,6 +97,7 @@ Here are a few points to keep in mind to make the process of writing LaTeX docum
    - Or use the Command Palette (`Ctrl+Shift+P`) and search for "Clean up auxiliary files"
    - This removes temporary files like .aux, .log, .synctex.gz but keeps your .tex and .pdf
    - These will be regenerated upon rebuilding the PDF
+
 3. To use LaTeX snippets in VSCodium:
   - Type a backslash `\` followed by the command name (e.g., `\begin`)
   - VSCodium will show a dropdown list of matching snippets
