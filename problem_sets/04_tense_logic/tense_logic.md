@@ -1,29 +1,40 @@
 # [Problem Set #4: Tense Logic](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
-> Problem Set #4: Tense Logic (due prior to class week 06)
+> Instructions for the problem set for this week
 
-This problem set explores tense logic as developed by Arthur Prior and extended by Richmond Thomason, applying modal techniques to reasoning about time.
+This problem set concerns the semantics for _propositional tense logic_.
+Please read the relevant portion of the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for the definitions.
+A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
+As always, feel free to open issues if there is anything that it would be helpful to discuss.
 
-## Background
+## Problem Set
 
-Tense logic treats temporal operators as modal operators, providing a formal system for reasoning about time. Prior's work established the foundations of tense logic, while Thomason extended these systems to address issues like indeterminism and the logic of the future.
+> Overview of the sections in the problem set.
 
-This problem set builds on our previous work with modal logic but applies it to temporal reasoning, exploring how the framework can be adapted to a new domain with its own unique challenges.
+There are fifty problems, five of which I provided as example solutions.
+Work together to complete the [solutions](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/04_pset/04_solutions.tex) by writing 5/50 solutions for the problems for this week.
+General information is provided in the [collaboration](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/collaboration.md) document.
 
-## Instructions
+## Regimentation
 
-1. Complete the proofs and exercises in the `04_solutions.tex` file provided in this directory.
-2. Follow the collaboration guidelines outlined in the [Problem Sets README](/problem_sets/README.md).
-3. Make sure to add your name to the problems you're working on before beginning.
-4. Pay special attention to the semantics of the temporal operators and how they relate to the more familiar modal operators we've studied.
-5. Consider the philosophical implications of different models of time (linear, branching, dense, etc.).
+We have two languages to consider.
+Whereas the first language includes the tense operators in addition to the extensional operators, the second language also includes the _inevitability_ operators.
+These provide a number of options for regimenting the English sentences that have been provided.
 
-## Resources
+## Temporal Frame Constraints
 
-- Review the tense logic sections in the [Logic Notes](https://github.com/benbrastmckie/LogicNotes)
-- Prior's "Past, Present and Future" and "Time and Modality"
-- Thomason's "Indeterminist Time and Truth-Value Gaps"
+This section concerns the definition of temporal frames and the various constraints provided.
+Although the intended interpretation of these frames differs from the semantics for the metaphysical modal operators, the counterexamples and proofs for this section are much as they were before.
 
-Tense logic provides an excellent case study in how modal techniques can be adapted to different domains. The formal systems we develop reflect philosophical commitments about the nature of time, demonstrating the close connection between logic and metaphysics.
+Note that the frame constraints provided in the Logic Notes are not intended to be exhaustive.
+Some of the problems will require you to think a bit outside the box.
 
-If you encounter difficulties or have questions, don't hesitate to open an issue in the repository.
+## Characterization
+
+This section asks you to produce countermodels to each of the axioms that one might include in a tense logic before determining which constraints are needed in order to validate the axiom in question.
+These countermodels and proofs are much as they were for the semantics for the metaphysical modal operators.
+
+## Indeterminacy
+
+This section considers an extension to the semantics in which sentences are evaluated at both a history and time.
+In addition to evaluating some of the standard axioms included in tense logics, there are a number of claims which include the indeterminacy operators.

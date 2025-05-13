@@ -38,11 +38,11 @@ ModalHistory/
 ├── problem_sets/                  # PROBLEM SETS AND SOLUTIONS
 │   ├── 01_tooling/                # Git and LaTeX setup
 │   ├── 02_axiomatic_proofs/       # Axiomatic proof systems
-│   ├── 03_semantic_proofs/        # Model theory and semantics
+│   ├── 03_semantic_proofs/        # Model theory and modal logic
 │   ├── 04_tense_logic/            # Temporal logic
-│   ├── 05_bimodal_logic/          # Multiple modalities
-│   ├── 06_model_checker/          # Programmatic verification
-│   ├── 07_bimodal_semantics/      # Advanced semantic systems
+│   ├── 05_bimodal_logic/          # Bimodal logic
+│   ├── 06_model_checker/          # Formal verification
+│   ├── 07_bimodal_semantics/      # Bimodal intensional semantics
 │   └── 08_state_semantics/        # Hyperintensional semantics
 └── README.md                      # COURSE OVERVIEW AND SYLLABUS
 ```
@@ -83,7 +83,7 @@ See Chapter 0 for a brief introduction to the subject-matter of logic, describin
   - Using the model-checker to implement a semantics
   - Other projects with approval
 
-In addition to the weekly readings, the [problem sets](/problem_sets) will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) (changes are underway).
+In addition to the weekly readings, the [problem sets](/problem_sets) will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf).
 It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative problem sets (details on how to do this is covered in the first problem set).
 
 ### Tooling
