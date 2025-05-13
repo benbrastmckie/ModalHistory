@@ -1,6 +1,45 @@
-# Collaboration
+# Formal Tack
 
 > The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) which provide essential theoretical background for the course
+
+## Problem Sets
+
+In addition to the relevant portion of the Logic Notes and the collaboration overview, please read the instructions for each week linked below.
+These instructions will provide some discussion of the problem set for that week.
+
+### [Problem Set #1: Tooling](/01_tooling/tooling.md)
+
+> Problem Set #1: Tooling (due prior to class week 01)
+
+### [Problem Set #2: Axiomatic Proofs](/02_axiomatic_proofs/axiomatic_proofs.md)
+
+> Problem Set #2: Axiomatic Proofs (due prior to class week 03)
+
+### [Problem Set #3: Modality](/03_semantic_proofs/semantic_proofs.md)
+
+> Problem Set #3: Semantic Proofs (due prior to class week 05)
+
+### [Problem Set #4: Tense](/04_tense_logic/tense_logic.md)
+
+> Problem Set #4: Tense Logic (due prior to class week 06)
+
+### [Problem Set #5: Bimodal Logic](/05_bimodal_logic/bimodal_logic.md)
+
+> Problem Set #5: Bimodal Logic (due prior to class week 08)
+
+### [Problem Set #6: Model-Checker](/06_model_checker/model_checker.md)
+
+> Problem Set #6: Model-Checker (due prior to class week 09)
+
+### [Problem Set #7: Bimodal Semantics](/07_bimodal_semantics/bimodal_semantics.md)
+
+> Due before Apr 18 (Week 11)
+
+### [Problem Set #8: State Semantics](/08_state_semantics/state_semantics.md)
+
+> Due before class on Apr 28 (Week 12)
+
+## Collaboration
 
 Work together to complete the solutions for each week by observing the following protocols, where further details will be provided below:
 

@@ -113,7 +113,7 @@ The course also includes several reference notes on specialized topics that may 
 
 > Although I will provide PDFs throughout, I recommend using [Zotero](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md) to pull down the readings for each week using the plugin for your browser.
 
-## Problem Sets
+## Problem Sets (Formal Track)
 
 > Eight problem sets to be completed collectively.
 
@@ -123,41 +123,6 @@ This will help to include others in the conversation and help me to improve the 
 
 The problem sets are to be completed in collaboration with your peers.
 More information is provided in the [Problem Sets README](/problem_sets/README.md) document about how to use Git to work effectively together.
-
-In addition to the relevant portion of the Logic Notes and the collaboration overview, please read the instructions for each week linked below.
-These instructions will provide some discussion of the problem set for that week.
-
-### [Problem Set #1: Tooling](/problem_sets/01_tooling/tooling.md)
-
-> Problem Set #1: Tooling (due prior to class week 01)
-
-### [Problem Set #2: Axiomatic Proofs](/problem_sets/02_axiomatic_proofs/axiomatic_proofs.md)
-
-> Problem Set #2: Axiomatic Proofs (due prior to class week 03)
-
-### [Problem Set #3: Modality](/problem_sets/03_semantic_proofs/semantic_proofs.md)
-
-> Problem Set #3: Semantic Proofs (due prior to class week 05)
-
-### [Problem Set #4: Tense](/problem_sets/04_tense_logic/tense_logic.md)
-
-> Problem Set #4: Tense Logic (due prior to class week 06)
-
-### [Problem Set #5: Bimodal Logic](/problem_sets/05_bimodal_logic/bimodal_logic.md)
-
-> Problem Set #5: Bimodal Logic (due prior to class week 08)
-
-### [Problem Set #6: Model-Checker](/problem_sets/06_model_checker/model_checker.md)
-
-> Problem Set #6: Model-Checker (due prior to class week 09)
-
-### [Problem Set #7: Bimodal Semantics](/problem_sets/07_bimodal_semantics/bimodal_semantics.md)
-
-> Due before Apr 18 (Week 11)
-
-### [Problem Set #8: State Semantics](/problem_sets/08_state_semantics/state_semantics.md)
-
-> Due before class on Apr 28 (Week 12)
 
 ## Module 1: Modal Logic
 
