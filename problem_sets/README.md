@@ -41,7 +41,7 @@ These instructions will provide some discussion of the problem set for that week
 
 ## Collaboration
 
-Work together to complete the solutions for each week by observing the following protocols, where further details will be provided below:
+Work together to complete the solutions for each week by observing the following protocols:
 
 > 1. Make sure to pull changes (sync) before starting to work on any problems
 > 2. Add your name to the problems you want to work on, pushing changes immediately to "check out" the problems

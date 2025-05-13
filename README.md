@@ -15,6 +15,8 @@ I will then present the extension that I have developed of Fine's semantics for 
 
 ## Overview
 
+> Course information
+
 ### Time and Location
 
 The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
@@ -39,7 +41,7 @@ Although optional for the _historical track_ I will be revising and expanding th
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
 If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction (see Chapter 0 for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study).
 
-Grades for the seminar will be calculated as follows:
+There are two tracks for this course where grades for the seminar will be calculated as follows:
 
 ### Historical Track
 
@@ -102,20 +104,11 @@ The final project constitutes 40% of the grade for the formal track and 80% for 
   - Analyze countermodels and logical consequences
   - Present findings in Jupyter notebook
 
-### Additional Resources
-
-The course also includes several reference notes on specialized topics that may be useful for both problem sets and final projects:
-
-- [Automated Reasoning](/notes/automated_reasoning.md)
-- [Bit Vectors](/notes/bit_vectors.md)
-- [Lattice Theory](/notes/lattice_theory.md)
-- [Satisfiability (SAT)](/notes/SAT.md)
-
-> Although I will provide PDFs throughout, I recommend using [Zotero](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md) to pull down the readings for each week using the plugin for your browser.
+> Although I will provide PDFs throughout for course readings, I recommend using [Zotero](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md) to pull down the readings for each week using the plugin for your browser.
 
 ## Problem Sets (Formal Track)
 
-> Eight problem sets to be completed collectively.
+> Eight problem sets to be completed collectively
 
 The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) which I will be revising and extending before each assignment.
 These notes are extremely terse, so if there are parts that don't make sense, please raise a question in the issues and we can chat about it there.
@@ -192,8 +185,6 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 - Kripke, Saul A. "A Completeness Theorem in Modal Logic." The Journal of Symbolic Logic 24, no. 1 (March 1959): 1–14. https://doi.org/10.2307/2964568.
 - **———. "Semantical Analysis of Modal Logic I Normal Modal Propositional Calculi." Mathematical Logic Quarterly 9, no. 5–6 (January 1963): 67–96. https://doi.org/10.1002/malq.19630090502.**
 
-> NOTE: I moved the problem set for this week forward a week.
-
 ### [Week 04: Prior and Thomason](2_intensional_semantics/04_week/04_week.md) (Mar 3)
 
 > Problem Set #4: Tense (due prior to class week 06)
@@ -214,11 +205,11 @@ Semantic approaches to interpretational and metaphysical readings of the modal o
 
 > Problem Set #5: Bimodal Logic (due prior to class week 08)
 
-This week will present the following paper:
-
 - **Brast-McKie, Benjamin. "The Construction of Possible Worlds" (draft)**
 
 ### Week 07: Spring Break (Mar 24)
+
+> No class or assignments
 
 ## Module 3: Counterfactual Conditionals
 
@@ -263,11 +254,11 @@ Hyperintensional semantics and logic for constitutive explanatory operators
 
 This week will present the following paper:
 
-- Brast-McKie, Benjamin. "Identity and Aboutness." Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. https://doi.org/10.1007/s10992-021-09612-w.
+- **Brast-McKie, Benjamin. "Identity and Aboutness." Journal of Philosophical Logic 50, no. 6 (December 1, 2021): 1471–1503. [https://doi.org/10.1007/s10992-021-09612-w](https://doi.org/10.1007/s10992-021-09612-w).**
 
 ### [Week 13: Necessary and Sufficient](4_constitutive_explanation/13_week/13_week.md) (May 5)
 
-This week will explore themes related to essence, ground, and constitutive explanation.
+This week will explore themes related to relevance, essence, ground, and constitutive explanation.
 
 ### [Week 14: Formal Track Presentations](4_constitutive_explanation/14_week/14_week.md) (May 12)
 
