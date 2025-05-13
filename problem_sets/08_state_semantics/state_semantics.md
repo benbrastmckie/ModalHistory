@@ -1,4 +1,4 @@
-# [Problem Set 08: State Semantics](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#problem-sets)
+# [Problem Set 08: State Semantics](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
 > Use the `model-checker` to explore the state semantics for counterfactual conditionals and constitutive explanatory operators.
 

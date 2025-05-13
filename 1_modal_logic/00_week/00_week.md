@@ -1,4 +1,4 @@
-# [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-1-modal-logic)
+# [Week 00: Introduction and Origins](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#module-1-modal-logic)
 
 This week will present an overview of the seminar before presenting the system of material implication developed in _Principia Mathematica_ and Lewis' early essays motivating the development of a logic of strict implication by appealing to the paradoxes of material implication.
 

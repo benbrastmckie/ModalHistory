@@ -1,4 +1,4 @@
-# [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-1-modal-logic)
+# [Week 01: Lewis & Langford's Modal Systems](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#module-1-modal-logic)
 
 This week will focus on the proof systems that Lewis and Langford developed for modal logic.
 

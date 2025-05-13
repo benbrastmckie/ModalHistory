@@ -1,4 +1,4 @@
-### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-1-modal-logic)
+### [Week 02: Quantified Modal Logic](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#module-1-modal-logic)
 
 > One way to download the readings for this week is to `Sync Changes` in VSCodium (or equivalent).
 > Then they will be on your hard drive and read to open with your preferred pdf viewer.
