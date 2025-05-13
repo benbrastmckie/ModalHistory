@@ -60,7 +60,7 @@ There are two tracks for this course where grades for the seminar will be calcul
   - Other projects with approval
 
 In addition to the weekly readings, the [problem sets](/problem_sets) will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) (changes are underway).
-For detailed information on the problem sets and collaboration guidelines, please see the [Problem Sets README](/problem_sets/README.md).
+For detailed information on the problem sets and collaboration guidelines, please see the [Problem Sets](/problem_sets/README.md).
 It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative problem sets (details on how to do this is covered in the first problem set).
 
 ### Tooling
@@ -84,7 +84,7 @@ Presenters for each week will also be responsible for contributing to the class 
 
 ### Final Projects
 
-For students on the formal track, the final project is a significant component of the course. For guidelines, templates, and examples, please see the [Final Projects README](/final_projects/README.md).
+For students on the formal track, the final project is a significant component of the course. For guidelines, templates, and examples, please see the [Final Projects](/final_projects/README.md).
 
 The final project constitutes 40% of the grade for the formal track and 80% for the historical track. Students will present their project outlines in the final seminar.
 
@@ -115,7 +115,7 @@ These notes are extremely terse, so if there are parts that don't make sense, pl
 This will help to include others in the conversation and help me to improve the notes.
 
 The problem sets are to be completed in collaboration with your peers.
-More information is provided in the [Problem Sets README](/problem_sets/README.md) document about how to use Git to work effectively together.
+More information is provided in the [Problem Sets](/problem_sets/README.md) document about how to use Git to work effectively together.
 
 ## Module 1: Modal Logic
 
@@ -262,4 +262,4 @@ This week will explore themes related to relevance, essence, ground, and constit
 
 ### [Week 14: Formal Track Presentations](4_constitutive_explanation/14_week/14_week.md) (May 12)
 
-Presentations are intended to provide a brief (15min) and accessible overview of each project. For more information on final projects, see the [Final Projects README](/final_projects/README.md).
+Presentations are intended to provide a brief (15min) and accessible overview of each project. For more information on final projects, see the [Final Projects](/final_projects/README.md).
