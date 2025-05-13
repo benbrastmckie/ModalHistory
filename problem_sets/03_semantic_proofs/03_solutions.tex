@@ -61,61 +61,47 @@
 \begin{enumerate}
 
 	\item Why are frames required to be nonempty?
-   \answer{}{}{% body of the argument
-      %   Begin argument...
-      % }
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\M, w \MLmodels[] \Diamond\metaA$ \textit{iff} $\M, u \MLmodels \metaA$ for some $u \in W$ such that $R(w, u)$.
-      \answer{ Miguel % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-        By the semantics of $\Box$, $\M, w \MLmodels \Box \metaA \textit{ iff } \M, u \MLmodels \metaA \text{ for every } u \in W \text{ s.t. } R(w,u)$. 
-        Substituting $\neg \metaA$ for $\metaA$, $\M, w \MLmodels \Box \neg \metaA \textit{ iff } \M, u \MLmodels \neg \metaA \text{ for every } u \in W \text{ s.t. } R(w,u)$. 
-        By the semantics of negation, $\M, w \MLmodels \neg \Box \neg \metaA \textit{ iff } \text{ it is not the case that }\M, u \MLmodels \neg \metaA \text{ for every } u \in W \text{ s.t. } R(w,u)$. 
-        This is equivalent to saying $\M, w \MLmodels \neg \Box \neg \metaA \textit{ iff } \M, u \nMLmodels \neg \metaA \text{ for some } u \in W \text{ s.t. } R(w,u)$. 
-        By the semantics of negation (and simplifying a double negation to no negation), $\M, w \MLmodels \neg \Box \neg \metaA \textit{ iff } \M, u \MLmodels \metaA \text{ for some } u \in W \text{ s.t. } R(w,u)$. 
-        By metalinguistic abbreviation, $\M, w \MLmodels \Diamond \metaA \textit{ iff } \M, u \MLmodels \metaA \text{ for some } u \in W \text{ s.t. } R(w,u)$. \qed
-        % [Ben] good to avoid breaking formal expressions over lines
-      }
+	\item $\M, w \MLmodels[] \Diamond\metaA$ \textit{iff} $\M, u \MLmodels \metaA$ for some $u \in W$ such that $R(w, u)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\M, w \MLmodels[] \Box\metaA$ \textit{iff} $(w)_R \subseteq \interpret{\M}{\metaA}$.
-      \answer{ Holden % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-        To show that $\M, w \MLmodels[] \Box\metaA$ \textit{iff} $(w)_R \subseteq \interpret{\M}{\metaA}$, we establish the following for an arbitrary $\ML$ model $\M$, world $w\in W$, and $\metaA \in \wfs{\ML}$.
-        \setcounter{equation}{0}
-        \begin{align}
-          \M, w \MLmodels[] \Box\metaA & ~\textit{ iff}~~ \M, u \MLmodels \metaA \text{ for every } u \in W \text{ such that } R(w, u)\\
-          &~\textit{ iff}~~ \text{for every } u \in W, R(w, u) \text{ implies } \M, u \MLmodels \metaA\\
-          &~\textit{ iff}~~ \text{for every } u \in W, u \in (w)_R \text{ implies } u \in \interpret{\M}{\metaA}\\
-          &~\textit{ iff}~~ (w)_R \subseteq \interpret{\M}{\metaA}
-        \end{align}
-        (1) follows from the semantics for $\Box\metaA$.
-        (2) is just a rephrasing of (1) in the metalanguage.
-        (3) Follows from applying the definitions of $(w)_R$ and $\interpret{\M}{\metaA}$.
-        (4) Follows from the definition of $\subseteq$.\qed
-      }
+	\item $\M, w \MLmodels[] \Box\metaA$ \textit{iff} $(w)_R \subseteq \interpret{\M}{\metaA}$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\M, w \MLmodels[] \Box(\metaA \rightarrow \metaB)$ \textit{iff} $\interpret{\M}{\metaA}^w \subseteq \interpret{\M}{\metaB}$.
-      % \answer{ Name % Collaborators
-      % % Reviewers
-      % }{% body of the argument
-      %   Begin argument...
-      % }
+	\item $\M, w \MLmodels[] \Box(\metaA \rightarrow \metaB)$ \textit{iff} $\interpret{\M}{\metaA}^w \subseteq \interpret{\M}{\metaB}$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\M, w \MLmodels[] \Box(\metaA \leftrightarrow \metaB)$ \textit{iff} $\interpret{\M}{\metaA}^w = \interpret{\M}{\metaB}^w$.
-      % \answer{}{}
+	\item $\M, w \MLmodels[] \Box(\metaA \leftrightarrow \metaB)$ \textit{iff} $\interpret{\M}{\metaA}^w = \interpret{\M}{\metaB}^w$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\M, w \MLmodels[] \Diamond\metaA$ \textit{iff} $(w)_R \cap \interpret{\M}{\metaA} \neq \varnothing$.
-      % \answer{}{}
+	\item $\M, w \MLmodels[] \Diamond\metaA$ \textit{iff} $(w)_R \cap \interpret{\M}{\metaA} \neq \varnothing$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    % TODO: move above after pset is complete
-    \item $\M, w \MLmodels[] \metaA \vee \metaB$ \textit{iff} $\M, w \MLmodels \metaA$ or $\M, w \MLmodels \metaB$.
-      % \answer{}{}
-
-    % NOTE: I dropped this one to make room for an addition above without changing numbering throughout
-    % \item $\M, w \MLmodels[] \Diamond\Box\metaA$ \textit{iff} there exists $u \in (w)_R$ where $(u)_R \subseteq \interpret{\M}{\metaA}$.
-    %   % \answer{}{}
+	      % TODO: move above
+	\item $\M, w \MLmodels[] \metaA \vee \metaB$ \textit{iff} $\M, w \MLmodels \metaA$ or $\M, w \MLmodels \metaB$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
 \end{enumerate}
 
@@ -129,585 +115,223 @@
 
 	\item[\bf Relations:] Evaluate the following, providing a proof or countermodel:
 
-    \item Every serial frame is reflexive.
-      \answer{ Ben % Collaborators
-      % Reviewers
-      }{% body of the argument
-        \vspace{-.2in}
-        \begin{multicols}{2}
-          \noindent
-          Letting $W = \set{w_i : 0 \leq i \leq 4}$ where $R = \set{\tuple{w_x, w_y} : y = x + 1 ~~ (\bmod\ 5)}$, we may observe that every world sees some world but no world sees itself.
-          Thus $\tuple{W, R}$ is serial without being reflexive, providing a countermodel to the stated claim. 
+	\item Every serial frame is reflexive.
+	      \answer{ Ben % Collaborators
+		      % Reviewers
+	      }{% body of the argument
+		      \vspace{-.2in}
+		      \begin{multicols}{2}
+			      \noindent
+			      Letting $W = \set{w_i : 0 \leq i \leq 4}$ where $R = \set{\tuple{w_x, w_y} : y = x + 1 ~~ (\bmod\ 5)}$, we may observe that every world sees some world but no world sees itself.
+			      Thus $\tuple{W, R}$ is serial without being reflexive, providing a countermodel to the stated claim.
 
-          We may produce infinitely many countermodels by simply varying the cardinality of $\vert{W} > 1$.
-          \qedp  % The diamond is because countermodels are existential instead of universal like proofs.
+			      We may produce infinitely many countermodels by simply varying the cardinality of $\vert{W} > 1$.
+			      \qedp  % The diamond is because countermodels are existential instead of universal like proofs.
 
-          \columnbreak
+			      \columnbreak
 
-          % NOTE: This is more elaborate than it needs to be, making extra work to write and to check.
-          % Instead it is better to use as simple of an example as you can find, adding complexity only when needed.
-          % I will put a simpler example below that you can adapt.
-          \begin{center}
-            \begin{tikzpicture}
-              % Define the five worlds in a circle
-              \node[world] (w0) at (72 :1.75) {$w_0$};
-              \node[world] (w1) at (360:1.75) {$w_1$};
-              \node[world] (w2) at (288:1.75) {$w_2$};
-              \node[world] (w3) at (216:1.75) {$w_3$};
-              \node[world] (w4) at (144:1.75) {$w_4$}; 
-            
-              % Draw arrows clockwise between worlds
-              \draw[arrow] (w0) to[bend right] (w1);
-              \draw[arrow] (w1) to[bend right] (w2);
-              \draw[arrow] (w2) to[bend right] (w3);
-              \draw[arrow] (w3) to[bend right] (w4);
-              \draw[arrow] (w4) to[bend right] (w0);
-            \end{tikzpicture}
-          \end{center}
-        \end{multicols}
+			      % NOTE: This is more elaborate than it needs to be, making extra work to write and to check.
+			      % Instead it is better to use as simple of an example as you can find, adding complexity only when needed.
+			      % I will put a simpler example below that you can adapt.
+			      \begin{center}
+				      \begin{tikzpicture}
+					      % Define the five worlds in a circle
+					      \node[world] (w0) at (72 :1.75) {$w_0$};
+					      \node[world] (w1) at (360:1.75) {$w_1$};
+					      \node[world] (w2) at (288:1.75) {$w_2$};
+					      \node[world] (w3) at (216:1.75) {$w_3$};
+					      \node[world] (w4) at (144:1.75) {$w_4$};
 
-        \noindent
-        NOTE: This solution is needlessly complex.
-        I use it as an example of what to avoid though it is a perfectly correct countermodel.
-        Instead, try to find the simplest countermodels that you can, adding complexity only as needed.
+					      % Draw arrows clockwise between worlds
+					      \draw[arrow] (w0) to[bend right] (w1);
+					      \draw[arrow] (w1) to[bend right] (w2);
+					      \draw[arrow] (w2) to[bend right] (w3);
+					      \draw[arrow] (w3) to[bend right] (w4);
+					      \draw[arrow] (w4) to[bend right] (w0);
+				      \end{tikzpicture}
+			      \end{center}
+		      \end{multicols}
 
-        % NOTE: This example would not work as is, but could easily be adapted to show what the example above shows.
-        % \begin{center}
-        %   \begin{tikzpicture}
-        %     % Define the two worlds
-        %     \node[world] (w) at (0,0) {$w$};
-        %     \node[world] (u) at (2,0) {$u$};
-        %     
-        %     % Draw arrows
-        %     \draw[arrow] (w) to[loop left] (w);
-        %     \draw[arrow] (w) to (u);
-        %   \end{tikzpicture}
-        % \end{center}
+		      \noindent
+		      NOTE: This solution is needlessly complex.
+		      I use it as an example of what to avoid though it is a perfectly correct countermodel.
+		      Instead, try to find the simplest countermodels that you can, adding complexity only as needed.
 
-      }
+		      % NOTE: This example would not work as is, but could easily be adapted to show what the example above shows.
+		      % \begin{center}
+		      %   \begin{tikzpicture}
+		      %     % Define the two worlds
+		      %     \node[world] (w) at (0,0) {$w$};
+		      %     \node[world] (u) at (2,0) {$u$};
+		      %     
+		      %     % Draw arrows
+		      %     \draw[arrow] (w) to[loop left] (w);
+		      %     \draw[arrow] (w) to (u);
+		      %   \end{tikzpicture}
+		      % \end{center}
 
-    \item Every serial symmetric frame is reflexive. \answer {Bailey [Ben]}
-    % [Ben] although it makes not difference to the pdf, good to stick to the formatting contentions
-    % there are various reasons for this but among them is ease since you can just uncomment the block I provide
-    % same goes for indenting (VSCodium should auto indent for you)
-    {I provide a counterexample. 
-    
-    Assume the existence of only one world $w\in W$. 
-    By seriality, we posit an additional world $u$ such that $R(w, u)$.
-    From symmetry, $R(u,w)$. 
-    Then we have a frame in which the relation is serial and symmetric, 
-    % [Ben] the word 'complete' means various things so best to drop that adjective
-    % also, frames are non-empty by definition, so OK to say that it is a frame
-    but for which neither the reflexive relation $R(w,w)$ or $R(u,u)$ holds.}
-      % \answer{ Name % Collaborators
-      % % Reviewers
-      % }{% body of the argument
-      %   Begin argument...
-      % }
-      
-    \item How many frames are both symmetric and transitive but not reflexive. \answer {Bailey}
-    {The question is difficult to answer in its present form.
-    
-    First, I show that there is at least as many frames as the natural numbers. 
-    Let $n$ be any natural number. 
-    Then we can imagine a frame with n-many worlds but for which the accessibility relation is empty. 
-    The relation on all such worlds is vacuously symmetric and transitive, although it is not reflexive. 
-    
-    But there are more worlds that meet this condition than this.
-    Let there be a frame which contains W such that w has only one element. 
-    Now if this element remains invariant, then we can imagine this as a frame with a natural number infinite many worlds that only contain this element. 
-    But we can also "diagonalize" this frame by adding an additional world such that it contains only one, but different, element. 
-    So there are more than natural number many such worlds. 
-    
-    We can iterate this procedure further up the set hierarchy. This means that there is no set of all worlds or all models altogether.
-    A fortiori, we cannot give a concrete answer to the question posed in the proof. 
-    }
-      % \answer{}{}
+	      }
 
-    \item Every frame that is left and right Euclidean is symmetric and transitive.
-      \answer{ Holden % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-      Let $\tuple{W, R}$ be a left Euclidean (\textsc{leu}) and right Euclidean (\textsc{reu}) frame.
-      
-      First, we show that it is symmetric. Assume $R(x, y)$ holds for some $x, y \in W$. We want to show that $R(y, x)$ holds.
-      Note that, since we have $R(x, y)$ and $R(x, y)$, we have $R(x, x)$ by \textsc{leu}.
-      Now we now have $R(x, y)$ and $R(x, x)$, so we have $R(y, x)$ by \textsc{reu}.
+	\item Every serial symmetric frame is reflexive.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Now, we show that it is transitive. Assume $R(x, y)$ and $R(y, z)$ hold for some $x, y, z \in W$. We want to show that $R(x, z)$ holds.
-      We have already shown that $R$ is symmetric, so we know $R(z, y)$ holds.
-      Then, we have $R(x, y)$ and $R(z, y)$, so by \textsc{leu}, we have $R(x, z)$.
+	\item How many frames are both symmetric and transitive but not reflexive.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Hence, $R$ is both symmetric and transitive, as desired. \qed
-      }
+	\item Every frame that is left and right Euclidean is symmetric and transitive.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item Every frame that is left and right Euclidean is symmetric and transitive.
-      \answer {Bailey
-      }{
-      Let $\tuple{W, R}$ be a left and right Euclidean frame. We show this frame to be both symmetric and transitive. 
-      Let there be arbitrary worlds x, y, and z such that $x,y,z \in W$. From LEU, $R(x, y)$  whenever $R(x, z)$ and $R(y,z)$.
-      % [Ben] ok to skip to: Let $x, y \in W$ be arbitrary worlds where... 
-      From REU, $R(x, y)$ whenever $R(z,x)$ and $R(z,y)$. We show that the whole frame is symmetric by demonstrating $R(y,x)$.
-      % [Ben] Better to use definitions than restate them since otherwise things can get cluttered.
-      % It can be nice to leave them in the comments for yourself to reference when writing a proof though.
-      We show that the whole frame is symmetric by demonstrating $R(y,x)$.
-      % [Ben] yes, but only after assuming the antecedent.
-      Since we know already that $R(y,z)$ and $R(x,z)$, then by LEU $R(y,x)$ fulfilling symmetry.
-      % [Ben] what we know is that $R(x, y)$ since this is the antecedent of symmetry. We don't know anything else. 
-      Further, consider that from the premises that we already knew that $R(y,z)$ and $R(z,x)$.
-      % [Ben] here you want to start by assuming the antecedent of transitivity for (new) arbitrary x, y, z
-      % OK to use the same variables of course. Maybe just say: Now let...
-      Thus, by showing that $R(y,x)$, we likewise show that the whole frame is transitive, as showing the transitivity of all other relations in the frame from the premises is immediate.
-      }
+	\item Every frame that is left and right Euclidean is symmetric and transitive.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item Every frame that is symmetric and transitive is left and right Euclidean.
-      \answer{ David and Sam % Collaborators
-      % % Reviewers
-      }{% body of the argument
-         Let $\tuple{W,R}$ be a symmetric and transitive frame. Let $x, y, z$ be some arbitrary worlds in $W$. Assume that $R(x,y)$. As the frame satisfies \textsc{sym}, we get: $R(y,x)$. Assume $R(y,z)$. By \textsc{tra}, we get: $R(x,z)$. By \textsc{sym}, we get: $R(z,y)$ and $R(z,x)$. This is a transitive and symmetric frame. From this, we also get that the frame is reflexive (by applying \textsc{tra}). We now can show it satisfies \textsc{leu} and \textsc{reu}. Whenever: $R(x,y)$ and $R(x,z)$, it's the case that $R(y,z)$. Whenever: $R(y,x)$ and $R(x,z)$, it's the case that $R(y,z)$. More informally: as our frame is reflexive, symmetric, and transitive, every world `sees' every world. So, it is left and right Euclidean. Generalising on $x, y, z \in W$, we may conclude that $\tuple{W,R}$ is left and right Euclidean.  
-         % [Ben] good to separate sentences on their own numbered lines so I can comment by making new lines
-         % Otherwise I risk merge conflicts.
-         % First sentence is good.
-         % Then you want to skip right to assuming the antecedent of one of the constraints for arbitrary worlds, saying which constraint.
-         % Then use those assumptions to get to the conclusion.
-         % Then repeat for the other constraint.
-         % Sometimes less is more since adding extra stuff, even if true, can clutter the flow of the proof.
-         % Good to only add what is needed to get from (in this case) antecedent to consequent of each constraint.
-         % Use paragraph breaks between parts of the proof.
-         % There are reflexive, symmetric, transitive frames where NOT every world sees every other.
-      }
+	\item Every frame that is symmetric and transitive is left and right Euclidean.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item Every frame that is transitive and both left and right Euclidean is symmetric.
-       \answer{ David and Sam% Collaborators
-      % % Reviewers
-       }{% body of the argument
-         We've seen above that left and right Euclidean frames suffice for symmetry. So, a frame that is Euclidean and transitive will also suffice for symmetry. 
-         % [Ben] This proof has a different shape, starting from the antecedent of symmetry and appealing to different constraints to proceed.
-       }
+	\item Every frame that is transitive and both left and right Euclidean is symmetric.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item Every frame that is symmetric and left Euclidean is transitive.
-      \answer{ Ben % Collaborators
-      % Reviewers
-      }{% body of the argument
-        Let $\tuple{W, R}$ be a symmetric (\textsc{sym}) and left Euclidean (\textsc{leu}) frame.
-        Since $R$ is transitive (\textsc{tra}) if $R = \varnothing$, we may assume otherwise.
-        Letting $R(x, y)$ and $R(y, z)$ for arbitrary $x,y,z \in W$, we aim to show that $R(x, z)$. 
+	\item Every frame that is symmetric and left Euclidean is transitive.
+	      \answer{ Ben % Collaborators
+		      % Reviewers
+	      }{% body of the argument
+		      Let $\tuple{W, R}$ be a symmetric (\textsc{sym}) and left Euclidean (\textsc{leu}) frame.
+		      Since $R$ is transitive (\textsc{tra}) if $R = \varnothing$, we may assume otherwise.
+		      Letting $R(x, y)$ and $R(y, z)$ for arbitrary $x,y,z \in W$, we aim to show that $R(x, z)$.
 
-        Since $R(z, y)$ follows by \textsc{sym}, we know $R(x, z)$ by \textsc{leu}.
-        Generalizing on $x, y, z \in W$, we may conclude that $\tuple{W, R}$ is transitive as desired. 
-        \qed
-      }
+		      Since $R(z, y)$ follows by \textsc{sym}, we know $R(x, z)$ by \textsc{leu}.
+		      Generalizing on $x, y, z \in W$, we may conclude that $\tuple{W, R}$ is transitive as desired.
+		      \qed
+	      }
 
-    \item There is a finite serial transitive frame that is neither reflexive nor symmetric.
-       \answer{ David and Sam% Collaborators
-      % % Reviewers
-       }{% body of the argument
-        Let $\tuple{W,R}$ be a finite serial (\textsc{ser}) transitive (\textsc{tra}) frame. By \textsc{ser}, every world seems some world. That is: $\forall x, y \in W$, either $R(x,y)$ or $R(y,x)$. By \textsc{tra}, if $R(x,y), R(y,z)$ then $R(x,z)$. 
-        % [Ben] ...sees some world...
-        % serial frames: \forall x \exists y R(x,y)
-        
-        Here's the frame. Let $x, y, z$ be some arbitrary worlds in $W$. Let $R(x,y)$ and $R(y,z)$. By \textsc{sym}, let: $R(z,y)$. By \textsc{tra}, we get: $R(x,z)$. By \textsc{tra} again, we get: $R(z,z)$. By \textsc{tra} again, we get: $R(y,y)$. But: nothing sees $x$. So, the model is not symmetric: even though $R(x,y)$, it is not the case that $R(y,x)$. It is also not reflexive. Even though $x \in W$, it is not the case that $R(x,x)$. 
-        % [Ben] this problem is a little subtle
-        % The best way to proceed would be to think about the simplest non-reflexive frame and, separately, to the simplest non-symmetry frame.
-        % Then find the simplest frame that is neither reflexive nor symmetric.
-        % Then think about how to make these serial without making them reflexive or symmetric.
-       }
+	\item There is a finite serial transitive frame that is neither reflexive nor symmetric.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item A symmetric frame is left Euclidean just in case it is right Euclidean.
-      \answer{ Sam % Collaborators
-      [Ben] % Reviewers
-      }{I first show that a symmetric right Euclidean frame is left Euclidean, and then I show that a symmetric left Euclidean frame is right Euclidean. 
+	\item A symmetric frame is left Euclidean just in case it is right Euclidean.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      To show that a symmetric right Euclidean frame is left Euclidean, let $\tuple{W,R}$ be a symmetric (\textsc{sym}) and right Euclidean (\textsc{reu}) frame. Suppose that there are 3 worlds, x, y, z. Moreover, suppose that $R(x, y)$ and $R(x, z)$. 
-      % [Ben] This is minor, but we don't need any cardinality assumptions (it could be x = y = z).
-      % So better wording is: Assume $R(x, y)$ and $R(x, z)$ for arbitrary $x, y, z \in W$.
-      
-      From \textsc{sym}, we get that $R(y, x)$ and $R(z, x)$. Given that $R(y, x)$ and $R(z, x)$, if the frame is left Euclidean, then we need to show $R(y, z)$ and $R(z, y)$. 
-      % [Ben] The first move is good, and then all you need to do is use \textsc{reu}.
-      % A single application gets you what you need to conclude \textsc{leu} (since x, y, and z were arbitrary).
-      % What we need to show is just $R(y, z)$ since the other comes for free by permuting the order of variables 
-      
-      From \textsc{reu}, $R(x, y)$, and $R(x, z)$, we get that $R(y, z)$. From \textsc{sym}, we get $R(z,y)$, so the conditions of being left Euclidean are satisfied. 
-      % [Ben] Yes exactly. All that is missing here is to clear out the unnecessary steps, making only necessary moves to improve readability.
-      
-      To show that a symmetric left Eucliean frame is right Euclidean, start with the same model, but let $\tuple{W,R}$ be a symmetric and left Euclidean (\textsc{leu}) frame. Since $R(x, y)$ and $R(x, z)$, if the frame is right Euclidean, then we need to show that $R(y, z)$ and $R(z, y)$. 
-      % [Ben] The language of 'the same model' is slightly misleading.
-      % We are working with frames (models have interpretations) and we are reasoning about an arbitrary one rather than a particular.
-      
-      From \textsc{sym}, we know $R(y,x)$ and $R(z, x)$. Given that and \textsc{leu}, we know that $R(y, z)$. Given \textsc{sym} we also have $R(z, y)$, so the conditions of being right Euclidean are satisfied. 
-      % [Ben] This proof has all the right ideas, it just needs to be boiled down to essentials.
-      }
+	\item The relational image of a transitive, symmetric, reflexive frame is a partition.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item The relational image of a transitive, symmetric, reflexive frame is a partition.
-       \answer{ David and Sam % Collaborators
-      [Ben] % Reviewers
-       }{% body of the argument
-       Let $\tuple{W,R}$ be a transitive, symmetric, reflexive frame. 
-       In order for it to be a partition, it must exclude the empty set, each subset ought to be disjoint, and it needs to be exhaustive (i.e., include all worlds $\in W$). Let's go one by one. 
+	\item Every total frame is a partition.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-       Let $[x]$ be $\{y \in W | Rxy\}$. Call this the `accessibility set of $x$'. We'll show that, via the accessibility sets of each member, we form a partition. That is: the accessibility set of each member provides a set of subsets that satisfy the conditions for partition. 
-       % [Ben] The notation [x] you introduce is very natural (assuming R to be given), but we already have notation for this in the Logic Notes: (x)_R.
-       % The approach is otherwise perfect
-      
-       By \textsc{ref}, we know that the empty set is excluded. $\forall w \in W (Rww)$. So, by the accessibility set, we exclude the empty set. 
-       % [Ben] Yes, but might help to clarify that every world sees itself, so sees something, so every accessibility set is nonempty, so the empty set is excluded.
-
-       By \textsc{ref}, we also know that every world is accounted for (i.e., satisfy covering). As $\forall w \in W (Rww)$, $\forall w \in W, w \in [w]$. 
-       % [Ben] Could help to clarify that since w \in (w)_R where (w)_R is in \img(R) for all w \in W, we know that for every w \in W there is some Y in \img(R) where w \in Y.
-
-       To show that there are no disjoint members, we can show that $\forall w, v \in W$ if $[w] \cap [v]$ then $[w] = [v]$. Two sets are disjoint just in case they include some (but not all) of the same members. So, to show they're not disjoint, we can show that: if they intersect (i.e., share a member), then they're the same set. 
-       % [Ben] Rather: To show that all distinct elements of \img(R) are disjoint...
-       % Close. You want: if (w)_R \cap (v)_R \neq \varnothing, then...
-       % The approach is perfect
-
-       Suppose that: $u \in ([w] \cap [v])$. That is: $Rwu$ and $Rvu$. By \textsc{sym}, we get: $Ruv$. 
-       From $Rwu$ and $Ruv$, we get $Rwv$, by \textsc{tra}. We can then show that $\forall x \in [v], Rwx$. If $x \in [v]$, then $Rvx$. From $Rwv$ and $Rvx$, by \textsc{tra} we get $Rwx$. So: $[v] \subseteq [w]$. 
-       % [Ben] Good. It would improve clarity to drop the second sentence, starting the third with: Let $x \in (v)_R$ be arbitrary...
-
-       We can do the same thing the other way round. Suppose again that: $u \in ([w] \cap [v])$. That is: $Rwu$ and $Rvu$. By \textsc{sym}, we get: $Ruw$. 
-       From $Rvu$ and $Ruw$, we get $Rvw$, by \textsc{tra}. We can then show that $\forall x \in [w], Rvx$. After all: $\forall x$ s.t. $Rvx$, by \textsc{tra}, we get $Rvx$. So: $[v] \subseteq [w]$. But, if $[v] \subseteq [w]$ and $[w] \subseteq [v]$, then $[w] = [v]$. 
-
-       So, if there is any intersection between two accessibility set, then they are the same set. Hence, satisfying the disjoint constraint for partition. 
-       % [Ben] There is always an intersection between any two sets.
-       % You mean: ...if the intersection between two accessibility sets is nonempty, ...
-
-       The accessibility set of each member of a symmetric, transitive, reflexive frame then satisfies all the constraints on a partition. 
-
-       The definition of relational image was interested in the accessibility set classes, as I defined them here. So, the relational image of a transitive, symmetric, reflexive frame is a partition, as the set of accessibility sets forms a partition. 
-       % [Ben] Nice work!
-       % Clarity may be improved by dropping the first sentence, and joining with the paragraph above.
-       }
-
-    \item Every total frame is a partition.
-      \answer{ David % Collaborators
-      % % Reviewers
-      }{% body of the argument
-      Let $\tuple{W,R}$ be a total frame that is reflexive. Let $W = {x, y}$.
-      % [Ben] Use $\set{ ... }$ or $\{ ... \}$ 
-      % Also, we don't want to assume more than we are given, i.e., just that it is a total frame.
-      As it satisfies \textsc{ref}, $Rxx$ and $Ryy$. As it's total, stipulate: $Rxy$. Now every world sees some world ($x$ sees $y$ and itself, $y$ sees itself). This does not form a partition as the corresponding set is: $\{\{x,y\}, \{y\}\}$. The members are not disjoint.
-      % [Ben] You are right to conclude that *this* total frame is a partition, but what about all the others?
- 
-      }
-
-    \item There is a symmetric total frame that is not a partition.
-       \answer{ David % Collaborators
-      % % Reviewers
-       }{% body of the argument
-       We know that any equivalence relation $R$ over some set partitions that set. 
-       So, to show that every symmetric total frame is a partition, we can show that every such frame involves an equivalence relation (i.e., satisfies \textsc{tra}, \textsc{sym}, \textsc{ref}). 
-       By \textsc{tot}, we know: $\forall x, y \in W$, either $Rxy$ or $Ryx$. 
-       As the frame is symmetric, we know: $\forall x,y \in W$ if $Rxy$, then $Ryx$. 
-       By combining \textsc{tot} and \textsc{sym}, we get the following: $\forall x, y \in W, Ryx$ and $Rxy$. \textsc{tot} requires one of these worlds (i.e., either $Rxy$ or $Ryx$) and \textsc{sym} guarantees that the other is true too. 
-       % [Ben] \textsc{tot} requires one of the relations to hold (rather than 'one of these worlds')
-       This frame is transitive. \textsc{tra} required that: if $Rxy$ and $Ryz$, then $Rxz$. By \textsc{tot}, we know that either $Rxz$ or $Rzx$. By \textsc[sym], we know that both: $Rxz$ and $Rzx$. So, the frame is transitive. 
-       We also know that the frame is reflexive. \textsc[tra] says: if $Rxy$ and $Ryz$, then $Rxz$. 
-       We know, in our frame that $Rxy$ and $Ryx$, by \textsc{sym}. So, by \textsc{tra}, we know that $Rxx$. The same can be done for any world in the frame. So, the frame is reflexive. 
-       We've shown that a symmetric total frame involves an equivalence relations. An equivalence relation over some set partitions that set. So: there is no symmetric total frame that is not a partition. 
-       % [Ben] your strategy is good but could be simplified. 
-       % assume R(x,y) and $R(y,z)$ to show that $R(x,z)$ and so transitive 
-       % by \textsc{tot}, either $R(x,z)$ or $R(z,x)$, where \textsc{sym} guarantees that both hold
-       % thus $R(x,z)$ is guaranteed 
-       % next observe that \textsc{ref} is immediate from \textsc{tot}
-       % so it is an equivalence relation given your assumptions
-       % so the claim holds by \#2.11
-
-       }
+	\item There is a symmetric total frame that is not a partition.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
 	\item[\bf Countermodels:] Evaluate the following, providing a proof or countermodel.
-    If there is a countermodel, replace $K$ with the weakest set of constraints $C$ to make the claim hold. 
-    You do not need to prove that it is the weakest set of constraints.
+	      If there is a countermodel, replace $K$ with the weakest set of constraints $C$ to make the claim hold.
+	      You do not need to prove that it is the weakest set of constraints.
 
-    \item $\Box \metaA \MLmodels[K] \Box\Box \metaA$
-      \answer{ Holden % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-        This does not hold in general.
-        Consider a frame where $W=\set{w_1, w_2, w_3}$ and $R=\set{\tuple{w_1,w_2}, \tuple{w_2,w_3}}$ where $\I(p_0)=\set{w_2}$.
-        Let $\M = \tuple{W, R, \I}$.
-        It follows from the definition of $\MLmodels$ that $\M, w_2 \MLmodels p_0$.
-        Note that $(w_1)_R = \set{w_2}$, and $w_2 \in \interpret{\M}{p_0}$, so $(w_1)_R \subseteq \interpret{\M}{p_0}$ and by \textbf{\#1.11}, $\M, w_1 \MLmodels \Box p_0$.
-        However, note that $\M, w_3 \not\MLmodels p_0$, so $w_3 \notin \interpret{\M}{p_0}$.
-        Also, $(w_2)_R = \set{w_3}$, so $(w_2)_R \not\subseteq \interpret{\M}{p_0}$.
-        Hence, by \textbf{\#1.11}, $\M, w_2 \not\MLmodels \Box p_0$.
-        So $w_2 \notin \interpret{\M}{\Box p_0}$.
-        Therefore, $(w_1)_R \not\subseteq \interpret{\M}{\Box p_0}$, and by \textbf{\#1.11}, $\M, w_1 \not\MLmodels \Box\Box p_0$. \qedp
-        
-        \medskip
-        
-        Restricting to \textsc{transitive} (\textsc{tra}) models, we may show $\Box\metaA \MLmodels[\textsc{tra}] \Box\Box\metaA$.
-        Let $\M$ be any $\ML$ model that satisfies \textsc{tra}, $\metaA \in \wfs{\ML}$, and $w \in W$ where $\M, w \MLmodels \Box \metaA$.
-        Assume towards a contradiction that $\M, w \not\MLmodels \Box\Box \metaA$.
-        Then, by \textbf{\#1.11}, $(w)_R \not\subseteq \interpret{\M}{\Box\metaA}$.
-        Hence, there is some $u \in (w)_R$ such that $u \notin \interpret{\M}{\Box\metaA}$.
-        % [Ben] Note that this same conclusion could be drawn directly from the semantics for \Box
-        % 1.11 is sometimes very helpful and sometimes can add an extra step
-        So $\M, u \not\MLmodels \Box\metaA$.
-        Then, by \textbf{\#1.11}, $(u)_R \not\subseteq \interpret{\M}{\metaA}$.
-        Hence, there is some $v \in (u)_R$ such that $v \notin \interpret{\M}{\metaA}$.
-        But by \textsc{tra}, since $u \in (w)_R$ and $v \in (u)_R$, we have $R(w, u)$ and $R(u, v)$ and hence $R(w, v)$.
-        So, $v \in (w)_R$.
-        But then $(w)_R \not\subseteq \interpret{\M}{\metaA}$.
-        So by \textbf{\#1.11}, $\M, w \not\MLmodels \Box \metaA$, which is a contradiction.
-        So we conclude that $\M, w \MLmodels \Box\Box \metaA$.\qed
-      }
+	\item $\Box \metaA \MLmodels[K] \Box\Box \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\Box \metaA \MLmodels[K] \metaA$
-       \answer{ David, Joaquin % Collaborators
-      % % Reviewers
-       }{% body of the argument
-      Throughout, let $C$ be the proposed set of constraints on $R$ replacing $K$. We first show that the proposed $C$ is sufficient to arrive at the proposed theorem. Then we show that it is necessary; that if $R$ does not satisfy the proposed $C$, then there exists a countermodel to the theorem.
+	\item $\Box \metaA \MLmodels[K] \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Define the indegree of a world $w$ as $indeg(w)$, which is the size of $S = {u : w \in (w)_R}$, and definte the outdegree of $w$ as $outdeg(w)$, which is the size of $S = (w)_R$.
+	\item $\metaA \MLmodels[K] \Box \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Claim: $C: \forall w, w \in (w)_R$.
+	\item $\Box(\metaA \vee \metaB) \MLmodels[K] \Box \metaA \vee \Box \metaB$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Sufficiency: if $\Box p$ holds at $w$, then $p$ holds at all of $(w)_R$. By $C$, $w \in (w)_R$. Then $p$ holds at $w$. Thus, $\Box p \rightarrow p$, as desired.
+	\item $\Box \metaA \MLmodels[K] \Diamond \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Necessity: Suppose $C$ fails. Then there exists $w$ with $w \notin (w)_R$. Assign $p$ to be true in all of $(w)_R$, and false in $w$. By construction, this is well-defined. Then $\Box p$, by construction, yet also $\neg p$. So the theorem fails, as desired.
-       }
+	\item $\Diamond \metaA \MLmodels[K] \Box \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\metaA \MLmodels[K] \Box \metaA$
-       \answer{ David, Joaquin % Collaborators
-      % % Reviewers
-       }{% body of the argument
-      Claim: $C: \forall w, (w)_R \subseteq {w}$.
+	\item $\Diamond\Box \metaA \MLmodels[K] \Box\Diamond \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Sufficiency: Assume $p$ at $w$. Then $p$ holds at all elements of ${w}$, trivially. Then $p$ holds over all subsets of ${w}$. Then by $C$, $p$ holds at all of $(w)_R$. Then $\Box p$ at $w$. Thus $p \rightarrow \Box p$, as desired.
+	\item $\Box\Diamond \metaA \MLmodels[K] \Diamond\Box \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Necessity: Suppose $C$ is violated. Then there exists $w$ with $(w)_R \not\subseteq {w}$. This is equivalent to $ \exists u \in (w)_R : u \not\in {w}$. This is equivalent to $ \exists u \in (w)_R: u \not= w$.
-      Let $p$ be true at $w$, false at $u$ described above. By construction, as $u \not= w$, this is well-defined. Then $p$ holds at $w$. Yet $\exists u \in (w)_R$ with $\neg p$ at $u$.
-      Then $\neg\Box p$ at $w$. So the theorem fails, as desired.
-       }
+	\item $\Box \metaA \MLmodels[K] \Box\Diamond \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\Box(\metaA \vee \metaB) \MLmodels[K] \Box \metaA \vee \Box \metaB$
-      \answer{ Helena % Collaborators
-      % Reviewers
-      }{
-        Let $W = \set{w_0, w_1, w_2}$ and $R = \set{\tuple{w_0, w_1}, \tuple{w_0,w_2}}$, where $\I(p_1)  = \set{w_1}$, $\I(p_2) = \set{w_2}$. 
-        Let $\M=\tuple{W, R, \I}$. It follows from the definition of $\MLmodels$ that $\M, w_1 \MLmodels p_1$ and $\M, w_2 \MLmodels p_2$. Therefore, $w_1 \in \interpret{\M}{p_1}$ and $w_2 \in \interpret{\M}{p_2}$. 
-        Moreover, given \textbf{\#1.4}, $\interpret{\M}{p_1} \subseteq \interpret{\M}{p_1} \cup \interpret{\M}{p_2} = \interpret{\M}{p_1 \lor p_2}$. 
-        It follows that $w_1 \in \interpret{\M}{p_1 \lor p_2}$. Similarly, $w_2 \in \interpret{\M}{p_1 \lor p_2}$. 
-        Note that $(w_0)_R = \set{w_1,w_2}$. So $(w_0)_R \subseteq \interpret{\M}{p_1 \lor p_2}$, and by \textbf{\#1.11}, $\M, w_0 \MLmodels \Box(p_1 \lor p_2)$. 
+	\item $\MLmodels[K] \neg\Box(\metaA \wedge \neg \metaA)$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-        However, note that $\M, w_1 \not\MLmodels p_2$, so $w_1 \not\in \interpret{\M}{p_2}$. 
-        And since $w_1 \in (w_0)_R$, it follows that $(w_0)_R \not\subseteq \interpret{\M}{p_2}$. Hence by \textbf{\#1.11}, $\M, w \not \MLmodels \Box p_1$.
-        Similarly, since $\M, w_2 \not\MLmodels p_1$, it follows that $w_2 \not\in \interpret{\M}{p_1}$. 
-        And since $w_2 \in (w_0)_R$, it follows that $(w_0)_R \not \subseteq \interpret{\M}{p_1}$. Hence by \textbf{\#1.11}, $\M, w \not \MLmodels \Box p_2$. 
-        Therefore, by \textbf{\#1.15}, $\M, w \not \MLmodels \Box p_1 \lor \Box p_2$. 
+	\item $\Diamond \metaB \MLmodels[K] \neg\Box(\metaA \wedge \neg \metaA)$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-        \medskip 
+	\item $\Box \metaA \MLmodels[K] \Box(\metaB \rightarrow \metaA)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-        Restricting considerations to the \textsc{right euclidean (reu)} models, we may show that $\Box(\metaA \lor \metaB) \MLmodels[\textsc{reu}] \Box \metaA \lor \Box \metaB$. 
-        Let $\M$ be an arbitrary $\ML$ model that satisfies \textsc{reu}, $\metaA, \metaB \in \wfs{\ML}$, and $w \in W$, $\M, w \MLmodels \Box(\metaA \lor \metaB)$. 
-        We want to show that for all $w \in W, \M, w \MLmodels[\textsc{reu}] \Box \metaA \lor \Box \metaB$.
-        
-        Assume for contradiction that there's a world $w_0 \in W$ where $\M, w_0 \not \MLmodels \Box \metaA \lor \Box \metaB$. 
-        Given \textbf{\#1.15}, this implies that $\M, w_0 \not \MLmodels \Box \metaA$ and $\M, w_0 \not \MLmodels \Box \metaB$. 
-        So by the semantics of necessity, there are worlds $w_1, w_2 \in W$ such that (i) $R(w_0,w_1)$ where $\M, w_1 \not\MLmodels \metaA$ and (ii) $R(w_0,w_2)$ where $\M, w_2 \not\MLmodels \metaB$. 
-        Given $R(w_0,w_1)$ and $R(w_0,w_2)$, by \textsc{reu}, it follows that $R(w_1, w_2)$. Since $R(w_1,w_2)$ and $\M,w_2 \not\MLmodels \metaB$, by the semantics of necessity, $\M, w_1 \not \MLmodels \Box \metaB$. 
-        Moreover, given $R(w_0, w_1)$ and $R(w_0, w_1)$, by \textsc{reu} it follows that $R(w_1,w_1)$. % i think this is legit tho i'm not sure?
-        % [Ben] this is legit!
-        And since $\M,w_1 \not\MLmodels \metaA$, by the semantics of necessity, $\M, w_1 \not \MLmodels \Box \metaA$. 
-        Therefore, by \textbf{\#1.15}, $\M, w_1 \not \MLmodels \Box \metaA \lor \Box \metaB$. 
-        This contradicts our assumption that $\M, w \MLmodels \Box(\metaA \lor \metaB)$ for all $w \in W$. 
-        % [Ben] everything is right but this last step doesn't hold
-        % think of a model {w, u} where everything sees everything and (\metaA \wedge \neg\metaB) holds in w
-        % and (\neg\metaA \wedge \metaB) holds in u
-        % then in both worlds, (\metaA \wedge \metaB) is necessary but neither disjunct is
-        % since this is an equivalence relation, you might wonder what constraint could be imposed to prevent this
-        % you may consider frame constraints beyond those indicated in the notes
-        % you are close!
-        Therefore, $\Box(\metaA \lor \metaB) \MLmodels[\textsc{reu}] \Box \metaA \lor \Box \metaB$.
-        \qed
-      }
-
-    \item $\Box \metaA \MLmodels[K] \Diamond \metaA$
-      \answer{ Ben % Collaborators
-      % Reviewers
-      }{% body of the argument
-        Letting $W = \set{w}$ and $R = \varnothing$, we may take $\I : \SL \to \wp(W)$ to be an arbitrary interpretation, setting $\M = \tuple{W, R, \I}$.
-        Since $(w)_R = \varnothing$ and $\interpret{\M}{p_0} \subseteq W$, we know that $(w)_R \subseteq \interpret{\M}{p_0}$, and so $\M, w \MLmodels[K] \Box p_0$ by \textbf{\#1.11}.
-
-        However, $\M, w \MLmodels[K] \Diamond p_0$ just in case $\M, u \MLmodels[K] p_0$ for some $w \in W$ where $R(w, u)$.
-        Since $R = \varnothing$, there is no such $u \in W$, and so $\M, w \nMLmodels[K] \Diamond p_0$.
-        Thus we have shown that $\Box \metaA \MLmodels[K] \Diamond \metaA$ does not hold for all $\metaA$.
-        \qedp
-
-        \medskip
-        Restricting consideration to the \textsc{serial} (\textsc{ser}) models, we may show that $\Box \metaA \MLmodels[D] \Diamond \metaA$.
-        Let $\M$ be any $\ML$ model that satisfies \textsc{ser}, $\metaA \in \wfs{\ML}$, and $w \in W$ where $\M, w \MLmodels \Box\metaA$.
-        By \textsc{ser}, we know that there is some $u \in W$ where $R(w, u)$, and so $\M, u \MLmodels \metaA$ by the $\ML$ semantics for necessity. 
-        Thus $\M, w \MLmodels \Diamond\metaA$ by \textbf{\#1.10}.
-        % This originally said 1.11, but I'm fairly sure it was a typo that was supposed to say 1.10, so I changed it -Holden
-        Since $\M$ was an arbitrary $\ML$ model that satisfies \textsc{ser} and $w \in W$ was any world, we may conclude that $\Box \metaA \MLmodels[D] \Diamond \metaA$.
-        \qed
-      }
-
-    \item $\Diamond \metaA \MLmodels[K] \Box \metaA$
-      \answer{ Helena % Collaborators
-      % Reviewers
-      }{
-        Let $W = \set{w_0, w_1}$ and $R = \set{\tuple{w_0,w_0},\tuple{w_0, w_1}}$, where $\I(p_0) = \set{w_1}$. 
-        Let $\M = \tuple{W, R, \I}$. 
-        It follows from the definition of $\MLmodels$ that $\M, w_1 \MLmodels p_0$. 
-        Therefore, $w_1 \in \interpret{\M}{p_0}$. 
-        Given $w_1 \in (w_0)_R$ and $w_1 \in \interpret{\M}{p_0}$, it follows that $w_1 \in (w_0)_R \cap \interpret{\M}{p_0}$. 
-        By \textbf{\#1. 14}, $\M, w_0 \MLmodels \Diamond p_0$. 
-
-        However, note that since $w_0 \not \in \I(p_0)$, it follows from the definition of $\MLmodels$ that $\M, w_0 \not\MLmodels p_0$, so $w_0 \notin \interpret{\M}{p_0}$. 
-        And since $w_0 \in (w_0)_R$, it follows that $(w_0)_R \not \subseteq \interpret{\M}{p_0}$.  
-        By \textbf{\#1.11}, $\M, w_0 \not \MLmodels \Box p_0$.
-        % [Ben] This is perfectly correct, however here it would be easier to use the semantics since \Box is primitive
-
-        \medskip 
-
-        Restricting consideration to the models that satisfy \textsc{reflexive (ref)}, \textsc{symmetric (sym)} and \textsc{transitive (tra)}, we may show that $\Diamond \metaA \MLmodels[S5] \Box \metaA$. 
-        Let $\M$ be an arbitrary $\ML$ model that satisfies \textsc{ref}, \textsc{sym} and \textsc{tra}, $\metaA \in \wfs{\ML}$, and $w \in W$ where $\M, w \MLmodels \Diamond \metaA$. 
-        We want to show that for all $w \in W, \M, w \MLmodels[S5] \Box \metaA$. 
-        
-        % actually no idea if this is right
-        % [Ben] good catch! requiring R to be an equivalence relation is not strong enough
-        % for instance, if \metaA is true in w and false in u where these are the only worlds and they see each other, then \Diamond\metaA is true but \Box\metaA is false (in both worlds)
-
-        Assume for contradiction that there's a world $w_0 \in W$ where $\M, w_0 \not \MLmodels \Box \metaA$. 
-        Given the semantics of necessity, there's a world $w_1 \in W$ such that $R(w_0, w_1)$ but $\M, w_1 \not \MLmodels \metaA$ (equivalently $\M, w_1 \MLmodels \lnot \metaA$). 
-        However, since $\M, w_0 \MLmodels \Diamond \metaA$, by \textbf{\#1.10}, there's a world $w_2 \in W$ such that $R(w_0, w_2)$ and $\M, w_2 \MLmodels \metaA$. 
-        By \textsc{tra}, since $R(w_0, w_1)$ and $R(w_0, w_2)$, it follows that $R(w_1, w_2)$. [TBC]
-
-        % ... and so am stuck here. any hints?
-        % also i think there are actually even weaker constraints? but given the resources in the notes I can only think of S5
-        % [Ben] see note above. It was a little tricky of me to give problems that require stronger constraints than I provided in the notes...
-        % [Joaquin] Note that one interpretation of the proposed theorem
-        % is that "if one image of w has phi (diamond phi), then all images
-        % of w have phi (box phi)". Under this interpretation, it is
-        % natural to think the condition may be that the constraint is
-        % "one image of w must be the whole image", and in fact this holds
-        % exactly; it is precisely necessary and sufficient.
-
-      }
-
-    \item $\Diamond\Box \metaA \MLmodels[K] \Box\Diamond \metaA$
-      \answer{ Helena % Collaborators
-      % Reviewers
-      }{
-        Let $W = \set{w_0, w_1}$ and $R = \set{\tuple{w_0,w_1}}$, where $\I(p_0) = \set{w_1}$. Let $\M = \tuple{W, R, \I}$. 
-        It follows from the definition of $\MLmodels$ that $\M, w_1 \MLmodels p_0$, and so $w_1 \in \interpret{\M}{p_0}$.
-        Since $(w_1)_R = \varnothing$ and $\interpret{\M}{p_0} \subseteq W$, we know that $(w_1)_R \subseteq \interpret{\M}{p_0}$, and so $\M, w_1 \MLmodels[K] \Box p_0$ by \textbf{\#1.11}. 
-        It follows that $w_1 \in \interpret{\M}{\Box p_0}$. 
-        Moreover, since $w_1 \in (w_0)_R$, by \textbf{\#1.14}, $\M, w_0 \MLmodels \Diamond \Box p_0$.
-
-        However, note that since $(w_1)_R = \varnothing$, it follows that $(w_1)_R \cap \interpret{\M}{p_0} = \varnothing$, and so by \textbf{\#1.14}, $\M, w_1 \not\MLmodels \Diamond p_0$.
-        It follows that $w_1 \not \in \interpret{\M}{\Diamond p_0}$. Then, given $w_1 \in (w_0)_R$, by \textbf{\#1.11} we know $\M, w_0 \not \MLmodels \Box \Diamond p_0$.
-        % [Ben] Nice!
-        
-        \medskip
-
-        Restricting considerations to the \textsc{symmetry (sym)} models, we may show that $\Diamond\Box \metaA \MLmodels[\textsc{sym}] \Box\Diamond \metaA$. 
-        Let $\M$ be any $\ML$ model that satisfies \textsc{sym}, $\metaA \in \wfs{\ML}$, and $w \in W$ where $\M, w \MLmodels \Diamond \Box \metaA$. 
-        We want to show that for all $w \in W$, $\M, w \MLmodels \Box \Diamond \metaA$.
-        % [Ben] since w is arbitrary, we just need to show that it makes the claim true (so can drop the 'for all')
-        
-        Assume for contradiction that there's world $w_0 \in W$ where $\M, w_0 \not \MLmodels \Box \Diamond \metaA$. 
-        Since $\M, w_0 \MLmodels \Diamond \Box \metaA$, there's a world $w_1 \in W$ such that $R(w_0, w_1)$ and $\M, w_1 \MLmodels \Box \metaA$. 
-        % [Ben] replace w_0 with the arbitrary world w introduced above
-        By \textsc{sym}, we know that $R(w_1,w_0)$. And so by the semantics of necessity, $\M, w_0 \MLmodels \metaA$. 
-        Now since $\M, w_0 \not \MLmodels \Box \Diamond \metaA$, by the semantics of necessity, there's a world $w_2 \in W$ where $R(w_0, w_2)$ and $\M, w_2 \not \MLmodels \Diamond \metaA$. 
-        By \textbf{\#1.14}, this says that $(w_2)_R \cap \interpret{\M}{\metaA} = \varnothing$. 
-        Now note that by \textsc{sym}, since $R(w_0, w_2)$, we know that $R(w_2, w_0)$, hence $w_0 \in (w_2)_R$. 
-        But recall that $\M, w_0 \MLmodels \metaA$, and so $w_0 \in \interpret{\M}{\metaA}$. 
-        It follows that $w_0 \in (w_2)_R \cap \interpret{\M}{\metaA}$. Contradiction. 
-        % [Ben] The essentials here are all correct
-        
-        Therefore, since $\M$ was an arbitrary $\ML$ model that satisfies \textsc{sym}, we may conclude that $\Diamond\Box \metaA \MLmodels[\textsc{sym}] \Box\Diamond \metaA$.
-        \qed
-      }
-
-    \item $\Box\Diamond \metaA \MLmodels[K] \Diamond\Box \metaA$
-      \answer{ Helena % Collaborators
-      % Reviewers
-     }{% 
-        Let $W = \set{w_0, w_1}$ and $R = \set{\tuple{w_0,w_0}, \tuple{w_0,w_1}, \tuple{w_1,w_0}, \tuple{w_1,w_1}}$, where $\I(p_0) = \set{w_1}$. 
-        Let $\M = \tuple{W, R, \I}$. It follows from the definition of $\MLmodels$ that $\M, w_1 \MLmodels p_0$. 
-        Therefore, $w_1 \in \interpret{\M}{p_0}$. 
-        Given $w_1 \in (w_1)_R$ and $w_1 \in \interpret{\M}{p_0}$, it follows that $w_1 \in (w_1)_R \cap \interpret{\M}{p_0}$. 
-        By \textbf{\#1.14}, $\M, w_1 \MLmodels \Diamond p_0$. 
-        And since $w_0 \in (w_1)_R$, by the same reasoning we know $\M, w_0 \MLmodels \Diamond p_0$. 
-        By the semantics of necessity, $\M, w_0 \MLmodels \Box \Diamond p_0$.
-
-        However, note that since $w_0 \not \in \I(p_0)$, we know that $\M, w_0 \not \MLmodels p_0$. 
-        Then, since $R(w_1, w_0)$, by the semantics of necessity, $\M, w_1 \not \MLmodels \Box p_0$. 
-        Similarly, since $R(w_0, w_0)$, we know that $\M, w_0 \not \MLmodels \Box p_0$. 
-        Then for $(w_0)_R = \set{w_0, w_1}$, $w_0 \not \in \interpret{\M}{\Box p_0}$ and $w_1 \not \in \interpret{\M}{\Box p_0}$. 
-        Hence $(w_0)_R \cap \interpret{\M}{ \Diamond p_0} = \varnothing$. 
-        By \textbf{\#1.14}, $\M, w_0 \not \MLmodels \Diamond \Box p_0$.
-
-        This is in fact already an S5 frame, so there's no stronger constraint to validate this formula (?).
-
-        % ??? anything went wrong??
-        % [Ben] your reasoning here is perfect, though there is a stronger constraint (just not stated in the notes)
-
-        \qed 
-        
-      }
-
-    \item $\Box \metaA \MLmodels[K] \Box\Diamond \metaA$
-     \answer{ Joaquin% Collaborators
-     % Reviewers
-     }{% body of the argument
-     Claim: $C: \forall w, u \in (w)_R, (w)_R \cap (u)_R \not= \emptyset$
-
-     Sufficiency: Suppose $\Box p$ holds at $w$. Then $\forall x \in (w)_R$, $p$ holds at $x$. 
-     Assume $A: (w)_R = \emptyset$. Then $\forall x \in (w)_R$, any property whatsoever holds. Then $\forall x \in (w)_R, \Diamond p$. Then $\Box \Diamond p$ at $w$, and we would be done. Now we discharge $A$ and assume that $(w)_R \not= \emptyset$.
-     Then let $x \in (w)_R$. By $C$, there exists $y \in (w)_R \cap (x)_R$. Then $y \in (w)_R$. As $\Box p$ at $w$, we have $p$ holds at $y$. Note that $x$ is arbitrarily ranging over $(w)_R$. Then $\forall u \in (w)_R, \exists y \in (u)_R$ such that $p$ holds at $y$. Then $\Box \Diamond p$, as desired.
-
-     Necessity: Suppose $C$ doesn't hold. Then there is some $w$, with some $u \in (w)_R$, such that $(w)_R \cap (u)_R = \emptyset$.
-     Assign $p$ to be true at $(w)_R$, $\neg p$ at $(u)_R$. By above, this is well-defined. Then by construction, $\Box p$ holds at $w$. Yet $\forall x \in (u)_R, \neg p$. Then $\neg \Diamond p$ at $u$. Then $\Diamond \neg \Diamond p$ at $w$, by looking at $u$. Then $\neg \Box \Diamond p$. Thus the theorem fails, as desired.
-     }
-
-    \item $\MLmodels[K] \neg\Box(\metaA \wedge \neg \metaA)$
-      \answer{ Joaquin % Collaborators
-      % % Reviewers
-      }{% body of the argument
-      Claim $C: \forall w, (w)_R \not= \emptyset$.
-
-      Sufficiency: By $C$, $\exists u \in (w)_R$. At $u$, note that $\neg (p \wedge \neg p)$ holds. Then $\Diamond \neg(p \wedge \neg p)$ at $w$, by considering $u$. Then $\neg \Diamond (p \wedge \neg p)$ at $w$, as desired.
-
-      Neccessity: If $C$ is violated, then $\exists w, (w)_R = \emptyset$. Then vacuously, $\forall u \in (w)_R, (p \wedge \neg p)$. Then $\Box (p \wedge \neg p)$ at $w$, so the theorem fails, as desired.
-      }
-
-    \item $\Diamond \metaB \MLmodels[K] \neg\Box(\metaA \wedge \neg \metaA)$
-      \answer{ Joaquin% Collaborators
-      % % Reviewers
-      }{% body of the argument
-      Claim: $C: \emptyset$.
-
-      Sufficiency: Note that the proof in 23 above holds precisely the same way, with the sole exception that now, $\exists u \in (w)_R$ is justified by $\Diamond q \rightarrow (w)_R \not= \emptyset$, so the above proof holds with no constraints on $C$.
-
-      Necessity: it is impossible to violate $C$, so it is vacuously necessasry.
-      }
-
-    \item $\Box \metaA \MLmodels[K] \Box(\metaB \rightarrow \metaA)$.
-      \answer{ Joaquin % Collaborators
-      % % Reviewers
-      }{% body of the argument
-      Claim: $C: \emptyset$.
-
-      Sufficiency: Suppose $\Box p$ at $w$. Then $\forall u \in (w)_R, p$. Note that $p \rightarrow (q \rightarrow p)$. Then $p$ holding at $u$ implies that $q \rightarrow p$ holds at $u$. Then $\forall u \in (w)_R, (q \rightarrow p)$. Then $\Box (q \rightarrow p)$ at $w$, as desired.
-
-      Necessity: it is impossible to violate $C$, so it is vacuously necessary.
-      }
-
-    \item $\neg\Box \metaA \MLmodels[K] \Box(\metaA \rightarrow \metaB)$.
-      \answer{ Joaquin % Collaborators
-      % % Reviewers
-      }{% body of the argument
-      Claim: $C: \forall w, outdeg(w) \leq 1$.
-
-      Sufficiency: suppose $\neg\Box p$ holds at $w$. Then $\Diamond \neg p$ at $w$. Then $\exists u \in (w)_R$ with $\neg p$. By $C$, the size of $(w)_R$ is less than or equal to 1. Then $(w)_R = {u}$. Then $\forall u \in (w)_R, \neg p$. Note that $\neg p \rightarrow (p \rightarrow q)$. Then $\forall u \in (w)_R, (p \rightarrow q)$. Then $\Box (p \rightarrow q)$ at $w$, as desired.
-
-      Neccesity: Suppose $C$ is violated. Then there exists $w$ with outdegree at least 2. Label these $u \not= v, u,v \in (w)_R$. Assign $\neg p$ at $u$, $p \wedge \neg q$ at $v$. As $u \not= v$, this is well-defined. Then $\Diamond \neg p$ at $w$, by considering $u$. Then $\neg \Box p$. Also $\Diamond p \wedge \neg q$, by considering $v$. Then $\Diamond \neg (\neg p \vee q)$. Then $\neg \Box (p \rightarrow q)$. Thus the theorem fails, as desired.  
-      }
+	\item $\neg\Box \metaA \MLmodels[K] \Box(\metaA \rightarrow \metaB)$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
 \end{enumerate}
 
@@ -722,190 +346,91 @@
 
 	\item[\bf Semantic Proofs:] Provide semantic proofs of the following:
 
-    \item If $\MLmodels[K] \metaA$, then $\MLmodels[K] \Box\metaA$
-       \answer{ David % Collaborators
-      % % Reviewers
-       }{% body of the argument
-      %   Begin argument...
-       }
+	\item If $\MLmodels[K] \metaA$, then $\MLmodels[K] \Box\metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\MLmodels[K] \Box(\metaA \rightarrow \metaB)\rightarrow(\Box\metaA \rightarrow \Box\metaB)$
-      \answer{ Juan
-      [Ben] % Reviewers
-      }{ 
-      Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$. Thus $\M$ is a \textit{K}-model. First we show that for any sentences $\metaA$, $\metaB$ of $\L^{\Box}$, any \textit{K}-model, and any $w \in W$, it's not the case that $\M, w \MLmodels \Box(\metaA \rightarrow \metaB)$ and $\M, w \nMLmodels  (\Box \metaA \rightarrow \Box \metaB)$.
-      % [Ben] not a big deal but want to alert you to the commands in the notation.tex file (could save trouble)
-      % I'm thinking of $\ML$ here 
-      
-      Suppose for contradiction there's a world $w \in W$ such that $\M, w \MLmodels \Box(\metaA \rightarrow \metaB)$ and $\M, w \nMLmodels (\Box\metaA \rightarrow \metaB)$. By the left conjuct and the semantics for $\Box$ it follows that for every $u \in W$ such that $R(u,w)$, $M, u \MLmodels \metaA \rightarrow \metaB$. By our definition of $\rightarrow$ it in turn follows that $M, u \nMLmodels \metaA$ or $M, u \MLmodels \metaB$.
-      Now let's turn to the right conjunct. It says $M, w \nMLmodels (\Box \metaA \rightarrow \Box\metaB)$. By our definition of $\rightarrow$, $\lnot$, and logical consequence it follows that $\M$ is a model where $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \Box \metaB$.
-      % NB: I'm unsure about this step buuuuuuut let's see if it gets us what we want.
-      % [Ben] this proof is correct but could be streamlined by focusing on existential claims (possibilities and negated necessities) before universal claims.
-      % the idea is to make no unforced moves, unpacking existential before universal
-      % The step you refer to here is the one to unpack before all the universal claims since it will give you a particular world which you can then apply the universals to in order to get a contradiction
-      
-      From this we can derive a contradiction. By our definition of $\Box$ it follows that for every world $u \in W$ such that $R(u, w)$ $\M, u \MLmodels \metaA$. So $\M, u \MLmodels \metaA$. This means the left conjunct can be true only if $\M, u \MLmodels \metaB$. But by our definition of $\lnot$ it follows that $\M, w \MLmodels \lnot \Box \metaB$. By our definition of $\Box$ it follows that there is some $u \in W$ such that $R(u,w)$ and $\M, u \nMLmodels \metaB$. We just showed this isn't so for every $u \in W$ such that $R(u,w)$. Contradiction.
-      
-      This means that for any $w \in W$ it's not the case that $\M, w \MLmodels \Box(\metaA \rightarrow \metaB)$ and $\M, w \nMLmodels (\Box \metaA \rightarrow \Box \metaB).$ This is equivalent to $\M, w \nMLmodels \Box(\metaA \rightarrow \metaB)$ or $\M, w \MLmodels (\Box \metaA \rightarrow \Box \metaB)$. By our semantics for $\rightarrow$ it follows that $\M, w \MLmodels \Box(\metaA \rightarrow \metaB) \rightarrow (\Box \metaA \rightarrow \metaB)$. Since $\M$ is an arbitrary \textit{K}-model this holds in all \textit{K}-models. By our definition of logical consequence it follows that $\MLmodels[K] \Box(\metaA \rightarrow \metaB) \rightarrow (\Box \metaA \rightarrow \Box \metaB)$. $\qed$.
-       }
+	\item $\MLmodels[K] \Box(\metaA \rightarrow \metaB)\rightarrow(\Box\metaA \rightarrow \Box\metaB)$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\MLmodels[D] \Box \metaA \rightarrow\Diamond \metaA$
-       \answer{ David % Collaborators
-      % % Reviewers
-       }{% body of the argument
-      %   Begin argument...
-       }
+	\item $\MLmodels[D] \Box \metaA \rightarrow\Diamond \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\MLmodels[T] \Box \metaA \rightarrow \metaA$
-      \answer{ Miguel % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-      Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$ such that $R$ is reflexive. Thus $\M$ is a \textit{T}-model. 
-      We will first show that for any \textit{T}-model and any sentence $\metaA$ of $\L^{\Box}$ (and world $w \in W$), it is not the case that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \metaA$. 
-      % [Ben] in case it is easier there are a bunch of commands in notation.tex, e.g., \ML
+	\item $\MLmodels[T] \Box \metaA \rightarrow \metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Suppose for contradiction that there is a world $w \in W$ such that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \metaA$. 
-      By the left conjunct and the semantics of $\Box$, for every world $u \in W$ s.t. $R(w,u)$, $\M, u \MLmodels \metaA$. 
-      By the right conjunct, $\M, w \nMLmodels \metaA$. Since our frame is reflexive, $R(w,w)$. So for a $u$ s.t. $R(w,u)$ (namely $w$ itself), $\M, u \nMLmodels \metaA$. 
-      But this is a contradiction, since we previously established that for every world $u \in W$ s.t. $R(w,u)$, $\M, u \MLmodels \metaA$. 
-      So we must negate our assumption, meaning that there is no world $w \in W$ such that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \metaA$. 
-      
-      This is equivalent to saying that for any world $w \in W$ it is not the case that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \metaA$. 
-      This in turn is equivalent to saying that for any world $w \in W$, $\M, w \nMLmodels \Box \metaA$ or $\M, w \MLmodels \metaA$. 
-      By the semantics of $\rightarrow$, for any $w \in W$ $\M, w \nMLmodels \Box \metaA \rightarrow \metaA$. 
-      Since $\M$ is any general \textit{T}-model the above statement applies to all \textit{T}-models, so by defintion of logical consequence $\MLmodels[\textit{T}] \Box \metaA \rightarrow \metaA$. \qed
-      % [Ben] the proof is correct, though could be streamlined by letting \M be an arbitrary T model where some w is such that the T axiom is false
-      % then once you work out a contradiction, it follows immediately that T is valid over all T models
-      }
+	\item $\MLmodels[B] \metaA \rightarrow \Box\Diamond\metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\MLmodels[B] \metaA \rightarrow \Box\Diamond\metaA$
-       \answer{ Juan
-      [Ben] % Reviewers
-       }{Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$ such that $R$ is symmetric. Thus $\M$ is a \textit{B}-model. First we show that for any sentence $\varphi$ of $L^{\Box}$, any \textit{B-}model, and any $w \in W$, it's not the case that $\M, w \MLmodels \metaA$ and $\M, w \nMLmodels \Box \Diamond \metaA$.
-       % [Ben] slightly better to say: assume for contradiction that \M is a B model where \M, w \nMLmodels[B] \metaA \rightarrow \Box\Diamond \metaA for some w \in W. you can then wait until the moment when you need symmetry to call on this fact, e.g., since \M is a B model, R is symmetric, and so... 
-       % But these are just style points to ease exposition and readability
-       % Also note \ML defined in notation.tex (to save time)
-     
-       For contradiction suppose $M, w \MLmodels \metaA$ and $M, w \nMLmodels \Box \Diamond \metaA$. The left conjunct says $\M, w \MLmodels \metaA$. The right conjunct says $\M, w \nMLmodels \Box \Diamond \metaA$. By our definition of $\lnot$ it follows from the right conjunct that  $M, w \MLmodels \lnot \Box \Diamond \metaA$. By our definition of $\Box$ it follows that there is some $u \in W$ such that $R(u,w)$ and $M, u \nMLmodels \Diamond \metaA$. By our abbreviation of $\Diamond$ this is equivalent to $M, u \nMLmodels \lnot\Box \lnot \metaA$. By our definition of $\lnot$ (and by simplifying a double negation) it follows that $M, u \MLmodels \Box \lnot \metaA$. And by our definition of $\Box$ it follows that for every $v \in W$ such that $R(v, u)$ $\M, v \MLmodels \lnot \metaA$. $R$ is symmetric. So it follows from $R(u,w)$ that $R(w,u)$. It follows that $M, w \MLmodels \lnot \metaA$. But this contradicts the left conjunct of our initial assumption. Contradiction.
-       % [Ben] good to have one sentence per line so I can comment more easily (and more maintainable)
-       % The left conjunct can sit (doesn't need to be restated)
-       % the right is good to work with before adding a negation (we want to reduce it's syntactic complexity)
-       
-       This means that for any $w \in W$ it's not the case that $\M, w \MLmodels \metaA$ and $\M, w \nMLmodels \Box \Diamond \metaA$. This is equivalent to $\M, w \nMLmodels \metaA$ or $\M, w \MLmodels \Box \Diamond \metaA$. By our semantics for $\rightarrow$ it follows that $\M, w \MLmodels \metaA \rightarrow \Box \Diamond \metaA$. Since $\M$ is an arbitrary \textit{B}-model this holds for all \textit{B}-models. By our definition of logical consequence $\MLmodels[B] \metaA \rightarrow \Box \Diamond \metaA$. $\qed$ 
-       % [Ben] this could be simplified by the setup mentioned above
-       % But the proof is perfectly correct
-       }
+	\item $\MLmodels[4] \Box\metaA \rightarrow \Box\Box\metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\MLmodels[4] \Box\metaA \rightarrow \Box\Box\metaA$
-      \answer{ Miguel % Collaborators
-      [Ben] % Reviewers
-      }{% body of the argument
-      Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$ such that $R$ is a reflexive and transitive frame. Thus $\M$ is a 4-model. 
-      % [Ben] Better to state in reverse, where you can start by assuming for contradiction that there is a 4-model with a world at which the 4 axiom is false.
-      % Then once you get a contradiction it is very easy to wrap up.
-      We will first show that for any 4-model and any sentence $\metaA$ of $\L^{\Box}$ (and world $w \in W$), it is not the case that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \Box \Box \metaA$. 
-
-      Suppose for contradiction that there is a world $w \in W$ such that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \Box \Box \metaA$. 
-      % [Ben] good to deal with existential (possibilities, negated necessities) claims before universal
-      % will help to streamline the proof
-      By the left conjunct and the semantics of $\Box$, $\M, u \MLmodels \metaA$ for every $u \in W$ such that $R(w,u)$. 
-      Similarly the right conjunct gives $\M, u \nMLmodels \Box \metaA$ for some $u \in W$ such that $R(w,u)$. 
-      By the semantics of $\Box$ again, For some $u \in W$ s.t. $R(w,u)$ and for some $v \in W$ s.t. $R(u,v)$, $\M, v \nMLmodels \metaA$. 
-      % [Ben] these are the claims to unpack first, applying the universal claims as needed after to these particulars
-      Since our frame is transitive and $R(w,u)$ and $R(u,v)$, then $R(w,v)$. 
-      Consequently for a $v$ s.t. $R(w,v)$, $\M, v \nMLmodels \metaA$. 
-      However, this is a contradiction, since we previously established that $\M, u \MLmodels \metaA$ for every $u \in W$ such that $R(w,u)$. 
-      So we must negate our assumption, meaning there is no world $w \in W$ such that $\M, w \MLmodels \Box \metaA$ and $\M, w \MLmodels \Box \metaA$. 
-      % [Ben] typo in last line
-      
-      This means for any world $w \in W$, it is not the case that $\M, w \MLmodels \Box \metaA$ and $\M, w \nMLmodels \Box \Box \metaA$. 
-      This is equivalent to saying that for any $w \in W$, $\M, w \nMLmodels \Box \metaA$ or $\M, w \MLmodels \Box \Box \metaA$. By the semantics of $\rightarrow$, $\M, w \MLmodels \Box \metaA \rightarrow \Box \Box \metaA$. Since our $\M$ is a general 4-model, this is true of all 4-models, meaning by definition of logical consequence $\MLmodels[4] \Box \metaA \rightarrow \Box \Box \metaA$. \qed
-      }
-
-    \item $\MLmodels[5] \Diamond\metaA \rightarrow \Box\Diamond\metaA$
-       \answer{ Juan
-      [Ben] % Reviewers
-       }{Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$ such that $R$ is reflexive and right Euclidean. Thus $\M$ is an \textit{S5}-model. First we show that for any sentence $\metaA$ of $L^{\Box}$, any \textit{S5}-model, and any $w \in W$, it's not the case that $\M, w \MLmodels \Diamond \metaA$ and $\M, w \nMLmodels \Box \Diamond \metaA$.
-       % [Ben] ditto streamlining strategy mentioned above
-
-       Suppose for contradiction that $M, w \MLmodels \Diamond \metaA$ and $\M, w \nMLmodels \Box \Diamond \metaA$. The left conjunct says $M, w \MLmodels \Diamond \metaA$. By the definition of $\Diamond$ proved above it follows that there is some $u \in W$ such that $R(u,w)$ and $\M, u \MLmodels \metaA$. The right conjunct says $M, w \nMLmodels \Box \Diamond \metaA$. By the definition of $\lnot$ it follows that $\M, w \MLmodels \lnot \Box \Diamond \metaA$. By the definition of $\Box$ it follows that there is some $v \in W$ such that $R(v, w)$ and $\M, v \MLmodels \lnot \Diamond \metaA$. By our abbreviation rules it follows that $\M, v \MLmodels \lnot \lnot \Box \lnot \metaA$. Simplying for double negation that's equivalent to $\M, v \MLmodels \Box \lnot \metaA$. And by our definition of $\Box$ it follows that for every $z \in W$ such that $R(z, v)$ $\M, z \MLmodels \lnot \metaA$.
-       % [Ben] good to name the results you cite so others can follow
-       % ditto avoid adding negation
-       
-       $R$ is reflexive and right Euclidean. Reflexivity implies $R(w,w)$, $R(u,u)$, $R(v,v)$, and $R(z,z)$. It follows from $R(u,w)$, $R(v,w)$, and right Euclideanity that $R(u,v)$. So it follows from above that $\M, u \MLmodels \lnot \metaA$. But we saw earlier that the left conjunct of our initial supposition entails that $\M, u \MLmodels \metaA$. Contradiction.
-       % [Ben] good to make no unforced moves
-
-       This means that for every world $w \in W$ it's not the case that $\M, w \MLmodels \Diamond \metaA$ and $\M, w \nMLmodels \Box \Diamond \metaA$. This is equivalent to $\M, w \nMLmodels \metaA$ or $\M, w \MLmodels \Box \Diamond \metaA$. From our semantics for $\rightarrow$ it follows that $\M, w \MLmodels \Diamond \metaA \rightarrow \Box \Diamond \metaA$. $\M$ is an arbitrary \textit{S-5} model so this holds for all \textit{S-5} models. By our definition of logical consequence it follows that $\MLmodels[5] \Diamond \metaA \rightarrow \Box \Diamond \metaA$.
-       % [Ben] this works!
-       \qed
-  
-       }
+	\item $\MLmodels[5] \Diamond\metaA \rightarrow \Box\Diamond\metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
 	\item[\bf Equivalences:] Provide semantic proofs of the following equivalences:
 
-    \item $\neg\Box \metaA \MLequiv[K] \Diamond\neg \metaA$.
-       \answer{Juan
-      [Ben] % Reviewers
-      }{
-      Let $\M$ be a model $\langle W, R, \I \rangle$. Thus $\M$ is a \textit{K}-model. Our aim is to show that for any $w \in W$, any $\metaA$ of $\L^{\Box}$, and any \textit{K}-model the following two claims hold: (i) if $\M, w \MLmodels \lnot \Box \metaA$ then $\M, w \MLmodels \Diamond \lnot \metaA$ and (ii) if $\M, w \MLmodels \Diamond \lnot \metaA$ then $\M, w \MLmodels \lnot \Box \metaA$.
+	\item $\neg\Box \metaA \MLequiv[K] \Diamond\neg \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      Let us prove claim (i). Suppose for contradiction that $\M, w \MLmodels \lnot \Box \metaA$ and $\M, w \nMLmodels \Diamond \lnot \metaA$. The left conjunct says $\M, w \MLmodels \lnot \Box \metaA$. By our definition of $\Box$ it follows there is some $u \in W$ such that $R(u,w)$ and $\M, u \nMLmodels \metaA$. The right conjunct says that $\M, w \nMLmodels \Diamond \lnot \metaA$. By our definition of $\lnot$ it follows that $\M, w \MLmodels \lnot \Diamond \lnot \metaA$. By our definition of $\Diamond$ (along with simplifying a double negation) it follows that for all $v \in W$ such that $R(v,w)$ $\M, v \MLmodels \metaA$. This implies $\M, u \MLmodels \metaA$ since $R(u,w)$, \textit{contra} what the left conjunct entails. Contradiction. So for every world $w \in W$ it's not the case that $\M, w \MLmodels \lnot \Box \metaA$ and $\M, w \nMLmodels \Diamond \lnot \metaA$. This equivalent to saying that if $\M, w \MLmodels \lnot \Box \metaA$ then  $\M, w \MLmodels \Diamond \lnot \metaA$.
-      % [Ben] this is an example where a direct proof may be less cumbersome than a reductio
-      
-      Now let us prove claim (ii). Suppose for contradiction that $\M, w \MLmodels \Diamond \lnot \metaA$ and $\M, w \nMLmodels \lnot \Box \metaA$. The left conjunct says $\M, w \MLmodels \Diamond \lnot \metaA$. By our definition of $\Diamond$ it follows that there is some $u \in W$ such that $R(u,w)$ and $\M, u \MLmodels \lnot \metaA$. The right conjunct says $\M, w \nMLmodels \lnot \Box \metaA$. By our definition of $\lnot$ it follows that $\M, w \MLmodels \lnot \lnot \Box \metaA$. Simplifying for double negation $\M, w \MLmodels \Box \metaA$. By our definition of $\Box$ it follows that for every $v \in W$ such that $R(v, w)$ $\M, v \MLmodels \metaA$. It follows that $\M, u \MLmodels \metaA$ since $R(u,w)$, \textit{contra} what the left conjunct entails. Contradiction. So for every $w \in W$ it's not the case that $\M, w \MLmodels \Diamond \lnot \metaA$ and $\M, w \nMLmodels \lnot \Box \metaA$. This is equivalent to saying that if $\M, w \MLmodels \Diamond \lnot \metaA$ then $\M, w \MLmodels \lnot \Box \metaA$.
-      
-      We have proven claims (i) and (ii). $\M$ is an arbitrary \textit{K}-model so they hold for all \textit{K}-models. By our definition of logical consequence it follows that $\lnot \Box \metaA \MLmodels[K] \Diamond \lnot \metaA$ and that $\Diamond \lnot \metaA \MLmodels[K] \lnot \Box \metaA$. By our definition of logical equivalence it follows that $\lnot \Box \metaA \MLequiv[K] \Diamond \lnot \metaA$. $\qed$
-      % [Ben] This works!
-      }
+	\item $\neg\Diamond \metaA \MLequiv[K] \Box\neg \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\neg\Diamond \metaA \MLequiv[K] \Box\neg \metaA$.
-    \answer{Bailey
-    
-    }{
-    Let $\M$ be an arbitrary model $\langle W, R, \I \rangle$. Since no further condition on $R$ must be specified for $M$ to be a \textit{K}-model, $M$ is a \textit{K}-model. I show that for any proposition $\metaA$ in the language $\L^{\Box}$, any \textit{K}-model, and any $w \in W$ that the following claims are true: (i) if $\neg \Diamond \metaA$, then $\Box\neg \metaA$ and (ii) if $\Box\neg \metaA$, then $\neg \Diamond \metaA$
-    
-    Let us first prove (i), which is nearly immediate. Suppose for contradiction that $\M, w \MLmodels \neg \Diamond \metaA$ and  $\M, w \nMLmodels \Box \neg \metaA$. From the meaning of $\Box$, logical consequence, and double negation elimination, we may rewrite the right conjunct as $M, w \MLmodels \Diamond \metaA$. Contradiction. 
-    
-    Now let us prove (ii). Suppose for contradiction that $M, w \MLmodels \Box \neg \metaA$ and $M,w \nMLmodels \neg \Diamond \metaA$. From the meaning of logical consequence and the application of double negation elimination, $M, w \MLmodels \Box \neg \metaA$ and $M,w \MLmodels \Diamond \metaA$. Consider the first conjunct. By our semantics, for every world $v \in W$ s.t. $R(w,v)$ $M, v \MLmodels \neg \metaA$. Now consider the second conjunct. The second conjunct means that there is some world $u$ s.t. $u \in W$, $R(w,u)$ and $M, u \MLmodels \metaA$. Since $u$ is one of the worlds $v$, it follows that $M, u \MLmodels \metaA$ and $M, u \MLmodels \neg \metaA$. Contradiction. 
-    
-    I generalize strategy in 3.8 to generate a lemma for future use. Let $C$ be any collection of conditions on the accessibility relation $R$. If a statement of biconditional form is true for an arbitrary \textit{C}-model, it is true for all \textit{C}-models. Call the first element in the biconditional $A$ and the second element in the biconditional $B$. Since it is a biconditional, the order is actually arbitrary. If $A \Leftrightarrow B$, it follows from the definition of logical consequence that $A \MLmodels B$ and $B \MLmodels A$. From logical equivalence, it follows that $A \MLequiv[C] B$.
-    
-    I call this lemma the equivalence lemma. 
-    
-    By the equivalence lemma, (i), and (ii), $\neg \Diamond \phi \MLequiv[K] \Box \neg \phi$. 
+	\item $\Diamond(\metaA \vee \metaB) \MLequiv[K]  \Diamond\metaA \vee \Diamond\metaB$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    }
+	\item $\Diamond\Box \metaA \MLequiv[B] \Diamond\Box\Diamond\Box\metaA$
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-    \item $\Diamond(\metaA \vee \metaB) \MLequiv[K]  \Diamond\metaA \vee \Diamond\metaB$
-    \answer {Bailey
-    
-    }{
-      Let us help ourselves to the standard facts about K-models from 3.8 and 3.9. We show the biconditional (i.) if $M,w \MLmodels \Diamond(\metaA \vee \metaB)$, then $M, w \MLmodels \Diamond \metaA \vee \Diamond \metaB.$
+	\item $\Box\Box \metaA \MLequiv[4] \Box \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      First, let us prove (i). Assume for contradiction that $M, w \MLmodels \Diamond(\metaA \vee \metaB)$ and $M, w \nMLmodels \Diamond \metaA \vee \Diamond \metaB$. By the semantic rules for negation, we can rewrite the right conjunct $M, w \MLmodels \neg(\Diamond \metaA \vee \Diamond \metaB)$. Consider the left conjunct. This means that there is some world $u$ s.t. $R(w,u)$ and that $M,u \MLmodels \metaA \vee \metaB$. Now consider the right conjunct. This means that there is not some world $v$ s.t. $R(w,v)$ where $M,v \MLmodels \metaA$ and not some world $q$ s.t. $R(w,q)$ and $M, q \MLmodels \metaB$. Now let us reconsider the world $u$, which is some world $v$ and some world $q$. We will first note that $\metaA$ cannot be true at $u$ because of the conditions on $v$. By disjunctive syllogism on $\metaA \vee \metaB$ and $\neg \metaA$, we know that $\metaB$ must be true at $u$. But recall that we have stipulated that $\neg \metaB$ must be true at $u$ through our condition on $q$, which stated that there is not some world related by $R$ to $w$ where $\metaB$ is true. Contradiction.
+	\item $\Box\Diamond \metaA \MLequiv[5] \Diamond \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
-      The proof for (ii) is similar. Suppose $M,w \MLmodels \Diamond \metaA \vee \Diamond \metaB$ and $M, w \nMLmodels \Diamond(\metaA \vee \metaB)$. We rewrite the right conjunction from the semantic rules for negation as $M, w \MLmodels \neg \Diamond(\metaA \vee \metaB)$. We know from the left conjunct that either there is some world $u$ s.t. $R(w,u)$ and $M,u \MLmodels \metaA$ or some world $v$ s.t. $R(w,v)$ and $M,v \MLmodels \metaB$. Now consider the right conjunct, which tells us that there is no world $q$ s.t. $R(w,q)$ and $M, q \MLmodels \metaA \vee \metaB$. Notice that the world $u$ and the world $v$ are some such worlds $q$. Arbitrarily, consider $u$, although we may also consider $v$. The semantics for $\vee$ mean that both $\metaA$ and $\metaB$ must be false at $u$. However, we know by stipulation that $\metaA$ is true at $u$. Contradiction. 
-
-      By the equivalence lemma proved in 3.9, $\Diamond(\metaA \vee \metaB) \MLequiv[K]  \Diamond\metaA \vee \Diamond\metaB$
-    }
-      % \answer{ Name % Collaborators
-      % % Reviewers
-      % }{% body of the argument
-      %   Begin argument...
-      % }
-
-    \item $\Diamond\Box \metaA \MLequiv[B] \Diamond\Box\Diamond\Box\metaA$ 
-     \answer {Bailey}
-      % \answer{}{}
-
-    \item $\Box\Box \metaA \MLequiv[4] \Box \metaA$.
-      % \answer{}{}
-
-    \item $\Box\Diamond \metaA \MLequiv[5] \Diamond \metaA$.
-      % \answer{}{}
-
-    \item $\Diamond\Box \metaA \MLequiv[5] \Box \metaA$.
-      % \answer{}{}
+	\item $\Diamond\Box \metaA \MLequiv[5] \Box \metaA$.
+	      % \answer{ NAME % collaborator names
+	      % }{% body of the argument
+	      %   Your answer goes here
+	      % }
 
 \end{enumerate}
 
