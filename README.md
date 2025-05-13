@@ -106,9 +106,9 @@ The final project constitutes 40% of the grade for the formal track and 80% for 
 
 > Although I will provide PDFs throughout for course readings, I recommend using [Zotero](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md) to pull down the readings for each week using the plugin for your browser.
 
-## Problem Sets (Formal Track)
+## Problem Sets
 
-> Eight problem sets to be completed collectively
+> Eight problem sets to be completed collectively by those on the formal track
 
 The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) which I will be revising and extending before each assignment.
 These notes are extremely terse, so if there are parts that don't make sense, please raise a question in the issues and we can chat about it there.
