@@ -50,28 +50,22 @@ ModalHistory/
 ### Time and Location
 
 The seminar will be held in the Stata Building, room `32-D831` at MIT on Mondays from 2-5pm.
-
 I am always happy to meet after the seminar and to hold office hours by appointment at `32-D962`.
 
 ### Further Particulars
 
 The seminar will be divided into the four modules indicated below.
-
 The readings for each week will be provided below and accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
-Please send me an email from the address that you used to sign into GitHub to gain access (you will need a GitHub account).
 Readings for each week will be arranged chronologically where primary readings will be in **bold**.
 
+There are two tracks for this course where grades for the seminar will be calculated as below.
 Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
-Add a star to this repository so that I can see who is taking the course for credit.
-
-Each week will have a file for notes which I will populate in advance of each class.
-Presenters for each week will be asked to contribute to revising these notes to include their presentation topics.
 
 Although optional for the _historical track_ I will be revising and expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
 The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
-If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction (see Chapter 0 for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study).
 
-There are two tracks for this course where grades for the seminar will be calculated as follows:
+If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction.
+See Chapter 0 for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study.
 
 ### Historical Track
 
@@ -133,8 +127,6 @@ The final project constitutes 40% of the grade for the formal track and 80% for 
   - Analyze countermodels and logical consequences
   - Present findings in Jupyter notebook
 
-> Although I will provide PDFs throughout for course readings, I recommend using [Zotero](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md) to pull down the readings for each week using the plugin for your browser.
-
 ## Problem Sets
 
 > Eight problem sets to be completed collectively by those on the formal track
@@ -143,7 +135,9 @@ The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/Logic
 These notes are extremely terse, so if there are parts that don't make sense, please raise a question in the issues and we can chat about it there.
 This will help to include others in the conversation and help me to improve the notes.
 
-The problem sets are to be completed in collaboration with your peers.
+The problem sets are to be completed in collaboration with your peers by pushing and pulling changes with Git.
+Here is an [example](problem_sets/02_axiomatic_proofs/02_solutions.pdf) of a proof based problem set.
+
 More information is provided in the [Problem Sets](/problem_sets/README.md) document about how to use Git to work effectively together.
 
 ## Module 1: Modal Logic
