@@ -1,5 +1,9 @@
 # [Week 13](https://github.com/benbrastmckie/ModalHistoryPrivate?tab=readme-ov-file#module-4-constitutive-explanation)
 
+**Additional Notes:**
+- [lattice theory](lattice_theory.md) 
+- [bit vectors](bit_vectors.md)
+
 ## Disjunctive and Conjunctive Parthood
 
 - Lattice Theory
