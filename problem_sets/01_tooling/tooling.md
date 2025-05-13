@@ -141,7 +141,7 @@ Here is a brief overview of the steps to be completed:
 
 2. **Generate Your SSH Key**:
    - In the terminal, enter the following, substituting your email address (the one you used on GitHub):
-     ```
+     ```bash
      ssh-keygen -t ed25519 -C "your.github@email.com"
      ```
    - When asked for the file location, press Enter (uses default location)
@@ -151,23 +151,23 @@ Here is a brief overview of the steps to be completed:
 
 3. **Start the SSH Agent**:
    - For Mac/Linux, enter these commands in VSCodium's terminal:
-   ```
+   ```bash
    eval "$(ssh-agent -s)"
    ssh-add ~/.ssh/id_ed25519
    ```
    - For Windows, enter these commands:
-   ```
+   ```bash
    start-ssh-agent
    ssh-add C:\Users\YOUR_USERNAME\.ssh\id_ed25519
    ```
 
 4. **Copy Your SSH Public Key**:
    - For Mac/Linux:
-   ```
+   ```bash
    cat ~/.ssh/id_ed25519.pub
    ```
    - For Windows:
-   ```
+   ```bash
    type C:\Users\YOUR_USERNAME\.ssh\id_ed25519.pub
    ```
    - Select and copy the entire output (starts with 'ssh-ed25519' and ends with your email)
@@ -183,7 +183,7 @@ Here is a brief overview of the steps to be completed:
 
 6. **Test Your Connection**:
    In VSCodium's terminal:
-   ```
+   ```bash
    ssh -T git@github.com
    ```
    - If you see a warning about host authenticity, type 'yes'
