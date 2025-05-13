@@ -2,7 +2,7 @@
 
 This problem set concerns the semantics for _propositional tense logic_.
 Please read the relevant portion of the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for the definitions.
-A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
+A number of definitions are included in the [notation.sty](../assets/notation.sty) file.
 As always, feel free to open issues if there is anything that it would be helpful to discuss.
 
 ## Problem Set
@@ -10,8 +10,8 @@ As always, feel free to open issues if there is anything that it would be helpfu
 > Overview of the sections in the problem set.
 
 There are fifty problems, five of which I provided as example solutions.
-Work together to complete the [solutions](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/04_pset/04_solutions.tex) by writing 5/50 solutions for the problems for this week.
-General information is provided in the [collaboration](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/collaboration.md) document.
+Work together to complete the [solutions](04_solutions.tex) by writing 5/50 solutions for the problems for this week.
+General information is provided in the [collaboration](../README.md#collaboration) document.
 
 ## Regimentation
 

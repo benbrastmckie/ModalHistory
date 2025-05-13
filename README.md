@@ -269,6 +269,8 @@ This week will present the forthcoming paper:
 
 ### Week 11: Patriot's Day (no class Apr 21)
 
+> No class or assignments
+
 ## Module 4: Constitutive Explanation
 
 Hyperintensional semantics and logic for constitutive explanatory operators

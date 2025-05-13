@@ -1,15 +1,15 @@
 # [Problem Set #2: Axiomatic Proofs](https://github.com/benbrastmckie/ModalHistory?tab=readme-ov-file#problem-sets)
 
 This problem set concerns _classical propositional logic_ in the guise of a Hilbert system and an extension thereof to a number of _propositional modal logics_.
-A number of definitions are included in the [notation.sty](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/notation.sty) file.
+A number of definitions are included in the [notation.sty](../assets/notation.sty) file.
 Please read the [Logic Notes](https://github.com/benbrastmckie/LogicNotes) up to the end of the section on quantified modal logics (you are welcome to skip over the Fitch system of pages 2-3).
 
 ## Problem Set
 
 > Overview of the sections in the problem set.
 
-Work together to complete the [solutions](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/02_pset/02_solutions.tex) by writing 10/60 solutions for the problems for this week and checking another 5/60.
-General information is provided in the [collaboration](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/collaboration.md) document.
+Work together to complete the [solutions](02_solutions.tex) by writing 10/60 solutions for the problems for this week and checking another 5/60.
+General information is provided in the [collaboration](../README.md#collaboration) document.
 
 ### Metalinguistic Abbreviation
 

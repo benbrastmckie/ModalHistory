@@ -63,6 +63,8 @@ Click the "split screen" button just beside the "play" button to show the PDF.
 Until you have put the `bst` and `bib` files in the right places, the document will not build, but you are close!
 The aim of this trial is just to produce the errors so that you know that LaTeX is at least trying to do the right things.
 
+You can find further resources for how to set up a LaTeX project in this [latex_example/README.md](../../final_projects/latex_example/).
+
 ### Adding Bib Support
 
 To build your `tex` file, LaTeX will look for the bibliography citation style `bst` file and bibliography specified at the bottom of the template LaTeX file with:
