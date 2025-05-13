@@ -90,7 +90,6 @@ There are two tracks for this course where grades for the seminar will be calcul
   - Other projects with approval
 
 In addition to the weekly readings, the [problem sets](/problem_sets) will draw from the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) (changes are underway).
-For detailed information on the problem sets and collaboration guidelines, please see the [Problem Sets](/problem_sets/README.md).
 It will be important to be able to push and pull changes with Git so that I can see your contributions to the eight collaborative problem sets (details on how to do this is covered in the first problem set).
 
 ### Tooling
