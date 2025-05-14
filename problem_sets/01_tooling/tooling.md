@@ -84,7 +84,7 @@ In order to get all the files in the right places and stay updated with the cour
 This will streamline collaboration so that staying up to date becomes easy and you don't have to cut and paste or move around different versions of files.
 To get Git working, you will need to add an SSH key.
 
->[NOTE]
+> [NOTE]
 > More details abut LaTeX will be provided in [Using LaTeX in VSCodium](#using-latex-in-vscodium) below.
 
 ## Git
@@ -261,7 +261,7 @@ Only share the public key (.pub file) with GitHub.
 
 ### Using LaTeX in VSCodium
 
->[INFO]
+> [INFO]
 > VSCodium is highly configurable.
 > If there is anything you find cumbersome, configure a solution that reduces the friction.
 > An LLM can help you devise a solution and implement it if you ask.
@@ -319,7 +319,7 @@ Having set up all of these pieces, complete one the following exercise to check 
 
 ### Practice Using Git
 
->[NOTE]
+> [NOTE]
 > We will not be using Git branches for collaboration in this course for simplicity.
 > Instead, I will ask you to only make comments on other's work by adding new lines instead of changing the lines they have created.
 > More on this in due course.
