@@ -1,59 +1,11 @@
-# Formal Tack
+# Problem Sets
 
 > The problem sets follow the [Logic Notes](https://github.com/benbrastmckie/LogicNotes/blob/main/LogicNotesCurrent.pdf) which provide essential theoretical background for the course
-
-## Problem Sets
 
 In addition to the relevant portion of the Logic Notes and the collaboration overview, please read the instructions for each week linked below.
 These instructions will provide some discussion of the problem set for that week.
 
-### [Problem Set #1: Tooling](01_tooling/tooling.md)
-
-> Problem Set #1: Tooling (due prior to class week 01)
-
-Here are the [instructions](01_tooling/tooling.md) for this problem set.
-
-### [Problem Set #2: Axiomatic Proofs](02_axiomatic_proofs/axiomatic_proofs.md)
-
-> Problem Set #2: Axiomatic Proofs (due prior to class week 03)
-
-Here are the [instructions](02_axiomatic_proofs/axiomatic_proofs.md) for this problem set and the [PDF](02_axiomatic_proofs/02_solutions.pdf).
-
-### [Problem Set #3: Modality](03_semantic_proofs/semantic_proofs.md)
-
-> Problem Set #3: Semantic Proofs (due prior to class week 05)
-
-Here are the [instructions](03_semantic_proofs/semantic_proofs.md) for this problem set and the [PDF](03_semantic_proofs/03_solutions.pdf).
-
-### [Problem Set #4: Tense](04_tense_logic/tense_logic.md)
-
-> Problem Set #4: Tense Logic (due prior to class week 06)
-
-Here are the [instructions](04_tense_logic/tense_logic.md) for this problem set and the [PDF](04_tense_logic/04_solutions.pdf).
-
-### [Problem Set #5: Bimodal Logic](05_bimodal_logic/bimodal_logic.md)
-
-> Problem Set #5: Bimodal Logic (due prior to class week 08)
-
-Here are the [instructions](05_bimodal_logic/bimodal_logic.md) for this problem set and the [PDF](05_bimodal_logic/05_solutions.pdf).
-
-### [Problem Set #6: Model-Checker](06_model_checker/model_checker.md)
-
-> Problem Set #6: Model-Checker (due prior to class week 09)
-
-Here are the [instructions](06_model_checker/model_checker.md) for this problem set.
-
-### [Problem Set #7: Bimodal Semantics](07_bimodal_semantics/bimodal_semantics.md)
-
-> Due before Apr 18 (Week 11)
-
-Here are the [instructions](07_bimodal_semantics/bimodal_semantics.md) for this problem set.
-
-### [Problem Set #8: State Semantics](08_state_semantics/state_semantics.md)
-
-> Due before class on Apr 28 (Week 12)
-
-Here are the [instructions](08_state_semantics/state_semantics.md) for this problem set.
+Here are some general points about collaboration in LaTeX using Git.
 
 ## Collaboration
 
@@ -96,8 +48,7 @@ If you are new to writing proofs, keep in mind that producing solutions is not a
 Rather, asking good questions is often a very helpful contribution as this will help to surface issues that might otherwise go overlooked or under-explained.
 It is also important to remember that we are all coming from different formal backgrounds, where both asking and trying to answer questions are some of the best means by which to learn.
 
-If you have any general or specific questions, feel free to open an issue in this repo which is reserved for collaboration on problem sets (including technical problems).
-Note that the issues here are separate from the issues on the main repo which are intended for questions and comments about the readings or other philosophical quandaries.
+If you have any general or specific questions, feel free to open an [issue](https://github.com/benbrastmckie/ModalHistory/issues) which is reserved for collaboration on problem sets (including technical problems).
 Also note that issues should strive to be separated by topic, e.g., one issue per problem unless it is the same specific issue in multiple problems.
 It is a low-stakes judgment call where to divide issues, so don't worry too much about it.
 
@@ -148,3 +99,76 @@ At most, you will have lost the changes that you were trying to push, but that i
 
 To avoid this scenario, be sure to add your name to the problems you want to work on, saving and pushing these changes before starting to work on the problems themselves.
 Then you can take the time you need to write up you solution, pushing changes before going on to work on another problem.
+
+## Problem Sets
+
+### [Problem Set #1: Tooling](01_tooling/tooling.md)
+
+> Problem Set #1: Tooling (due prior to class week 01)
+
+An introduction to essential tools for the course: setting up a text editor (VSCodium/NeoVim), installing LaTeX, configuring Git with SSH authentication, and practicing the Git workflow.
+This problem set ensures everyone has the necessary technical foundation to collaborate on future assignments.
+
+Here are the [instructions](01_tooling/tooling.md) for this problem set.
+
+### [Problem Set #2: Axiomatic Proofs](02_axiomatic_proofs/axiomatic_proofs.md)
+
+> Problem Set #2: Axiomatic Proofs (due prior to class week 03)
+
+Explores classical propositional logic using Hilbert's axiom system which is then extended to propositional modal logics.
+This problem set includes metalinguistic abbreviations, derived metarules, and axiomatic proofs, gradually building a stock of derivations to tackle increasingly complex problems.
+
+Here are the [instructions](02_axiomatic_proofs/axiomatic_proofs.md) for this problem set, the [TeX file](02_axiomatic_proofs/02_solutions.tex), and the [PDF](02_axiomatic_proofs/02_solutions.pdf).
+
+### [Problem Set #3: Semantic Proofs](03_semantic_proofs/semantic_proofs.md)
+
+> Problem Set #3: Semantic Proofs (due prior to class week 05)
+
+Focuses on semantics for propositional modal logic, examining natural connections between logical operators and set-theoretic operations.
+Students explore intensional frames, create countermodels, and test the soundness of various modal proof systems through mechanical proofs and equivalence demonstrations.
+
+Here are the [instructions](03_semantic_proofs/semantic_proofs.md) for this problem set, the [TeX file](03_semantic_proofs/03_solutions.tex), and the [PDF](03_semantic_proofs/03_solutions.pdf).
+
+### [Problem Set #4: Tense Logic](04_tense_logic/tense_logic.md)
+
+> Problem Set #4: Tense Logic (due prior to class week 06)
+
+Examines propositional tense logic semantics with both basic tense operators and inevitability operators.
+Students work on regimenting English sentences, analyzing temporal frame constraints, providing countermodels to tense logic axioms, and evaluating semantic indeterminacy where sentences are evaluated at both a history and time.
+
+Here are the [instructions](04_tense_logic/tense_logic.md) for this problem set, the [TeX file](04_tense_logic/04_solutions.tex), and the [PDF](04_tense_logic/04_solutions.pdf).
+
+### [Problem Set #5: Bimodal Logic](05_bimodal_logic/bimodal_logic.md)
+
+> Problem Set #5: Bimodal Logic (due prior to class week 08)
+
+Explores propositional bimodal logic semantics through three main sections: comparing Kaplan and Montague's Cartesian semantics, investigating the task semantics for bimodal language, and extending the framework to include operators for the open past, future, and inevitability, concluding with mixed modal operators.
+
+Here are the [instructions](05_bimodal_logic/bimodal_logic.md) for this problem set, the [TeX file](05_bimodal_logic/05_solutions.tex), and the [PDF](05_bimodal_logic/05_solutions.pdf).
+
+### [Problem Set #6: Model-Checker](06_model_checker/model_checker.md)
+
+> Problem Set #6: Model-Checker (due prior to class week 09)
+
+Introduces computational methods for modal logic through installation and use of the model-checker tool powered by the SMT solver Z3.
+Students learn to create model-checker projects, run examples, and understand how to evaluate logical consequences and find countermodels, shifting from manual proofs to automated verification.
+
+Here are the [instructions](06_model_checker/model_checker.md) for this problem set.
+
+### [Problem Set #7: Bimodal Semantics](07_bimodal_semantics/bimodal_semantics.md)
+
+> Due before Apr 18 (Week 11)
+
+Applies the model-checker to bimodal semantics through three tasks: exploring the existing documentation and test examples, creating and testing new examples to evaluate the model-checker's performance, and extending the bimodal language by defining a new operator using the existing operators, providing practical experience with computational semantic tools.
+
+Here are the [instructions](07_bimodal_semantics/bimodal_semantics.md) for this problem set.
+
+### [Problem Set #8: State Semantics](08_state_semantics/state_semantics.md)
+
+> Due before class on Apr 28 (Week 12)
+
+Uses the model-checker to explore state semantics for counterfactual conditionals, focusing on interpreting hyperintensional models.
+Students analyze existing counterfactual countermodels, create their own examples with customized settings, test logical equivalences between operators, and enhance their ability to translate between formal models and natural language examples.
+
+Here are the [instructions](08_state_semantics/state_semantics.md) for this problem set.
+
