@@ -290,3 +290,10 @@ This week will explore themes related to relevance, essence, ground, and constit
 ### [Week 14: Formal Track Presentations](4_constitutive_explanation/14_week/14_week.md) (May 12)
 
 Presentations are intended to provide a brief (15min) and accessible overview of each project. For more information on final projects, see the [Final Projects](/final_projects/README.md).
+
+## Using this Course
+
+If you are interested in drawing from this course, don't hesitate to fork this repository, making all the changes you like.
+I ask that you do not reproduce a substantial portion of these resources without forking or otherwise citing their origins.
+
+Please feel free to reach out if you have any questions.
