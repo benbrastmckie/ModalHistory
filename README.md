@@ -90,9 +90,9 @@ It will be important to be able to push and pull changes with Git so that I can 
 
 Although optional for the _historical track_, the [first problem set](/problem_sets/01_tooling/tooling.md) for students on the _formal track_ will consist of:
 
-- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course (instructions will be provided).
-- Install LaTeX on your machine if you have not already done so.
-- Use Git to push changes to the private repository, adding an SSH key as needed.
+- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown and LaTeX for the proof based problem sets as well as Python in order to the [model-checker](https://github.com/benbrastmckie/ModelChecker) for the final problem sets (detailed instructions will be provided)
+- Install LaTeX on your machine if you have not already done so
+- Use Git to push changes to the private repository
 
 This is a great opportunity for upgrading you tool kit, gaining some experience using Git to collaborate if you have not done so before.
 No prior experience is required.
@@ -102,8 +102,10 @@ No prior experience is required.
 > In class presentations differ from the presentation of a final project for the _formal track_.
 
 The presentations in class may consist of leading a discussion about a particular topic or paper or presenting the outline of a formal result of general significance in an accessible way.
-I have begun to gather papers for two potential topics to present in [week 1](1_modal_logic/01_week/01_week.md).
-Presenters for each week will also be responsible for contributing to the class notes for that week.
+You are invited to prepare a handout or problem set as you see fit.
+
+I have gathered papers for various topics to present on in [week 1](1_modal_logic/01_week/01_week.md).
+Presenters for each week will be asked to contribute their handout to the class notes for that week.
 
 ### Final Projects
 

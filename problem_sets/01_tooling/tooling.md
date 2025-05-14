@@ -2,11 +2,10 @@
 
 Here is an outline of what is to come:
 
-- Install a general purpose text editor (IDE) if you do not have one already.
-- Install LaTeX if you have not already done so.
-- Add an SSH key to your GitHub account.
-- Configure Git and learn how to push changes to repositories, adding an SSH key as needed.
-- Use Git to clone the repository and push changes.
+- Install a general purpose text editor (IDE) if you do not have one already
+- Install LaTeX if you have not already done so
+- Add an SSH key to your GitHub account and configure Git
+- Use Git to clone the repository and push changes
 
 This is an opportunity to upgrade your toolkit and gain experience with Git collaboration if you haven't used it before. No prior experience is required.
 
@@ -14,8 +13,8 @@ This is an opportunity to upgrade your toolkit and gain experience with Git coll
 
 Install one of the following or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course:
 
-1. **VSCodium**: Follow the installation instructions [here](https://github.com/benbrastmckie/VSCodium)
-2. **NeoVim**: Follow the configuration instructions [here](https://github.com/benbrastmckie/.config)
+1. **VSCodium**: Follow the installation instructions
+2. **NeoVim**: Follow the configuration instructions
 3. **Other**: Any editor that supports Markdown, LaTeX, and Python
 
 ### VSCodium
@@ -40,14 +39,16 @@ Here is a brief overview:
 
 Installing and learning to use NeoVim is a significant undertaking, so beware.
 Nevertheless, you can find detailed installation instructions [here](https://github.com/benbrastmckie/.config).
+
 If you go this route, feel free to open an [issue](https://github.com/benbrastmckie/.config/issues) in that repository if you run into any trouble.
+NeoVim has it's advantages, but this is more on the order of summer project than a single problem set.
 
 ## LaTeX Installation
 
 Install a LaTeX distribution appropriate for your operating system if you have not already done so:
 
+- **MacOS**: [MacTeX](https://tug.org/mactex/mactex-download.html)
 - **Windows**: [MiKTeX](https://miktex.org/download) or [TeX Live](https://tug.org/texlive/windows.html)
-- **macOS**: [MacTeX](https://tug.org/mactex/mactex-download.html)
 - **Linux**: TeX Live via your package manager (e.g., `sudo apt install texlive-full` for Ubuntu)
 
 You can find resources for installing LaTeX [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/latex.md).
@@ -55,15 +56,17 @@ Follow these (or other) instructions to get LaTeX up and running on your machine
 
 ### Trial Run
 
-Once LaTeX is installed, create a `test_file.tex` document using the [template](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/latex_template.tex).
-Note that it is important to that your file has the extension `.tex` since otherwise VSCodium won't know that it is a LaTeX file.
+Once LaTeX is installed, create a `test_file.tex` document by copying this [template](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/latex_template.tex).
+Note that it is important that your file has the extension `.tex` since otherwise VSCodium won't know that it is a LaTeX file.
 
 Use VSCodium (or equivalent) to build the document, by clicking the green "play" button in the top right.
+You will need to install the appropriate extensions for this play button to appear.
+
 Click the "split screen" button just beside the "play" button to show the PDF.
 Until you have put the `bst` and `bib` files in the right places, the document will not build, but you are close!
-The aim of this trial is just to produce the errors so that you know that LaTeX is at least trying to do the right things.
 
-You can find further resources for how to set up a LaTeX project in this [latex_example/README.md](../../final_projects/latex_example/).
+The aim of this trial is just to produce the errors so that you know that LaTeX is at least trying to do the right things.
+Now we will add bibliographic support.
 
 ### Adding Bib Support
 
@@ -74,55 +77,14 @@ To build your `tex` file, LaTeX will look for the bibliography citation style `b
   \bibliography{../assets/modal_history} %%bib database found locally or in textmf/bibtex/bib
 ```
 
-The easiest thing to do is to put the [`bib_style.bst`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/bib_style.bst) file in the `/texmf/bibtex/bst/` directory on your computer as explained [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/latex.md) so that you don't need to worry about always including a `bst` file in the same directory as your LaTeX file.
+The easiest thing to do is to put the [`bib_style.bst`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/bib_style.bst) file in the `/texmf/bibtex/bst/` directory on your computer as explained [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/latex.md) so that you don't need to worry about always including a `bst` file in some directory or other.
 As for the bibliography, the path `../../assets/modal_history` included above specifies a sample bibliography that I have provided and will update as we go.
 
 In order to get all the files in the right places and stay updated, the next step is to pull down the repository with Git.
 This will streamline collaboration so that staying up to date becomes easy and you don't have to cut and paste or move around different versions of files.
+
 To get Git working, you will need to add an SSH key.
-
-### Writing LaTeX
-
-Here are a few points to keep in mind to make the process of writing LaTeX documents easier:
-
-1. SyncTex and BackSync
-  - You can use `Cmd + click` (Mac) or `Ctrl + click` (Windows/Linux) on the PDF to find the same spot in the LaTeX.
-  - You can also use `Ctrl + Alt + J` (Windows/Linux) or `Cmd + Alt + J` (Mac) to highlight the spot in the PDF corresponding to where the cursor is in the LaTeX document
-
-2. Kill auxiliary files
- - You may need to delete auxiliary files when LaTeX builds fail or become corrupted
- - To clean auxiliary files in VSCodium:
-   - Click the LaTeX Workshop icon in the left sidebar
-   - Click the trash can icon labeled "Clean up auxiliary files"
-   - Or use the Command Palette (`Ctrl+Shift+P`) and search for "Clean up auxiliary files"
-   - This removes temporary files like .aux, .log, .synctex.gz but keeps your .tex and .pdf
-   - These will be regenerated upon rebuilding the PDF
-
-3. To use LaTeX snippets in VSCodium:
-  - Type a backslash `\` followed by the command name (e.g., `\begin`)
-  - VSCodium will show a dropdown list of matching snippets
-  - Press `Tab` or `Enter` to insert the selected snippet
-  - Common snippets include:
-    - `\begin{document}` - Creates document environment
-    - `\section{}` - Creates a new section
-    - `\cite{}` - Creates citation
-    - `\textit{}` - Creates italicized text
-    - `\textbf{}` - Creates bold text
-  - You can navigate between snippet placeholders using `Tab`
-  - Create custom snippets in VSCodium:
-    - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
-    - Type "Snippets: Configure User Snippets"
-    - Select "latex.json"
-    - Add your custom snippets following the JSON format
-  - The LaTeX Workshop extension includes many built-in snippets
-  - Type part of a command to see suggestions
-  - Use `Ctrl+Space` to manually trigger suggestions
-
-### Zotero (Optional)
-
-Although optional, I recommend setting up [Zotero](https://www.zotero.org/) or equivalent if you have not already done so to help manage the readings and `.bib` info for each.
-You can find installation instructions [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md).
-Shouldn't take more than a few minutes.
+Alternatively, you can skip to [Using LaTeX in VSCodium](#using-latex-in-vscodium) below.
 
 ## Git
 
@@ -133,7 +95,8 @@ Here is a brief overview of the steps to be completed:
 - Add your name to the [`practice_git.md`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/practice_git.md) file on your computer
 - Push your change up to the repository
 
-> Feel free to complete these steps however you are comfortable, or by following the instructions below:
+If you are already familiar with Git, feel free to complete these steps however you are comfortable
+Alternatively, follow the instructions below:
 
 ### Generate and Add an SSH Key
 
@@ -193,6 +156,8 @@ Here is a brief overview of the steps to be completed:
 
 ### Troubleshooting SSH in VSCodium
 
+An LLM will be able to talk you through the following points
+
 - If commands aren't recognized:
   - Make sure Git is installed on your system
   - Try restarting VSCodium
@@ -206,7 +171,10 @@ Here is a brief overview of the steps to be completed:
   - Make sure you're using SSH URLs for repositories (starts with `git@github.com:`)
   - Try verbose SSH test: `ssh -vT git@github.com`
 
-Remember: Never share your private key (the file without .pub extension). Only share the public key (.pub file) with GitHub.
+Feeding any errors you get into an LLM will help diagnose the problem.
+
+Remember: Never share your private key (the file without .pub extension).
+Only share the public key (.pub file) with GitHub.
 
 ### Configure Git
 
@@ -290,16 +258,76 @@ Remember: Never share your private key (the file without .pub extension). Only s
   - Asking an LLM how to change the `settings.json` file to produce a specific change is another way
   - Don't want to mess with all that? No problem, it will be there if you ever feel inspired
 
+### Using LaTeX in VSCodium
+
+>[INFO]
+> VSCodium is highly configurable.
+> If there is anything you find cumbersome, configure a solution that reduces the friction.
+> An LLM can help you devise a solution and implement it if you ask.
+> For instance, you might write, "I don't like having to use F12 in VSCodium to jump back to the previous position. Help me implement a better solution."
+> As you adjust to using VSCodium to write LaTeX, I would encourage you to think about where the friction is in your workflow and strive to reduce it through improving your configuration.
+
+
+Here are a few defaults that already make the process of writing LaTeX documents easier:
+
+1. SyncTex and BackSync
+  - You can use `Cmd + click` (Mac) or `Ctrl + click` (Windows/Linux) on the PDF to find the same spot in the LaTeX.
+  - You can also use `Ctrl + Alt + J` (Windows/Linux) or `Cmd + Alt + J` (Mac) to highlight the spot in the PDF corresponding to where the cursor is in the LaTeX document
+
+2. Kill auxiliary files
+ - You may need to delete auxiliary files when LaTeX builds fail or become corrupted
+ - To clean auxiliary files in VSCodium:
+   - Click the LaTeX Workshop icon in the left sidebar
+   - Click the trash can icon labeled "Clean up auxiliary files"
+   - Or use the Command Palette (`Ctrl+Shift+P`) and search for "Clean up auxiliary files"
+   - This removes temporary files like .aux, .log, .synctex.gz but keeps your .tex and .pdf
+   - These will be regenerated upon rebuilding the PDF
+
+3. To use LaTeX snippets in VSCodium:
+  - Type a backslash `\` followed by the command name (e.g., `\begin`)
+  - VSCodium will show a dropdown list of matching snippets
+  - Press `Tab` or `Enter` to insert the selected snippet
+  - Common snippets include:
+    - `\begin{document}` - Creates document environment
+    - `\section{}` - Creates a new section
+    - `\cite{}` - Creates citation
+    - `\textit{}` - Creates italicized text
+    - `\textbf{}` - Creates bold text
+  - You can navigate between snippet placeholders using `Tab`
+  - Create custom snippets in VSCodium:
+    - Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
+    - Type "Snippets: Configure User Snippets"
+    - Select "latex.json"
+    - Add your custom snippets following the JSON format
+  - The LaTeX Workshop extension includes many built-in snippets
+  - Type part of a command to see suggestions
+  - Use `Ctrl+Space` to manually trigger suggestions
+
+You can find further resources for how to set up a LaTeX project in this [latex_example/README.md](../../final_projects/latex_example/).
+
+### Zotero (Optional)
+
+Although optional, I recommend setting up [Zotero](https://www.zotero.org/) or equivalent if you have not already done so to help manage the readings and `.bib` info for each.
+You can find installation instructions [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md).
+Shouldn't take more than a few minutes and will be well worth the time you invest.
+
 ## Exercise
 
-Having set up all of these pieces there is one final exercise to check that everything is working
+Having set up all of these pieces, complete one the following exercise to check that everything is up and running.
 
 ### Practice Using Git
 
-1. Clone this repository (if you haven't already)
-2. Create a new branch for your work
-3. Make some changes to a file
-4. Stage and commit your changes
-5. Push your changes to the remote repository
+>[NOTE]
+> We will not be using Git branches for collaboration in this course for simplicity.
+> Instead, I will ask you to only make comments on other's work by adding new lines instead of changing the lines they have created.
+> More on this in due course.
 
-This exercise will help you become familiar with the Git workflow that we'll use throughout the course
+Complete the following steps:
+
+1. Clone this repository (if you haven't already)
+2. Add your name to this [practicing_git.md](practicing_git.md) file
+3. Stage and commit your changes
+4. Push your changes to the remote repository
+5. Check online to see that your changes have arrived
+
+This exercise will help you to become familiar with the Git workflow that we'll use throughout the course.
