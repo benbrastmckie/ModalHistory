@@ -56,16 +56,16 @@ I am always happy to meet after the seminar and to hold office hours by appointm
 
 The seminar will be divided into the four modules indicated below.
 The readings for each week will be provided below and accessible on the [private repository](https://github.com/benbrastmckie/ModalHistoryPrivate) for the seminar.
-Readings for each week will be arranged chronologically where primary readings will be in **bold**.
+I will arrange readings chronologically where the primary readings will be in **bold**.
 
 There are two tracks for this course where grades for the seminar will be calculated as below.
-Students taking the course for credit may choose between the _formal track_ which fulfills the logic requirement and the _historical track_ which does not.
+Students taking the course for credit may choose between the _formal track_ which fulfills the graduate [logic requirement](https://philosophy.mit.edu/phd/) for philosophy at MIT and the _historical track_ which does not.
 
 Although optional for the _historical track_ I will be revising and expanding these [Logic Notes](https://github.com/benbrastmckie/LogicNotes) for this course.
-The material presented here will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
+The material presented there will not be the focus of the seminar meetings, though certain core topics relevant to both tracks will be covered in an accessible manner.
 
 If you are looking for further background in propositional and first-order logic, the [ForAllX textbook](https://github.com/benbrastmckie/ForAllX) provides an introduction.
-See Chapter 0 for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study.
+See [Chapter 0](https://github.com/benbrastmckie/ForAllX/blob/master/forallx-mit.pdf) for a brief introduction to the subject-matter of logic, describing what it is that logic aims to study.
 
 ### Historical Track
 
