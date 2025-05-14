@@ -2,10 +2,10 @@
 
 Here is an outline of what is to come:
 
-- Install a general purpose text editor (IDE) if you do not have one already
-- Install LaTeX if you have not already done so
-- Add an SSH key to your GitHub account and configure Git
-- Use Git to clone the repository and push changes
+1. Install a general purpose text editor (IDE) if you do not have one already
+2. Install LaTeX if you have not already done so
+3. Add an SSH key to your GitHub account and configure Git
+4. Use Git to clone the repository and push changes
 
 This is an opportunity to upgrade your toolkit and gain experience with Git collaboration if you haven't used it before. No prior experience is required.
 
@@ -13,9 +13,9 @@ This is an opportunity to upgrade your toolkit and gain experience with Git coll
 
 Install one of the following or equivalent for writing in markdown, LaTeX, as well as using the [model-checker](https://github.com/benbrastmckie/ModelChecker) to complete the final problem sets at the end of the course:
 
-1. **VSCodium**: Follow the installation instructions
-2. **NeoVim**: Follow the configuration instructions
-3. **Other**: Any editor that supports Markdown, LaTeX, and Python
+- **VSCodium**: Follow the installation instructions
+- **NeoVim**: Follow the configuration instructions
+- **Other**: Any editor that supports Markdown, LaTeX, and Python
 
 ### VSCodium
 
@@ -23,14 +23,14 @@ I have provided extensive installation instructions for how to install VSCodium 
 You do not need to clone or fork that repository if you don't want to, but this is a good option if you have not already configured your editor.
 Feel free to open an [issue](https://github.com/benbrastmckie/VSCodium/issues) in that repository if you run into any trouble.
 
-Here is a brief overview:
+Here is a brief overview of what is required:
 
 1. **Download VSCodium**:
    - For Windows: Download the latest release from [VSCodium Releases](https://github.com/VSCodium/vscodium/releases)
    - For Mac: run `brew install --cask vscodium` in the terminal or download the latest release from [VSCodium Releases](https://github.com/VSCodium/vscodium/releases)
    - For Linux: Follow the [official installation guide](https://github.com/VSCodium/vscodium#installation)
 
-1. **Essential Extensions**:
+2. **Install Essential Extensions**:
    - LaTeX Workshop
    - GitHub Pull Requests
    - Python
@@ -80,20 +80,21 @@ To build your `tex` file, LaTeX will look for the bibliography citation style `b
 The easiest thing to do is to put the [`bib_style.bst`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/assets/bib_style.bst) file in the `/texmf/bibtex/bst/` directory on your computer as explained [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/latex.md) so that you don't need to worry about always including a `bst` file in some directory or other.
 As for the bibliography, the path `../../assets/modal_history` included above specifies a sample bibliography that I have provided and will update as we go.
 
-In order to get all the files in the right places and stay updated, the next step is to pull down the repository with Git.
+In order to get all the files in the right places and stay updated with the course materials as they evolve, the next step is to pull down the repository with Git.
 This will streamline collaboration so that staying up to date becomes easy and you don't have to cut and paste or move around different versions of files.
-
 To get Git working, you will need to add an SSH key.
-Alternatively, you can skip to [Using LaTeX in VSCodium](#using-latex-in-vscodium) below.
+
+>[NOTE]
+> More details abut LaTeX will be provided in [Using LaTeX in VSCodium](#using-latex-in-vscodium) below.
 
 ## Git
 
 Here is a brief overview of the steps to be completed:
 
-- Set up SSH authentication to be able to securely interact with GitHub repositories
-- Use Git to pull down this repository onto your computer
-- Add your name to the [`practice_git.md`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/practice_git.md) file on your computer
-- Push your change up to the repository
+1. Set up SSH authentication to be able to securely interact with GitHub repositories
+2. Use Git to pull down this repository onto your computer
+3. Add your name to the [`practice_git.md`](https://github.com/benbrastmckie/ModalHistoryPrivate/blob/master/problem_sets/01_pset/practice_git.md) file on your computer
+4. Push your change up to the repository
 
 If you are already familiar with Git, feel free to complete these steps however you are comfortable
 Alternatively, follow the instructions below:
@@ -156,7 +157,7 @@ Alternatively, follow the instructions below:
 
 ### Troubleshooting SSH in VSCodium
 
-An LLM will be able to talk you through the following points
+An LLM will be able to talk you through the following points:
 
 - If commands aren't recognized:
   - Make sure Git is installed on your system
@@ -268,7 +269,7 @@ Only share the public key (.pub file) with GitHub.
 > As you adjust to using VSCodium to write LaTeX, I would encourage you to think about where the friction is in your workflow and strive to reduce it through improving your configuration.
 
 
-Here are a few defaults that already make the process of writing LaTeX documents easier:
+Here are a few default features for writing LaTeX documents:
 
 1. SyncTex and BackSync
   - You can use `Cmd + click` (Mac) or `Ctrl + click` (Windows/Linux) on the PDF to find the same spot in the LaTeX.
@@ -303,13 +304,14 @@ Here are a few defaults that already make the process of writing LaTeX documents
   - Type part of a command to see suggestions
   - Use `Ctrl+Space` to manually trigger suggestions
 
-You can find further resources for how to set up a LaTeX project in this [latex_example/README.md](../../final_projects/latex_example/).
+You can find further resources for how to set up a LaTeX projects in this [latex_example/README.md](../../final_projects/latex_example/).
 
 ### Zotero (Optional)
 
 Although optional, I recommend setting up [Zotero](https://www.zotero.org/) or equivalent if you have not already done so to help manage the readings and `.bib` info for each.
 You can find installation instructions [here](https://github.com/benbrastmckie/VSCodium/blob/master/docs/zotero.md).
-Shouldn't take more than a few minutes and will be well worth the time you invest.
+This should not take more than a few minutes and will be well worth the time you invest.
+Note that migrating to Zotero from an existing bibliographic database can require some care.
 
 ## Exercise
 
