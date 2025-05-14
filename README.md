@@ -70,13 +70,13 @@ See Chapter 0 for a brief introduction to the subject-matter of logic, describin
 ### Historical Track
 
 - [10%] Present a topic in class, revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
+- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
 - [80%] Write a final term paper (5k words)
 
 ### Formal Track
 
 - [10%] Present a topic in class, revising the class notes for that week
-- [10%] Open five [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
+- [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
 - [40%] Make contributions to all eight collaborative problem sets 
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
