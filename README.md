@@ -110,9 +110,10 @@ Presenters for each week will be asked to contribute their handout to the class 
 
 ### Final Projects
 
-For students on the formal track, the final project is a significant component of the course. For guidelines, templates, and examples, please see the [Final Projects](/final_projects/README.md).
-
-The final project constitutes 40% of the grade for the formal track and 80% for the historical track. Students will present their project outlines in the final seminar.
+The final project constitutes 40% of the grade for the formal track and 80% for the historical track.
+Students will present their project outlines in the final seminar.
+For guidelines, templates, and examples, please see the [Final Projects](/final_projects/README.md).
+Further details are provided for each track below.
 
 #### Historical Track
 
