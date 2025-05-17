@@ -10,7 +10,7 @@ We will then consider Prior 1967 and Thomason's 1970 tense logics and some of th
 This module will conclude with an alternative bimodal system that I am developing.
 (3) The third module will begin with the intensional semantics for counterfactuals developed by Stalnaker 1968 and Lewis 1973.
 We will then move to review some of the early criticisms by Fine 1975 and others, comparing the hyperintensional account that Fine 2012 offers as an alternative.
-I will then present the extension that I have developed of Fine's semantics for counterfactuals, extending this system further to accommodate tensed counterfactuals.
+I will then present the simplification that I have developed of Fine's semantics for counterfactuals as well as an extension of this system to accommodate tensed counterfactuals.
 (4) The fourth module will close by considering hyperintensional semantic theories more generally and their logics for propositional identity, subject-matter, essence, ground, and logical subtraction.
 
 ## Overview
@@ -296,4 +296,4 @@ Presentations are intended to provide a brief (15min) and accessible overview of
 If you are interested in drawing from this course, don't hesitate to fork this repository, making all the changes you like.
 I ask that you do not reproduce a substantial portion of these resources without forking or otherwise citing their origins.
 
-Please feel free to reach out if you have any questions.
+I'm happy to help if you have any questions so please feel free to reach out!
