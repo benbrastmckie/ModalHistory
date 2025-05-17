@@ -91,7 +91,7 @@ It will be important to be able to push and pull changes with Git so that I can 
 
 Although optional for the _historical track_, the [first problem set](/problem_sets/01_tooling/tooling.md) for students on the _formal track_ will consist of:
 
-- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown and LaTeX for the proof based problem sets as well as Python in order to the [model-checker](https://github.com/benbrastmckie/ModelChecker) for the final problem sets (detailed instructions will be provided)
+- Installing either [VSCodium](https://github.com/benbrastmckie/VSCodium), [NeoVim](https://github.com/benbrastmckie/.config), or equivalent for writing in markdown and LaTeX for the proof based problem sets as well as Python in order to use the [model-checker](https://github.com/benbrastmckie/ModelChecker) in the final problem sets (detailed instructions will be provided)
 - Install LaTeX on your machine if you have not already done so
 - Use Git to push changes to the private repository
 
