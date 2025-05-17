@@ -3,15 +3,16 @@
 > A graduate course in _Philosophical Logic_ at MIT covering the modern history of modal logic.
 
 **Description:** The seminar will cover the modern history of modal logic, focusing on the development of both its proof theories and semantic systems.
-(1) The first module will begin with C.I. Lewis' systems of strict implication 1912 - 1932, focusing on the early motivations and interpretations.
-The module will conclude with Ruth Barcan Marcus' first-order extensions of the systems of strict implication 1946 and the objections raised by Quine 1943 - 1953 that modal logic will lead back into the "jungle of Aristotelian metaphysics".
-(2) The second module will focus on the development of intensional semantics by comparing Carnap 1946 and Kripke's 1963 accounts.
-We will then consider Prior 1967 and Thomason's 1970 tense logics and some of the attempts to fit these semantic systems together by Montague 1973 and Kaplan 1989.
-This module will conclude with an alternative bimodal system that I am developing.
-(3) The third module will begin with the intensional semantics for counterfactuals developed by Stalnaker 1968 and Lewis 1973.
-We will then move to review some of the early criticisms by Fine 1975 and others, comparing the hyperintensional account that Fine 2012 offers as an alternative.
-I will then present the simplification that I have developed of Fine's semantics for counterfactuals as well as an extension of this system to accommodate tensed counterfactuals.
-(4) The fourth module will close by considering hyperintensional semantic theories more generally and their logics for propositional identity, subject-matter, essence, ground, and logical subtraction.
+
+1. The first module will begin with C.I. Lewis' systems of strict implication 1912 - 1932, focusing on the early motivations and interpretations.
+   The module will conclude with Ruth Barcan Marcus' first-order extensions of the systems of strict implication 1946 and the objections raised by Quine 1943 - 1953 that modal logic will lead back into the "jungle of Aristotelian metaphysics".
+2. The second module will focus on the development of intensional semantics by comparing Carnap 1946 and Kripke's 1963 accounts.
+   We will then consider Prior 1967 and Thomason's 1970 tense logics and some of the attempts to fit these semantic systems together by Montague 1973 and Kaplan 1989.
+   This module will conclude with an alternative bimodal system that I am developing.
+3. The third module will begin with the intensional semantics for counterfactuals developed by Stalnaker 1968 and Lewis 1973.
+   We will then move to review some of the early criticisms by Fine 1975 and others, comparing the hyperintensional account that Fine 2012 offers as an alternative.
+   I will then present the simplification that I have developed of Fine's semantics for counterfactuals as well as an extension of this system to accommodate tensed counterfactuals.
+4. The fourth module will close by considering hyperintensional semantic theories more generally and their logics for propositional identity, subject-matter, essence, ground, and logical subtraction.
 
 ## Overview
 
@@ -77,7 +78,7 @@ See [Chapter 0](https://github.com/benbrastmckie/ForAllX/blob/master/forallx-mit
 
 - [10%] Present a topic in class, revising the class notes for that week
 - [10%] Open two [issues](https://github.com/benbrastmckie/ModalHistory/issues) in this repo to post a substantial question or comment
-- [40%] Make contributions to all eight collaborative problem sets 
+- [40%] Make contributions to all eight collaborative problem sets
 - [40%] Complete and present a final project by either:
   - Presenting and discussing an important formal result
   - Using the model-checker to implement a semantics
